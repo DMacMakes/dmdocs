@@ -1,18 +1,18 @@
-*.[pP][dD][fF] filter=lfs diff=lfs merge=lfs  
-*.[pP][nN][gG] filter=lfs diff=lfs merge=lfs 
-*.[jJ][pP][gG] filter=lfs diff=lfs merge=lfs 
-*.[zZ][iI][pP] filter=lfs diff=lfs merge=lfs 
-*.[pP][sS][dD] filter=lfs diff=lfs merge=lfs
-*.7[zZ] filter=lfs diff=lfs merge=lfs
-*.[mM][pP]4 filter=lfs diff=lfs merge=lfs
-*.[pP][pP] filter=lfs diff=lfs merge=lfs
-*.[pP][pP][tT][xX] filter=lfs diff=lfs merge=lfs
-*.[pP][pP][tT] filter=lfs diff=lfs merge=lfs
-*.[dD][oO][cC] filter=lfs diff=lfs merge=lfs
-*.[dD][oO][cC][xX] filter=lfs diff=lfs merge=lfs
-*.3[bB] filter=lfs diff=lfs merge=lfs
-*.[sS][pP][pP] filter=lfs diff=lfs merge=lfs
-*.[rR][aA][rR] filter=lfs diff=lfs merge=lfs
-*.[sS][vV][gG] filter=lfs diff=lfs merge=lfs
-*.[iI][sS][oO] filter=lfs diff=lfs merge=lfs
-*.[pP][uU][rR] filter=lfs diff=lfs merge=lfs
+*.[pP][dD][fF] filter=lfs diff=lfs merge=lfs -text
+*.[pP][nN][gG] filter=lfs diff=lfs merge=lfs -text
+*.[jJ][pP][gG] filter=lfs diff=lfs merge=lfs -text
+*.[zZ][iI][pP] filter=lfs diff=lfs merge=lfs -text
+*.[pP][sS][dD] filter=lfs diff=lfs merge=lfs -text
+*.7[zZ] filter=lfs diff=lfs merge=lfs -text
+*.[mM][pP]4 filter=lfs diff=lfs merge=lfs -text
+*.[pP][pP] filter=lfs diff=lfs merge=lfs -text
+*.[pP][pP][tT][xX] filter=lfs diff=lfs merge=lfs -text
+*.[pP][pP][tT] filter=lfs diff=lfs merge=lfs -text
+*.[dD][oO][cC] filter=lfs diff=lfs merge=lfs -text
+*.[dD][oO][cC][xX] filter=lfs diff=lfs merge=lfs -text
+*.3[bB] filter=lfs diff=lfs merge=lfs -text
+*.[sS][pP][pP] filter=lfs diff=lfs merge=lfs -text
+*.[rR][aA][rR] filter=lfs diff=lfs merge=lfs -text
+*.[sS][vV][gG] filter=lfs diff=lfs merge=lfs -text
+*.[iI][sS][oO] filter=lfs diff=lfs merge=lfs -text
+*.[pP][uU][rR] filter=lfs diff=lfs merge=lfs -text
