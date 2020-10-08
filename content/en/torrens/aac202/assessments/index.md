@@ -8,47 +8,34 @@ description: >
 
 ## Weeks 1-4: High Poly Character
 
-While this was officially assessment 2, we'll be completing it in weeks 1-4
 
-The brief for the assessment delves into things we won't actually be covering here or fitting in. That said, we'll still be delivering a sculpted character in rendered images (and working zpr file), and I'll go through how the marking rubric is still relevant.
+**Due**: Sunday October 11 by 11:55pm. 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9223158_1&course_id=_94273_1" target="_blank">Character assessment on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+**Create a bust from an existing 2D concept:**  
+1. Select one of the heads you _didn't_ already sculpt (concept art [below](#concepts))  
+2. Using the provided base mesh and what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.  
+_Note: While this was officially assessment 2, we'll be completing it in weeks 1-4._
 
-{{< alert title="Your task: Creating a bust from an existing 2D concept" color= "primary" >}}
+{{< alert title="Delivery" color= "primary" >}}
 
-1. Select one of the heads you _didn't_ already sculpt (concept art below)
-2. Using the provided base mesh and what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.
-3. Using the ZBrush photoshop export plugin, send render layers to photoshop and composite a _beauty render_
-{{< /alert >}}
+**Elements:**  
+1. Your final **ZPR file**  
+2. **Renders** (`shift+r`) of your character from multiple angles, with polypaint on.  
+   * **Side, front, back** (with perspective enabled: press `p`)  
+   * A **beauty render 3/4 angle** to show off the character. You can polish it a bit in photoshop.  
+   * Don't have the character tiny in the middle of the canvas. Move zbrush to your largest screen and have the character take up most of the canvas.  
 
-### Deliverables And Submission
+**Zipping and delivering:**  
+1. Put your beauty render, other ZB screenshots and your final ZPR file in a folder.  
+2. **Rename that folder** `AAC202_A2_Lastname_Firstname` and archive it with zip or 7zip.  
+3. The file is likely large, so use the Torrens LFS to upload it. If you haven't used it, instructions are at [the end of this page](#torrens-large-file-system).   
+4. Submit on Blackboard as **Assessment 2**.  
+{{< /alert >}}  
 
-1. Your final **ZPR file**
-2. **Renders** (`shift+r`) of your character from multiple angles, with polypaint on.
-   * **Side, front, back** (with perspective enabled: press `p`)
-   * A **beauty render 3/4 angle** to show off the character. You can polish it a bit in photoshop.
-   * Don't have the character tiny in the middle of the canvas. Move zbrush to your largest screen and have the character take up most of the canvas.
-3. Screenshots of your character in _Substance Painter_
-   * A few shots to show off the quality of the Bake
-   * A shot with wireframe enabled to show the decimated mesh.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9223158_1&course_id=_94273_1" target="_blank">Submit Character Assessment on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-Some **polishing** possibilities:
-  * Cropping to a nice composition
-  * Warming/cooling shadows, maybe improving the contrast
-  * Adding rim light  
-  * Adding gloss/specular hilight/shine to some elements
-  * painting in eyelashes and eyebrows that you didn't have geometry for
-    
-
-{{< alert title="Submitting Your Files" color= "primary" >}}
-1. Put your beauty render, other ZB screenshots, Painter screenshots and your final ZPR file in a folder.
-2. **Rename that folder** `AAC202_A2_Lastname_Firstname`, zip it and, if it's not too big, submit it on the **Blackboard** Assessment 2 page.
-3. If that file is very large (>100MB) use the Torrens LFS to upload it. If you don't know how to use the LFS, upload it to cloud storage like drive/dropbox/onedrive and provide a link when you submit.
-{{< /alert >}}
-
-### Concepts
-
-Choose one of the concepts below, or click one and visit Patri Balanovsky's page to pick another **from the same artstation page** (not all of his artstation content). Be careful not to pick one that requires extra meshes (hair, horns, eyepatches) if you're not confident creating new meshes. Don't stretch the head to support large horns, hair etc.
+### Concepts  
+Choose one of the concepts below, or click one and visit Patri Balanovsky's page to pick another **from the same artstation page** (not all of his artstation content). Be careful not to pick one that requires extra meshes (hair, horns, eyepatches) if you're not confident creating new meshes. Don't stretch the head to support large horns, hair etc.  
 
 {{< imgproc "patri-balanovsky-alien-faces-5" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
 faces-5
@@ -61,6 +48,13 @@ faces-8
 {{< imgproc "patri-balanovsky-alien-faces-12" Resize "600x" Link "https://www.artstation.com/artwork/n6X1r" >}}
 faces-12
 {{< /imgproc >}}
+
+### Some polishing ideas:
+  * Cropping to a nice composition
+  * Warming/cooling shadows, maybe improving the contrast
+  * Adding rim light  
+  * Adding gloss/specular hilight/shine to some elements
+  * painting in eyelashes and eyebrows that you didn't have geometry for
 
 ---
 
