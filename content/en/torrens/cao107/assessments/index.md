@@ -49,6 +49,29 @@ A **zip file** containing:
 
 Implement the peaceful version of threaded cinema. Use what you learned from chapter 3 and the week 4 lecture.
 
+- Prevent multiple sales of a single seat
+- Prevent garbled output by interrupted threads
+- Prevent missing entries in order completed
+- Do it without completely removing all parallelism.
+- In a README file, explain what you've tried to implement. Reflect on how it went. Where did you succeed? Where did you fail? Can you see a path forward if you'd had more time?
+
+{{< alert title="Delivery" color= "primary" >}}
+
+**Elements:**
+
+* Visual Studio solution folder containing your final cinema_seats project, minus the cache folders (.vs, x64, Debug, Release)  
+* Your README.txt (or README.md) file. Put it in the solution folder along with the project files.
+
+**Submission:**
+1. Do NOT refer to the pdf brief on blackboard for what you should deliver. Go by this page's instructions to avoid confusion. Ask Danny if this page and the week 4 class don't answer your questions.
+2. Zip up the Visual Studio solution folder (containing the readme as well) and name the zip file **CAO107_Assessment1_LastName_FirstName.zip**.
+3. Submit the zip file to Blackboard at the link below.
+4. I already have your previous labs, so don't include them.
+{{< /alert >}}
+
+Ignore the **correct naming** and leave out the **readme** file ONLY IF YOU WANT TO LOSE MARKS.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219125_1&course_id=_94382_1" target="_blank">Submit Assessment 1 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 <!--
 Xs and Os, noughts and crosses assessment 4.
 What would have been marked as the solid approach?

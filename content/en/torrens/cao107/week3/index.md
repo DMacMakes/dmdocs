@@ -66,16 +66,6 @@ Threads are wild animals who only care about getting their own job done. If you'
 Black Friday SSD sale maybe? I remember having to queue for a box copy of WoW.
 {{< /imgcard >}}
 
-### Oversubscription
-
-You might think 16 threads on a 2/4/8 core machine is fine. Four at a time, then four at a time, what could go wrong?
-
-Let's look at at my lying drawing of threads being orderly.
-
-Threads aren't doing that though. They all want in right now, and the operating system is all flustered and trying to serve them all at once. 
-
-Load balancing means anyone waiting gets a shot unless they've been deprioritized. We don't have direct control over that without getting very cpu specific, so what can we do? Manage!
-
 ### Not our fault
 
 Just like the customers going World War Z on release day, they're not going to be responsible when your store is wrecked and lawsuits come in from people who turned into surfboards. It's their nature. You let them charge through every door you had, you maniac.
