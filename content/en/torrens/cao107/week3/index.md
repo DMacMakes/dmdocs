@@ -93,10 +93,6 @@ This is something for you to learn about this week :D
 
 1. How can we limit our threads?
 
-## Project downloads
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="cao107_week2_projects.zip" target="_blank">Download cao107_week2_projects.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
 ## Homework
 
 Complete lab 2 of assessment 1, _with the help of the reading_.
