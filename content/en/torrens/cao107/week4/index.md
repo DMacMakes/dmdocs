@@ -50,6 +50,17 @@ We covered these in the work review last week. Essentially, when multiple worker
 * You both check a variable at the same time, do something with it (like add 1) and write back. 1 + 1 + 1 = ... 2.
 * You see an item at your store is in stock, and you begin to sell it. In the mean time your assistant (who had checked the stock just before you before you) sells the stock and marks it as sold. Depending on your system, you end up selling the same tickets, or being rejected by the system as you go to finalise your sale. 
 
+### Exercise: Get money
+
+1. Lao and Penny are looking really bad. Type out the code, find out how bad. Screenshot the result to Discord.
+
+{{< imgcard get_money_race Link "get_money_race.png">}}
+Lao and Penny are working hard, but are they RIPPING ME OFF?
+{{< /imgcard >}}
+
+2. Fix it with mutex!
+3. Fix it with Atomic!
+
 ### Mutual exclusion
 
 Mutual (both) exclusive (one only.)
