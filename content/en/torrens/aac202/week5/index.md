@@ -3,8 +3,7 @@ title: "5. Hard surface modelling with subdivs"
 linkTitle: "5. Hard surf 1"
 weight: 50
 description: >
-  High resolution modelling in Maya with Subdivision Surfaces. 
-  Links to resources to study at home
+  Weeks 5-8: Hard surface modelling
 resources:
 - src: "*krzysztof-maziarz*"
   params:
@@ -33,39 +32,55 @@ resources:
 NEW CONCEPT WITH objects that better show smooth to sharp etc.
 SIMPLE enough to model, retop, and then get to substance.
 
-## AAC202 Overview
+## What is Hard Surface Modelling?
 
-Welcome back and hello new people!
+Hard surface modelling is a term used in the game industry for modelling objects that are inorganic and usually machined. Think headphones, engines, washing machines, hinges, vehicles, space helmets, guns, armour, frying pans. These objects are usually rigid and have features not easily found in nature: **paralell lines, near-perfect circles, very flat surfaces, tightly controlled bevelled/rounded edges**. If you've held an iphone,- played a nice piano, used a well made game controller or mouse that fit your hand well, you know the pleasure of having just the right curves and texture to a surface, just the right play/travel to a button.
 
-* Modern, current-generation 3D graphics.
-* Learning Maya, ZBrush, some Substance.
-* Immerse yourself in modeling. Practise always, just like drawing.
-* Get your hands on a wacom or other drawing tablet! From week 5 we'll be using it every class and for homework.
-* Assessments.
+{{< imgcard "wooden_radio" Link "wooden_radio.jpg">}}
+Handsome retro bluetooth radio.
+{{< /imgcard >}}
 
-## Join the Discord server
+{{< imgcard helmet_doom_eternal Link "helmet_doom_eternal.jpg">}}
+AAA super legit space helmet
+{{< /imgcard >}}
 
-Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
+The techniques for modeling a go kart or military radio in high detail, then, is pretty different to how you'd model say, a _Wrinkle-necked Slothbarg Peasant_ NPC or his ragged cloth farmer's tunic.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+## How's it done? 
 
-### Recap
-
-ACR103: 
-  - Low poly modeling
-    - Blocking out
-    - Detailing
-  - Rendering
-  - UV unwrapping
-  - Hand painted textures
-
-## High detail modeling
-
-This semester we're going to be working towards current-gen assets, with techniques that apply to both cartoony and realistic models.
+The key is controlling surfaces and edges carefully, without introducing lumpiness. As we saw in character modelling, **fewer edges** usually leads to **fewer lumps**: but it leaves things faceted, or we **smooth it and lose our sharp edges**.
 
 {{< imgproc klaayas_room_wireframe_javier_rodriguez Resize "600x" Link "klaayas_room_wireframe_javier_rodriguez.jpg">}}
 Round vs sharp, countour control!
 {{< /imgproc >}}
+
+Look at the eimage above carefully. See how the window is perfectly smooth and round, and the top left curtain folds are perfectly curved despite having few lines on there?
+
+That's our friend **dynamic subdivisions**. But how do we use them without collapsing the sharp edges at the edges of teh window, or the controlled bevels on the chest?
+
+### Creases and control edges
+
+{{< imgproc control_loops Resize "400x" Link "control_loops.jpg" >}}
+Using extra edges where we want more structure.
+{{< /imgproc >}}
+
+When we subdivide, as you can imagine, our computers do some fancy math to add new polygons, average them out, etc etc. That's fine, we just hit ctrl-d. The way that algorithm (bit of code that calls the shots) works allows for us to add in extra edges, or add *crease* to edges, just like creasing paper really, so when the surface smoothes it can keep corners.
+
+{{< imgproc "bot_piece" Resize "400x" Link "bot_piece.jpg" >}}
+Armour from the upper arm of a robot.
+{{< /imgproc >}}
+
+You can think of **creases** like the bendy poles in a tent. The hold the form very well where the cloth crosses them, and bend with the form along their length.
+
+//Need pic of crease in zbrush. Pref from my hearthstone things.
+
+**Support edges** are more about strength in numbers.. The more there are and the closer together they are, they more they behave like a creased edge. You get more control with support edges, but it messes with your polygon density. 
+
+{{< alert title="Catmull-Clark" color= "primary" >}}
+The most common smoothing algorithm used in 3D packages is <i>Catmull-Clark</i> subdivision. You probably won't be surprised that it's engineered to allow expressive modelling with minimal polygons when you hear that the _Catmull_ is **Ed Catmull**, co-founder of **Pixar**. Pixar's tech is heavily focussed on realism combined with appeal, but with the goal of rendering fast enough to make the hundreds of hundres of thousands of frames needed for a feature film.
+
+He worked along with Jim Clarke, who co-founded _Silicon Graphics_ and _Netscape_, and of course like all our creations it was built on the work of other smart, passionate people.
+{{< /alert >}}
 
 Last trimester our goal was to make **low surface detail** props, using **hundreds of triangles**. To make up for the lacking geometry, we'd use [diffuse](https://docs.unity3d.com/Manual/shader-NormalDiffuse.html) textures, flat hand-painted images. Something like you see here:
 
