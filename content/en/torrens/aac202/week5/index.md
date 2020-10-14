@@ -3,30 +3,7 @@ title: "5. Hard surface modelling with subdivs"
 linkTitle: "5. Hard surf 1"
 weight: 50
 description: >
-  Weeks 5-8: Hard surface modelling
-resources:
-- src: "*krzysztof-maziarz*"
-  params:
-    byline: "Art: Krzysztof Maziarz (Artstation)"
-- src: "*lulemero*"
-  params:
-    byline: "Art: Lulemero (Instagram)"
-- src: "*javier_rodriguez*"
-  params:
-    byline: "Art: Javier Rodriguez (Artstation)"
-- src: "*paul_chambers*"
-  params:
-    byline: "Art: Paul Chambers (Artstation)"
-- src: "*alexander-shevchuk.jpg"
-  params:
-    byline: "Art: Alexander Shevchuk (Artstation)"
-- src: "*lauren-duke.jpg"
-  params:
-    byline: "Art: Lauren Duke (Artstation)"
-- src: "spanner.jpg"
-  params:
-    byline: "Art: Uncredited"
-    
+  Weeks 5-8: Hard surface modelling time
 ---
 
 <!--
@@ -178,23 +155,7 @@ Download, unzip and open the arcade stick in ZBrush
 {{< /imgcard >}}
 
 
-<!-- 
-## Assessment 1: High Detail Props
 
-Choose and create prop for the provided environment.
-Particulars on the [AAC202 Assessments page](../assessments/#assessment-1-high-detail-props).
-
-### The Environment Concept 
-
-{{< imgproc retro_building_krzysztof-maziarz Resize "1024x" Link "retro_building_krzysztof-maziarz.jpg" >}}
-Cartoony building design with lots of toony props.
-{{< /imgproc >}}
-
-{{< imgproc lineworks_krzysztof-maziarz Resize "1024x" Link "lineworks_krzysztof-maziarz.jpg" >}}
-Linework for extra object information
-{{< /imgproc >}}
-
--->
 
 ## Style reference is critical 
 
@@ -247,32 +208,14 @@ Here's a wireframe to discuss
 Mostly hitting corners. Leaves and cacti use more even geometry. Click to zoom.
 {{< /imgproc >}}
 
-<!--
-
-### Photo Reference
-
-This week you’re going to grab reference for the other sides of your chosen concept. Back ports of computer? Back of arcade unit etc. fan for aircon?
-
-{{< alert title="Homework Is Critical" color= "danger" >}}
-This is a second year course, and the material is too complex to learn in class. The homework you are given is:
-1. A part of your assessments
-2. To flesh out what you learned in class
-2. To build the required base for next week's work.
-
-Each week you'll be working along with me **using things you made and collected for your homework**. I will help people with issues they've had but we won’t be holding back class to finish the homework or to explain at length concepts you didn't learn during the week.
-
-Each week you are expected to put at least 10 hours into this subject, including the 2-3 hours we spend in class. That's at least 7 hours at home.
-{{< /alert >}}
-
 ## Learning Resources
 
 Flipped Normals how to model curved hard surfaces.
 https://www.youtube.com/watch?v=U7HG6XJsKoQ
 
-
 {{< youtube okaC2_NxPYQ >}}
 _Reviewing: Maya Interface tour_
--->
+
 ## Subdiv Learning
 
 Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
@@ -334,17 +277,16 @@ This week we
 * Covered our first assessment
 * Introduced resources you'll need to learn from
 * Have homework to do!
-
-## Homework
+<!--
+ Homework
 
 1. Watch videos provided, take notes about some of the techniques and challenges of subdivision/hard surface modeling that you discover.
 2. Consider what techniques you think will solve your problems.
 3. Draw over the concept in photoshop/krita to show pieces, and again to show ideas of edges/topology
 4. Document your answers in **your own new thread** in the module one forum. [See my post for instructions](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866553_1&message_id=_2124709_1).
-
+-->
 <!--
-## NEW APPROACH
-
+ NEW APPROACH
 Biggest cross-subject problem right now: assignments are due on a sunday, not 1 week after the class.
 
 W1: 
