@@ -29,8 +29,10 @@ resources:
     
 ---
 
+<!--
 NEW CONCEPT WITH objects that better show smooth to sharp etc.
 SIMPLE enough to model, retop, and then get to substance.
+-->
 
 ## What is Hard Surface Modelling?
 
@@ -140,28 +142,43 @@ The Super Wings?
 Wikipedia: <https://en.wikipedia.org/wiki/Subdivision_surface>
 {{< /alert >}}
 
-## Exercise 1: Maya Subdivisions
+## New tools!
+
+Since we're doing new things, I've updated our tools and UI. Grab them and we'll install.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/Ee2da8SsTu5Jlf4E10iHxCgBhxjyXKhXfMMnCeyzpibg_A?e=6f1xLN" target="_blank">ZBrush 2020.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ETsNpdQYe1NJpDtFYUZDE04Bawx7Di8-PfsyDlWfOCZwxw?e=75Dvru" target="_blank">zbrush_customisation.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+## Exercise 1: ZBrush Subdivisions
+
 
 <!--Open scene with cube and magnifying glass good topo, mag bad topo, in layers, only cube visible.-->
-Grab and open this Maya Project (unzip to a folder, set project, open scene):
-[week1_subdivs_maya.zip](week1_subdivs_maya.zip)
+Grab and open this ZBrush project
+{{< imgcard "mug_subd_zb" Link "breakfast_zbrush.zip">}}
+Breakfasty bits modeled in ZBrush.
+{{< /imgcard >}}
 
 ### Preview Subdivisions
 
-1. Enable wireframe-on-shaded in your viewport
-2. With cube selected, try 1, 2, 3 on keyboard.
-Maya is applying subdivisions in memory and showing you the result, without changing your model.
+Let's explore previewing:
+* Dynamic subdivisions on/off
+* Controlling how many levels of subdivision are previewed
+* Look at the real poly count
 
 ### Real subdivisions
 
-1. Duplicate the cube, call it cube_smooth
-2. Move it to the right of the original cube so you can see them both.
-3. With cube_smooth selected, press 1.
-4. Open the mesh smooth dialogue: Mesh->Smooth [] (you have to click the square for the dialogue)
+1. Copy paste the tool. Rename each element, removing "_subd"
+4. In _Tool -> Geometry -> Dynamic_ Subdiv hit **apply**.
 
-### Magnifying Glass
+### Arcade stick
+
+{{< imgcard arcade_stick_zb Link "stick.zip">}}
+Download, unzip and open the arcade stick in ZBrush
+{{< /imgcard >}}
 
 
+<!-- 
 ## Assessment 1: High Detail Props
 
 Choose and create prop for the provided environment.
@@ -177,9 +194,11 @@ Cartoony building design with lots of toony props.
 Linework for extra object information
 {{< /imgproc >}}
 
-### Style Help
+-->
 
-Detailed subdivision modelling is way beyond the scope of this subject. Instead, we'll use them to add **charming roundness** and **light catching** chamfers to our props.
+## Style reference is critical 
+
+Detailed subdivision modelling is way beyond the scope of this subject. Instead, we'll use the techniques to add **charming roundness** and **light catching** chamfers to our props.
 
 To do that in a cohesive way we'll use style reference.
 
@@ -228,6 +247,8 @@ Here's a wireframe to discuss
 Mostly hitting corners. Leaves and cacti use more even geometry. Click to zoom.
 {{< /imgproc >}}
 
+<!--
+
 ### Photo Reference
 
 This week you’re going to grab reference for the other sides of your chosen concept. Back ports of computer? Back of arcade unit etc. fan for aircon?
@@ -251,8 +272,8 @@ https://www.youtube.com/watch?v=U7HG6XJsKoQ
 
 {{< youtube okaC2_NxPYQ >}}
 _Reviewing: Maya Interface tour_
-
-### Subdiv Learning
+-->
+## Subdiv Learning
 
 Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
 
@@ -262,7 +283,7 @@ For that reason, I'll be skimming several videos today, and leaving it to each o
 Always work large to small. You don't know yet how many small details you'll need to get your point across, or how hard they'll be. Get the silhouettes, proportions and corners right first.
 {{< /alert >}}
 
-#### Fundamentals
+### Fundamentals
 
 Ways to support corners:
 {{< youtubetime HPrj4FbVnRM 122 >}}
@@ -272,7 +293,7 @@ Ways to support corners:
 * Creases
     - Appear to be the holy grail at first, but have real limitations.
  
-#### Working with cylinders
+### Working with cylinders
 
 Some straightforward controlling of volume and end shapes:
 
@@ -284,13 +305,13 @@ But how do you add features to one small area without breaking the that perfectl
 The first 10 minutes here show us how to break up the mesh without gaps and distortions.
 {{< youtube ryPIKJkNzPI >}}
 
-#### More Complex
+### More Complex
 
 More by Elementza:
 
 {{< youtube 0WZ8zfKOTr0 >}}
 
-#### Sharp Things, Hiding Triangles
+### Sharp Things, Hiding Triangles
 
 One to subdivision modeling is that **pointy volumes** are naturally form **pyramids/triangles**: how do we handle those with quads?
 
