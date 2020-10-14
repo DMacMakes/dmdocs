@@ -63,30 +63,6 @@ The most common smoothing algorithm used in 3D packages is <i>Catmull-Clark</i> 
 He worked along with Jim Clarke, who co-founded _Silicon Graphics_ and _Netscape_, and of course like all our creations it was built on the work of other smart, passionate people.
 {{< /alert >}}
 
-Last trimester our goal was to make **low surface detail** props, using **hundreds of triangles**. To make up for the lacking geometry, we'd use [diffuse](https://docs.unity3d.com/Manual/shader-NormalDiffuse.html) textures, flat hand-painted images. Something like you see here:
-
-{{< imgproc barrels_low_poly_textured Resize "500x" >}}
-Low poly cartoony barrels.
-{{< /imgproc >}}
-
-**High detail** meshes can be made many ways and are **defined differently** depending on whether you're making games or film, whether the year's 2005 or 2020 and so on. Then those high poly details are brought into games using some tricks that we'll worry about that later.
-
-{{< imgproc destiny_gun_1 Resize "900x" Link "destiny_gun_1.jpg" >}}
-caption
-{{< /imgproc >}}
-
-{{% alert title="Why more polygons?" %}}
-The end goal of adding polygons is to support **smoothly curving surfaces** and **fine details**.
-{{% /alert %}}
-
-More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/).
-
-You could work toward high detail assets using our low poly process but.. on its own it would take a looong time. 
-
-### New methods
-
-ZBrush. We'll be covering weeks 5-12.
-Subdivision modeling, which takes a low detail model as input and uses an algorithm to divide up each polygon into several, while smoothing the whole mesh.
 
 ## Subdivision surfaces
 
@@ -129,7 +105,6 @@ Since we're doing new things, I've updated our tools and UI. Grab them and we'll
 
 ## Exercise 1: ZBrush Subdivisions
 
-
 <!--Open scene with cube and magnifying glass good topo, mag bad topo, in layers, only cube visible.-->
 Grab and open this ZBrush project
 {{< imgcard "mug_subd_zb" Link "breakfast_zbrush.zip">}}
@@ -154,9 +129,6 @@ Let's explore previewing:
 Download, unzip and open the arcade stick in ZBrush
 {{< /imgcard >}}
 
-
-
-
 ## Style reference is critical 
 
 Detailed subdivision modelling is way beyond the scope of this subject. Instead, we'll use the techniques to add **charming roundness** and **light catching** chamfers to our props.
@@ -179,7 +151,6 @@ Chest. Click to zoom.
 Big breakfast. Click to zoom.
 {{< /imgproc >}}
  
- 
 #### Zoomed out: Lulemero
 
 Nice rounded softness in this scene gives us an idea of how to approach our modeling.
@@ -188,58 +159,33 @@ Nice rounded softness in this scene gives us an idea of how to approach our mode
 Everything looks sanded off, smooth to touch. Click to zoom.
 {{< /imgproc >}}
 
-Here's a scene with a tiny bit less rounding/bevelling, but full and smooth volumes.
-
-{{< imgproc bathroom_lulemero Resize "1024x" Link "bathroom_lulemero.jpg" >}}
-Bathroom. Click to zoom.
-{{< /imgproc >}}
-
-Look at the chair, pillow and blanket. Imagine the pc and furniture with more rounded off edges, or large soft chamfers.
-
-{{< imgproc bedroom_tech_ninjas Resize "1024x" Link "bedroom_tech_ninjas.jpg" >}}
-Bedroom. Click to zoom.
-{{< /imgproc >}}
-
-### Method
-
-Here's a wireframe to discuss
-
-{{< imgproc klaayas_room_wireframe_javier_rodriguez Resize "1024x" Link "klaayas_room_wireframe_javier_rodriguez.jpg">}}
-Mostly hitting corners. Leaves and cacti use more even geometry. Click to zoom.
-{{< /imgproc >}}
-
-## Learning Resources
-
-Flipped Normals how to model curved hard surfaces.
-https://www.youtube.com/watch?v=U7HG6XJsKoQ
-
-{{< youtube okaC2_NxPYQ >}}
-_Reviewing: Maya Interface tour_
-
-## Subdiv Learning
+## Subdiv learning and resources
 
 Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
 
-For that reason, I'll be skimming several videos today, and leaving it to each of you to watch the ones in the order that works for your prop.
+for that reason, i'll be skimming several videos today, and leaving it to each of you to watch the ones in the order that works for your prop.
 
-{{< alert title="Tip: Work Large To Small" color= "warning" >}}
-Always work large to small. You don't know yet how many small details you'll need to get your point across, or how hard they'll be. Get the silhouettes, proportions and corners right first.
+{{< alert title="tip: work large to small" color= "warning" >}}
+always work large to small. you don't know yet how many small details you'll need to get your point across, or how hard they'll be. get the silhouettes, proportions and corners right first.
 {{< /alert >}}
 
-### Fundamentals
+### fundamentals
 
-Ways to support corners:
-{{< youtubetime HPrj4FbVnRM 122 >}}
 
-* Bevels
-* Fencing (or support loops)
-* Creases
-    - Appear to be the holy grail at first, but have real limitations.
- 
+### metal slug tank start to finish zmodeler
+
+This video is timelapsed but it has **commentary** through the whole thing by Pixologic's demo guy (and former industry modeler guy). It doesn't slowly teach you any given feature, but it will give you a great **understanding of how he breaks up the model** into pieces, then repeats a small set of processes in different ways. He also solves common problems, and you'll see him use masking, polygroups and visiblity controls just like with the other brushes.
+
+{{< youtube jHOk2kCPK8Y >}}
+
+https://www.youtube.com/watch?v=jHOk2kCPK8Y
+
 ### Working with cylinders
 
-Some straightforward controlling of volume and end shapes:
+flipped normals how to model curved hard surfaces.
+https://www.youtube.com/watch?v=u7hg6xjskoq
 
+Some straightforward controlling of volume and end shapes:
 {{< youtubetime iyZqmWf5x_c 223 >}}
 
 But how do you add features to one small area without breaking the that perfectly circular cross section:
