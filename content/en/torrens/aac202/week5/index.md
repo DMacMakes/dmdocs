@@ -58,6 +58,8 @@ Look at the eimage above carefully. See how the window is perfectly smooth and r
 
 That's our friend **dynamic subdivisions**. But how do we use them without collapsing the sharp edges at the edges of teh window, or the controlled bevels on the chest?
 
+![Pixar subdivs](subdiv_pyramid_pixar.png)
+
 ### Creases and control edges
 
 {{< imgproc control_loops Resize "400x" Link "control_loops.jpg" >}}
