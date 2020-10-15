@@ -48,7 +48,7 @@ Install **VMWare workstation** player 16:
 
 **Download this virtual machine** and unzip it into a virtual_machines folder on your pc:
 
-{{< imgcard linux_mint_vm.png Link "https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERUaIyk5nP9Fgsacv5dRKMgBJOYQ7mpmrWf-B_LGnDrxGQ?e=tQALgo">}}
+{{< imgcard linux_mint_vm Link "https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERUaIyk5nP9Fgsacv5dRKMgBJOYQ7mpmrWf-B_LGnDrxGQ?e=tQALgo">}}
 Download the cao107 linux mint vm for vmware
 {{< /imgcard >}}
 
