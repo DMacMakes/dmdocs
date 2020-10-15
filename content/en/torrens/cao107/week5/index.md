@@ -48,12 +48,17 @@ Install **VMWare workstation** player 16:
 
 **Download this virtual machine** and unzip it into a virtual_machines folder on your pc:
 
-{{< imgcard linux_mint_vm Link "https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERUaIyk5nP9Fgsacv5dRKMgBJOYQ7mpmrWf-B_LGnDrxGQ?e=tQALgo">}}
-Download the cao107 linux mint vm for vmware
+{{< imgcard linux_mint_vm >}}
+A screenshot from our Linux Mint virtual machine.
 {{< /imgcard >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERUaIyk5nP9Fgsacv5dRKMgBJOYQ7mpmrWf-B_LGnDrxGQ?e=tQALgo" target="_blank">Download mint_cao107_vmware.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+**If you know how to unpack 7z (7zip)** files, grab this smaller 3.2 GB file:
 
-File-Open the virtual machine in vmware. Change the settings and lower the ram to 3 or 4 GB if you only have 8. Hit play, and then select "copied" when it asks if you copied or moved it.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EWFZ0tYV4D1MqOeXTIsD2rcBGhIlOi-LCCLuhdvjFJBLBQ?e=Bnj2hQ" target="_blank">Download Linux VM in 7z Archive (3.2GB)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-Enter the password, which Danny will give you.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERUaIyk5nP9Fgsacv5dRKMgBJOYQ7mpmrWf-B_LGnDrxGQ?e=tQALgo" target="_blank">Download Linux VM in Zip archive (4.4GB)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+1. _File -> Open_ the virtual machine in _VMWare_.  
+2. If your pc only has 8GB of ram you can enter the virtal machine settings and lower the vm's ram to 3 or 4 GB. 
+3. **Run/play** the vm, then select "copied" when it asks if you copied or moved it.
+4. At times you'll be asked for a password for the user "student". There's a pinned message in the **#general_cao107** discord chat. 
