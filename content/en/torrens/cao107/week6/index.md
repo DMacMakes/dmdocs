@@ -39,6 +39,14 @@ Start with computer with an operating system.
     - m.2: nvme or sata protocol ends up on PCIE bus
 2. Goes via pcie bus through Direct Memory Access to the ram
 
+{{< imgcard motherboard_x99m_killer.png>}}
+Motherboard: Moving images from storage to ram to cpu to ram to cpu to gpu etc
+{{< /imgcard >}}
+
+{{< imgcard nvme_m2_installed>}}
+The NVME drive (a pcb) installed into m2 nvme slot.
+{{< /imgcard >}}
+
 ### 3. Decode/decompress/put in window
 1. Image header is read, assess the file type. Then, using a library that defines how that image type works, the image is decoded/decompressed in the cpu, then shunted back to memory.
 1. Then you need an operating system's windowing library to display the image on screen. 
