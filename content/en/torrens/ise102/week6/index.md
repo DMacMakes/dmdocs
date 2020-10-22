@@ -90,13 +90,17 @@ Importantly, an abstraction isn't a single instance of thing. **A _car_ is an id
 #### Levels
 
 What you just did, breaking down a _car_ into other, smaller abstractions, you just used **levels of abstraction** to understand a car. Top to bottom, or bottom to top, levels of abstraction make it manaageable!
+
 <!--
+
 ## Stringing it together
 
 The relationships between the jobs are very important: what do they need, and what do they provide? 
 
 It's the job of `main()` to give out, receive back and pass along data to the next level of functions. What input do these medium jobs need, and what do they produce?
+
 -->
+
 ## Slots Level 2: Medium sized problems
 
 Back to our slot machine. Our _Game Program_ is an abstraction equivalent to our car, and it mentioned screens, Our screens are the next level of abstraction down. 
