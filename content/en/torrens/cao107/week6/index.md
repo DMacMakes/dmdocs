@@ -33,7 +33,9 @@ Steps:
 What you'll see when you run the project.
 {{< /imgcard >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EW63GlqCx0RDls2upO3B6gcB323l_Vzo-97WA97XJto3Vw" target="_blank">Download Base_imgui.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EW63GlqCx0RDls2upO3B6gcB323l_Vzo-97WA97XJto3Vw" target="_blank">Download Base_imgui.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EXx4avVQkvZBmYSxe6h_sh0ByLgjBpf0Tcy9zSgONM9gig" target="_blank">Download Base_imgui.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 Unzip the contents into a folder, you'll see `libraries_cpp` and `weeks_5-8`.
 Go into `weeks_5-8\Base_imgui` and double click `base_imgui.sln`. 
