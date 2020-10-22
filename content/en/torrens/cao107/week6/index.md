@@ -47,55 +47,56 @@ Motherboard: Moving images from storage to ram to cpu to ram to cpu to gpu etc
 The NVME drive (a pcb) installed into m2 nvme slot.
 {{< /imgcard >}}
 
-### 3. Decode/decompress/put in window
-1. Image header is read, assess the file type. Then, using a library that defines how that image type works, the image is decoded/decompressed in the cpu, then shunted back to memory.
-1. Then you need an operating system's windowing library to display the image on screen. 
+### 3. Decode/decompress/put in window  
+1. Image header is read, assess the file type. Then, using a library that defines how that image type works, the image is decoded/decompressed in the cpu, then shunted back to memory.  
+1. Then you need an operating system's windowing library to display the image on screen.   
 
-## Send to Display
-1. Finally, this is sent via the pcie bus, with the help of the graphics drivers, to the GPU.
-1. The GPU sends it to the display via HDMI/VGA/DVI/DP/Thunderbolt/Usb C.
+## Send to Display  
+1. Finally, this is sent via the pcie bus, with the help of the graphics drivers, to the GPU.  
+1. The GPU sends it to the display via HDMI/VGA/DVI/DP/Thunderbolt/Usb C.  
 
-### On Windows
+### On Windows  
 
-File system: Fat32/NTFS 
-Driver model: WDM
-Limitations: Windows is 99% x86 architecture
-Windowing: Win32 API
-Multimedia/graphics libraries: Directx
+File system: Fat32/NTFS   
+Driver model: WDM  
+Limitations: Windows is 99% x86 architecture  
+Windowing: Win32 API  
+Multimedia/graphics libraries: Directx  
 
-Open alternatives exist for multimedia part: OpenGL, SDL2, QT, Imgui.
+Open alternatives exist for multimedia part: OpenGL, SDL2, QT, Imgui.  
 
 ### On Mac
-File system: HFS+, AppleFS
-Driver model: IOKit/Driver kit
-Limitation: Apple made computers. Unless you are running a Hackintosh, you are on apple made and sold hardware.
-Multimedia/graphics: Metal API 
-Windowing: Cocoa (appkit)
-64bit: As of MacOS 10.15 your app has to be 64 bit.
+File system: HFS+, AppleFS  
+Driver model: IOKit/Driver kit  
+Limitation: Apple made computers. Unless you are running a Hackintosh, you are on apple made and sold hardware.  
+Multimedia/graphics: Metal API   
+Windowing: Cocoa (appkit)  
+64bit: As of MacOS 10.15 your app has to be 64 bit.  
 
 ### On Linux
-Filesystem: Ext4
-Driver model: Not really branded.
-Limitation: Not friendly to casuals.
-Upside: Runs on almost anything. x86, arm, other architectures, all supercomputers.
-Windowing: X11 api (Gnome, KDE, Mate)
-Multimedia/graphics libraries: OpenGL, Vulcan, SDL2 
+Filesystem: Ext4  
+Driver model: Not really branded.  
+Limitation: Not friendly to casuals.  
+Upside: Runs on almost anything. x86, arm, other architectures, all supercomputers.  
+Windowing: X11 api (Gnome, KDE, Mate)  
+Multimedia/graphics libraries: OpenGL, Vulcan, SDL2   
 
 ### Cross Platform then? Impossible?
 Hard! 
 Cross platform does exist: openGL/Vulcan 
 
-Our Solution, layers of abstraction:
-Lowest layer:
-  OpenGL: Talk to graphics card, display triangles, bitmaps.
-  Boost: Thread pools
-Middle layer:
-  SDL2: Accessing files, accessing operating system/multimedia/graphics, controllers
-  sdl2_image: Library for various image formats
-Top layer:
-  ImGui: Displaying visuals, reacting to clicks. All your typical program gui elements. Buttons, text areas, checkboxes, tables, text, tileable windows.
-Helpers:
-  ImGuiFileDialog: Browse files
+Our Solution, layers of abstraction:  
+
+> - Lowest layer:  
+>   - **OpenGL**: Talk to graphics card, display triangles, bitmaps.  
+>   - **Boost**: Thread pools  
+> - Middle layer:  
+>   - **SDL2**: Accessing files, accessing operating system/multimedia/graphics, controllers  
+>   - **sdl2_image**: Library for various image formats  
+> - Top layer:  
+>   - **ImGui**: Displaying visuals, reacting to clicks. All your typical program gui elements. Buttons, text areas, checkboxes, tables, text, tileable windows.  
+> - Helpers:  
+>   - **ImGuiFileDialog**: Browse files  
 
 ## Code: Base_imgui
 
@@ -116,8 +117,16 @@ Set build type to _Release, x86_ in the main toolbar of visual studio, hit **ctr
 
 Explore the provided _Base\_imgui_ project, and add the functionality described below. This homework requires you to research the libraries I've provided, and to dig through the code and make discoveries. It'll also help to read about _Immediate Mode GUIs_.
 
+{{< alert title="Delivery" color= "primary" >}}
+1. Copy and paste the two folders (libraries_cpp, weeks_5-8) into a new folder.
+2. In the new copy of the Base_imgui folder, delete the usual visual studio folders (.vs, Release, Debug and x64)
+3. 7zip the new libraries_cpp and weeks_5-8 folders. It'll reduce from 130+ megabytes to about 11mb. Call the file _cao107\_week6\_homework.7z_. Zip is fine as well.
+4. Upload the file to cloud storage.
+5. Email the link to Danny by Monday Night (_not_ Tuesday morning). Also describe what you did and didn't get finished in the email.
+{{< /alert >}}
+
 1. Look through demo window features both in the running program and in code, see how they work.
-2. Add two checkboxes to the Media Loader window, _Load with thread_ and _Multiple threads_. They don't have to do anything yet.
+2. Add two checkboxes to the Media Loader window, ideally in an options menu: _Load with thread_ and _Multiple threads_. They don't have to do anything yet.
 3. The ImFileDialog library is being used to pop a new file browser when you click _File->Load images_ in the Media Loader window menu bar.
   * Configure it to show only image file types for selection. Look into the window flags and file extension masking.
   * The dialog already returns a string with the file path in it. Use the sdl2_image library to load an image when one has been selected in browser and the user has clicked OK.
