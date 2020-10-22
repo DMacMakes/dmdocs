@@ -39,7 +39,7 @@ Start with computer with an operating system.
     - m.2: nvme or sata protocol ends up on PCIE bus
 2. Goes via pcie bus through Direct Memory Access to the ram
 
-{{< imgcard motherboard_x99m_killer.png>}}
+{{< imgcard motherboard_x99m_killer>}}
 Motherboard: Moving images from storage to ram to cpu to ram to cpu to gpu etc
 {{< /imgcard >}}
 
