@@ -57,12 +57,45 @@ The NVME drive (a pcb) installed into m2 nvme slot.
 
 ### On Windows
 
+File system: Fat32/NTFS 
+Driver model: WDM
+Limitations: Windows is 99% x86 architecture
+Windowing: Win32 API
+Multimedia/graphics libraries: Directx
+
+Open alternatives exist for multimedia part: OpenGL, SDL2, QT, Imgui.
 
 ### On Mac
+File system: HFS+, AppleFS
+Driver model: IOKit/Driver kit
+Limitation: Apple made computers. Unless you are running a Hackintosh, you are on apple made and sold hardware.
+Multimedia/graphics: Metal API 
+Windowing: Cocoa (appkit)
+64bit: As of MacOS 10.15 your app has to be 64 bit.
 
 ### On Linux
+Filesystem: Ext4
+Driver model: Not really branded.
+Limitation: Not friendly to casuals.
+Upside: Runs on almost anything. x86, arm, other architectures, all supercomputers.
+Windowing: X11 api (Gnome, KDE, Mate)
+Multimedia/graphics libraries: OpenGL, Vulcan, SDL2 
 
 ### Cross Platform then? Impossible?
+Hard! 
+Cross platform does exist: openGL/Vulcan 
+
+Our Solution, layers of abstraction:
+Lowest layer:
+  OpenGL: Talk to graphics card, display triangles, bitmaps.
+  Boost: Thread pools
+Middle layer:
+  SDL2: Accessing files, accessing operating system/multimedia/graphics, controllers
+  sdl2_image: Library for various image formats
+Top layer:
+  ImGui: Displaying visuals, reacting to clicks. All your typical program gui elements. Buttons, text areas, checkboxes, tables, text, tileable windows.
+Helpers:
+  ImGuiFileDialog: Browse files
 
 ## Code: Base_imgui
 
