@@ -11,15 +11,44 @@ description: >
 Loading images and sounds. Displaying and playing.
 
 Steps:
-  1. Browse for and choose
+  1. Browse for and choose a file
   2. Load into memory
   3. Decode
   4. Decompress?
   5. Send to display
 
-### What's really involved?
+## What's really involved?
+
+Start with computer with an operating system.
+
+### 1. Browse for and choose
+1. Windowing, file browser on a gui (graphical user interface): some sort of interface for browsing for files.
+1. A mouse or keyboard to open the browser and select a file. 
+1. File is on some physical storage: HDD or SSD or thumb drive or cloud storage or Micro SD card or a CD.
+1. Driver software that can turn physical attributes of the storage medium and movements of read/write head etc into useful information we can read.
+1. What is 01010011111000010101100101010101010010010011? What makes that into files and folders? Drive has to be formatted with a file system. 
+   Windows: FAT32, NTFS. 
+   Mac: HFS+, now AppleFS.
+   Linux: EXT4, BTRFS
+  
+### 2. Load
+1. Moving a file from the long term storage to memory. We need DIMMs (memory modules) and a bus that moves the data from the hard drive to the memory.
+  Buses:
+    - Sata: usually internal, sata3 gives 6Gigabits/s. PCIE bus.
+    - USB: External, between 40MB/s up to 1GB per second.
+    - m.2: nvme or sata protocol ends up on PCIE bus
+2. Goes via pcie bus through Direct Memory Access to the ram
+
+### 3. Decode/decompress/put in window
+1. Image header is read, assess the file type. Then, using a library that defines how that image type works, the image is decoded/decompressed in the cpu, then shunted back to memory.
+1. Then you need an operating system's windowing library to display the image on screen. 
+
+## Send to Display
+1. Finally, this is sent via the pcie bus, with the help of the graphics drivers, to the GPU.
+1. The GPU sends it to the display via HDMI/VGA/DVI/DP/Thunderbolt/Usb C.
 
 ### On Windows
+
 
 ### On Mac
 
