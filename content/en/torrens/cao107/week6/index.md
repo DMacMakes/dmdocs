@@ -104,18 +104,16 @@ Our Solution, layers of abstraction:
 What you'll see when you run the project.
 {{< /imgcard >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EW63GlqCx0RDls2upO3B6gcB323l_Vzo-97WA97XJto3Vw" target="_blank">Download Base_imgui.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EXx4avVQkvZBmYSxe6h_sh0ByLgjBpf0Tcy9zSgONM9gig" target="_blank">Download Base_imgui.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EVOD7jD80J1GtDABECZyr_UB5ky57VX_lZTMZSv-t6Hpow?e=OkPnIN" target="_blank">Download imgui_base_updated.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 Unzip the contents into a folder, you'll see `libraries_cpp` and `weeks_5-8`.
-Go into `weeks_5-8\Base_imgui` and double click `base_imgui.sln`. 
+Go into `weeks_5-8\imgui_load_image` and double click `imgui_load_image.sln`. 
 
-Set build type to _Release, x86_ in the main toolbar of visual studio, hit **ctrl+F5** to run.
+Set build type to _Release, x64_ in the main toolbar of visual studio, hit **ctrl+F5** to run.
 
 ## Homework
 
-Explore the provided _Base\_imgui_ project, and add the functionality described below. This homework requires you to research the libraries I've provided, and to dig through the code and make discoveries. It'll also help to read about _Immediate Mode GUIs_.
+Explore the provided _imgui\_load\_image_ project, and add the functionality described below. This homework requires you to research the libraries I've provided, and to dig through the code and make discoveries. It'll also help to read about _Immediate Mode GUIs_.
 
 {{< alert title="Delivery" color= "primary" >}}
 1. Copy and paste the two folders (libraries_cpp, weeks_5-8) into a new folder.
@@ -129,6 +127,6 @@ Explore the provided _Base\_imgui_ project, and add the functionality described 
 2. Add two checkboxes to the Media Loader window, ideally in an options menu: _Load with thread_ and _Multiple threads_. They don't have to do anything yet.
 3. The ImFileDialog library is being used to pop a new file browser when you click _File->Load images_ in the Media Loader window menu bar.
   * Configure it to show only image file types for selection. Look into the window flags and file extension masking.
-  * The dialog already returns a string with the file path in it. Use the sdl2_image library to load an image when one has been selected in browser and the user has clicked OK.
-  * You've loaded an image with sdl, now create a new window in imgui to display it.
+  * The dialog already returns a string with the file path in it when a user chooses and image and clicks _OK_. Create a `DmGui::ImageTexture` and use the `Load_Image_To_GLuint_Texture` function I've provided to load an image (usable with `ImGui::Image()`).
+  * You've loaded an image, now create a new window in imgui to display it.
 4. Bonus/nice to have: Allow selecting of multiple images. Drop their names into a table, with a button beside each to open them for viewing.
