@@ -98,7 +98,7 @@ Our Solution, layers of abstraction:
 > - Helpers:  
 >   - **ImGuiFileDialog**: Browse files  
 
-## Code: Base_imgui
+## Code: Your imgui base project 
 
 {{< imgcard Base_imgui_running >}}
 What you'll see when you run the project.
