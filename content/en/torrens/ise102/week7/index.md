@@ -6,6 +6,8 @@ description: >
   X-Ray vision: looking at your program as it runs
 ---
 
+<!--
+
 ## Week 6 Homework Review
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../week6/#homework" target="_blank">Week 6 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
@@ -25,10 +27,15 @@ Work along with me as I write out my solution to the homework:
 
 I will start from blanked out code you had to type out to get started. If you haven't typed that, start doing it and keeping up as best you can. You'll have a little time to catch it up before exercise 2.
 
+-->
+
+## Work review-review
+
 {{< imgproc code_w7_slotso_base Resize "400x" Link "code_w7_slotso_base.png" >}}
 Middle click to view in new tab
 {{< /imgproc >}}
 
+<!--
 ## Simultaneous activities:
 
 While people are catching up on that code, I'll go over the trickier pickles in week 4's exam with those who are up to date.
@@ -38,7 +45,6 @@ If you didn't follow along with me or still have some to finish, type in the cod
 
 If your code is similar enough to mine as makes no difference (just different variable names maybe?), skip this step. 
 
-**HOMEWORK CODE**
 
 {{< /alert >}}
 
@@ -46,7 +52,9 @@ If your code is similar enough to mine as makes no difference (just different va
 Common exam one problems.
 {{< /alert >}}
 
-## Exercise 2: Refreshing the console
+-->
+
+## Exercise 1: Refreshing the console
 
 Our game is scrolling off down the screen like a chatroom. It's not a natural fit for our game, with its distinct screens.
 
