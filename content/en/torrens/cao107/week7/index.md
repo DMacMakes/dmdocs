@@ -57,18 +57,18 @@ Large files!
     
 
 ## How do we load sound?
-Together let's try adding sound mixer library support to the windows version.
-
-Learning from _LazyFoo_ tutorials
-Looking at SDL2 wiki for reference
-
 We can add sound to this one, people who already have their code base advanced can copy over the code from this to theirs when done.
 
 _What does it mean to load and play a sound?_ What's involved at system level? How is SDL saving us work?
 
-Look at what _SDL actually is_ and does. What is it abstracting? What alternatives exist? SFML. Whichever of glew or glfw or whatever does it too.
+## What actually is SDL?
 
-(Remaning to do: you guys add them to a list/table using imgui?)
+<https://www.libsdl.org/index.php>
+<https://wiki.libsdl.org/FrontPage>
+<http://lazyfoo.net/tutorials/SDL/index.php>
+<https://www.libsdl.org/projects/SDL_mixer/>
+
+What is SDL abstracting for us? What does it depend on?
 
 _question:_ Is anyone lost on pointers? (One on one chat? pointers class?) If so, have you tried studying up on them somewhere? What issue do you think you're having with them? 
 ## Bonus: References and pointers videos?
