@@ -30,33 +30,7 @@ You can load an image each time the file dialogue opens, or look up the document
 
 Due: End of Week 8 (Sunday 11:55pm)
 
-Load multiple images
-  - open by default
-  - top left and cascading (try adding n pixels to the x and y position of new window first creation)
-  - list with buttons
-  - allow multiple image select in dialog
-  - can you add jpg/tif support?
-
-Load multiple sounds
-  - use SDL mixer
-  - ready to play on load (don't play)
-  - a button for each to play
-  - extra features
-    - per sound mute
-    - per sound volume
-    - overall system volume
-
-Large files!
-  - Immediate mode gui runs at 60 fps.
-  - Loading a large image or sound, loading many images at once.. 
-    - does that make interface responsive?
-    - how long does it take?
-  - If so, how can we fix that with threads?
-    - Can try with regular threads
-    - Can try with boost pooled threads
-    - How do you avoid accessing images/sounds before they're fully loaded?
-    - Does the solution lock the entire vector of images/sounds? How can you avoid that?
-    
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-multi-threaded-loader" target="_blank">Details on Assessments page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## How do we load sound?
 We can add sound to this one, people who already have their code base advanced can copy over the code from this to theirs when done.
@@ -73,9 +47,39 @@ _What does it mean to load and play a sound?_ What's involved at system level? H
 What is SDL abstracting for us? What does it depend on?
 
 _question:_ Is anyone lost on pointers? (One on one chat? pointers class?) If so, have you tried studying up on them somewhere? What issue do you think you're having with them? 
+
+## Homework
+
+I won't be specifying hard requirements for homework this week, instead I need you to make strong progress on the image loading and threading part of the assessment:
+
+**Images:** _finalising.._
+Load multiple images
+- open by default
+- top left and cascading (try adding n pixels to the x and y position of new window first creation)
+- list with buttons
+- allow multiple image select in dialog
+
+**Threads:**
+Text how/if the program bogs down loading large/multiple images. Bring in the timer from assessment one to get yourself real data.
+- Immediate mode gui runs at 60 fps.
+- Loading a large image or sound, loading many images at once..
+- does that make interface responsive?
+- how long does it take?
+- If so, how can we fix that with regular threads?
+- How do you avoid accessing images before they’re fully loaded?
+- Does the solution lock the entire vector of images/sounds? How can you avoid that?
+
+Your challenge now is to **manage your workload** and not fall into taking a week off, or you'll be in a dire place next week (a half week from deadline). **Reach out on Discord** if you have questions, and I'll see you in work review class.
+
+PS: **Sound **- I'll work on getting SDL-mixer into the libraries and let you know the visual studio settings to integrate them (I may give new sln and .proj files out too)
+
+<!--
+
 ## Bonus: References and pointers videos?
 
 ## Bonus: Compiling in Linux. Installing the required libraries
 1. Copying your files to the Linux virtual machine. VmWare share folder. Recco: zip it on windows side first, then copy over, unzip.
 2. Try compiling, show there are errors re: missing libraries. Visual studio's compiler and g++ handle this differently. I've sorted out the Makefile but we need the libraries installed at system level on Linux.
 3. sudo apt install libSDL2-dev, sdl2 image, imguifiledialog, mixer? #!cao107.
+
+-->
