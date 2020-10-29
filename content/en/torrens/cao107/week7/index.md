@@ -28,6 +28,8 @@ You can load an image each time the file dialogue opens, or look up the document
 
 ## Assessment 2
 
+Due: End of Week 8 (Sunday 11:55pm)
+
 Load multiple images
   - open by default
   - top left and cascading (try adding n pixels to the x and y position of new window first creation)

@@ -10,6 +10,10 @@ description: >
 
 Three coding, observation and analysis tasks (referred to as labs) in which we'll explore the challenges of writing code that executes in parallel.
 
+_Submitted for this trimester_
+
+<!--
+
 > We won't be working from the Blackboard brief for this. See the instructions below.
 
 ### Lab 1
@@ -73,83 +77,58 @@ Ignore the **correct naming** and leave out the **readme** file ONLY IF YOU WANT
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219125_1&course_id=_94382_1" target="_blank">Submit Assessment 1 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<!--
-
-Xs and Os, noughts and crosses assessment 4.
-What would have been marked as the solid approach?
-Everyone went the cheap way with 2 dimensional arrays.
-Bare minimum: randoms
-Better: Go through a list of win states and see if we can head to one
-
-Tree structures? Heaps?
-Sounds like most won't have a solution that scales up.
-
-We need:
-Cache line optimisation
-Threading
-
-What have they done and understand well enough to apply those?
-
-
-
-**A3 part 3:** thread pool may be too brutal, a trap. Mutexes, race conditions. 
-Design pattern they would have to understand really well.
-Get back to Noman week 4.
-
-# Assessment 1: Labs
-
-Optimising matrix math performance via:
-  - memory access / cache hits
-  - threading
-  - thread pooling
-Good: They should have complexity analysis from ADS
-Bad: Many don't have the MAT102 for matrices 
-
-Vectors in space 2d. atan2? Swarming. Boids type thing?
-
-Sample, deliberately inefficient algorithm provided. If you don't know the theory it won't mean much. Single letter vars related to formula/complexity analysis etc
-
-### Look at third assessment q2:
-Figure out which number of threads per number of sortable elements. When to cap threads? When to start using threads?
-Binary min heap, max heap by inserting numbers
-Binary search tree, keeping left hand side higher than root node, right side lower.
-
-**3 Deliverables:** Weeks **2, 3, 4.**
-
 -->
 
-# Assessment 2: Multi threaded loader
+---
 
-Due end of week 8
+## Assessment 2: Multi threaded loader
 
-Load, in parallel, and then display/play multiple images and sounds. Display the time taken to load and display/begin playing the files.
+**Due:** End of Week 8 (Sunday 11:55pm)
 
-<!-- 
+> Load images and sound in parallel, and then display/play multiple images and sounds. Using threads, solve the problems that emerge when we load large/many images/sounds. Keep the interface responsive, and keep the user informed. Allow the user to decide how many threads to use during loading.  
+>  
+> Use what you're learning in class (and through your own research) to theorize about and test solutions to the delays you see when using different numbers of threads.  
 
-Base given out: windows app with _File_ and _Exit_. _File - Load Image_ and _File - Load Sound_ each open a file browser. Uses Visual Studio gui bits, `rc` resource file.
+{{< imgproc Base_imgui_running Resize "550x" Link "../week6/#code-your-imgui-base-project" >}}
+Click to see visit the project base section of the week 6 notes.
+{{< /imgproc >}}
 
-Windows?
-How do you display 100 images and play 100 sound images. IMGUI
+### Brief and submission on Blackboard
 
-Noman: It's about the windows context and callbacks. Not what they're taught.
-Did you have to teach windows programming during those weeks 5-7? Yes he did.
+You can refer to [the brief found on the Blackboard Assessment 2 page](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219126_1&course_id=_94382_1) but don't use the old MultiThreadedLoader Starting Template.zip provided there. Instead, use the [base provided in week 6](../week6/#code-your-imgui-base-project). 
 
-From another version of my notes on laptop (oops):
-They should leverage the threadpool class from A1. Work with a fixed number of threads, not just create one per file.
-User can configure the fixed number of threads, load, and see how long it took. (Can see at what point threads stop helping)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219126_1&course_id=_94382_1" target="_blank">Submit Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-**From Learning Outcomes:**
-_Identify how operating systems bring the computer system components together to work cohesively._
+{{< alert title="The details" color= "secondary" >}}
 
-**How does this match lectures?**
-> * They'll need to add a display area for the timing results.
-> * How will they display a bunch of diff images if they don't fit in the space?
-> * Playing all the sounds at once will be a noisey mess, play them in sequence. Maybe a list box of some sort can be added to each side.
-> * Given they've already used threads in A1, this seems like a windows api/windowing exercise partly. Thus tying in to OS side of things? 
-> * Are we using windows api calls for loading or raw c++ file io?
-> * Seems like the threads are mostly going to be i/o limited, so it's going to be less about cores and more about things like DMA and buses?
+**Load multiple images**
+  - open by default
+  - top left and cascading (try adding n pixels to the x and y position of new window first creation)
+  - list with buttons
+  - allow multiple image select in dialog
+  - can you add jpg/tif support?
 
--->
+**Load multiple sounds**
+  - use SDL mixer
+  - ready to play on load (don't play)
+  - a button for each to play
+  - extra features
+    - per sound mute
+    - per sound volume
+    - overall system volume
+
+**Large files!**
+  - Immediate mode gui runs at 60 fps.
+  - Loading a large image or sound, loading many images at once.. 
+    - does that make interface responsive?
+    - how long does it take?
+  - If so, how can we fix that with threads?
+    - Can try with regular threads
+    - Can try with boost pooled threads
+    - The user needs to be able to select the number of threads used during loading. So do you for testing. Add an imgui control/widget supporting this. One good place might be a new/existing menu in the Media Loader window.
+    - How do you avoid accessing images/sounds before they're fully loaded? Think about those data races!
+    - Does the solution lock the entire vector of images/sounds? How can you avoid that
+{{< /alert >}}
 
 # Assessment 3: Cuda + Cpu threads Mandelbrot
 
