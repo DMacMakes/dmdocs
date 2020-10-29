@@ -72,7 +72,9 @@ Implement the peaceful version of threaded cinema. Use what you learned from cha
 Ignore the **correct naming** and leave out the **readme** file ONLY IF YOU WANT TO LOSE MARKS.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219125_1&course_id=_94382_1" target="_blank">Submit Assessment 1 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 <!--
+
 Xs and Os, noughts and crosses assessment 4.
 What would have been marked as the solid approach?
 Everyone went the cheap way with 2 dimensional arrays.
@@ -118,9 +120,12 @@ Binary search tree, keeping left hand side higher than root node, right side low
 
 # Assessment 2: Multi threaded loader
 
+Due end of week 8
+
 Load, in parallel, and then display/play multiple images and sounds. Display the time taken to load and display/begin playing the files.
 
 <!-- 
+
 Base given out: windows app with _File_ and _Exit_. _File - Load Image_ and _File - Load Sound_ each open a file browser. Uses Visual Studio gui bits, `rc` resource file.
 
 Windows?
@@ -148,6 +153,7 @@ _Identify how operating systems bring the computer system components together to
 
 # Assessment 3: Cuda + Cpu threads Mandelbrot
 
+Due to end of week 12
 Mandelbrot fractals using the CPU and GPU together.
 
 * Build your program on the base provided, built with imgui and SDL2.
