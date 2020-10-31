@@ -8,17 +8,24 @@ description: >
 
 ## Updated base (example, use what you need)
 
+1. Download this new base:
+
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EZAodsMjJQlLmjmwWau6B48B0ulDLZlNYSrr8SODYFQ3dg?e=Yt4U5n" target="_blank">w7_base_media_loader.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+2. Unzip into a folder called `loading` in your `cao107/weekly_code/week7` folder
+3. Copy the `libraries_cpp` folder you already have into the same root (week7 folder)
+
+End result:
+cao107/week7/loading/hw-w6-media-loader
+cao107/week7/libraries_cpp
+
+### What is the base?
 A base for people who've fallen away (fresh start, can mark on the additions from here) plus marks for having achieved up to here.
 - loads an image, opens a window
 - closes on click
 - contains options object to handle the checkboxes added to a unique options menu. Feel free to take that for your own project. 
-- I've reduced number of functions and removed statics.
-- Added path name to the string (getting rid of statics)
-- `using namespace DmGui;` added to reduce clutter
-- lots of if braces removed to make it shorter.
-  - Shorthand if statements.
+- Removal of statics. 
+- Shorthand if statements.
 
 ### Opening closed windows
 
