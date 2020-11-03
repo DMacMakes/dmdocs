@@ -6,6 +6,20 @@ description: >
   Sound? In Linux?
 ---
 
+## Double-updated base!
+
+Like the base below, but this one has:
+1. Timer files included (timer.cpp, timer.h)
+2. Includes libraries_cpp, containing sound libaries (dev and playback)
+3. Todo: comments showing where you can add the sound library code.
+4. A new MLoad_Sound struct. ImageTexture has been renamed MLoad_Image to match.
+5. Big tif images to load
+6. 3 sample wav files, 3 mp3 files.
+
+Note: you need the timer, dmgui, sln and proj files from this project, also parts of main.cpp (mainly around the includes).
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EYzfbd90TelGn-TGUM5hgi8Bae6WYCzYQwZnmg8CsTJjxA?e=YI41NP" target="_blank">Download w7-base-with-sound-libs.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 ## Updated base (example, use what you need)
 
 1. Download this new base:
