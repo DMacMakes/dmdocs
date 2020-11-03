@@ -12,15 +12,13 @@ resources:
 
 ## What are we learning today?
 
-1. Answers to the **homework**
-2. Correctly **delivering** assessment 2.
-3. The next level of **abstraction**: the `playSlots()` function.
-4. Project management using sticky-note style _**agile/kanban** board_.
-5. Adding colour with **_colorterm.h_**
+1. Correctly **delivering** assessment 2.
+1. The next level of **abstraction**: the `playSlots()` function.
+1. Project management using sticky-note style _**agile/kanban** board_.
+1. Adding colour with **_colorterm.h_**
 
 ## Delivering Your Assessment
 
-* Confirming the Blackboard-related **extension to July 29**. 
 * If anything is going to stop you delivering on time, reach out/request extension BEFORE the day it's due.
 
 Visit the link, follow the instructions there carefully!!

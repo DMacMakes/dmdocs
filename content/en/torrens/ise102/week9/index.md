@@ -15,16 +15,9 @@ resources:
 * Making frame based games: drawing the screen _30, 60 times a second_ (or more).
 * Drawing the the terminal, like it was a bitmap, but using text symbols!
 
-### Slots
-
-* Officially, we're done. Of course, due Wednesday night.
-* Any major questions throw them in today, but everything should be covered by now.
-* Extension effect!
-
-
-<!--
-
+## Slots
 * Thanks for submissions
+<!-- 
 * Check Blackboard. Some people submitted the wrong files and I've messaged you about resubmitting. Each day costs marks so act now.
 * I haven't looked at the code yet, just that the file structure looked right.
 -->
