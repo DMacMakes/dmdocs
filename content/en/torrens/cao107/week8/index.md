@@ -8,6 +8,8 @@ description: >
 
 ## Assessment 2
 
+Progress census on Discord.. continued.
+
 Implementing the interface has been fairly time consuming and people have worked well despite not having a layout until now.
 * Pass/credit for multi load and solid playback of images and sound  
 * Distinction/high distinction for more features, threads.
