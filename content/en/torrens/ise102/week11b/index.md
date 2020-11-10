@@ -8,6 +8,7 @@ description: >
 
 ## Learning today
 
+_Coming soon.._
 
 ## Things left to do
 
@@ -16,6 +17,10 @@ Not sure what's left to do? Check the [Snake_T2 Trello](https://trello.com/b/aVY
 {{< imgproc snake_trello Resize "500x" Link "snake_trello.png" >}}
 Click image to visit the Trello
 {{< /imgproc >}}
+
+
+
+<!-- 
 
 ## A3 deliverable: Homework
 
@@ -295,6 +300,7 @@ Yeah, in the same way adulthood is worth it. The rules get murkier and more conf
 
 -------------
 
+-->  
 
 
 <!-- ### Don't Push Code Around

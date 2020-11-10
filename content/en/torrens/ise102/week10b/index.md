@@ -17,6 +17,8 @@ So, we can move left and right by changing our x location.
 
 ## Controlling Movement
 
+<!-- 
+
 We'll use it now to move around. **Grab the base file** and help me **fill in** the missing bits from the code below.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="Snake_A3_incomplete.zip" target="_blank">Download Snake_A3_incomplete.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
@@ -203,6 +205,8 @@ Look it up on wikipedia, call your maths teacher, whatever, but DO IT NOW.
 {{< /alert >}}
 
 > Programmers don't say I don't know, they say **I don't know _yet_.** 👍
+
+-->  
 
 <!---
 

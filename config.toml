@@ -16,6 +16,7 @@ defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = true
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
+ignoreErrors = ["error-remote-getjson"]
 
 # Highlighting config
 pygmentsCodeFences = true

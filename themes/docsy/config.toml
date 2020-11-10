@@ -16,4 +16,4 @@ rss_sections = ["blog"]
 
 
 
-
+ignoreErrors = ["error-remote-getjson"]
