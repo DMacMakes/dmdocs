@@ -27,7 +27,7 @@ This rig is the one used to test the card in a <a href="https://www.guru3d.com/a
 
 See a lot more goofy history in [this forum post.](https://forum.overclock3d.net/showthread.php?t=53027)
 
-{{< imgproc gpu_evga_1070_ports Resize "800x" Link "gpu_evga_1070_ports.jpg" >}}
+{{< imgproc gpu_evga_1070_ports_body Resize "800x" Link "gpu_evga_1070_ports_body.jpg" >}}
 The card I bought about 4 years ago, the evga GTX 1070 superclocked with 8GB of VRAM. 1.7GHz clock.
 {{< /imgproc >}}
 
@@ -84,7 +84,7 @@ A mining rig.
 
 {{< youtube "OC637pfAJs8" >}}
 
-#### Civilian cpus vs covid vs supercomputers
+#### Civilian gpus vs covid vs supercomputers
 
 200,000 home users = a distributed supercomputer with the power of the top 12 known supercomputers combined.
 
@@ -162,8 +162,8 @@ Tensor Cores      | Machine learning acceleration cores
 {{< imgproc coad_cover Resize "300x">}}
 {{< /imgproc >}}
 
-Appendix C sections: 
-Chapter 6 sections: 6.1, 6.3.
+Appendix C sections: C.1 and C.2
+Chapter 6 sections: 6.1, 6.3 (sections on distinction between SIMD, MIMD etc), 6.6 GPUs.
 
 Read it online with [ebook Central](https://ebookcentral-proquest-com.ezproxy.laureate.net.au/lib/think/reader.action?docID=5376640)
 
