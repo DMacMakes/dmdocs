@@ -6,17 +6,19 @@ description: >
   How would a segmented snake work? How can I store all those segments?
 ---
 
+_Coming soon.._
+
 ## Homework:
 Fruit eating, score displaying, general progress.
-
-
-
 
 ## Reminder: Submitting your files correctly
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable" target="_blank">Cleaning up and zipping your project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!-- 
+
+PREVIOUSLY COMMENTED
+
 ## Downloads
 
 Download these to follow along: executable examples of batty/snake in action, and solutions you'll use as exercise bases.
@@ -30,6 +32,8 @@ Download these to follow along: executable examples of batty/snake in action, an
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_vector_exercise.zip" target="_blank">week12_vector_exercise.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 -->
+
+<!-- 
 ## A Segmented Snake
 
 A feature you've been asking for: the segmented snake.
@@ -114,7 +118,11 @@ Leaving snapshots behind
 oldSlithers is just one snapshot of slithers past, being taken over and over again.
 What if, instead, we had a bunch of snapshots, and instead of updating them we just take new ones. When slithers is about to move, take a snapshot and leave it there.
 
+--> 
+
 <!-- 
+
+PREVIOUSLY COMMENTED
 > slithers0, slithers1, slithers2, slithers3..
 
 What about all those damn variables though? Do you have to make like 100, 1000 variables to store them? How do you even make new variables at run time? Hell, we don't even need all the names. Just slithers0, 1, 2, 3.
@@ -132,7 +140,10 @@ What about all those damn variables though? Do you have to make like 100, 1000 v
 
 ## Collections: The vector
 A vector object can hold any number of a chosen data type(int, float, string, Bag, Creature, Fruit). Then you can read or write individual values in the collection using an index.
+
 -->
+
+<!-- 
 
 Declaring a collection of stuff:
 ```cpp
@@ -170,16 +181,6 @@ int scoreBuffed = scores[2] + 20;
 
 {{< /alert >}}
 Note: array access notation
-
-<!--
-
-## OLD CODE BELOW, REPLACE WITH THE IMPROVED VERSION
-The code:
-
-{{< imgcard code_vector_exercise Link "code_vector_exercise.png">}}
-{{< /imgcard >}}
-
--->
 
 ### slithersHistory
 
@@ -269,3 +270,6 @@ The brief says the Snake game is a base. It rewards building new things, added s
 * Action replay of the last 10 seconds?
 * Multiple game modes
 * Top 3 scores saved to disk and reopened each time app opens
+
+-->  
+

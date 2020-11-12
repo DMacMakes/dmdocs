@@ -17,10 +17,11 @@ resources:
 
 ## Slots
 * Thanks for submissions
-<!-- 
+
+<!--  
 * Check Blackboard. Some people submitted the wrong files and I've messaged you about resubmitting. Each day costs marks so act now.
 * I haven't looked at the code yet, just that the file structure looked right.
--->
+-->  
 
 ## Beyond Text Entry Mode
 

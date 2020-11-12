@@ -15,6 +15,10 @@ description: >
 6. Adding to score on fruit hit.
 7. Game over?
 
+_Coming soon.._
+
+<!-- 
+
 ## Homework due next week  
 
 **Homework:**  
@@ -122,3 +126,5 @@ Give the second fruit type a different score.
 **Tomorrow 3:30pm (Tuesday):**
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../week11b" target="_blank">Week 11B<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->  
