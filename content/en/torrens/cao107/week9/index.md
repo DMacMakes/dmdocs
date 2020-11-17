@@ -182,3 +182,7 @@ Download and install the Cuda Toolkit version 11.1. Following is the direct link
 
 {{< youtube cL05xtTocmY>}}
 
+##  notes from textbook
+
+![simd etc](simd_etc.png)
+
