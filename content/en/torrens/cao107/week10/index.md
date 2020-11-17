@@ -25,6 +25,16 @@ The more extensive guide for programmers:
 
 <https://developer.nvidia.com/how-to-cuda-c-cpp>
 
+### Your program that uses cuda
+1. Define some data (in system(host) memory)
+2. Define a function you want the gpu to run, and that's in gpu(device) memory. It's called a kernel, and there's a special keyword for defining them in gpu memory.
+3. COPY the data (you defined in system(host) memory) over to the gpu (device) memory.
+4. Tell the GPU to start running kernel on N number of threads. They will then look for the data in the GPU memory.
+
+### How does a thread know what work to do?
+1. It calculates an id from it's place in the GPU.. which streaming multiprocessor? Which block? etc.
+2. It uses that id to access that data in a collection, like the index to a vector. thread 0 gets BigCollectionOfFloats[0]; thread 22 gets BigCollectionOfFloats[22];
+  
 ## Glossary
 
 term | meaning
