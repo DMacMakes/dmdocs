@@ -9,21 +9,67 @@ description: >
 
 ## Learning this week
 
-You learned, in broad terms, the nvidia GPUs architecture over the last week. This week we learn how to think about and write a basic program with the CUDA general purpose programming toolkit.
-First, how do you..
-* create a CUDA project in Visual Studio 2019?
-* define a kernel, or thread in CUDA c/c++?
+You learned, in broad terms, the nvidia GPUs architecture over the last week. This week we learn how to use a GPU for regular, general purpose programming.
 
-The GPU is a whole extra card containing the processing silicon along with plenty of it's own RAM in several layers. To run kernels/threads on the device (gpu) you need to copy over the contents of variables from host memory (regular DDR4 ram your cpu and main.cpp is using) over to the device's own (possibly GDDR5 or higher) RAM.
+## GP..GPU
 
+That's right, **GPGPU**. It's a super awkward acronym, but let's learn it: General Purpose GPU programming
 
-Nice starter resource on NVidia's website, from install through your first tutorial and onto their High Performance Computing (HPC) courseware.
+If you're sitting down to write code to render real time game graphics on your GPU, it's probably because you want to offload some super parallel, very heavy work from your CPU.You're not going be writing GLSL, DirectX or OpenGL today.
 
-<https://developer.nvidia.com/how-to-cuda-c-cpp>
+{{< alert title="Enter CUDA and nvcc" color= "primary" >}}
+You need a way to tell the GPU to do.. well C++ type stuff you'd normally do on the CPU. Do maths, sort things, map your face into a movie you should have been cast in, or calculate the ideal attack strategies for different team comps on different game maps.
+
+_**CUDA**_ is a sort of umbrella term for hardware and software, and _**nvcc**_ is the _**NVidia C/C++ Compiler**_.
+{{< /alert >}}
+
+Al Pachino is Ace Ventura:
+
+{{< youtube zWpv3hxeqq4>}}
+
+At 1:13 Bill Hader remembers meeting Tom Cruise on the set of _Tropic Thunder_.
+
+{{< youtube "VWrhRBb-1Ig" >}}
+
+At 0:43 Mark Zuckerberg recites a poem about Data's cat.. in a Star Trek the Next Generation episode from 1991.
+
+{{< youtube  "lRgf18VExvo?t=43">}}
+
+### NVidia resources 
+
+Here's a nice starter resource on NVidia's website, from install through your first tutorial and onto their High Performance Computing (HPC) courseware.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://developer.nvidia.com/how-to-cuda-c-cpp" target="_blank">How to Cuda in C/C++ @Nvidia<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 The more extensive guide for programmers:
 
-<https://developer.nvidia.com/how-to-cuda-c-cpp>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html" target="_blank">Cuda Programming Guide @Nvida<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Exercise: Create and compile CUDA project
+
+We did this the other day in work review, we'll do it again real quick and have a look at what's generated.
+
+## What does CUDA code look like?
+
+It looks like regular C++ with some extra language features like **extra scoping keywords**, **special variables** and ways to play nicely when working **in parallel** with the GPU and its thousands of threads.
+
+First, how do you..
+* define a kernel, or thread in CUDA c/c++?
+
+### Coding your GPU in a nutshell
+
+1. Write your regular C++ cpu code (includes, main func etc)
+2. Write a C++ style function for the job you want done (many many times in many threads, ideally) by your GPU, say a face-remapping thing. Use some special keywords.
+3. Load some data into variables in C++, like a video file and your face photo files.
+4. Move the data to the gpu and, with some special magical nvidia C++ syntax (many angle brackets) get it going!  
+
+{{< imgcard coding_cpu_to_gpu Link "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#from-graphics-processing-to-general-purpose-parallel-computing">}}
+Click for the non-annotated version of this graphic on NVidia's Programming guide.
+{{< /imgcard >}}
+
+## Real CUDA C++ details
+
+The GPU is a whole extra card containing the processing silicon along with plenty of it's own RAM in several layers. To run kernels/threads on the device (gpu) you need to copy over the contents of variables from host memory (regular DDR4 ram your cpu and main.cpp is using) over to the device's own (possibly GDDR5 or higher) RAM.
 
 ### Your program that uses cuda
 1. Define some data (in system(host) memory)
@@ -33,8 +79,9 @@ The more extensive guide for programmers:
 
 ### How does a thread know what work to do?
 1. It calculates an id from it's place in the GPU.. which streaming multiprocessor? Which block? etc.
-2. It uses that id to access that data in a collection, like the index to a vector. thread 0 gets BigCollectionOfFloats[0]; thread 22 gets BigCollectionOfFloats[22];
-  
+2. It uses that id to access that data in a collection, like the index to a vector. thread `0` accesses `BigCollectionOfFloats[0];` thread `22` accesses `BigCollectionOfFloats[22];`
+
+
 ## Glossary
 
 term | meaning
@@ -69,32 +116,30 @@ You ask the gpu to execute a **_grid_ of _blocks_ of _threads_**. Give it the am
 Blocks of threads
 {{< /imgcard >}}
 
+{{< imgcard gpu_scaling>}}
+Different cards with different numbers of streaming multiprocessors handle the work.. differently.
+{{< /imgcard >}}
+
 
 ## A kernel becomes a thread
 
 A kernel is some code defined to run in a hardware thread on the GPU. It serves the same role as the functions we used in regular C++ threads. 
 
-SOURCE CODE OF REGULAR THREAD CREATE
+
 
 The kernel exists to be processed by the gpu cores, so it needs to be defined in the GPUs own on-board GDDR memory, the so called _global_ memory. Not to be confused with global scope in C++. Of course not.
 
 {{< alert title="Global, __global__" color= "primary" >}}
-_Global_, in the CUDA cinematic universe, means the top level GDDR RAM on the gpu device. It has other levels of RAM like L2 cache, and bits of ram avaiable to streaming multiprocessors (SMPs) which aren't considered global.
+_Global_, in the CUDA cinematic universe, means the top level GDDR RAM on the gpu device, and in code both the host and device know about it. The GPU also has other levels of RAM like L2 cache, and bits of ram avaiable to streaming multiprocessors (SMPs) which aren't considered global.
 {{< /alert >}} 
 
 ### Defining a kernel
 
 First, we need a CUDA project to define it in.
 
-DOWNLOAD OR CREATE NEW PROJECT IN VS
-
 Defining a kernel is like defining a function, but you need the `__global__` keyword.
 
 Source: Defining a simple kernel that does not much. How do we give them IDS in simplest way?
-
-### Preparing data for a kernel
-
-It's in the device's global memory, and it needs data there to process it.
 
 #### Cuda Malloc and Memcopy
 
@@ -103,17 +148,18 @@ It's in the device's global memory, and it needs data there to process it.
 Keeping track of what's in our host ram and what's on the gpu device ram:
 * Variables for each: pointers to pointers! 
 
-{{< alert title="Use the `_d` prefix" color= "primary" >}}
-Pointers will always provide a bit of mental work, sensible naming will help keep it manageable. 
+{{< alert title="Use the `dev_` prefix" color= "primary" >}}
+Variables across different memory on multiple devices won't be east to keep track of if the names don't give us a hint.
 
-**Prefix the names of your device variables with a 'd_'** and you'll be able to keep them straight. This is a common _convention_.
+**Use the CUDA convention of naming your device variables with a 'dev_'**.
+
+I also use '_p" at the end (suffix) of pointers.
 {{< /alert >}}
 
 ### Running a kernel
 
 * Each hardware thread executes the _kernel_
 Hardware threads can only run in warps (for later) inside blocks, so we'll need to ask for one or more blocks and kick off the kernel.
-
 
 * **Within a block** you can communicate.
 * There's **no defined order** to how the blocks execute, so don't count on any.
