@@ -50,13 +50,15 @@ Provide answers to questions in comments in your code inside the `playSnake()` f
 * _**CORE**_   
   
   1. Complete the remaining TODOs, adding up/down movement.
-  2. Try changing the moveEveryNFrames to different values, see how the speed changes. 3. 3. Try the same with just the FPS values. 
+  2. Try changing the moveEveryNFrames to different values, see how the speed changes.  
+  3. Try the same with just the FPS values. 
   4. Question: Which offers more fine-grained speed control? Why?
 
 * _**ADVANCED**_  
   * Set FPS to 180. What value for moveEveryNFrames will move you 20 times per second?
-  * Set moveEveryNFrames to 15.What framerate value would make snakey cross the level in approx 1.8 seconds?
+  * Set moveEveryNFrames to 15.What framerate value would make snakey cross the level in approx 1.8 seconds?  
 
+* _**DELIVERY**_
 1. **Zip the solution**  like you would for an assessment submission, taking care to **delete cache folders** like Debug and x86 
 2. **Email** to Danny by **midday Monday, November 23rd**.
   
@@ -156,7 +158,6 @@ What if we move **more often**?
 3. Change `moveEveryNFrames` to 1, so we move every frame.
 3. Try it out, see what it's like to cross the screen in about 1.5 seconds.
 
-![Set fps in main](code_snake_fps10.png)
 {{< imgcard code_snake_fps>}}
 Setting fps in `playSnake()`
 {{< /imgcard >}}
