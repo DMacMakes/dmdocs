@@ -172,3 +172,6 @@ Here's the cuda template I modified in class to focus attention on the steps tak
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="cuda-add-no-checks.zip" target="_blank">Download cuda-add-no-checks.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Homework
+
+Finish this code:
+

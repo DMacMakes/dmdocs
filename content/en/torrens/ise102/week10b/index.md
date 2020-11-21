@@ -17,8 +17,6 @@ So, we can move left and right by changing our x location.
 
 ## Controlling Movement
 
-<!-- 
-
 We'll use it now to move around. **Grab the base file** and help me **fill in** the missing bits from the code below.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="Snake_A3_incomplete.zip" target="_blank">Download Snake_A3_incomplete.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
@@ -49,19 +47,23 @@ Step through the //TODO: comments in the code and:
 
 ## Homework
 
-I'd like to see everyone complete at least the easy and medium homework. Advanced is there 
+Everyone needs to complete at least the core homework. Advanced and the learning below is for people who want to go further.
 
-* _**EASY**_   
-   Get snake moving up and down (x,y). Try changing frame rate to higher values, starting with say 12, 15.  
-* _**MEDIUM**_  
-   Set the framerate so snakey crosses the level in approx 1.8 seconds.  
+Provide answers to questions in comments in your code inside the `playSnake()` function, at its beginning.
+
+* _**CORE**_   
+  1. Complete all the TODOs  
+  2. Try changing the moveEveryNFrames to different values, see how the speed changes.
+  3. Try the same with just the FPS values. 
+  4. Which offers more fine-grained speed control?
 * _**ADVANCED**_  
-  Set the framerate to 200, but only move and draw the snake every 15th frame.   
+  * Set FPS to 180. What value for moveEveryNFrames will move you 20 times per second?
+  * Set moveEveryNFrames to 15.What framerate value would make snakey cross the level in approx 1.8 seconds?
 
 1. **Zip the solution**  like you would for an assessment submission, taking care to **delete cache folders** like Debug and x86 
-2. **Email** to Matt Carr by **midday Monday, August 10**.
+2. **Email** to Danny by **midday Monday, November 23rd**.
   
-**Danny will review** Danny in class Monday evening (this doesn't mean deliver the homework late).  
+**Danny will review**  in class Monday evening (this doesn't mean deliver the homework late. Deliver by **midday**).  
 
 ## Speeding up Snakey
 
@@ -143,8 +145,9 @@ What if we move **more often**?
 
 ### Move more often with `setFps(int fps);`
 
-1. Scroll to the `main` function 
-2. Change the value we're passing to `the textpixels::setFps` to **our target: 23**. 
+1. Scroll to the `playSnake` function 
+2. Change the value we're passing to `the textpixels::setFps` to **23**. 
+3. Change `moveEveryNFrames` to 1, so we move every frame.
 3. Try it out, see what it's like to cross the screen in about 1.5 seconds.
 
 ![Set fps in main](code_snake_fps10.png)
@@ -176,11 +179,12 @@ Crossing the screen in 0.175 seconds is a problem for humans. We blink, for a st
 
 ### Method 1: counting.
 
-1. Declare a variable to store the frames since last move. Do it _before the loop_.
-2. Count up by 1 each frame.
-3. Move when it reaches 15.
-4. Set it back to zero.
-5. Goto _2._
+1. Declare a constant for the number of frames we wait to move.
+2. Declare a variable to count down, then copy the constant value (we just made one) into it. This has to be declared outside the loop or it'll be reset every iteration.
+3. Count down by 1 each frame, assuming it hasn't hit zero.
+4. Move the snake according to its speed when the countdown reaches 0
+5. Set it back to the value in our frames-to-wait constant.
+6. Goto instruction _2_.
 
 ### Method 2: our old friend modulus **`%`**
 
@@ -205,22 +209,3 @@ Look it up on wikipedia, call your maths teacher, whatever, but DO IT NOW.
 {{< /alert >}}
 
 > Programmers don't say I don't know, they say **I don't know _yet_.** 👍
-
--->  
-
-<!---
-
-## Homework
-
-When batty reaches the right border of the screen, she needs to teleport to the left border. Another way to word it: when she collides with the the right border she wraps around to the left side of the play area.
-
-1. Take a grid and, assuming she's moving right on row 10, draw the place she will be when she needs to teleport (hint: it's an illegal position, on a border)
-2. Draw the place she needs to appear (a legal one)
-3. Write down those x coordinates.
-4. Now, on **the line below** the one in which we apply yDir to her y:
-   * Check if her x location is on the disappear point.
-   * If true, change her x to the location she needs to appear.
-5. Apply the same process to going left, going up and going down.
-
---->
-
