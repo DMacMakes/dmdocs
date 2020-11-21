@@ -10,10 +10,11 @@ description: >
 
 ### Up Down Left Right
 
-{{< imgcard xy_leftright_updown Link "xy_leftright_updown.jpg">}}
-{{< /imgcard >}}
+Refresher: screen space.
 
-So, we can move left and right by changing our x location.
+{{< imgcard xy_leftright_updown Link "xy_leftright_updown.jpg">}}
+We can move left and right by changing our x location. Up and down with y.
+{{< /imgcard >}}
 
 ## Controlling Movement
 
@@ -30,32 +31,28 @@ The frame-based **loop during gamePlay**, at its simplest, is this:
 ```
 do:
   get input
-  simulate everything(processing)
+  simulate game world
   ouput to screen
 while player hasn't quit/lost
 ```
 {{< /alert >}}
 
 ### Demo and work along
-I'll explain the codebase above, and together we'll add player controlled movement.
-
-### Exercise 2b: Complete the code
-
-Step through the //TODO: comments in the code and:   
-1: Modify and correct the constants for UP and DOWN in `textpixels_enum.h`
-2: Add up and down controls and get them working (the left/right control code has everything you need)
+I'll explain the codebase above, and together we'll add left-right player controlled movement.
 
 ## Homework
 
-Everyone needs to complete at least the core homework. Advanced and the learning below is for people who want to go further.
+Moving up and down!
+**Everyone** needs to complete **at least the core homework**. Advanced and the learning below is for people who want to go further.
 
 Provide answers to questions in comments in your code inside the `playSnake()` function, at its beginning.
 
 * _**CORE**_   
-  1. Complete all the TODOs  
-  2. Try changing the moveEveryNFrames to different values, see how the speed changes.
-  3. Try the same with just the FPS values. 
-  4. Which offers more fine-grained speed control?
+  
+  1. Complete the remaining TODOs, adding up/down movement.
+  2. Try changing the moveEveryNFrames to different values, see how the speed changes. 3. 3. Try the same with just the FPS values. 
+  4. Question: Which offers more fine-grained speed control? Why?
+
 * _**ADVANCED**_  
   * Set FPS to 180. What value for moveEveryNFrames will move you 20 times per second?
   * Set moveEveryNFrames to 15.What framerate value would make snakey cross the level in approx 1.8 seconds?
@@ -69,7 +66,7 @@ Provide answers to questions in comments in your code inside the `playSnake()` f
 
 **The game is too slow**. We need to move faster, so we need a way to **define our speed**. 
 
-I mentioned the speed is **10 pixels per second** but if we increased that to 16 pixels per second, **would it be clear** what that means?
+Our speed can be described as a combo of frames per second and frames between moves, but can we really get a sense of that? Is it how someone would describe what they see on screen? 
 
 ### A better target
 
@@ -77,7 +74,9 @@ Let's pick a more relatable metric. We'll ask:
 
 > **how long does it take to go across the level?**
 
-Picking a number, we say we want to get across the whole thing in **just 1.5 seconds**.
+As in, "The snake goes across the whole level in one second", or "it got so fast I went up and down the screen/level in like twice in a second."
+
+Picking an arbitrary number, say we want to get across the whole level in **1.5 seconds**. How would you figure out the right fps/n frames between moves values? You already know the kind of calculation and we use it to talk about car speed. 
 
 {{< alert title="Calculating travel time: The long Maccas Drive" color= "primary" >}}
 Your friend wants to go to his favourite maccas, but it's **100km** away. It's also through suburbia, so it's **50kph** the whole way. Cool, but you need to eat **within three hours**. _Will you get there in time?_
@@ -85,6 +84,8 @@ Your friend wants to go to his favourite maccas, but it's **100km** away. It's a
 You probably did that in your head almost without thinking. The formula you used was:
 
 $$time = {distance \over speed}$$
+
+which is basically **kilometers per hour = speed** remixed to **hours = kilometers / speed**.
 
 To check our answer, lets plug the $distance$ (100km) and the $speed$ (50kph)
 
@@ -97,15 +98,20 @@ Only 2 hours to Newcastle Maccas, let's go.
 
 The **distance** across our level is **35 pixels**, because that's what I set as the **`LEVEL_WIDTH`**
 
-![](code_snake_level_width.png)
+{{< imgcard code_screen_width>}}
+Defining a screen width constant, using it when we create the console window.
+{{< /imgcard >}}
 
-**Snakey's speed** is `10` pixels per second, because we're moving as much as 1 pixel per frame/loop
+**Slithers speed** is currently `10` pixels per second, because we wait 10 frames between moves and.. 
 
-![](code_snake_move.png)
+{{< imgcard code_snake_move >}}
+Counting down frames till the snake moves, then resetting and counting down again.
+{{< /imgcard >}}
 
-and because **I set the frames per second** (`fps`) to 10 in main, where I also used `LEVEL_WIDTH`:
+*we set the frames per second** (`fps`) to 100 playSnake.
 
-![](code_snake_fps10.png)
+{{< imgcard code_snake_fps10.png>}}
+{{< /imgcard >}}
 
 #### Plugging the values in:
 Lets plug it distance = 35 and speed = 10 (both using "pixels")
