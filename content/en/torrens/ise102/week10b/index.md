@@ -110,7 +110,7 @@ Counting down frames till the snake moves, then resetting and counting down agai
 
 *we set the frames per second** (`fps`) to 100 playSnake.
 
-{{< imgcard code_snake_fps10.png>}}
+{{< imgcard code_snake_fps>}}
 {{< /imgcard >}}
 
 #### Plugging the values in:
@@ -157,6 +157,9 @@ What if we move **more often**?
 3. Try it out, see what it's like to cross the screen in about 1.5 seconds.
 
 ![Set fps in main](code_snake_fps10.png)
+{{< imgcard code_snake_fps>}}
+Setting fps in `playSnake()`
+{{< /imgcard >}}
 
 ## Looks Good Feels Bad: Responsiveness
 
