@@ -173,5 +173,20 @@ Here's the cuda template I modified in class to focus attention on the steps tak
 
 ## Homework
 
-Finish this code:
+{{< imgcard ui_creepers Link "ui_creepers.png">}}
+What you'll see when you first compile+run. The demo window's included again for reference.
+{{< /imgcard >}}
 
+Here's the meteor-strike-some monsters project I talked about in class. Currently it creates the monsters and gets part way through blasting them, but there's a bunch of unfinished code!
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERBkakUq8_FDkMI2m0H0zlUBwFPGWZ0GzQ2sfSg493u53A?e=V0csJ2" target="_blank">Download cuda-creepers-homework.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+**Your task:** 
+1. Open `cuda-creepers-homework/cuda/creepers-base/creepers.sln`
+2. Read the **full details at the top of main.cpp** 
+3. Look for the **TODO** comments, uncomment the code lines containing `_____` blanks and fill in those blanks to get it working. Look at the array adding function for comparison, it's pretty straightforward. 
+4. Email me a link to your zipped, completed homework by **midday, Tuesday November 24**
+
+{{< imgcard code_creepers_summary Link "code_creepers_summary.png">}}
+Creeper-base's main.cpp collapsed to show structures, variables and functions.
+{{< /imgcard >}}
