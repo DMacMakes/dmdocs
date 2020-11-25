@@ -88,8 +88,10 @@ Anything else?
 ### Exercise1b: Create a fruit
 
 1. Go back to `main.cpp` and, above the loop in `playSnake`, define some fruit! 
-2. Give it a starting location where it won't be in a wall or snakey.
-3. Draw it every loop, just like you draw snakey.
+   * Create a yellow banana, set its position (not in wall or snake)
+   * Create a strawberry, set its position
+2. Draw those fruit every loop, just like you draw slithers. 
+   * Do it on the lines just above the code for drawing slithers, which prevents them drawing over the snake when they collide.
 
 ## Adding a score
 
@@ -127,6 +129,14 @@ Remember,to debug your code you have to have the drop down on the toolbar set to
 {{< imgcard debugger_fruit_collisions>}}
 The debugger "Locals" window showing the contents and values for our banana (Fruit object) and Slithers (Snake object), along with other great info.
 {{< /imgcard >}}
+
+### Exercise: Collide and stop
+
+1. Make fruit collision happen
+2. Set a breakpoint inside the collision testing if statement
+3. Screenshot the moment in time when the debugger stops the game (game screen, not code)
+4. Paste into Discord.
+5. Does the image match what the collision test and local variable values (in debug locals window) for the snake and piece of fruit are telling you? Why?
 
 ## Homework
 
