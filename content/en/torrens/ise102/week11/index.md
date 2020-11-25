@@ -123,6 +123,7 @@ In your collision checking code should be a section to handle what happens if th
 Once you've actually moved you can check if you've slammed into something. Setting a boolean gives me a line of code to set a breakpoint against, also it's probably useful.
 {{< /imgcard >}}
 
+Remember,to debug your code you have to have the drop down on the toolbar set to _**debug**_, not _release_, then in the menus click _debug->start debugging_ or hit **F5**, or click the _Local Windows Debugger_ button on the toolbar.
 {{< imgcard debugger_fruit_collisions>}}
 The debugger "Locals" window showing the contents and values for our banana (Fruit object) and Slithers (Snake object), along with other great info.
 {{< /imgcard >}}
