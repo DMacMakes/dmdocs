@@ -115,17 +115,23 @@ So how do we check if fruit shares a location with our Snake?
 * How to check location equality?
 * How to only collide once?
 
-### Exercise 1c: Scoring fruit
+### Stop and check variables when you've collided 
 
-2. Create a second kind of fruit, add it somewhere else on level at start.
-3. Check for hits on the second fruit.
+In your collision checking code should be a section to handle what happens if the collision result is `true`, and you can set a boolean, say `snakeHitFruit` to `true`. Set a breakpoint on that line, and debug your program, you can check all sorts of useful information (like if slithers location really does match that of a fruit)
 
+{{< imgcard code_snake_collide_test>}}
+Once you've actually moved you can check if you've slammed into something. Setting a boolean gives me a line of code to set a breakpoint against, also it's probably useful.
+{{< /imgcard >}}
+
+{{< imgcard debugger_fruit_collisions>}}
+The debugger "Locals" window showing the contents and values for our banana (Fruit object) and Slithers (Snake object), along with other great info.
+{{< /imgcard >}}
 
 ## Homework
 
 You don't have to send me this homework, but you do have to do it if you want to have **a chance at finishing the assessment** on time and passing. I'll answer questions about it next week and help a bit, but I won't spell it all out.
 
-Critical: 
+**CRITICAL:** 
 1. When you hit the fruit, **add 1** to the score.
 2. Pass the score to the gui drawing function
 3. Always **display the score** as part of the gui
@@ -136,12 +142,14 @@ Critical:
    Once it works, try pausing the game for a while and displaying a message about 
    the deadly wall collision.
 
-Optional:
-5. Give the second fruit type a different score.
-6. When the snake collides with a side wall, teleport it to the opposite side. Do the
+Optional:  
+1. Give the second fruit type a different score.
+2. When the snake collides with a side wall, teleport it to the opposite side. Do the
    equivalent for top/bottom walls.
 
-**Extra session this week:**
+## Extra session this week
+
+Covering collections aka arrays/vectors.
 
 Time and date incoming! 
 
