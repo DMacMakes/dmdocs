@@ -85,6 +85,8 @@ Ignore the **correct naming** and leave out the **readme** file ONLY IF YOU WANT
 
 **Due:** End of Week 8 (Sunday 11:55pm)
 
+_Complete_
+<!--
 > Load images and sound in parallel, and then display/play multiple images and sounds. Using threads, solve the problems that emerge when we load large/many images/sounds. Keep the interface responsive, and keep the user informed. Allow the user to decide how many threads to use during loading.  
 >  
 > Use what you're learning in class (and through your own research) to theorize about and test solutions to the delays you see when using different numbers of threads.  
@@ -129,19 +131,44 @@ You can refer to [the brief found on the Blackboard Assessment 2 page](https://l
     - How do you avoid accessing images/sounds before they're fully loaded? Think about those data races!
     - Does the solution lock the entire vector of images/sounds? How can you avoid that
 {{< /alert >}}
+-->
 
-# Assessment 3: Cuda + Cpu threads Mandelbrot
+# Assessment 3: Cuda programming
 
-Due to end of week 12
-Mandelbrot fractals using the CPU and GPU together.
+Due: Sunday December 6 (end of week 12, T3 2020)
 
-* Build your program on the base provided, built with imgui and SDL2.
+## Task 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="" target="_blank">Base link will be here.<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+You're given a project in week 10 that uses a Nvidia GPU with Cuda capabilites to run a a function on many threads. This function happens to cast a meteorStrike spell that does great damage in the center of its circular area of effect, falling off toward the edges and finally nothing. _ImGui_ and _SDL2_ are used, as in assessment 2, to provide a graphical user interface.
 
-More info soon. 
+You are to add features to the creepers game as described below:
+1. Display the creepers distance and health image graphically, using tools like imgui's plotting widgets, the implot plugin, or your own approach (say, SDL2 to generate a 2D diagram/3d scene)
+2. Sort the creepers by distance. Consider std::sort in the algorithms library.
+2. Increase the number of creepers to 1024. You will need to consider the number of threads and blocks to acquire on the GPU, and how to get the right creeper index for each thread.
+3. Add a timer to precisely count the milliseconds/microseconds taken to run entire castMeteorStrikeCuda function (this includes memory allocs, copies). Make sure you don't include the first initialisation time of Cuda library (goes away in subsequent spell castings). Display it in an easy to read way in the UI.
+4. Write a CPU-bound version of the meteorStrike spell, using a single loop (no threads). It can operate on the same local Creeper collection. Time how long this takes to run.
+5. Try 4,096 Creepers. Try 8,192. Try 16,384. More? Process them all, but if imgui struggles to plot them all I'd consider displaying only a representative percentage of them.
+6. Compare and contrast the performance of the GPU threaded function and the CPU looping function for small and large numbers of Creepers. Is the GPU version ever faster? The CPU version? What accounts for the times when the CPU is faster (if ever), and slower(if ever)? Give a well considered answer of a few sentences, taking into account the architecture of the pc and gpu, and perhaps scheduling?
+7. Change the Creepers to use an x and y location instead of distance. 
+8. Change the rollCreepers function to distribute them randomly around you inside a 20m radius circle. If you can't get that working, use a 40m x 40m square.
+9. Edit the cuda meteor strike and the cpu meteor strike so they calculate the distance of each creeper from the center of the spell (0,0). This distance should be calculated fresh each time in case they, you know, crept. Write the code to find the distance between the creeper and center using the formula for the distance between two points, using sqrtf and powf. Don't use an existing point class with its own super optimised distance thingy - we want the maths in there to make the cpu/gpu work a bit on the arithmetic!
+10. Compare the cpu and gpu results now for small and very large numbers of Creepers.
+7. Increase the number to Creepers to 1125. How will you acquire enough threads while not attempting to access non-existent creepers past the end of the array?
+
+Add more features:
+
+
+### Code base and IDE requirements
+
+* Build your program on the base provided for _Cuda 11.1_ in _Visual Studio 2019_. Libraries are supplied and tested.
+* Edit and build your project in _Visual Studio Community 2019_ with _Nividia's Cuda Toolkit 11.1_ for Windows installed.
+* Based is introduced in the [week 10 class]<week10/#homework> with a homework task.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERBkakUq8_FDkMI2m0H0zlUBwFPGWZ0GzQ2sfSg493u53A?e=V0csJ2" target="_blank">Direct link to Week10 cuda-creepers-homework.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 
 <!-- 
+
 Look at GPR202. Also maybe noman slides from weeks 8-11.
 Try to give them a base that lets them test it. Show knowledge not so much by writing their own cuda code but instead testing and choosing the write amounts of data to distribute across the right amount of threads. If they can do a good job of picking ranges of numbers to test, and come out with ones that optimize it well, then they're showing enough understanding.
 
@@ -159,5 +186,6 @@ Split work appropriately between available resources to maximise speed.
 
 **Qs**
 ** What windowing/multimedia library? SFML? SDL2?
+
 -->
 
