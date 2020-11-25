@@ -23,7 +23,7 @@ You need a way to tell the GPU to do.. well C++ type stuff you'd normally do on 
 _**CUDA**_ is a sort of umbrella term for hardware and software, and _**nvcc**_ is the _**NVidia C/C++ Compiler**_.
 {{< /alert >}}
 
-Al Pachino is Ace Ventura:
+Al Pacino is Ace Ventura:
 
 {{< youtube zWpv3hxeqq4>}}
 

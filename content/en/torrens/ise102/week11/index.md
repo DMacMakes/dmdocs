@@ -15,9 +15,7 @@ description: >
 6. Adding to score on fruit hit.
 7. Game over?
 
-_Coming soon.._
-
-<!-- 
+<!-- _Coming soon.._ -->
 
 ## Homework due next week  
 
@@ -28,15 +26,26 @@ _advanced:_ Add second playmode, deadly walls. Pass as argument to playSnake.
 
 ## A2 Slots marking
 
-Marking is basically complete and most results should go up tonight (in the hours after class).
+Not ready yet, will be releasing in bunches as I go.
 
 ## Assessment 3
 
-## Last week's homework
+## Last week's homework and review
+
+We added up and down movement, controlled speed. In the review we learned more about controlling and calculating speed, and **found the txtpxls library had been broken by windows sdk changes**.
+
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../week10b/#homework" target="_blank">Week10 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Creating your own objects
+
+### Slightly updated base
+
+You can continue to use your work from last class or grab this. It has the fixed frame rate code, up and down movement, TODO comments for this class.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="Snake_A3_w11_incomplete.zip" target="_blank">Download Snake_A3_w11_incomplete.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### The easy way: copy and edit 
 
 Creating an object is as easy as   
 1. Creating a _**myobject.h**_ file, known as a **header file** file (or less formal **dot h** file)  
@@ -49,10 +58,6 @@ An easy way is to copy a similar class and edit it. **Open your snake project** 
 {{< imgproc code_snake_class_explained Resize "1024x" Link "code_snake_class_explained.png" >}}
 Hacking time! We can get away with understanding 80% of what's going on here 👍
 {{< /imgproc >}}
-
-{{< imgcard code_snake_class_simpler >}}
-FAKE but useful: Here's what it would look like if I took out the enums and textpixels references.
-{{< /imgcard >}}
 
 ### What is a fruit?
 
@@ -123,8 +128,10 @@ Reposition fruit on hit
 Give the second fruit type a different score.
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="#learning-this-week" target="_blank">Back up to Learning this week<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-**Tomorrow 3:30pm (Tuesday):**
+**Extra session this week:**
+
+Time and date incoming! 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../week11b" target="_blank">Week 11B<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
--->  
+  
