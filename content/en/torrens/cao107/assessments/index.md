@@ -143,12 +143,17 @@ You're given a project in week 10 that uses a Nvidia GPU with Cuda capabilites t
 
 You are to add features to the creepers game as described below:
 1. Display the creepers distance and health image graphically, using tools like imgui's plotting widgets, the implot plugin, or your own approach (say, SDL2 to generate a 2D diagram/3d scene)
+2. Sort the creepers by distance. Consider std::sort in the algorithms library.
 2. Increase the number of creepers to 1024. You will need to consider the number of threads and blocks to acquire on the GPU, and how to get the right creeper index for each thread.
 3. Add a timer to precisely count the milliseconds/microseconds taken to run entire castMeteorStrikeCuda function (this includes memory allocs, copies). Make sure you don't include the first initialisation time of Cuda library (goes away in subsequent spell castings). Display it in an easy to read way in the UI.
 4. Write a CPU-bound version of the meteorStrike spell, using a single loop (no threads). It can operate on the same local Creeper collection. Time how long this takes to run.
-5. Try 4096 Creepers. 
-6. Compare and contrast the performance of the GPU threaded function and the CPU looping function for small and large numbers of Creepers. Is the GPU version ever faster? The CPU version? What accounts for the times when the CPU is faster (if ever), and slower(if ever)?
-7. Increase the number to Creepers to 1125. How will you acquire enough threads while not attempting to access non-existent creepers the end of the array?
+5. Try 4,096 Creepers. Try 8,192. Try 16,384. More? Process them all, but if imgui struggles to plot them all I'd consider displaying only a representative percentage of them.
+6. Compare and contrast the performance of the GPU threaded function and the CPU looping function for small and large numbers of Creepers. Is the GPU version ever faster? The CPU version? What accounts for the times when the CPU is faster (if ever), and slower(if ever)? Give a well considered answer of a few sentences, taking into account the architecture of the pc and gpu, and perhaps scheduling?
+7. Change the Creepers to use an x and y location instead of distance. 
+8. Change the rollCreepers function to distribute them randomly around you inside a 20m radius circle. If you can't get that working, use a 40m x 40m square.
+9. Edit the cuda meteor strike and the cpu meteor strike so they calculate the distance of each creeper from the center of the spell (0,0). This distance should be calculated fresh each time in case they, you know, crept. Write the code to find the distance between the creeper and center using the formula for the distance between two points, using sqrtf and powf. Don't use an existing point class with its own super optimised distance thingy - we want the maths in there to make the cpu/gpu work a bit on the arithmetic!
+10. Compare the cpu and gpu results now for small and very large numbers of Creepers.
+7. Increase the number to Creepers to 1125. How will you acquire enough threads while not attempting to access non-existent creepers past the end of the array?
 
 Add more features:
 
