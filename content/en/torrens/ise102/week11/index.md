@@ -117,16 +117,29 @@ So how do we check if fruit shares a location with our Snake?
 
 ### Exercise 1c: Scoring fruit
 
-1. When you hit the fruit, **add 1** to the score.
 2. Create a second kind of fruit, add it somewhere else on level at start.
 3. Check for hits on the second fruit.
 
 
-## What we learned and homework due
-Homework: Can you check if the snake hits the wall?
-Reposition fruit on hit
-Give the second fruit type a different score.
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="#learning-this-week" target="_blank">Back up to Learning this week<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+## Homework
+
+You don't have to send me this homework, but you do have to do it if you want to have **a chance at finishing the assessment** on time and passing. I'll answer questions about it next week and help a bit, but I won't spell it all out.
+
+Critical: 
+1. When you hit the fruit, **add 1** to the score.
+2. Pass the score to the gui drawing function
+3. Always **display the score** as part of the gui
+4. Reposition fruit when eaten (as if it's a new fruit)
+5. Check if the **snake hits the walls**: you can check side walls when moving left/right,
+   top and bottom when moving vertically.
+6. Test the wall collision with a breakpoint like we did in class for fruit collisions.
+   Once it works, try pausing the game for a while and displaying a message about 
+   the deadly wall collision.
+
+Optional:
+5. Give the second fruit type a different score.
+6. When the snake collides with a side wall, teleport it to the opposite side. Do the
+   equivalent for top/bottom walls.
 
 **Extra session this week:**
 
