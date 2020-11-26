@@ -143,36 +143,64 @@ You can refer to [the brief found on the Blackboard Assessment 2 page](https://l
 
 ## Assessment 3: Cuda programming
 
-Due: Sunday December 6 (end of week 12, T3 2020)
+We're implementing and adding to a "game" in which you are a magic user surround by many small but nasty _Creepers_. We want to optimise it using the GPUs general compute capabilities and take some work off the CPU. We can't just asssume it works though, we need to measure and to understand!
 
-### Task 
+**Due:** Sunday December 6 (end of week 12, T3 2020)
+**Deliverable:** Your solution/project folder, zipped. Details below.
 
-You're given a project in week 10 that uses a Nvidia GPU with Cuda capabilites to run a a function on many threads. This function happens to cast a meteorStrike spell that does great damage in the center of its circular area of effect, falling off toward the edges and finally nothing. _ImGui_ and _SDL2_ are used, as in assessment 2, to provide a graphical user interface.
+{{< imgcard a3_creeper_sample>}}
+Some of the Assessment 3 features
+{{< /imgcard >}}
 
-You are to add features to the creepers game as described below:
-1. Display the creepers distance and health image graphically, using tools like imgui's plotting widgets, the implot plugin, or your own approach (say, SDL2 to generate a 2D diagram/3d scene)
-2. Sort the creepers by distance. Consider std::sort in the algorithms library.
-2. Increase the number of creepers to 1024. You will need to consider the number of threads and blocks to acquire on the GPU, and how to get the right creeper index for each thread.
-3. Add a timer to precisely count the milliseconds/microseconds taken to run entire castMeteorStrikeCuda function (this includes memory allocs, copies). Make sure you don't include the first initialisation time of Cuda library (goes away in subsequent spell castings). Display it in an easy to read way in the UI.
-4. Write a CPU-bound version of the meteorStrike spell, using a single loop (no threads). It can operate on the same local Creeper collection. Time how long this takes to run.
-5. Try 4,096 Creepers. Try 8,192. Try 16,384. More? Process them all, but if imgui struggles to plot them all I'd consider displaying only a representative percentage of them.
-6. Compare and contrast the performance of the GPU threaded function and the CPU looping function for small and large numbers of Creepers. Is the GPU version ever faster? The CPU version? What accounts for the times when the CPU is faster (if ever), and slower(if ever)? Give a well considered answer of a few sentences, taking into account the architecture of the pc and gpu, and perhaps scheduling?
-7. Change the Creepers to use an x and y location instead of distance. 
-8. Change the rollCreepers function to distribute them randomly around you inside a 20m radius circle. If you can't get that working, use a 40m x 40m square.
-9. Edit the cuda meteor strike and the cpu meteor strike so they calculate the distance of each creeper from the center of the spell (0,0). This distance should be calculated fresh each time in case they, you know, crept. Write the code to find the distance between the creeper and center using the formula for the distance between two points, using sqrtf and powf. Don't use an existing point class with its own super optimised distance thingy - we want the maths in there to make the cpu/gpu work a bit on the arithmetic!
-10. Compare the cpu and gpu results now for small and very large numbers of Creepers.
-7. Increase the number to Creepers to 1125. How will you acquire enough threads while not attempting to access non-existent creepers past the end of the array?
+{{< alert title="Meteor Strike base" color= "primary" >}}
+In **week 10** you're given a project in that uses an **_Nvidia GPU_** with **_Cuda_** capabilites to run a a function on many threads. Your homework is to trigger the _**meteorStrike**_ spell that does great damage in the center of its circular area of effect, falling off toward the edges and finally nothing. 
 
-Add more features:
+You use ImGui_ and _SDL2_ as in assessment 2, to control and display the results of events in a windowed graphical user interface.
+{{< /alert >}} 
 
+### Add features and analyse!
 
-### Code base and IDE requirements
+Create a folder called analysis in your project. Edit a text file called ANALYSIS.md, and include all your answers to the questions below, plus any observations you'd like to make. 
+
+Task                                        | Details
+--------                                    |----------
+1: **Display** creepers distance, health        | Do this graphically so it's fast to read. Use tools like imgui's plotting widgets, the implot plugin, or your own approach (say, SDL2 to generate a 2D diagram/3d scene)
+2: **Sort** the creepers by distance.           | Consider std::sort in the algorithms library.
+3: Increase creeper count to **1024**.          | You will need to consider the number of threads and blocks to acquire on the GPU, and how to get the right creeper index for each thread.
+4: **Time** the castMeteorStrikeCuda function.  | Use the timer class from a2 to time the function (this includes memory allocs, copies) in milliseconds. Make sure you don't include the first initialisation time of Cuda library (goes away in subsequent spell castings). Display it in an easy to read way in the UI.
+5: Write a **CPU version** of meteorStrike | A function that does the same thing as the CUDA spell using a single loop on the CPU (no threads). It can operate on the same local Creeper collection. Time how long this takes to run.
+6: Try **4,096** Creepers. **8,192**. **16,384**.  | More?  Process them all. If/when imgui struggles to plot them displaying representative group of them (selected across the population).
+7: Compare+contrast GPU/CPU performance. | Run on each for small and very large numbers of Creepers. Is the GPU version ever faster? The CPU version? What accounts for the times when the CPU is faster (if ever), and slower(if ever)? Give a well considered answer of a few sentences, taking into account the architecture of the pc and gpu, and perhaps scheduling?
+8: Change the Creepers to x,y location. | Generating x and y location instead of distance. 
+9: Change rollCreepers to distribute randomly in a circle. | Use a radius of 20m (diameter40m). If you can't get that working, second best option is a 40m x 40m square.
+10: Make Cuda and CPU meteor strike calculate creeper dist from (0,0). | That is, the center of the spell aka where you are. This distance should be calculated fresh each time in case they, you know, crept. Write the code to find the distance between the creeper and center using the formula for the distance between two points, using sqrtf and powf. Don't use an existing point class with its own super optimised distance thingy - we want the maths in there to make the cpu/gpu work a bit on the arithmetic!
+11: Compare the cpu and gpu results | You're doing it again for small and very large numbers of Creepers. Has anything changed? If so, what's behind the new results? Predict how this would go with a) more creepers and b) more complex calculations.
+
+#### Add more features:
+
+1: Controls! Widgets to input the number of creepers, the sample size. Graph control options? 
+1: More spells!
+1: Increase the number to Creepers to 1125. | How will you acquire enough threads while not attempting to access non-existent creepers past the end of the array?
+
+{{< alert title="Code base and IDE Requirements" color= "secondary" >}}
 
 * Build your program on the base provided for _Cuda 11.1_ in _Visual Studio 2019_. Libraries are supplied and tested.
 * Edit and build your project in _Visual Studio Community 2019_ with _Nividia's Cuda Toolkit 11.1_ for Windows installed.
 * Based is introduced in the [week 10 class]<week10/#homework> with a homework task.
+{{< /alert >}} Code base and IDE requirements
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERBkakUq8_FDkMI2m0H0zlUBwFPGWZ0GzQ2sfSg493u53A?e=V0csJ2" target="_blank">Direct link to Week10 cuda-creepers-homework.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Submitting A3
+
+* 7zip the folder that contains the libraries_cpp and the cuda folder with your project inside. Delete all those cache folders first as usual.
+* Don't forget, your project should include the analysis folder with your responses and any images.
+* Upload to torrens LFS.
+* Submit the link on the Blackboard assessment 3 page.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219127_1&course_id=_94382_1" target="_blank">Blackboard submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://lfs.torrens.edu.au" target="_blank">Torrens Large File Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 
 <!-- 

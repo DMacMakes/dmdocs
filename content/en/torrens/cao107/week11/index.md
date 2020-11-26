@@ -20,18 +20,18 @@ It feels like we've been working fairly low level, and compared to a lot of styl
 
 So, how? We're standing on the shoulders of other coders who've done the work and rigorously tested their code while using it in real production. Then they've compiled their code into libraries and supplied us with the header files to use them ourselves. This includes, by the way, large game and tech company staff contributions, along with open source communities on Github.
 
-Tool/Library | Description
--------------|------------
-C++ | Language plus standard libraries as our core.
-Cuda/nvcc | General computing library and compiler for Nvidia GPUS, C++ extension.
-gl3w | OpenGL cross platform initialiser (used by SDL2/ImGui) (see also freeglut, glew)
-SDL2 | Simple Direct media Layer. Offers access to graphics and sound hardware, input and output, without having to write os-specific code or low level GL code.
-SDL_Image | Extension library for SDL, allows loading of images
-SDL_Mixer | Extension library for SDL, load and play sounds
-Format libs | Various free libraries doing all the decoding and decompression of image and sound formats (complex, dry work): libpng, libjpeg, libmpg123,zlib
-ImGui | gpu accelerated, frame based (immediate mode) gui.
-ImGuiFileDialog | Adds a cross-platform file browser to ImGui
-Others | usynergy, dirent
+Tool/Library     | Description
+-------------    |------------
+C++              | Language plus standard libraries as our core.
+Cuda/nvcc        | General computing library and compiler for Nvidia GPUS, C++ extension.
+gl3w             | OpenGL cross platform initialiser (used by SDL2/ImGui) (see also freeglut, glew)
+SDL2             | Simple Direct media Layer. Offers access to graphics and sound hardware, input and output, without having to write os-specific code or low level GL code.
+SDL_Image        | Extension library for SDL, allows loading of images
+SDL_Mixer        | Extension library for SDL, load and play sounds
+Format libs      | Various free libraries doing all the decoding and decompression of image and sound formats (complex, dry work): libpng, libjpeg, libmpg123,zlib
+ImGui            | gpu accelerated, frame based (immediate mode) gui.
+ImGuiFileDialog  | Adds a cross-platform file browser to ImGui
+Others           | usynergy, dirent
 
 ### How to leverage libraries
 
@@ -51,11 +51,15 @@ They offer huge power, but you have to understand a bit about what they are and 
 {{< alert title="Dynamic libraries on your system" color= "secondary" >}}
 Executables would be gigabytes in size if they had to include the binary for every library they might ever use. They'd very often be bloated with the exact same code too.They'd also use a ton of memory, and you'd have to install a new patch/update to almost every app on your system each time microsoft patched/updated a library.
 
-Have a look in:
+**Have a look in:**
 
 1. c:\windows\system32 folder
 2. The windows _Apps \& Features_ control panel. Type 'redist' in the search/filter box. Look familiar?
 3. Install folders like C:\Program Files\iTunes and C:\Program Files\7-Zip
+
+![](system32_dlls.png)
+
+![](redist_vcpp.png)
 {{< /alert >}}
 
 ## Exercise: Downloading and integrating implot
