@@ -109,3 +109,6 @@ The demo scatter plot in my creeper window.
 4. If you tried and can't solve it, provide me/the class with the **specific error** from your _**output window**_, and formulate a specific question. "It says it can't link symbols from SDL. Is that likely to be the lib files, my `#include` statement, something else? I think it might be X. Where do I start looking?"  
 {{< /alert >}}  
 
+### Plotting your own data
+
+Look at how the plot works. What data does it need? An array of stuff for the x axis, another for the y? Well, you better copy some of your creeper data over to some handy, plottable arrays. Do it when the data changes (original roll, spells, re rolls), NOT every single frame.
