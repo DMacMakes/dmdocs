@@ -160,6 +160,7 @@ You use ImGui_ and _SDL2_ as in assessment 2, to control and display the results
 
 ### Add features and analyse!
 
+Read the textbook's GPU appendix C, section C.3, _Scalable programming with CUDA_ around **page C-17**.
 Create a folder called analysis in your project. Edit a text file called ANALYSIS.md, and include all your answers to the questions below, plus any observations you'd like to make. 
 
 Task                                        | Details
@@ -185,17 +186,16 @@ Task                                        | Details
 {{< alert title="Code base and IDE Requirements" color= "secondary" >}}
 
 * Build your program on the base provided for _Cuda 11.1_ in _Visual Studio 2019_. Libraries are supplied and tested.
-* Edit and build your project in _Visual Studio Community 2019_ with _Nividia's Cuda Toolkit 11.1_ for Windows installed.
 * Based is introduced in the [week 10 class]<week10/#homework> with a homework task.
-{{< /alert >}} Code base and IDE requirements
+{{< /alert >}} 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERBkakUq8_FDkMI2m0H0zlUBwFPGWZ0GzQ2sfSg493u53A?e=V0csJ2" target="_blank">Direct link to Week10 cuda-creepers-homework.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Submitting A3
 
-* 7zip the folder that contains the libraries_cpp and the cuda folder with your project inside. Delete all those cache folders first as usual.
+* 7zip the folder that contains the libraries_cpp and the cuda folder with your project inside. Delete all those cache folders first as usual, including `build` and `obj` folders. Name the file `cao107_a3_lastName_firstName.7z`
 * Don't forget, your project should include the analysis folder with your responses and any images.
-* Upload to torrens LFS.
+* Upload to torrens LFS in uploads section under CAO107 (if visible) or CAO201. Try [this link](https://laustu.sharepoint.com/:f:/r/sites/lfs/2020/T3/CAO107?csf=1&web=1&e=SizAHd) for CAO107 if you weren't able to find it.
 * Submit the link on the Blackboard assessment 3 page.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219127_1&course_id=_94382_1" target="_blank">Blackboard submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
