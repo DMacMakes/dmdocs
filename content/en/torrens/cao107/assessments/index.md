@@ -6,13 +6,15 @@ description: >
   Assessment dates, briefs, deliverables etc.
 ---
 
+---
+
 ## Assessment 1
 
+_Complete_
+
+<!-- 
+
 Three coding, observation and analysis tasks (referred to as labs) in which we'll explore the challenges of writing code that executes in parallel.
-
-_Submitted for this trimester_
-
-<!--
 
 > We won't be working from the Blackboard brief for this. See the instructions below.
 
@@ -83,10 +85,13 @@ Ignore the **correct naming** and leave out the **readme** file ONLY IF YOU WANT
 
 ## Assessment 2: Multi threaded loader
 
+_Complete_
+
+
+
+<!--  
 **Due:** End of Week 8 (Sunday 11:55pm)
 
-_Complete_
-<!--
 > Load images and sound in parallel, and then display/play multiple images and sounds. Using threads, solve the problems that emerge when we load large/many images/sounds. Keep the interface responsive, and keep the user informed. Allow the user to decide how many threads to use during loading.  
 >  
 > Use what you're learning in class (and through your own research) to theorize about and test solutions to the delays you see when using different numbers of threads.  
@@ -131,13 +136,16 @@ You can refer to [the brief found on the Blackboard Assessment 2 page](https://l
     - How do you avoid accessing images/sounds before they're fully loaded? Think about those data races!
     - Does the solution lock the entire vector of images/sounds? How can you avoid that
 {{< /alert >}}
--->
 
-# Assessment 3: Cuda programming
+-->  
+
+--- 
+
+## Assessment 3: Cuda programming
 
 Due: Sunday December 6 (end of week 12, T3 2020)
 
-## Task 
+### Task 
 
 You're given a project in week 10 that uses a Nvidia GPU with Cuda capabilites to run a a function on many threads. This function happens to cast a meteorStrike spell that does great damage in the center of its circular area of effect, falling off toward the edges and finally nothing. _ImGui_ and _SDL2_ are used, as in assessment 2, to provide a graphical user interface.
 
