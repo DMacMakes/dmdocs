@@ -6,6 +6,13 @@ description: >
   The full brief for A3, plus Q&A, tips. Also to make full use of the many features of computers and their operating systems without reinventing the wheel, you need to know how to find and integrate libraries.
 ---
 
+## Assessment 3
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-cuda-programming" target="_blank">Assessment 3 tasks<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< imgcard a3_creeper_sample>}}
+CPU meteor strike vs 16K creepers, stem plot graphing health vs distance.
+{{< /imgcard >}}
 
 ## Libraries
 
@@ -52,6 +59,10 @@ Have a look in:
 {{< /alert >}}
 
 ## Exercise: Downloading and integrating implot
+
+{{< imgcard implot_git Link "https://github.com/epezent/implot">}}
+ImPlot sample graphs on github. Click to visit.
+{{< /imgcard >}}
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://github.com/epezent/implot" target="_blank">Go to implot on Github<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
