@@ -99,11 +99,11 @@ drawString(0,0, "Number of Fruits in punnet: " + to_string( punnet.size() );
 
 ## Exercise: vectors
 
-1. Grab Fruit_vector_wk11_incomplete.zip (a special cut down version of snake) 
+1. Grab Fruit_vector_wk11_inc.zip (a special cut down version of snake) 
 2. Look for the //TODO: comments
 3. Finish the code by uncommenting lines and filling in the blanks.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="Fruit_vector_w11_incomplete.zip" target="_blank">Download Fruit_vector_wk11_incomplete.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="Fruit_vector_w11_inc.zip" target="_blank">Download Fruit_vector_wk11_inc.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!-- 
 
@@ -112,7 +112,7 @@ Click to for full size
 {{< /imgproc >}} 
 
 -->
-/
+
 ### Accessing objects in vectors by _**index**_
 
  {{< alert title="Indexed Collections" color= "primary" >}}
