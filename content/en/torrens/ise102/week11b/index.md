@@ -8,21 +8,16 @@ description: >
 
 ## Learning today
 
-_Coming soon.._
 
 ## Things left to do
 
-Not sure what's left to do? Check the [Snake_T2 Trello](https://trello.com/b/aVYKZSK8/snaket2).
+Not sure what's left to do? Check the [Snake_T2 Trello](https://trello.com/b/aVYKZSK8/snakea3).
 
-{{< imgproc snake_trello Resize "500x" Link "snake_trello.png" >}}
+{{< imgproc snake_trello Resize "650x" Link "https://trello.com/b/aVYKZSK8/snakea3" >}}
 Click image to visit the Trello
 {{< /imgproc >}}
 
-
-
-<!-- 
-
-## A3 deliverable: Homework
+<!--## A3 deliverable: Homework
 
 This homework **MUST be attempted in order to pass the assessment**. Make a genuine attempt at completing AT LEAST the _**easy**_ and _**medium**_ homework to qualify.
 
@@ -46,7 +41,7 @@ Clean it up (delete unnecessary folders), **ZIP YOUR PROJECT AND SUBMIT** by ema
    - Your choice how to get back to start of playSnake, but definitely don't call playSnake from within itself. 
      - (You'll probably need to encapsulate everything in side playSnake in a regular loop, so it never returns the score until the player has finished playing. Maybe it doesn't return the score at all, but sets a global "best score" if it the score you just got is better, So many options!
 {{< /alert >}}
-
+-->
 ## Bunches of data: collections!
  
  Games are full things, and a lot of those things are _almost_ the same.
@@ -106,14 +101,18 @@ drawString(0,0, "Number of Fruits in punnet: " + to_string( punnet.size() );
 
 1. Grab Fruit_vector_wk11_incomplete.zip (a special cut down version of snake) 
 2. Look for the //TODO: comments
-3. Complete them by entering in the missing code. Reference the code from the image of the complete source below.
+3. Finish the code by uncommenting lines and filling in the blanks.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="Fruit_vector_w11_incomplete.zip" target="_blank">Download Fruit_vector_wk11_incomplete.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+<!-- 
+
 {{< imgproc code_fruit_vectors Resize "800x" Link "code_fruit_vectors.png">}}
 Click to for full size
-{{< /imgproc >}}
+{{< /imgproc >}} 
 
+-->
+/
 ### Accessing objects in vectors by _**index**_
 
  {{< alert title="Indexed Collections" color= "primary" >}}
@@ -152,9 +151,10 @@ Go back to the top and **attempt the homework in order to qualify to pass the fi
 
 -----------
 
-## OLDER MATERIAL
+## Extra learning 
 
-This is from previous trimesters, you may find nuggets of nice info,especially on pass by reference.
+_This content is from previous trimesters and may contain a reference here or there to code or characters (batty) that aren't with us anymore._
+
 
 ## Ending the game
 A way to **end the game**. There's work to be done like:
@@ -162,7 +162,7 @@ A way to **end the game**. There's work to be done like:
 * making it obvious to the person where they died and why,
 * and letting them know their final score
 * letting people go to the menu or play again.
-* 
+
 We have no way of dying right now, but we want that screen sorted, so we have **a couple choices**:
 1) **Make our snake grow** and eat itself
    - That's a _lot_ of work getting the snake to grow and move
@@ -195,28 +195,23 @@ If they hit a rotten fruit, you have to make clear it was rotten fruit, and what
   * You could tutorialise it a bit by pausing the game for 2 seconds the first time it happens, so they def read the message.
 {{< /alert >}}
 
-## Game Modes?
-
-To get more than a pass/credit, you want to have extra features and options in the game. See my ideas in _game over_, the ideas in the pdf brief, also just think of fun ideas.
-
-----------
+----
 
 ## Intermediate Level: Moving The Collision Code
 
-`playBattyGame()` is getting bloated with wall collision code, then fruit collision code. Long functions are tough to read and debug.
+`playSnake()` is getting bloated with wall collision code, then fruit collision code. Long functions are tough to read and debug.
 Can we **move that stuff into a function?**.
 
-x and y are two values, so we can't assign a return value. It'd be great to pass batty to to a function and have it change the positions. Functions work on a value copy of our object though, not the original. We need a solution.. 
+Since we have the location object in slithers (an instance of Point2D), we can return a new x AND y values for her position if she teleports. Or we can edit the location if we pass it by reference instead of value.
 
 ### Have Functions Return Collision Results
 
 When Batty collides with Fruit, we can return the Fruit or null, a single return value (object). When Batty hits a wall it's more complicated because we need new values for x and y, and we don't have an object that holds them.
 
-Here are three techniques, in order of complexity:
-1. Just check one dimension: up and down OR left and right.
-2. Return an object containing x and y values.
-3. Return a vector with two ints, the x and y direction.
-4. Pass batty _by reference_ and have the function edit her directly. Point2D, wh
+1. Return an object containing x and y values.
+2. Pass slither's location (point2D) _by reference_ and have the function edit it directly. Return true if teleported. 
+
+<!--
 
 ### 1. One Dimension
 
@@ -244,12 +239,12 @@ Psuedocode:
    return newPosition
  end teleportIfOOB
 ```  
-
-### 3. Pass By Reference (Intermediate Level)
+-->
+### 2. Pass By Reference (Intermediate Level)
 
 Normally a function passes a variable's value as a copy, we can't change the original. There _is_ actually a way _C++_ to pass a reference to the original variable (albeit with a different name), letting us edit the original.
 
-This would let us pass in `batty`, and the function will directly change her `x` and `y` if she's out of bounds.
+This would let us pass in `slithers.location`, and the function will directly change her `x` and `y` if she's out of bounds.
 
 * In the function declaration add `&` to the name of the argument variable: `bool teleportIfOOB(Creature &thatCreature)`
 * If you pass `batty` to that function, changes to `thatCreature` in the function are really changes to batty.
@@ -300,10 +295,7 @@ Yeah, in the same way adulthood is worth it. The rules get murkier and more conf
 
 -------------
 
--->  
-
-
-<!-- ### Don't Push Code Around
+## Tips
 
 "Don't push paint around" is a phrase art teachers use to counter something they, us, and everyone else does. When we have gone beyond our understanding, but we know we're kinda close, we start to noodle and try random stuff. In concept art it's maybe because we don't really know how to paint folds in fabric, or how to render realistic hair. We don't have reference photos for combat armour, or we never figured out the perspective properly.
 
@@ -317,4 +309,3 @@ Test small chunks of code in isolation and you'll be able to focus down the prob
 Take the two or three lines you _know_ you don't really understand and put them in `main()` in a new, empty project. Throw in some dummy values, try to ask new questions in that new lightSee them without anything around them, think about what you're assuming about the c++ keywords/operators/syntax in that code and how you can test if you're right. 
 {{< /alert >}}
 
--->
