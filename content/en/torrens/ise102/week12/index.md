@@ -33,7 +33,6 @@ Download these to follow along: executable examples of batty/snake in action, an
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_vector_exercise.zip" target="_blank">week12_vector_exercise.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 -->
 
-<!-- 
 ## A Segmented Snake
 
 A feature you've been asking for: the segmented snake.
@@ -118,7 +117,6 @@ Leaving snapshots behind
 oldSlithers is just one snapshot of slithers past, being taken over and over again.
 What if, instead, we had a bunch of snapshots, and instead of updating them we just take new ones. When slithers is about to move, take a snapshot and leave it there.
 
---> 
 
 <!-- 
 
@@ -143,7 +141,6 @@ A vector object can hold any number of a chosen data type(int, float, string, Ba
 
 -->
 
-<!-- 
 
 Declaring a collection of stuff:
 ```cpp
@@ -270,6 +267,3 @@ The brief says the Snake game is a base. It rewards building new things, added s
 * Action replay of the last 10 seconds?
 * Multiple game modes
 * Top 3 scores saved to disk and reopened each time app opens
-
--->  
-
