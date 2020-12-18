@@ -18,13 +18,13 @@ Click to read
 
 **Download chapters** below in PDF format:
 
-| Link       | Topics/features covered  |  
-| ---- | ---- |  
-| [Chapter1 ](cpp_through_games_1.pdf)  | Types, Variables, Input and Output |  
-| [Chapter2 ](cpp_through_games_2.pdf) | Truth, Branching, `while` Looops, `do` loops, logical operators, random numbers |  
-| [Chapter3 ](cpp_through_games_3.pdf) | `for` Loops and nesting, String objects, `array` (collections), multi-dimensional arrays, word jumble. |  
-| [Chapter4](cpp_through_games_4.pdf) | `vector` collections, algorithms library, planning with pseudocode (hangman). |  
-| [Chapter5](cpp_through_games_5.pdf) | Functions, including scope, arguments, overloading. |  
+ Link       | Topics/features covered    
+---- | ----   
+[Chapter1 ](cpp_through_games_1.pdf)  | Types, Variables, Input and Output   
+[Chapter2 ](cpp_through_games_2.pdf) | Truth, Branching, `while` Looops, `do` loops, logical operators, random numbers     
+[Chapter3 ](cpp_through_games_3.pdf) | `for` Loops and nesting, String objects, `array` (collections), multi-dimensional arrays, word jumble.  
+[Chapter4](cpp_through_games_4.pdf) | `vector` collections, algorithms library, planning with pseudocode (hangman).  
+[Chapter5](cpp_through_games_5.pdf) | Functions, including scope, arguments, overloading.  
 
 ## Subject Software Installs  
 
@@ -47,13 +47,25 @@ What's critical for us is that, when asked what `Workloads` you want to install,
 
 ![Desktop development with C++](visual_studio_cpp_desktop.png)
 
-### Handy extra: JDoodle
-This isn't an install, but instead a on online C++ ide where you can type out and test snippets of code without starting a new Visual Studio solution.
+### Handy extra: Repl.it
+This isn't an install, but instead a on online IDE where you can write out and compile c++ without having to open Visual Studio. It has syntax hilighting and some auto completion too. 
+
+{{< imgproc replit Resize "600x" Link "https://repl.it/">}}
+Online c++ IDE at repl.it
+{{< /imgproc >}}
 
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.jdoodle.com/online-compiler-c++17/" target="_blank">JDoodle C++<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://repl.it/" target="_blank">Repl.it online coding environment<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
 </div>
+
+Here's something I wrote in a class (demoing functions) and then shared via repl.it.
+
+<div class="mx-auto">
+	<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://repl.it/@dmacmakes/TatteredFamiliarLesson#main.cpp" target="_blank">C++ code: A function that makes you taller.<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	</a>
+</div>
+
 
 ## Flowgorithm
 

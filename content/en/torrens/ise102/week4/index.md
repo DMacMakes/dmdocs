@@ -254,7 +254,7 @@ The parentheses `()` in the first line of the `for` loop are familiar, we've see
 
 Those 3 parts in the `for` loop parentheses can **vary their form** quite a bit, and some be **left out** entirely. 
 
-**Open a browser** and visit [Jdoodle's online C++ IDE](https://www.jdoodle.com/online-compiler-c++17/). Try each of the `for` loops below inside `main()` (delete the contents of `main` first).
+**Open a browser** and sign up for [Repl.it's C++ IDE](https://repl.it/). Try each of the `for` loops below inside `main()` (delete the contents of `main` first).
 
 ```cpp
 // The most common form of the `for` loop, declaring and using a variable called `i`.
