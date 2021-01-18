@@ -140,7 +140,11 @@ We'll get into how to use more of those later, but to get started we'll have **a
 
 ### Download The Example
 
+**OLD version:**  
 [Console_Drawing_Week_9.zip](Console_Drawing_Week_9.zip) (Updated with `fillRect(x, y, width, height)` and `fillRectByCoords(x, y, x2, y2)` working correctly)
+
+**Updated W10 T4 2021**
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="Console_Drawing_w9.zip" target="_blank">Download Console_Drawing_w9.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 We'll treat the characters on screen as giant pixels. Using the TextPixels library, they'll be made square.
 
