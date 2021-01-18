@@ -89,11 +89,13 @@ Some ideas:
 #### Exploring Poses And Variation
 
 Great examples of movement and posing by Spudonkey:
-{{< instagram B9C5eGpJIZ1 >}}
-{{< instagram B7jQkQKFdRi >}}
+<!-- instagram B9C5eGpJIZ1 
+ instagram B7jQkQKFdRi 
+
+TOOK OUT HUGO TAG BRACKETS because compile fail on netlify
 
 Quick variations/options by Spudonkey:
-{{< instagram B7zEwowlKbQ >}}
+ instagram B7zEwowlKbQ  -->
 
 Nico Marlet defining a character's acting.
 
