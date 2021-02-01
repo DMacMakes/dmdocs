@@ -32,7 +32,7 @@ How can we change our `Snake` so that:
 
 There are _many_ ways to make our Snake, but with limited time left I've picked one to dive into.
 
-## Idea: SNAKE AS HISTORY
+## Idea: Snake as history
 
 The Snake's body, when you think of it, is sort of a history of places the Snake has recently visited.
 
@@ -136,7 +136,7 @@ Slithers has one location, but we need many. Make another location in your Snake
 
 1. Every frame, **before** we move slithers, store (assign) her location in lastLocation.
 2. Then move slithers (we already do this by updating her location)
-3. When you `slithers.location`, draw another pixels at her `lastLocation`.
+3. When you draw a pixel at `slithers.location`, draw another pixel at her `lastLocation`.
 
 ## More than 1 segment
 
@@ -149,7 +149,9 @@ Two ways to store collections of things in C++ are
 2. Declaring a `std::vector`. 
 
 Arrays are very basic, static things that don't grow and don't offer any tools to us. I suggest using `std::vector`, because they're super flexible, easier and safer to use, and not noticeably slower for our simple game. 
-<!--
+
+<!--  
+
 {{< imgcard snapshots_onionskin>}}
 Leaving snapshots behind
 {{< /imgcard >}}
@@ -177,8 +179,7 @@ What about all those damn variables though? Do you have to make like 100, 1000 v
 ## Collections: The vector
 A vector object can hold any number of a chosen data type(int, float, string, Bag, Creature, Fruit). Then you can read or write individual values in the collection using an index.
 
--->
-
+-->  
 
 ### Declaring a vector of stuff:
 ```cpp
