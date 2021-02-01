@@ -70,17 +70,21 @@ Our game needs to clear the screen every frame so it can draw the current state 
 We need our history captured and stored somewhere, just like when we take photos and upload them to the cloud. If we capture our snake locations as we move around the garden, there's a history. **Draw that history** and you'll have a snake that goes all the way back to your starting point!
 
 {{< alert title="Big programmers now" color= "primary" >}}
-<img src="big_baby_bird.jpg" width=400 />
-I'll be getting you started on this, but after that you'll have to fly on your won: putting together the code and ideas into a working snake is up to you.
+<img src="big_baby_bird.jpg" width=200 />
+I'll be getting you started on this, but after that you'll have to fly on your own: putting together the code and ideas into a working snake is up to you. 
 {{< /alert >}}
 
-### Steps
+### Planning our solution
 
-Simulation:
-1. Make a variable in our snake that can store our past locations, our history.
-2. Every time we are going to move to a new location, add our current location to the history 
-Output:
-3. Every time we go to draw the Snake's current location (with DrawPixel), go through our travel history and draw all of those too.
+  
+1. **Input:**  
+   - Make a variable in our snake that can store our past locations, our history.  
+   
+2. **Processing:**   
+   - Every time we are going to move to a new location, add our current location to the history  
+
+3. **Output:** 
+   - Every time we go to draw the Snake's current location (with DrawPixel), go through our travel history and draw all of those too.  
 
 {{< imgproc screen_snake_history_insert Resize "600x" >}}
 Drawing snake head, then the snake history in alternating colours.  
@@ -92,43 +96,6 @@ Try the segmented, growing snake in `4_snake_insert_erase.exe` from the zip belo
 
 > Q: How did I stop drawing?  
 > A: HMMM. How _did_ I stop drawing?
-
-
-<!-- 
-### 2. Draw Pixels Where We Visited
-
-A trail should be easy. It's just a pixel drawn in any square the creature goes into.. wait, didn't we do that? 
-
-{{< alert title="Did We Already Make A Trail?" color= "primary" >}}
-Yes! Sort of! You moved to a bunch of squares and drew a pixel each time. Like walking down the street leaving a trail of m&ms.
-
-The only reason it's not there is.. you fill the background every frame, erasing your old bat/snake coloured pixels.
-{{< /alert >}}
-
-### Exercise 1: Drawing Slithers' Trail
-
-Filling the screen with wall and grass has been hiding slithers' trail. Stop it happening by commenting out a couple of lines.
-
-{{< imgcard slithers_notrail_trail >}}
-No trail, trail. No trail, trail.
-{{< /imgcard >}}
-
-{{< alert title="Definition: \"Comment out\"" color= "primary" >}}
-To stop lines of code executing by turning them into comments. You can:
-1. Add `//` to the beginning of code on a line 
-2. Add `/*` to the start of a line and `*/` several lines later.
-{{< /alert >}}
-
-### What's Wrong?
-
-That was a great way to get a trail, but what's wrong? What's the solution?
-
-1. ???  (Messiness)
-2. ???  (What's wrong with the trail?)
-
-Solving either problem means wiping our trail out. How can we draw it again, instead of just drawing one pixel?
--->
-
 
 ### Exercise 1: Starting With 1
 
