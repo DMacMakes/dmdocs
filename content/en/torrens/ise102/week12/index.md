@@ -194,40 +194,6 @@ int scoreBuffed = scores[2] + 20;
 {{< /alert >}}
 Note: array access notation
 
-<!--
-### Visualising locationHistory
-
-So, if slithers is real, and behind her is a trail of snapshots of her past, many old slithers, we could call that `slithersHistory`.
-
-{{< imgcard battyHistory_in_flight>}}
-{{< /imgcard >}}
-
-Every time **she is about to move**, we create a **new snapshot**, an `oldSlithers` at her current position, **insert it** into `slithersHistory` at the **beginning**, and then move her.
-
-That **new snapshot makes her body one piece longer**, which is **not okay** because she only grows when she eats, not every time she moves. 
-
-To prevent growing, we **snip off** the old, **unwanted snapshot** at the end of `slithersHistory`
-
-## Making a snake:
-* Say you have a `Creature` called `snakeHead`.
-* And you make a `vector` called `snakeHistory`, to hold old snakeHead snapshots. It's of type `vector<Creature>`
-Create the first 3 snapshots, `Creature`s with the same x and y as snakeHead, and push them onto the snake, like so:
-In a loop:
-  * make a `Creature` called `oldHead`
-  * give it `snakeHead`s `x` and `y` coordinates.
-  * add it to `snakeHistory` with vector::push_back()
-
-### Drawing A Snake
-1. Loop through `snakeHistory`. For each `Creature` in there, draw a pixel at it's x and y location
-2. Body drawn, draw a pixel at `snakeHead`'s `x` and `y` location.
-
-### Moving a snake:
-1. When you're about to move the head, make a snapshot, a `Creature` called `oldHead`
-2. Store `snakeHead.x` and `snakeHead.y` in `oldHead.x` and `oldHead.y` (like we did with `oldSlithers`)
-3. `insert` `oldHead` into the `begin()` of the `snakeHistory`.
-4. `erase` the oldest `Creature` at the end of the the `vector` to keep the same length.
--->
-
 {{< imgcard diagram_snake_move_insert_erase Link "diagram_snake_move_insert_erase.png">}}
 Step by step.
 {{< /imgcard >}}
