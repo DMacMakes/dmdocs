@@ -30,15 +30,11 @@ How can we change our `Snake` so that:
 * the segments of the body follow the head as if on rails - no corner cutting
 * the snake can grow in length 
 
-## DRAFTING THE REST
-
-There are many ways, we'll stay focussed on one.
+There are _many_ ways to make our Snake, but with limited time left I've picked one to dive into.
 
 ## Idea: SNAKE AS HISTORY
 
 The Snake's body, when you think of it, is sort of a history of places the Snake has recently visited.
-
-PICTURE OF FOOTPRINTS 
 
 Think of footprints as you walk on sand, or in the snow. Which prints are nearest? Furthest? We naturally describe them in terms of time. The most recent is  one behind it is slightly older and so on.
 
@@ -52,8 +48,9 @@ What do you know about the concrete when these paw prints were made? Think outsi
 
 **Bear prints answer:** The ones under their feet <img src="pausechamp.png" width=40 height=40 />
 
-GEOTAGGED PHOTOS
+Sadly we don't have the help of a medium like snow or cement that will do the work for us. Our old locations are lost as soon as we move. We need an another analogy maybe?
 
+## _Geotagged_ photos
 If you're travelling and take a bunch of photos, you can leave geotagging turned on (common phone feature) and it'll save location data (gps) in your photos. When you upload them, some services will read that info. You can use it to draw a path of your travel over time, like a visual travelog of your journey. 
 
 {{< imgproc geotag_map Resize "700x">}}
