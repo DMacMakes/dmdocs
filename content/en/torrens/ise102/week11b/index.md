@@ -11,7 +11,7 @@ description: >
 
 ## Things left to do
 
-Not sure what's left to do? Check the [Snake_T2 Trello](https://trello.com/b/aVYKZSK8/snakea3).
+Not sure what's left to do? Check the [Snake_A3 Trello](https://trello.com/b/aVYKZSK8/snakea3).
 
 {{< imgproc snake_trello Resize "650x" Link "https://trello.com/b/aVYKZSK8/snakea3" >}}
 Click image to visit the Trello

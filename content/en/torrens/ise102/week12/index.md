@@ -6,49 +6,98 @@ description: >
   How would a segmented snake work? How can I store all those segments?
 ---
 
-_Coming soon.._
-
 ## Homework:
-Fruit eating, score displaying, general progress.
+Collisions: Fruit eating, score updating, wall hitting, options etc.
 
-## Reminder: Submitting your files correctly
+## Reminders:
+
+### Trello
+
+Not sure what's left to do? Check the [Snake_A3 Trello](https://trello.com/b/aVYKZSK8/snakea3).
+
+{{< imgproc snake_trello Resize "650x" Link "https://trello.com/b/aVYKZSK8/snakea3" >}}
+Click image to visit the Trello
+{{< /imgproc >}}
+
+### Submitting your files correctly
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable" target="_blank">Cleaning up and zipping your project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<!-- 
+## A growing snake
 
-PREVIOUSLY COMMENTED
+How can we change our `Snake` so that:
+* it has body segments as well as the existing head pixel.
+* the segments of the body follow the head as if on rails - no corner cutting
+* the snake can grow in length 
 
-## Downloads
+## DRAFTING THE REST
 
-Download these to follow along: executable examples of batty/snake in action, and solutions you'll use as exercise bases.
+There are many ways, we'll stay focussed on one.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_executables.zip" target="_blank">week12_executables.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+## Idea: SNAKE AS HISTORY
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_snake_trail_exercise1.zip" target="_blank">week12_snake_trail_exercise1.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+The Snake's body, when you think of it, is sort of a history of places the Snake has recently visited.
 
-## VECTOR EXERCISE OUTDATED, REPLACE WITH IMPROVED VERSION
-(Complete version is done, need to remove key lines and replace with //..)  
+PICTURE OF FOOTPRINTS 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_vector_exercise.zip" target="_blank">week12_vector_exercise.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
--->
+Think of footprints as you walk on sand, or in the snow. Which prints are nearest? Furthest? We naturally describe them in terms of time. The most recent is  one behind it is slightly older and so on.
 
-## A Segmented Snake
+{{< imgcard bears_alan_watson >}}
+Which prints here are most recent?
+{{< /imgcard >}}
 
-A feature you've been asking for: the segmented snake.
+{{< imgcard paws_circles >}}
+What do you know about the concrete when these paw prints were made? Think outside the circle.
+{{< /imgcard >}}
+
+**Bear prints answer:** The ones under their feet <img src="pausechamp.png" width=40 height=40 />
+
+GEOTAGGED PHOTOS
+
+If you're travelling and take a bunch of photos, you can leave geotagging turned on (common phone feature) and it'll save location data (gps) in your photos. When you upload them, some services will read that info. You can use it to draw a path of your travel over time, like a visual travelog of your journey. 
+
+{{< imgproc geotag_map Resize "700x">}}
+Path of a walk in Tbilisi showing locations from photo metadata 
+(look up pic2map){{< /imgproc >}}
+
+If you out it's a snake with your current location (if you upload a photo today) as the head.
+
+### Application: building our snake's travel blog
+
+{{< imgcard slithers_notrail_trail >}}
+Slithers with a trail. Can we do it with our own kinda x,y geotags?
+{{< /imgcard >}}
+
+Our game needs to clear the screen every frame so it can draw the current state of things. This erases our footprints in the sand, so to speak, from the screen. So we don't get the free visual history that the beach gives us. 
+
+We need our history captured and stored somewhere, just like when we take photos and upload them to the cloud. If we capture our snake locations as we move around the garden, there's a history. **Draw that history** and you'll have a snake that goes all the way back to your starting point!
+
+{{< alert title="Big programmers now" color= "primary" >}}
+<img src="big_baby_bird.jpg" width=400 />
+I'll be getting you started on this, but after that you'll have to fly on your won: putting together the code and ideas into a working snake is up to you.
+{{< /alert >}}
+
+### Steps
+
+Simulation:
+1. Make a variable in our snake that can store our past locations, our history.
+2. Every time we are going to move to a new location, add our current location to the history 
+Output:
+3. Every time we go to draw the Snake's current location (with DrawPixel), go through our travel history and draw all of those too.
 
 {{< imgproc screen_snake_history_insert Resize "600x" >}}
-Try the segmented, growing snake in `4_snake_insert_erase.exe` 
+Drawing snake head, then the snake history in alternating colours.  
 {{< /imgproc >}}
 
-### How would a snake work?
+Try the segmented, growing snake in `4_snake_insert_erase.exe` from the zip below:
 
-There are a few approaches we could take
-1. Our current Creature object (snake or batty) becomes the snake head. A bunch more objects, maybe a custom Segment objects each follow along whenever the head is moved.
-2. We draw a snake coloured pixel in the last 'n' places the snake visited.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_executables.zip" target="_blank">Download week12_executables.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-1 makes sense if you get objects, but can be confusing to implement. 2 isn't immediately obvious, but it's easier once you get it.
+> Q: How did I stop drawing?  
+> A: HMMM. How _did_ I stop drawing?
 
+
+<!-- 
 ### 2. Draw Pixels Where We Visited
 
 A trail should be easy. It's just a pixel drawn in any square the creature goes into.. wait, didn't we do that? 
@@ -81,35 +130,29 @@ That was a great way to get a trail, but what's wrong? What's the solution?
 2. ???  (What's wrong with the trail?)
 
 Solving either problem means wiping our trail out. How can we draw it again, instead of just drawing one pixel?
+-->
 
-## Reminder: Big Programmers Now
 
-{{< imgcard big_baby_bird>}}
-Fly little fella! Dad's wrecked his back getting worms.
-{{< /imgcard >}}
+### Exercise 1: Starting With 1
 
-This is just a guide: finishing all this and putting it together is up to you and your new coding skills!
+Slithers has one location, but we need many. Make another location in your Snake class (`snake.h`) called `lastLocation`. 
 
-## Drawing History
+1. Every frame, **before** we move slithers, store (assign) her location in lastLocation.
+2. Then move slithers (we already do this by updating her location)
+3. When you `slithers.location`, draw another pixels at her `lastLocation`.
 
-**A trail is just history marked out.** A trail in a forest is just where a lot of feet have trodden the grass down. The memory of that travel is in the state of the plants and ground.
+## More than 1 segment
 
-* The trail we saw slithers make, that was just the _screen buffer_ (the state of each textpixel on screen, stored) remembering the places slithers had been drawn.
-* When we don't draw something new (the background) it's safe there. But we need to draw the background, and that overwrites the slithers positions till we draw her again.
+Keeping a single location (lastLocation) gave us one frame of history, one segment of snake body. That was just one snapshot.
 
-What if we just drew her again at all her old positions as well as her current position?
+To get the rest you just need a collection of previous locations. 
 
-* All we need then is some other _storage_. Somewhere to keep our bat's history of x,y positions that doesn't have to be erased.
-* Then we drawPixel for each of them.
+Two ways to store collections of things in C++ are
+1. Declaring an `array`
+2. Declaring a `std::vector`. 
 
-### Exercise 2: Starting With 1
-
-We have slithers. Make a new Creature, just like `slithers`, called oldSlithers, that follows her one pixel behind. It's one frame of slithers' past. 
-
-1. Every frame, before we move slithers, store (assign) her x and y positions to `oldSlithers`'s x and y.  
-2. Then move slithers.
-3. When you drawPixel `slithers`, draw `oldSlithers` (who has the old x and y positions of `slithers`) next.
-
+Arrays are very basic, static things that don't grow and don't offer any tools to us. I suggest using `std::vector`, because they're super flexible, easier and safer to use, and not noticeably slower for our simple game. 
+<!--
 {{< imgcard snapshots_onionskin>}}
 Leaving snapshots behind
 {{< /imgcard >}}
@@ -117,8 +160,6 @@ Leaving snapshots behind
 oldSlithers is just one snapshot of slithers past, being taken over and over again.
 What if, instead, we had a bunch of snapshots, and instead of updating them we just take new ones. When slithers is about to move, take a snapshot and leave it there.
 
-
-<!-- 
 
 PREVIOUSLY COMMENTED
 > slithers0, slithers1, slithers2, slithers3..
@@ -142,7 +183,7 @@ A vector object can hold any number of a chosen data type(int, float, string, Ba
 -->
 
 
-Declaring a collection of stuff:
+### Declaring a vector of stuff:
 ```cpp
   // We declare a vector type, then the type it contains, and give it a name.
   vector<int> scores;
@@ -154,11 +195,21 @@ Declaring a collection of stuff:
   string studentName;
   float preciseDistance;
 ```
-You can initialise a vector's first _n_ entries using set notation, which you learned about in high school maths (and maths 1 here at uni)
+
+`vector<Point2d> locationHistory`, does that sound useful to anyone?
+
+### Initialising vectors 
+
+You can initialise a vector's first _n_ entries (as in create your `vector` with a few things already in there) using _set notation_, which you learned about in high school maths (and maths 1 here at uni)
 ```cpp
   vector<int> scores = { 25, 2, 108, 60 };
   vector<string> studentNames = { "Miles Morales", "Chen Guo", "Gwanda Stacey" };
 ```
+Here are some [vector initialisation techniques on Geeks For Geeks](https://www.geeksforgeeks.org/initialize-a-vector-in-cpp-different-ways/), which is a) helpful and b) a fun rabbit hole maybe? We all love listicles. 
+
+We're only using very basic set notation (a list of values or objects) but here's [a reminder on Wikipedia](https://en.wikipedia.org/wiki/Set-builder_notation). 
+
+### Adding things to vectors
 
 New entries can be added with `push_back()`: 
 ```cpp
@@ -175,11 +226,11 @@ scores[0] = garysScore;
 int secondScore = scores[1];
 int scoreBuffed = scores[2] + 20;
 ```
-
 {{< /alert >}}
 Note: array access notation
 
-### slithersHistory
+<!--
+### Visualising locationHistory
 
 So, if slithers is real, and behind her is a trail of snapshots of her past, many old slithers, we could call that `slithersHistory`.
 
@@ -210,20 +261,30 @@ In a loop:
 2. Store `snakeHead.x` and `snakeHead.y` in `oldHead.x` and `oldHead.y` (like we did with `oldSlithers`)
 3. `insert` `oldHead` into the `begin()` of the `snakeHistory`.
 4. `erase` the oldest `Creature` at the end of the the `vector` to keep the same length.
+-->
 
 {{< imgcard diagram_snake_move_insert_erase Link "diagram_snake_move_insert_erase.png">}}
 Step by step.
 {{< /imgcard >}}
 
-### Growing A Snake:
-1. When you eat a fruit, add to the snake's length variable.
-2. You want to put it at the end, so start with the `x` and `y` coordinates of the oldest `Creature` at the end of `snakeHistory`
-3. Add it onto the back of `snakeHistory`.
-  
-### Vector functions we can use:
+### Drawing a snake, not our entire history
+
+Our snake isn't a trail all the way back to our origin. Each frame, we'll have to limit how many old locations we draw. Where's the cut off point? What property of a `Snake` might tell us how _long_ a `Snake` is?
+
+What variable does our `snake.h` need, then? 
+1. **Add it** to `snake.h`, initialise it somewhere (before the play loop), then make sure you respect it in your body-drawing loop. 
+
+### Growing a `Snake`:
+
+When you eat a fruit, you become longer. So make Slither's length longer.
+
+### Snipping a `Snake`
+If you don't want to keep every location your snake ever visited you can always throw some away, provided you used `std::vector` to store them. 
+
+## Useful `std::vector` functions
 
 Google them, they're your tools now.
-    * vector::insert(), vector::erase().
+    * vector::insert(), vector::erase(), vector.append().
     * vector::front(), vector::back()
     * vector::begin(), vector::end()
 
@@ -267,3 +328,7 @@ The brief says the Snake game is a base. It rewards building new things, added s
 * Action replay of the last 10 seconds?
 * Multiple game modes
 * Top 3 scores saved to disk and reopened each time app opens
+
+## Colliding with your own body
+
+A snake's body is just a list of locations. How can we check, each frame, if slithers' head (`slithers.location`) is on the same pixel as one of her body parts? You've already done it for a `strawberry` or `banana`, so do the same for the old locations. 
