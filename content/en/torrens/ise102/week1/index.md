@@ -252,8 +252,8 @@ Before we write computer language, let's write the instructions in a language we
 ### Setting up
 
 Visit the [ise102 Resources page](/torrens/ise102/resources/) and: 
-1. Install Visual Studio Community 2019 with Desktop devopment in C++ (if you haven't already)
-2. Get the _ise102_console_ template, add it to Visual Studio
+1. Install *Visual Studio Community 2019* with Desktop development in C++ (if you haven't already)
+2. Get the `ise102_console_template` add it to Visual Studio
 3. Create a new Solution/project using the template.
 4. Run the project to make sure it works by hitting `ctrl + F5` 
 
@@ -262,7 +262,7 @@ Visit the [ise102 Resources page](/torrens/ise102/resources/) and:
 1. Select and delete all the code in `main.cpp`
 2. Type in the following code, including the _comment_ lines starting with `//`
 ![KnightsJourney No Input](cpp_knightsJourney_noInput.png)
-3. Run the program with `ctrl+F5`
+3. Run the program with <kbd>ctrl</kbd>+<kbd>F5</kbd>
 
 ## Don't Panic: Four Basic Features
 
@@ -323,7 +323,7 @@ The contents of a box change, but the type of contents for a particular box shou
 ```cpp
 string name               = "Pedro";
 int age                   = 17;
-boolean isClassPresident  = true;
+bool isClassPresident     = true;
 ```
 
 ## Summary
@@ -349,22 +349,14 @@ Read through **pages 1-12** of [Chapter 1](../resources/cpp_through_games_1.pdf)
 Then:
 1. Create a Visual Studio project for called `GameOver3`, using the _ise102_console_ project type.
 2. Replace the contents of `main.cpp` with the code of the **Game Over 3.0** program (pages _11,12_).  
-3. Run it with the `ctrl + F5` hotkey, or select _Debug -> Start Without Debugging_ from the menu bar.  
-  
+3. Run it with the <kbd>ctrl</kbd>+<kbd>F5</kbd> hotkey, or select _Debug -> Start Without Debugging_ from the menu bar.  
 
 The textbook is also linked from the [ise102 resources page](https://dmdocs.netlify.com/torrens/ise102/resources/).  
 
 ### Adding Input
 
-Add input to the program in C++ and Flowgorithm. Submit your finished code to Ivan by Sunday night.
+Add input to the program in *C++* and *Flowgorithm*. Submit your finished code Sunday night.
 
 ![input](cpp_knightsJourney_input.png)
 
 ![flowgorithm](flow_knightsJourney_input.png)
-
-<!--## Bits
-
-### Storage
-
-Memory boxes. Memory that can have variable contents. Instead of calling them variable memory boxes, call them simply **variables**.
--->
