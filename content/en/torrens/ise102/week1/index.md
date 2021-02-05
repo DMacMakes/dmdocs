@@ -62,6 +62,7 @@ _Credit: Dakota Kelly, allrecipes.com_
 * 3 tablespoons butter, melted
 
 **Directions:**
+
 1. In a large bowl, sift together the flour, baking powder, salt and sugar. 
 2. Make a well in the center
 3. Pour in the milk, egg and melted butter.
@@ -75,36 +76,9 @@ _Credit: Dakota Kelly, allrecipes.com_
 
 Maybe you haven't written a recipe, but **you've given someone instructions**. Maybe you asked your dad to drive you to your friend's house. When you told him the time to leave and your friend's address, you could say you did some _Parental Programming_.
 
-{{< imgproc instructions_eng Resize "600x" Link "https://www.english-at-home.com/giving-instructions/" >}}
+{{<imgproc instructions_eng Resize "600x" Link "https://www.english-at-home.com/giving-instructions/">}}
 Giving instructions is something we learned at school and at home.
-{{< /imgproc >}}
-
-<!--
-{{% alert title="Parental Programming" color="warning" %}}
-My 3 year old son is an expert programmer of parents. When he wants warm milk but can't instruct the microwave to prepare it, he **instructs an adult:**
-
-```
-// Here is the program Harvey speaks to his mum:
-"Mum, I want a bottle please."
-```
-{{% /alert %}}
-
-### Interpreting The Program
-
-Mum, like any good computer, has an _**instruction interpreter**_. Each instruction encoded in Harvey's program translates predictably an action she can perform:
-
-```
-Instruction: "Mum"
-Action: Begin new program on machine "mum"
-
-Instruction: "I want a bottle please"
-Action: Get a baby bottle. fill with 250ml of milk.
-
-
-Instruction: "Can you make it better?"
-Action: Warm it for 40 seconds in the microwave.
-```
--->
+{{</imgproc>}}
 
 ## New program: Dad drives me to my friends house
 
@@ -114,9 +88,9 @@ Say you want dad to drive you to Charlene's house at 7:30 tonight, for reasons h
 
 Let's break it down.
 
-{{< imgproc dad_car Resize "900x" >}}
+{{<imgproc dad_car Resize "900x">}}
 Dad loves helping out.
-{{< /imgproc >}}
+{{</imgproc>}}
 
 ### What Do We Need For Dad Programming To Work?
 
@@ -153,26 +127,22 @@ START
 END
 ```
 
-### What we need for general programming  
+## Requirements for giving orders  
 
-We'll be writing different programmings for different tasks, so lets 
-If we remove the dad, the car and the route, we have a handy way thinking about programming a human/device to solve a given problem: 
+We'll be writing different programs for different tasks, and dads+cars won't always be involved. 
+If we remove the dad, the car and the route, we end up with a handy, general way of thinking about getting a human _or_ a device to solve a problem. 
 
-1. **Helper**  
-   - A human (dad) or a computer that you will you program to do the work
-2. **A common language** 
-   - An agreed _grammar_: eg English words arranged in sentences
-   - An agreed _instruction set_: keywords which trigger actions in your helper.  
-3. **Context** agreed setting or **_context_** where the work happens:  
-4. Some **ingredients** or data needed to do the task
-5. A list of _**instructions**_
-   - Steps which, performed correctly, with the right ingredients, will lead to a completed task.
+| Requirement        | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| _Helper_           | A subject (human, computer, smart speaker) we can order to do the work. |
+| _Language_         | A language you can both speak, with words-in-common and grammar(rules). |
+| _Context_/Platform | A setting where the work can take place.                     |
+| _Information!_     | Info needed to get the work done: names, addresses, numbers, lists. |
+| _Instructions_     | Steps/actions which, performed correctly and with good info, will lead to a well-done task. |
 
------
+## Giving orders to a computer with c++
 
-## Programming A Computer With C++
-
-Let's start with filling in our requirements:
+The same table applied to **our in-class coding**.
 
 | Requirement     | Description                           |
 |-----------------|---------------------------------------|
@@ -187,7 +157,7 @@ Let's start with filling in our requirements:
 This is easy. The subject is a computer. In our case a **PC with an Intel Processor**, with all the usual bits and peripherals (keyboard, mouse etc)
 
 ### Language  
-  
+
 We'll be using **C++**, a programming language first created in the early 1980s.  
 
 * Built on a language called C
@@ -201,9 +171,10 @@ We'll be using **C++**, a programming language first created in the early 1980s.
 * Quite familiar to `Java`, `C#`, `ActionScript` programmers.
 * Somewhat familiar to `Python` coders, and in some ways strange.
   
+
 We'll use Visual Studio to write our source code and turn that into programs (though other environments exist).
 
-### Context: Windows Command Prompt
+## Context: The windows command prompt
 
 We're going to make a text-based program. To do that we'll write a program that runs in the  _Windows Command Prompt_:
 
@@ -223,29 +194,40 @@ Before we had fancy graphical window managers,regular users were met with a blac
 Why is it still in Windows? Because that's how a large portion of serious system administration is still done, by calling lots of programs in the command prompt!
 
 #### Exercise
-  
+
 Open the Command Prompt and **try out the commands** above for yourself.
-  
+
 1. Press the `Windows` key, next to `Alt`.  
+
 2. Type `Command Prompt` and hit `Enter`.  
+
 3. Type the commands in the screenshot, hitting `Enter` after each.  
+
 4. Also try these commands:  
-    - `echo I am a computer`  
-    - `echo %PROCESSOR_IDENTIFIER%`  
-    - `ping www.reddit.com`  
-  
-### Instructions.
+    1. `echo I am a computer`  
 
-<div class="-bg-200 p-2">  
-The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them. </div>  
+    2. `echo %PROCESSOR_IDENTIFIER%`  
 
-To have instructions though, we need a task to complete or problem to solve!  
+    3. `ping www.reddit.com`  
 
-## Hello part 2
+{{<alert title="Many names" color="warning" >}}
+You might come across (or he me say) any of these things, all meaning the  **command prompt**.
 
-Share your webcam and say hello to the class, tell us what you wrote in your thread post. It will have helped you get your thoughts together.
+* console
 
-## Our first program: Knight's Journey
+* the DOS prompt
+
+* a terminal
+
+* cmd
+
+  {{</alert>}}
+
+## Instructions.
+
+The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them. To give instructions though, we'll need a task for them to complete.  
+
+### Our first program: Knight's Journey
 
 ![Knighting](knighting.png)
 
@@ -255,16 +237,15 @@ _**Knight's Journey**_ is going to be a game where you give your name, and are i
 
 ### Instructing The Computer
 
-Before we write computer language, let's write the instructions in a language we know. English!
+Before we write computer language, let's write the instructions in a language we know, English. 
 
-Computer, please:  
-1. Ask us for our name  
-2. Receive our name via keyboard  
-3. Remember our name  
-4. Know the special knighting words  
-5. Combine our name with the knighting words  
-6. Point out the resulting sentence, so we know we're knights.  
-
+> "Dear computer, please..
+> 1. Ask us for our name  
+> 2. Receive our name via keyboard  
+> 3. Remember our name  
+> 4. Know the special knighting words  
+> 5. Combine our name with the knighting words  
+> 6. Point out the resulting sentence, so we know we're knights. " 
 
 ## Exercise: Knights Journey in C++
 
@@ -292,7 +273,7 @@ People, like computers, feature _input, storage, processing and output_.
   * Her brain **stores** instructions and remembers events
   * She uses her hands and smarts to **process** the milk, moving it to a bottle and warming it
   * She **outputs** a warm bottle of milk and a kiss to Harvey.
-  
+
 {{< alert title="Abstractions Reduce Complexity" color="warning" >}}
 When we take the (at least) thousands of components of a PC and group them into a few simple functions, we call it **abstraction**, and it's a very powerful tool.
 
@@ -370,6 +351,7 @@ Then:
 2. Replace the contents of `main.cpp` with the code of the **Game Over 3.0** program (pages _11,12_).  
 3. Run it with the `ctrl + F5` hotkey, or select _Debug -> Start Without Debugging_ from the menu bar.  
   
+
 The textbook is also linked from the [ise102 resources page](https://dmdocs.netlify.com/torrens/ise102/resources/).  
 
 ### Adding Input

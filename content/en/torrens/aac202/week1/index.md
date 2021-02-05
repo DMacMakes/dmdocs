@@ -6,7 +6,9 @@ description: >
   ZBrush is a critical tool for modern games studios; it's also the best way to sculpt on a computer.
 ---
 
-Welcome back and hello new people!
+## Welcome back
+
+..and hello new people!
 
 * Modern, current-generation 3D graphics.
 * Learning Maya, ZBrush, some Substance.
@@ -117,7 +119,7 @@ Many wrinkly monsters, festy zombies and gnarled trees in film have been created
 * Unreal engine (and whatever doom 3 was on??)
 
 ### Doom 3
-  
+
 {{< imgcard doom_3 Link "doom_3.png">}}
 Doom 3, maybe the first big normal mapped game
 {{< /imgcard >}}
@@ -197,11 +199,11 @@ Screenshot it and post it in the Discussion forums:
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902732_1&message_id=_2307470_1" target="_blank">Thread: class madball<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-  
+
 {{< imgcard madballz Link "madballz.png">}}
 Madballz
 {{< /imgcard >}}
-  
+
 ## More Basics
 
 Auto masking:
