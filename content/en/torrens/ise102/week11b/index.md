@@ -79,22 +79,22 @@ The **`vector`** object is exactly that. If we add **`#include <vector>`** to `m
 You can declare a new vector that holds `Fruit` objects like this:  
 
 ```cpp
-  vector<Fruit> punnet;
+  vector<Fruit> strawberryPunnet;
   // vectors are objects. They are special because they can hold a punch of objects.
   // vector is the type of container object, then <Fruit> specificies what type of objects it can hold.
   // finally it has a name, punnet.
 ```
 
-Add an existing fruit to your vector with **`.push_back(myFruit)`**. It's not a great name, but it means "addToEnd".
+Add an existing fruit to your vector with **`.push_back(strawberry)`**. It's not a great name, but it means something like "add_to_end". If you imagine someone joining a queue, they join it at the end. They're kinda.. pushed onto the back?
 ```cpp
-Fruit strawberry;
-Fruit cherry;
-punnet.push_back(strawberry);
-punnet.push_back(cherry);
+Fruit smallStrawberry;
+Fruit hugeStrawberry;
+strawberryPunnet.push_back(smallStrawberry);
+strawberryPunnet.push_back(hugeStrawberry);
 
 // punnet now contains 2 fruit.
 // punnet.size() returns the number of things added to the vector (as an integer)
-drawString(0,0, "Number of Fruits in punnet: " + to_string( punnet.size() );
+drawString(0,0, "Number of strawberries in punnet: " + to_string( strawberryPunnet.size() );
 ```
 
 ## Exercise: vectors
@@ -104,14 +104,6 @@ drawString(0,0, "Number of Fruits in punnet: " + to_string( punnet.size() );
 3. Finish the code by uncommenting lines and filling in the blanks.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="Fruit_vector_w11_inc.zip" target="_blank">Download Fruit_vector_wk11_inc.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-<!-- 
-
-{{< imgproc code_fruit_vectors Resize "800x" Link "code_fruit_vectors.png">}}
-Click to for full size
-{{< /imgproc >}} 
-
--->
 
 ### Accessing objects in vectors by _**index**_
 
@@ -197,6 +189,8 @@ If they hit a rotten fruit, you have to make clear it was rotten fruit, and what
 
 ----
 
+<!-- 
+
 ## Intermediate Level: Moving The Collision Code
 
 `playSnake()` is getting bloated with wall collision code, then fruit collision code. Long functions are tough to read and debug.
@@ -210,8 +204,6 @@ When Batty collides with Fruit, we can return the Fruit or null, a single return
 
 1. Return an object containing x and y values.
 2. Pass slither's location (point2D) _by reference_ and have the function edit it directly. Return true if teleported. 
-
-<!--
 
 ### 1. One Dimension
 
@@ -239,7 +231,7 @@ Psuedocode:
    return newPosition
  end teleportIfOOB
 ```  
--->
+
 ### 2. Pass By Reference (Intermediate Level)
 
 Normally a function passes a variable's value as a copy, we can't change the original. There _is_ actually a way _C++_ to pass a reference to the original variable (albeit with a different name), letting us edit the original.
@@ -302,6 +294,8 @@ Yeah, in the same way adulthood is worth it. The rules get murkier and more conf
 You're new to coding, and you'll often have bugs that come from misunderstanding c++ syntax, its basic structures. When that happens, it'll feel like you're close, but you'll never get there: reordering, changing variable values, none of it's working because you don't actually know how to do a comparison in your `while` statement, or that you have to store the value a function is returning.
 
 What you need to do is solve the underlying problem, outside of your program, and come back with the knowledge.
+
+-->
 
 {{< alert title="(A) Golden Rule: Work Small To Big" color= "primary" >}}
 Test small chunks of code in isolation and you'll be able to focus down the problem. Students often spend hours and days trying to fix their logic, despite knowing they're kind of winging it on functions or the difference between `&&` and `||`. Maybe they can just get this one thing solved and not have to dig into that.

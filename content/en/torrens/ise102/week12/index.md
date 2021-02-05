@@ -32,7 +32,7 @@ How can we change our `Snake` so that:
 
 There are _many_ ways to make our Snake, but with limited time left I've picked one to dive into.
 
-## Idea: SNAKE AS HISTORY
+## Idea: Snake as history
 
 The Snake's body, when you think of it, is sort of a history of places the Snake has recently visited.
 
@@ -70,17 +70,21 @@ Our game needs to clear the screen every frame so it can draw the current state 
 We need our history captured and stored somewhere, just like when we take photos and upload them to the cloud. If we capture our snake locations as we move around the garden, there's a history. **Draw that history** and you'll have a snake that goes all the way back to your starting point!
 
 {{< alert title="Big programmers now" color= "primary" >}}
-<img src="big_baby_bird.jpg" width=400 />
-I'll be getting you started on this, but after that you'll have to fly on your won: putting together the code and ideas into a working snake is up to you.
+<img src="big_baby_bird.jpg" width=200 />
+I'll be getting you started on this, but after that you'll have to fly on your own: putting together the code and ideas into a working snake is up to you. 
 {{< /alert >}}
 
-### Steps
+### Planning our solution
 
-Simulation:
-1. Make a variable in our snake that can store our past locations, our history.
-2. Every time we are going to move to a new location, add our current location to the history 
-Output:
-3. Every time we go to draw the Snake's current location (with DrawPixel), go through our travel history and draw all of those too.
+  
+1. **Input:**  
+   - Make a variable in our snake that can store our past locations, our history.  
+   
+2. **Processing:**   
+   - Every time we are going to move to a new location, add our current location to the history  
+
+3. **Output:** 
+   - Every time we go to draw the Snake's current location (with DrawPixel), go through our travel history and draw all of those too.  
 
 {{< imgproc screen_snake_history_insert Resize "600x" >}}
 Drawing snake head, then the snake history in alternating colours.  
@@ -93,50 +97,13 @@ Try the segmented, growing snake in `4_snake_insert_erase.exe` from the zip belo
 > Q: How did I stop drawing?  
 > A: HMMM. How _did_ I stop drawing?
 
-
-<!-- 
-### 2. Draw Pixels Where We Visited
-
-A trail should be easy. It's just a pixel drawn in any square the creature goes into.. wait, didn't we do that? 
-
-{{< alert title="Did We Already Make A Trail?" color= "primary" >}}
-Yes! Sort of! You moved to a bunch of squares and drew a pixel each time. Like walking down the street leaving a trail of m&ms.
-
-The only reason it's not there is.. you fill the background every frame, erasing your old bat/snake coloured pixels.
-{{< /alert >}}
-
-### Exercise 1: Drawing Slithers' Trail
-
-Filling the screen with wall and grass has been hiding slithers' trail. Stop it happening by commenting out a couple of lines.
-
-{{< imgcard slithers_notrail_trail >}}
-No trail, trail. No trail, trail.
-{{< /imgcard >}}
-
-{{< alert title="Definition: \"Comment out\"" color= "primary" >}}
-To stop lines of code executing by turning them into comments. You can:
-1. Add `//` to the beginning of code on a line 
-2. Add `/*` to the start of a line and `*/` several lines later.
-{{< /alert >}}
-
-### What's Wrong?
-
-That was a great way to get a trail, but what's wrong? What's the solution?
-
-1. ???  (Messiness)
-2. ???  (What's wrong with the trail?)
-
-Solving either problem means wiping our trail out. How can we draw it again, instead of just drawing one pixel?
--->
-
-
 ### Exercise 1: Starting With 1
 
 Slithers has one location, but we need many. Make another location in your Snake class (`snake.h`) called `lastLocation`. 
 
 1. Every frame, **before** we move slithers, store (assign) her location in lastLocation.
 2. Then move slithers (we already do this by updating her location)
-3. When you `slithers.location`, draw another pixels at her `lastLocation`.
+3. When you draw a pixel at `slithers.location`, draw another pixel at her `lastLocation`.
 
 ## More than 1 segment
 
@@ -149,7 +116,9 @@ Two ways to store collections of things in C++ are
 2. Declaring a `std::vector`. 
 
 Arrays are very basic, static things that don't grow and don't offer any tools to us. I suggest using `std::vector`, because they're super flexible, easier and safer to use, and not noticeably slower for our simple game. 
-<!--
+
+<!--  
+
 {{< imgcard snapshots_onionskin>}}
 Leaving snapshots behind
 {{< /imgcard >}}
@@ -177,8 +146,7 @@ What about all those damn variables though? Do you have to make like 100, 1000 v
 ## Collections: The vector
 A vector object can hold any number of a chosen data type(int, float, string, Bag, Creature, Fruit). Then you can read or write individual values in the collection using an index.
 
--->
-
+-->  
 
 ### Declaring a vector of stuff:
 ```cpp
@@ -225,40 +193,6 @@ int scoreBuffed = scores[2] + 20;
 ```
 {{< /alert >}}
 Note: array access notation
-
-<!--
-### Visualising locationHistory
-
-So, if slithers is real, and behind her is a trail of snapshots of her past, many old slithers, we could call that `slithersHistory`.
-
-{{< imgcard battyHistory_in_flight>}}
-{{< /imgcard >}}
-
-Every time **she is about to move**, we create a **new snapshot**, an `oldSlithers` at her current position, **insert it** into `slithersHistory` at the **beginning**, and then move her.
-
-That **new snapshot makes her body one piece longer**, which is **not okay** because she only grows when she eats, not every time she moves. 
-
-To prevent growing, we **snip off** the old, **unwanted snapshot** at the end of `slithersHistory`
-
-## Making a snake:
-* Say you have a `Creature` called `snakeHead`.
-* And you make a `vector` called `snakeHistory`, to hold old snakeHead snapshots. It's of type `vector<Creature>`
-Create the first 3 snapshots, `Creature`s with the same x and y as snakeHead, and push them onto the snake, like so:
-In a loop:
-  * make a `Creature` called `oldHead`
-  * give it `snakeHead`s `x` and `y` coordinates.
-  * add it to `snakeHistory` with vector::push_back()
-
-### Drawing A Snake
-1. Loop through `snakeHistory`. For each `Creature` in there, draw a pixel at it's x and y location
-2. Body drawn, draw a pixel at `snakeHead`'s `x` and `y` location.
-
-### Moving a snake:
-1. When you're about to move the head, make a snapshot, a `Creature` called `oldHead`
-2. Store `snakeHead.x` and `snakeHead.y` in `oldHead.x` and `oldHead.y` (like we did with `oldSlithers`)
-3. `insert` `oldHead` into the `begin()` of the `snakeHistory`.
-4. `erase` the oldest `Creature` at the end of the the `vector` to keep the same length.
--->
 
 {{< imgcard diagram_snake_move_insert_erase Link "diagram_snake_move_insert_erase.png">}}
 Step by step.
