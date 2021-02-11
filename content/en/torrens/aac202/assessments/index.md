@@ -9,12 +9,12 @@ description: >
 ## Weeks 1-4: High Poly Character
 
 
-**Due**: Sunday October 11 by 11:55pm. 
+**Due**: Sunday March 14 by 11:55pm. 
 
 **Create a bust from an existing 2D concept:**  
 1. Select one of the heads you _didn't_ already sculpt (concept art [below](#concepts))  
 2. Using the provided base mesh and what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.  
-_Note: While this was officially assessment 2, we'll be completing it in weeks 1-4._
+*Note: While this was officially assessment 3, we'll be completing it in weeks 1-4.*
 
 {{< alert title="Delivery" color= "primary" >}}
 
@@ -32,7 +32,9 @@ _Note: While this was officially assessment 2, we'll be completing it in weeks 1
 4. Submit on Blackboard as **Assessment 2**.  
 {{< /alert >}}  
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9223158_1&course_id=_94273_1" target="_blank">Submit Character Assessment on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586491_1&course_id=_102086_1" target="_blank">Online Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586562_1&course_id=_102604_1" target="_blank">Ultimo Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Concepts  
 Choose one of the concepts below, or click one and visit Patri Balanovsky's page to pick another **from the same artstation page** (not all of his artstation content). Be careful not to pick one that requires extra meshes (hair, horns, eyepatches) if you're not confident creating new meshes. Don't stretch the head to support large horns, hair etc.  
@@ -56,13 +58,13 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * painting in eyelashes and eyebrows that you didn't have geometry for
 
+<!--
 ---
 
 ## Weeks 5-8: High Detail Props Assessment
 
 While this was officially assessment 1, we'll be completing it in weeks 5-8
 
-<!--
 For Assessment 1 you'll create a **high detail, normal mapped** prop using **techniques shown in class** and developed at home. These will include subdivision modeling, normal mapping and PBR textures.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9223157_1&course_id=_94273_1" target="_blank">A1 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
@@ -157,6 +159,8 @@ Deliver **PNG24 files** or jpgs of at least 85% (8.5/10) compression quality.
 
 -->
 
+<!--
+
 ---
 
 
@@ -165,7 +169,6 @@ Deliver **PNG24 files** or jpgs of at least 85% (8.5/10) compression quality.
 Team of two: Work as Stone Mason (building a wharf) and Carpenter (building the wooden pier).
 Individual: Pick one role or the other.
 
-<!--
 
 LINKS NEED UPDATING 
 
