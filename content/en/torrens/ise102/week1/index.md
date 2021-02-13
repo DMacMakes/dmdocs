@@ -11,7 +11,7 @@ resources:
 ---
 ## Software Requirements
 
-Before we can do any programming, you need to have the right software on hand. If you haven't installed _Visual Studio_ and _Flowgorithm_ you need to follow the link and do so! 
+Before we can do any programming, you need to have the right software on hand. If you haven't installed *Visual Studio* and *Flowgorithm* you need to follow the link and do so! 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources">ISE102 Resources</a>
 
@@ -50,7 +50,7 @@ If you've never seen or followed a recipe, here's an example.
 
 {{< alert title="Good Old Pancakes" color= "secondary" >}}
 
-_Credit: Dakota Kelly, allrecipes.com_
+*Credit: Dakota Kelly, allrecipes.com*
 
 
 ![Pancakes](pancakes.png)
@@ -77,7 +77,7 @@ _Credit: Dakota Kelly, allrecipes.com_
 
 ### Instructions: you've all given them.
 
-Maybe you haven't written a recipe, but **you've given someone instructions**. Maybe you asked your dad to drive you to your friend's house. When you told him the time to leave and your friend's address, you could say you did some _Parental Programming_.
+Maybe you haven't written a recipe, but **you've given someone instructions**. Maybe you asked your dad to drive you to your friend's house. When you told him the time to leave and your friend's address, you could say you did some *Parental Programming*.
 
 {{<imgproc instructions_eng Resize "600x" Link "https://www.english-at-home.com/giving-instructions/">}}
 Giving instructions is something we learned at school and at home.
@@ -85,7 +85,7 @@ Giving instructions is something we learned at school and at home.
 
 ## New program: Dad drives me to my friends house
 
-Say you want dad to drive you to Charlene's house at 7:30 tonight, for reasons he doesn't need to know. You're going to need to _instruct_ him.
+Say you want dad to drive you to Charlene's house at 7:30 tonight, for reasons he doesn't need to know. You're going to need to *instruct* him.
 * He's old so you need to have a **plan**.
 * You'll need to use just the **right phrases** or he won't run the program.
 
@@ -110,7 +110,7 @@ Dad loves helping out.
     - Wait for my call
 3. A common **language**:  
     - Something you both speak to people in general  
-    - Better: particular phrases and keywords known to.. _motivate_ dad.  
+    - Better: particular phrases and keywords known to.. *motivate* dad.  
 4. A setting this can all happen in: in this case it's a city on planet earth with **roads** to drive on.
   
 ```
@@ -133,15 +133,15 @@ END
 ## Requirements for giving orders  
 
 We'll be writing different programs for different tasks, and dads+cars won't always be involved. 
-If we remove the dad, the car and the route, we end up with a handy, general way of thinking about getting a human _or_ a device to solve a problem. 
+If we remove the dad, the car and the route, we end up with a handy, general way of thinking about getting a human *or* a device to solve a problem. 
 
 | Requirement        | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
-| _Helper_           | A subject (human, computer, smart speaker) we can order to do the work. |
-| _Language_         | A language you can both speak, with words-in-common and grammar(rules). |
-| _Context_/Platform | A setting where the work can take place.                     |
-| _Information!_     | Info needed to get the work done: names, addresses, numbers, lists. |
-| _Instructions_     | Steps/actions which, performed correctly and with good info, will lead to a well-done task. |
+| *Helper*           | A subject (human, computer, smart speaker) we can order to do the work. |
+| *Language*         | A language you can both speak, with words-in-common and grammar(rules). |
+| *Context*/Platform | A setting where the work can take place.                     |
+| *Information!*     | Info needed to get the work done: names, addresses, numbers, lists. |
+| *Instructions*     | Steps/actions which, performed correctly and with good info, will lead to a well-done task. |
 
 ## Giving orders to a computer with c++
 
@@ -149,11 +149,11 @@ The same table applied to **our in-class coding**.
 
 | Requirement     | Description                           |
 |-----------------|---------------------------------------|
-| _Helper_        | Windows PC                            |
-| _Language_      | C++ (in Microsoft Visual Studio 2019) |
-| _Context_       | Windows Console application           |
-| _Ingredients_   | Data, including _variables_           |
-| _Instructions_  | Our English recipe instructions converted into lines of code |
+| *Helper*        | Windows PC                            |
+| *Language*      | C++ (in Microsoft Visual Studio 2019) |
+| *Context*       | Windows Console application           |
+| *Ingredients*   | Data, including *variables*           |
+| *Instructions*  | Our English recipe instructions converted into lines of code |
 
 ### Helper: PC
 
@@ -179,20 +179,20 @@ We'll use Visual Studio to write our source code and turn that into programs (th
 
 ## Context: The windows command prompt
 
-We're going to make a text-based program. To do that we'll write a program that runs in the  _Windows Command Prompt_:
+We're going to make a text-based program. To do that we'll write a program that runs in the  *Windows Command Prompt*:
 
 ![Command Prompt](command_prompt_new.png)
 <br /><br />
-Windows, at its heart, is an **operating system**. It takes all those bits of silicon, gold, copper and plastic, and makes them work together. The thing you're used to using, with _Explorer_ windows and the _Start Menu_ is a thing that sits on top, called a **window manager**.
+Windows, at its heart, is an **operating system**. It takes all those bits of silicon, gold, copper and plastic, and makes them work together. The thing you're used to using, with *Explorer* windows and the *Start Menu* is a thing that sits on top, called a **window manager**.
 
-Under that lives the beast that actually controls network cards, drives the monitor, moves files around drives, sends sound to the speaker etc. It's the **kernel**. _Windows_, _MacOS_ and _Linux_ all have one.
+Under that lives the beast that actually controls network cards, drives the monitor, moves files around drives, sends sound to the speaker etc. It's the **kernel**. *Windows*, *MacOS* and *Linux* all have one.
 
 Before we had fancy graphical window managers,regular users were met with a black screen with some text on it. You typed in commands to run programs, and they controlled the kernel:
 
 ![Command Prompt](command_prompt_programs.png)
 <br /><br />
 
-`cd` (_change directory_) is a program for changing into a folder, `dir` (_directory_) lists the contents of a folder and so on.
+`cd` (*change directory*) is a program for changing into a folder, `dir` (*directory*) lists the contents of a folder and so on.
 
 Why is it still in Windows? Because that's how a large portion of serious system administration is still done, by calling lots of programs in the command prompt!
 
@@ -263,13 +263,13 @@ Visit the [ise102 Resources page](/torrens/ise102/resources/) and:
 ### Enter The Code
 
 1. Select and delete all the code in `main.cpp`
-2. Type in the following code, including the _comment_ lines starting with `//`
+2. Type in the following code, including the *comment* lines starting with `//`
 ![KnightsJourney No Input](cpp_knightsJourney_noInput.png)
 3. Run the program with <kbd>ctrl</kbd>+<kbd>F5</kbd>
 
 ## Don't Panic: Four Basic Features
 
-People, like computers, feature _input, storage, processing and output_.
+People, like computers, feature *input, storage, processing and output*.
 
 **Harvey's mum:**
   * Receives **input** via her ears, eyes and other senses
@@ -283,7 +283,7 @@ When we take the (at least) thousands of components of a PC and group them into 
 Any complex task achieved by humans requires the use of abstractions: if we considered every object in its full complexity we'd grind to a stop!
 {{< /alert >}}
 
-Just have a think about what you're _really_ describing when you say "I was thirsty until I drank some water."  There are several Nobel Prizes in chemistry, physics, neuroscience and biology in that statement if you go deep enough!
+Just have a think about what you're *really* describing when you say "I was thirsty until I drank some water."  There are several Nobel Prizes in chemistry, physics, neuroscience and biology in that statement if you go deep enough!
 
 ## Four Basic Features of Computers
 
@@ -293,10 +293,10 @@ While there are indeed lots of instructions you could give to a computer and its
 
 | Features | Examples  |
 |-----------|-----------|
-| **Input** |  _Data_ in: Keyboard, mouse, network connection, camera, microphone, touch screen, control pad  |
-| **Storage** | _Data_ stored: SSD, Hard drive, RAM, CD, Micro SD. |
-| **Processing** | _Data_ changed: Moving a character across a platform, adding two cells of a spreadsheet, decompressing video. |
-| **Output** | Showing the _data_: Drawing pixels to a monitor, sending packets to a game server, sound from speakers, printing. |
+| **Input** |  *Data* in: Keyboard, mouse, network connection, camera, microphone, touch screen, control pad  |
+| **Storage** | *Data* stored: SSD, Hard drive, RAM, CD, Micro SD. |
+| **Processing** | *Data* changed: Moving a character across a platform, adding two cells of a spreadsheet, decompressing video. |
+| **Output** | Showing the *data*: Drawing pixels to a monitor, sending packets to a game server, sound from speakers, printing. |
 ---
 
 
@@ -338,21 +338,21 @@ bool isClassPresident     = true;
 * To program you need:
     - A subject you will program(human, computer)
     - Common language 
-    - An agreed place the subject can do the work (car, kitchen, _Windows Command Prompt_)
+    - An agreed place the subject can do the work (car, kitchen, *Windows Command Prompt*)
     - A list of instructions
 * We made a simple game, Knights Journey, with help from 3 of our basic categories (input, storage etc)
-    - Once, in _Visual Studio_ with _C++_, for the _Windows Command Prompt/Console_
-    - Again as a flowchart in _Flowgorithm_.
+    - Once, in *Visual Studio* with *C++*, for the *Windows Command Prompt/Console*
+    - Again as a flowchart in *Flowgorithm*.
 
 ## Homework
 
 ### From The Textbook 
-Read through **pages 1-12** of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, _Beginning C++ Through Game Programming_. This will help you understand what **variables** are, and how they represent storage. 
+Read through **pages 1-12** of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, *Beginning C++ Through Game Programming*. This will help you understand what **variables** are, and how they represent storage. 
 
 Then:
-1. Create a Visual Studio project for called `GameOver3`, using the _ise102_console_ project type.
-2. Replace the contents of `main.cpp` with the code of the **Game Over 3.0** program (pages _11,12_).  
-3. Run it with the <kbd>ctrl</kbd>+<kbd>F5</kbd> hotkey, or select _Debug -> Start Without Debugging_ from the menu bar.  
+1. Create a Visual Studio project for called `GameOver3`, using the _console app_ project type.
+2. Replace the contents of `main.cpp` with the code of the **Game Over 3.0** program (pages *11,12*).  
+3. Run it with the <kbd>ctrl</kbd>+<kbd>F5</kbd> hotkey, or select *Debug -> Start Without Debugging* from the menu bar.  
 
 The textbook is also linked from the [ise102 resources page](https://dmdocs.netlify.com/torrens/ise102/resources/).  
 
