@@ -15,17 +15,20 @@ Before we can do any programming, you need to have the right software on hand. I
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources">ISE102 Resources</a>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#basic-console-program-template">Console Program Template</a>
+## Discord server
 
-## Join the Discord server
+Let's jump on Discord Join the Torrens class discord server if you haven't already. I'll be making announcements there but we'll be using the subject channels to post our work during class, ask questions when we get stuck, etc. *(PS - don't show your code in the channel, just screenshots)*
 
-Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
+### Quick intros
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+Introduce yourself in our #class-ise102 channel.
 
-## Hello!
-
-Introduce yourself on the discussion forums.
+1. Name
+2. Degree you're doing here
+3. Uni, school or job you went to before taking this course
+4. Favourite game ever and favourite current game. Include platform you played it on (Switch, XBone, PS5, PC, phone etc)
+5. Have you ever programmed or scripted before? Python, javascript, scratch, maybe even html? Was it for yourself or at work? Did you get far?
+6. Have you ever opened up your computer and changed/added parts? Have you ever built your own pc from parts?
 
 ## Programming is just recipes
 

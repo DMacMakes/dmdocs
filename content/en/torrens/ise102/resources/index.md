@@ -16,7 +16,7 @@ You can read it online or download PDF chapters from Ebook Central:
 Click to read
 {{< /imgproc >}}
 
-**Download chapters** below in PDF format:
+**Download the first 5 chapters** below in PDF format:
 
  Link       | Topics/features covered    
 ---- | ----   
@@ -67,6 +67,8 @@ Here's something I wrote in a class (demoing functions) and then shared via repl
 </div>
 
 
+<!-- 
+
 ## Flowgorithm
 
 Flowchart-based programming with Flowgorithm.
@@ -93,7 +95,6 @@ Portable software can run straight from its folder, no install required.
 {{% /alert %}}
 
 
-
 ## Visual Studio C++ Templates
 
 Setting up projects for quick and easy exercise coding can be a little daunting. These templates, imported into Visual Studio 2019, will get you started.
@@ -117,6 +118,8 @@ Next:
 7. Visual studio will now open your Solution/Project. Expand the `Source Files` folder in the **Solution Explorer** and double click `main.cpp` to view your source code.  
 ![Project Open](project_open_main_cpp.png)  
   
+-->
+
 ## Sololearn C++ Tutorial
 
 Sololearn provides a system for learning a new programming language: It's structured to both teach and quiz you at each stage progress, helping to confirm understanding and lock in what you learn.
@@ -131,7 +134,7 @@ Download from the [iOS App Store](https://apps.apple.com/us/app/sololearn-learn-
 - After you answer a question, read the comments to see how other people fared or what tips they offer. 
 - Read up to and including data types: you can stop when you reach arrays.
 
-## Windows Options  
+## Windows on Mac or Linux machines
 
 ### 1. Install Inside/Alongside Your OS
 
