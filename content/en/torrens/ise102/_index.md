@@ -30,16 +30,16 @@ It also outlines **required** reading in the subject textbook.
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources/">ISE102 Resources
 </a>
 
+<!--
+
 ## Join Discord
 
 Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+-->
 
-
-
-<!-- [Download Microsoft Visual Studio Community 2019](https://visualstudio.microsoft.com/vs/) -->
 
 
 

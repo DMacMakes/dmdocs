@@ -6,8 +6,20 @@ description: >
   Assessment dates, briefs, deliverables etc.
 ---
 
-## Weeks 1-4: High Poly Character
+{{< alert title="Note: Order of assessment change" color= "warning" >}}
+Your assessments won't be delivered in the order shown on Blackboard. We'll be **completing them in the order shown in the table below**.  
 
+Due dates have been manually updated, so we're golden 👍
+{{< /alert >}}
+
+order  | deliverable       | old numbering on blackboard
+---    | ---               | ---
+1      | character sculpt  | 3
+2      | prop model        | 1
+3      | prop texture      | 2
+
+
+## Weeks 1-4: High Poly Character
 
 **Due**: Sunday March 14 by 11:55pm. 
 

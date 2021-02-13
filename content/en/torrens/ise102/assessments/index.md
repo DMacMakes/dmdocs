@@ -11,7 +11,9 @@ description: >
 
 **Due:** End of week 4
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258117_1&course_id=_93608_1" target="_blank">Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642029_1&course_id=_102173_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642073_1&course_id=_102573_1" target="_blank">ULTIMO: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
 
@@ -39,6 +41,8 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 ## Assessment 2: Slot Machine
 
 **Due:** End of week 8
+
+<!--
 
 We'll make a text based slot machine using the `ise102_console` template. A _prompt and response_ game loop.
 
@@ -81,9 +85,15 @@ In your solution/project folder (same thing for us) you can **delete all** of th
 Delete the folders. DO NOT MOVE YOUR FILES if this folder is different to yours. Contact me.
 {{< /imgcard >}}
 
+-->
+
 ## Assessment 3: Realtime Game
 
+**Due:** End of week 12
+
 Make Snake!
+
+<!--
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258119_1&course_id=_93608_1" target="_blank">A3 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
@@ -95,3 +105,5 @@ You must use base code provided in class (week 10) and use learnings and techniq
 2. **Week 11 homework** submission is **required to be considered for a pass!**
    **Due:** Midnight, Sunday August 16. Submit via email to Mat Carr.
 3. Your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard.
+
+-->
