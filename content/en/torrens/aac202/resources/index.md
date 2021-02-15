@@ -32,9 +32,11 @@ _ZBrush_ is a digital sculpting application that provides an experience similar 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://pixologic.com/zbrush/trial/signup.php">Get ZBrush<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
+### Custom UI, Brushes, Materials
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/Ee2da8SsTu5Jlf4E10iHxCgBhxjyXKhXfMMnCeyzpibg_A?e=XlabCL" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ETsNpdQYe1NJpDtFYUZDE04Bawx7Di8-PfsyDlWfOCZwxw?e=qWvRbG" target="_blank">Download CFG files zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 
 
