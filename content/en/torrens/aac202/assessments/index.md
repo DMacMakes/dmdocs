@@ -12,22 +12,22 @@ Your assessments won't be delivered in the order shown on Blackboard. We'll be *
 Due dates have been manually updated, so we're golden 👍
 {{< /alert >}}
 
-order  | deliverable       | old numbering on blackboard
----    | ---               | ---
-1      | character sculpt  | 3
-2      | prop model        | 1
-3      | prop texture      | 2
+Order  | Deliverable       | Due     | Blackboard number
+---    | ---               | ---     | ---
+1      | character sculpt  | Week 1  | 3
+2      | prop model        | Week 1  | 1
+3      | prop texture      | Week 1  | 2
 
 
-## Weeks 1-4: High Poly Character
+## 1. High Poly Character (week 4)
 
 **Due**: Sunday March 14 by 11:55pm. 
 
 **Create a bust from an existing 2D concept:**  
 1. Select one of the heads you _didn't_ already sculpt (concept art [below](#concepts))  
-2. Using the provided base mesh and what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh), sculpt a high quality, polypainted 3D model of the character.  
-*Note: While this was officially assessment 3, we'll be completing it in weeks 1-4.*
-
+2. Starting with a clean copy of the provided base mesh, sculpt a high quality, polypainted 3D model of the character. Draw on what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh).
+3. Show your progress in the week 3 forum thread provided by your lecturer: your participation and display of process will contribute to your marks.
+4. Deliver your final ZBrush project and renders in week 4. 
 {{< alert title="Delivery" color= "primary" >}}
 
 **Elements:**  

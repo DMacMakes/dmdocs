@@ -16,11 +16,15 @@ description: >
 * Get your hands on a wacom or other drawing tablet! From week 5 we'll be using it every class and for homework.
 * Assessments.
 
+<!-- 
+
 ## Join the Discord server
 
 Join the Torrens class discord server if you haven't already. Follow the instructions there to receive roles for each subject so you don't miss news/updates.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/a87M8dr" target="_blank">Torrens Class Discord Server<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->
 
 ### Recap
 
@@ -62,18 +66,17 @@ You could work toward high detail assets using our low poly process but.. on its
 
 ## Download And Install ZBrush
 
-* Using 30 day trial for now:
-* Working on floating licenses outside uni
+You should all have now have ZBrush installed and, while watching [the review stream from Monday](https://au-lti.bbcollab.com/recording/5c0cd4de4ccd419d9a6f50fcbbc19f14), downloaded and added our custom UI, brushes etc. If not, you need to go and do that before watching this class.
+* For personal pcs you're using 30 day trial for now:
+* After that a 1 month subscription is an option, or using the uni lab machines remotely (more info as we approach week 5).
 
-Download link on the resources page:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#zbrush">Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#zbrush">AAC202 Software Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 ### Class Working Files
 
-ZBrush demo scene, template scene and config files.
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="aac202_zbrush_resources.zip">AAC202 ZBrush Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+A ZBrush project containing a few objects. We'll use them to test out the brushes.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="trying-out-brushes.zip">Download trying-out-brushes.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 {{< imgproc zbrush_trial Resize "600x">}}
@@ -195,9 +198,7 @@ Pixelation?? Subdivision up down
 
 Play around and make a madball for 25 mins. 
 
-Screenshot it and post it in the Discussion forums:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902732_1&message_id=_2307470_1" target="_blank">Thread: class madball<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+Screenshot it and paste it into the **#class-aac202** channel on our Discord class server.
 
 
 {{< imgcard madballz Link "madballz.png">}}
@@ -231,9 +232,9 @@ Pick a different Madball (the real foam ball, not a 2D  drawing from their site)
 
 {{< alert title="Deliverables and Submission" color= "primary" >}}
 
-Post the **reference** of your chosen madball along with some **screenshots of the finished sculpt** in the Discussion forum. Have it done and posted **before next week's class**.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968741_1&message_id=_2511010_1" target="_blank">ULTIMO Madball Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902732_1&message_id=_2307472_1" target="_blank">Thread: Home madball submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968726_1&message_id=_2511002_1" target="_blank">ONLINE Madball Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 {{< /alert >}}
 
