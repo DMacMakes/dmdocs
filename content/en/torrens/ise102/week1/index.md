@@ -256,9 +256,9 @@ Before we write computer language, let's write the instructions in a language we
 
 Visit the [ise102 Resources page](/torrens/ise102/resources/) and: 
 1. Install *Visual Studio Community 2019* with Desktop development in C++ (if you haven't already)
-2. Get the `ise102_console_template` add it to Visual Studio
-3. Create a new Solution/project using the template.
-4. Run the project to make sure it works by hitting `ctrl + F5` 
+2. Create a new *C++* `Console App` with the project name `knights_journey`, in a location you'll remember, for example  `c:\Users\You\Documents\torrens/ise102/week1`. Make sure you **tick the checkbox** to *Place solution and project in the same directory*. 
+![](new_proj_knights_journey.png)
+3. Run the project to make sure it works by hitting <kbd>ctrl</kbd>+<kbd>F5</kbd> 
 
 ### Enter The Code
 
@@ -306,10 +306,9 @@ While there are indeed lots of instructions you could give to a computer and its
 * Processing via operators (`+`)
 * Output via `cout`
 
-## Again, visually
+## As a flow chart:
 
 ![flowgorithm](flow_knightsJourney_noInput.png)
-
 
 ## Variables
 
@@ -358,8 +357,7 @@ The textbook is also linked from the [ise102 resources page](https://dmdocs.netl
 
 ### Adding Input
 
-Add input to the program in *C++* and *Flowgorithm*. Submit your finished code Sunday night.
+Add input to your `knights_journey` project. Submit your finished cpp file to your lecturer, by email, by Saturday night.
 
 ![input](cpp_knightsJourney_input.png)
 
-![flowgorithm](flow_knightsJourney_input.png)

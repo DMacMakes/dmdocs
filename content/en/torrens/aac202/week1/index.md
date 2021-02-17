@@ -64,7 +64,7 @@ More barrels can be found on my [aac202 Pinterest board](https://www.pinterest.c
 
 You could work toward high detail assets using our low poly process but.. on its own it would take a looong time. 
 
-## Download And Install ZBrush
+## ZBrush installation
 
 You should all have now have ZBrush installed and, while watching [the review stream from Monday](https://au-lti.bbcollab.com/recording/5c0cd4de4ccd419d9a6f50fcbbc19f14), downloaded and added our custom UI, brushes etc. If not, you need to go and do that before watching this class.
 * For personal pcs you're using 30 day trial for now:
@@ -73,17 +73,17 @@ You should all have now have ZBrush installed and, while watching [the review st
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#zbrush">AAC202 Software Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
-### Class Working Files
+### Brush testing project.
 
-A ZBrush project containing a few objects. We'll use them to test out the brushes.
+A ZBrush project containing a variety of forms to test out the main sculpting brushes.
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="trying-out-brushes.zip">Download trying-out-brushes.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
+
+## Digital sculpting?
 
 {{< imgproc zbrush_trial Resize "600x">}}
 ZBrush 2020.1
 {{< /imgproc >}}
-
-## Digital Sculpting?
 
 * What is sculpture (some classical, modern pics)
 * Isn't Maya 3D sculpting?
@@ -112,7 +112,7 @@ Many kinds of sculpting brushes
 
 {{< youtube L6kYhShKXKY >}}
 
-### From Film To Games
+### From film to games
 
 Many wrinkly monsters, festy zombies and gnarled trees in film have been created with ZBrush.
 
