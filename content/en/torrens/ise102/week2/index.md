@@ -233,9 +233,7 @@ Lets implement the same game in **_Flowgorithm_**, using our new understanding o
 Fill in the blurry bits. (click if the flowchart is too small to read)
 {{< /imgcard >}}
 
-When you've completed typing and running the code below **submit the `.cpp` files for both projects**. 
-   * Email to Danny with the subject _"ise102 homework week 2"_
-   * Danny's email will be sent to you via Blackboard announcements (and _Discord_).
+### Reading and programming
   
 1. Read the rest of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, where you'll learn about arithmetic operators, data types and more.
     - Take notes
@@ -243,6 +241,14 @@ When you've completed typing and running the code below **submit the `.cpp` file
 2. Read [Chapter 2](../resources/cpp_through_games_2.pdf) up to a **page 48**
     - Take notes
     - Create another project _Score Rater 3_ and **type and run** the code on **page 47**.
+
+### Submission
+
+Make sure you've pasted your flowgorithm output into the Discord chat as described above.
+
+When you've completed typing and running the code in the text book **submit the `.cpp` files for both projects**. 
+   * Email to Danny with the subject _"ise102 homework week 2"_
+   * Danny's email will be sent to you via Blackboard announcements (and _Discord_).
 
 {{< alert title="Where's my source code?" color= "secondary" >}}
 You can find the `.cpp` file for a project in its **project folder**. For `guessy_number` you'll be looking for `guessy_number.cpp`.
