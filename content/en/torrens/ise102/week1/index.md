@@ -355,9 +355,12 @@ Then:
 
 The textbook is also linked from the [ise102 resources page](https://dmdocs.netlify.com/torrens/ise102/resources/).  
 
-### Adding Input
+### Knights Journey with player input 
 
-Add input to your `knights_journey` project. Submit your finished cpp file to your lecturer, by email, by Saturday night.
+Add input to your `knights_journey` project. The code you need to type out is below; remember to include the comments!
 
 ![input](cpp_knightsJourney_input.png)
 
+###  What to submit
+
+I only need the cpp file for your updated Knights Journey with input. Locate the `knights_journey.cpp` file in your project and email it to me by the deadline given in class/Discord. In your email use the subject line `ise102 homework week 1`.

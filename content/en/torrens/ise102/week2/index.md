@@ -3,16 +3,9 @@ title: "2: Comparing and Deciding"
 linkTitle: "W.2 Comparisons"
 weight: 20
 description: >
-  We found out last week that a program is just the instructions for completing a task.
-  A task really comes down to two things: _observing_ and _taking action_. Is it loose? Tighten it. Are they aligned? Glue them. Is it dry? Put it in the cupboard. 
-  <br /><br />
-  If we can _compare_ things and _decide_ what action to take, we can almost make anything!
+  If we can _compare_ things and _choose what to do next_ we can almost make anything!
 ---
 
-
-## Goodbye Ivan
-
-It's all me from here.
 
 ## Week 1 Recap And Homework
 
@@ -24,11 +17,10 @@ We're exploring a new game called **_Guessy Number_**. Let's type it in, then br
 
 ### Exercise: Coding guessy number
 
-1. Make a **new project** using the `ise102_console` template (use the search field).
-    - If you can't remember how, visit [the resources](resources/#visual-studio-c-templates) and start from **step 3**.
-    - Put it in a new folder `week2` and call the project `Guessy Number`.
+1. Make a **new project** using the C++ *console app* template.
+    - Put it in a new folder `week2` and call the project `guessy_number`.
     - Remember: click the checkbox to **keep project and solution in the same folder.**
-2. Open `main.cpp`, select and delete all the code, then **type this in**:
+2. When `guessy_number.cpp` opens, select and delete all the code, then **type this in**:
  
 {{< imgcard guessy_code_vs Link "guessy_code_vs.png" >}}
 Click the code if it's too small.
@@ -223,26 +215,26 @@ Ths week we learned how to make comparisons between values, and then to decide w
 
 We discussed the importance and power of names.
 
-## Homework:
+## Homework
 
 ### Flowgorithm Guessy 
 
 Lets implement the same game in **_Flowgorithm_**, using our new understanding of programming ideas.
 
-1. Grab _Flowgorithm_ from the [resources](../resources/#Flowgorithm) page.
+1. Grab _Flowgorithm_ (windows 64 bit) from the their [downloads page](http://flowgorithm.org/download/index.htm).
 2. Open it, it should start with a new flowchart (main -> end).
 3. Click the arrow between (main -> end) and choose _declare_
 4. Name the variable `secretNumber`, and set it to `integer` in the drop down.
-5. Continue on to make the rest of Guessy Number.
-
+5. Assign it a value.
+6. Continue on to make the rest of Guessy Number.
+7. Run Guessy Number and try a valid and invalid guess. Screenshot the output window (not your flowchart!) and paste it into the *Discord* `#class-ise102` chat.
+   
 {{< imgcard flow_guessy Link "flow_guessy.png" >}}
-Click if the flowchart is too small to read.
+Fill in the blurry bits. (click if the flowchart is too small to read)
 {{< /imgcard >}}
 
-
-
-When you've completed typing and running the code below **submit the `main.cpp` file for each project**. 
-   * Email to Danny _"ISE102 Homework Week 2"_
+When you've completed typing and running the code below **submit the `.cpp` files for both projects**. 
+   * Email to Danny with the subject _"ise102 homework week 2"_
    * Danny's email will be sent to you via Blackboard announcements (and _Discord_).
   
 1. Read the rest of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, where you'll learn about arithmetic operators, data types and more.
@@ -252,9 +244,9 @@ When you've completed typing and running the code below **submit the `main.cpp` 
     - Take notes
     - Create another project _Score Rater 3_ and **type and run** the code on **page 47**.
 
-{{< alert title="Where's the main.cpp file?" color= "secondary" >}}
-You can find the `main.cpp` file for a project in its **project folder**. 
+{{< alert title="Where's my source code?" color= "secondary" >}}
+You can find the `.cpp` file for a project in its **project folder**. For `guessy_number` you'll be looking for `guessy_number.cpp`.
 
 * If you're following our class conventions, those project folders will be in `ise102/code/week2`.
-* If you aren't sure were to find it, right click the project name in the visual studio _solution explorer_ and go to _open folder in file explorer_.
+* If you aren't sure were to find it or just want to go there from within Visual Studio, right click the project name in the _solution explorer_ panel and go to _open folder in file explorer_.
 {{< /alert >}}
