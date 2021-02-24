@@ -147,6 +147,16 @@ Need something to integrate eye and lids into.
 Append an object as a Subtool
 {{< /imgcard >}}
 
+### Spy
+
+{{< imgcard spy>}}
+Beginnings of spy from TF2 concept art, again with Brice's base mesh. Reference included.
+{{< /imgcard >}}
+
+You'll need [7zip](https://www.7-zip.org/) to extract this one.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="spy_demo.7z" target="_blank">Download spy_demo.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 ## Exercise
 
 Fool around with the brice base mesh.
