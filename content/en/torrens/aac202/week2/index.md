@@ -10,6 +10,8 @@ resources:
     byline: "Art: Patri Balanovsky (Artstation)"
 ---
 
+<!--  
+
 ## Last Week's Homework
 
 Madballs: 2 hours of try-harding.
@@ -23,8 +25,7 @@ Today we'll learn to do things that were hard with the basic subdividing workflo
 
 (Doing stuff close together, clean work with crisp transitions, eyeballs and eyelids!)
 
-## Assessment 2: Character Sculpt
-Look at assignment brief
+-->  
 
 ## What are we learning today?
 
@@ -35,10 +36,13 @@ You'll learn how to:
   * without needing as many divisions
 * work from basemeshes for fast, clean, on-model results
 
+## Assessment 1: Character Sculpt
+Look at order of assessments, brief.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments" target="_blank">aac202 assessments<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 ## Beyond Pushing Clay
-
 More than just adding and removing clay. Now we take advantage of digital tools.
-
 
 {{< imgproc res_ztools Resize "650x">}}
 Stylised human basemeshes.
@@ -51,6 +55,8 @@ Stylised human basemeshes.
 ### How To Add Eyeballs And Eyelids!
 
 Sometimes having everything in one mooshy, continuous mass makes life hard. Consider eyes:
+
+<!-- ## ---------- BETTER IMAGE?? ----------- -->  
 
 {{< imgcard moana_disney Link "https://www.pinterest.com.au/dmacdraws/aac202/">}}
 Moana's lower lids are more visible as she looks upward. Also visible are the thick edges of her upper lids.
@@ -76,7 +82,35 @@ To access the new files in _ZTools_ we'll start ZBrush and use the _lightbox_. I
 Projects, models, materials, brushes that don't load with ZBrush can be loaded from the lightbox.
 {{< /imgproc >}}
 
-A Tool can have multiple subtools. While you're in a ZBrush project you can load in new ones or save them out.
+## Modelling from existing base mesh
+
+A base mesh is essentially a reusable block out: a whole made out of smaller, simpler pieces.
+- don't have to worry about joining and topology
+- can edit pieces safely without messing up neighbouring anatomy.
+
+Brice Laville Saint Martin doing it:
+
+{{< youtube "Ay-UY6JTbF4" >}}
+
+### Let's look at his basemesh 👌
+
+* Open the 1mCube starting file in `Lightbox->Projects`
+* Select a star or cylinder tool from tool palette
+* Go to `Lightbox->Tools->Base Meshes` and double click `Brice_Head.ztl`
+
+### Pipehead
+
+Here's one I've started in my spare time, using the Brice base to model a Max Grecke concept. We'll open and look at the modified mesh.
+
+[![pipehead](pipehead_polys_low.png)](pipehead_demo.zip)
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="pipehead_demo.zip" target="_blank">Download pipehead_demo.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Load and save subtools
+
+A Tool can have multiple subtools. While you're in a ZBrush project you can load in new ones or save them out. 
+1. Let's load our whole, merged pipehead from a ztl file.
+2. Load pipehead again, this time as separate subtools from another ztl file.
 
 {{< imgproc subtools_jaw Resize "800x">}}
 Jaw is a subtool of our character tool. Note the ear subtool has two meshes.
@@ -93,6 +127,11 @@ Jaw is a subtool of our character tool. Note the ear subtool has two meshes.
 {{< alert title="Definition: Subtools" color= "primary" >}}
 A bit like objects in Maya. Can have multiple meshes.
 {{< /alert >}}
+  
+<!--  
+
+# ---- REPLACE - Not a useful file. ----
+Need something to integrate eye and lids into. 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_class.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
@@ -102,10 +141,16 @@ A bit like objects in Maya. Can have multiple meshes.
 3. Open `madball_demo.zpr`
 5. Click `tool->subtool->append` and choose the `polysphere3D`. 
 
+-->  
+  
 {{< imgcard ui_append>}}
 Append an object as a Subtool
 {{< /imgcard >}}
-   
+
+## Exercise
+
+Fool around with the brice base mesh.
+
 #### Moving With The Gizmo
 
 The  gizmo is like the Maya transform manipulators.
@@ -123,7 +168,6 @@ Gizmo tool moving things
 	* Locking/unlocking and changing the gizmo pivot `alt` or gizmo edit widget (like `d` in Maya`)
 	* Back to center of visible objects
 	* Can scale/rotate also.
-
 
 * Modifying eyes
   	* Deforming with gizmo (`w`)
@@ -143,8 +187,10 @@ Gizmo tool moving things
 {{< imgproc brice_head_pg Resize "500x">}}
 Brice head with polygroups visible.
 {{< /imgproc >}}
-This is a nice sitting position, I can type pretty easy too. typing way easier with a bigass tilt to the keeb dohn u fing.
-I wonder if i can type prtty cosy like. yeah that's real cosy like.super cosy like if i could get my arms held up like this.
+
+
+
+<!-- 
 
 _**Coming soon: making eyes and lashes short tute*_
 
@@ -152,21 +198,9 @@ _**Coming soon: making eyes and lashes short tute*_
 
 Re-do them on your model.
 
-## Modelling From Existing Blockout
+--> 
 
-A blockout is what we saw last week: a whole made out of smaller, simpler pieces.
-- don't have to worry about joining and topology
-- can edit pieces safely without messing up neighbouring anatomy.
 
-Brice Laville Saint Martin doing it:
-
-{{< youtube "Ay-UY6JTbF4" >}}
-
-Now we'll do it with his basemesh 👌
-
-* Open the 1mCube starting file in `Lightbox->Projects`
-* Select a star or cylinder tool from tool palette
-* Go to `Lightbox->Tools->Base Meshes` and double click `Brice_Head.ztl`
 
 
 <!-- ### Joining The Pieces
@@ -193,7 +227,15 @@ Brice: digital realm specific: block out low and clean, minimal final sculpting
 
 Head modelling exercise, **due by Sunday night.** Details are in the linked thread. Concepts are below.
 
+<!-- 
+
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902733_1&message_id=_2328678_1" target="_blank">Homework Thread: Alien Doe<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968742_1&message_id=_2527587_1" target="_blank">ULTIMO Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968727_1&message_id=_2527584_1" target="_blank">ONLINE Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Concepts
 
