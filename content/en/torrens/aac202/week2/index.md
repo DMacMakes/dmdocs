@@ -147,13 +147,13 @@ Need something to integrate eye and lids into.
 Append an object as a Subtool
 {{< /imgcard >}}
 
-### Spy
+### Basemesh vs Team Fortress 2 Spy 
 
-{{< imgcard spy>}}
-Beginnings of spy from TF2 concept art, again with Brice's base mesh. Reference included.
-{{< /imgcard >}}
+{{< imgproc spy_base Resize "600x">}}
+Beginnings of spy from TF2 concept art, again with Brice's base mesh.
+{{< /imgproc >}}
 
-You'll need [7zip](https://www.7-zip.org/) to extract this one.
+You'll need [7zip](https://www.7-zip.org/) to extract this one. Reference included. 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="spy_demo.7z" target="_blank">Download spy_demo.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
@@ -265,7 +265,7 @@ faces-12
 
 ### Staying low subdiv
 
-{{< imgproc pipehead_polys_low Resize "600x" Link "pipehead_polys_low.png" >}}
+{{< imgproc pipehead_polys_low Resize "600x" Link "pipehead_polys_low?" >}}
 Here I'm attempting to get as far as I can (on a different concept) towards final before adding more subdivisions. <I>Click for high res.</I>
 {{< /imgproc >}}
 
