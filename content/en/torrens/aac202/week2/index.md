@@ -149,7 +149,7 @@ Append an object as a Subtool
 
 ### Basemesh vs Team Fortress 2 Spy 
 
-{{< imgproc spy_base Resize "600x">}}
+{{< imgproc "spy_base" Resize "600x">}}
 Beginnings of spy from TF2 concept art, again with Brice's base mesh.
 {{< /imgproc >}}
 
