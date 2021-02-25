@@ -52,7 +52,17 @@ Stylised human basemeshes.
 
 {{< youtube cYE_bVG98OQ >}}
 
-### How To Add Eyeballs And Eyelids!
+## Modelling from existing base mesh
+
+A base mesh is essentially a reusable block out: a whole made out of smaller, simpler pieces.
+- don't have to worry about joining and topology
+- can edit pieces safely without messing up neighbouring anatomy.
+
+Brice Laville Saint Martin doing it:
+
+{{< youtube "Ay-UY6JTbF4" >}}
+
+### Preserving important details around the eye
 
 Sometimes having everything in one mooshy, continuous mass makes life hard. Consider eyes:
 
@@ -74,6 +84,32 @@ To freely modify one while leaving the other perfect, **we need different surfac
 This real clay chef sculpt from Pixar is extremely stylised. You can see the eyes and lids are not sculpted out of the main mass.
 {{< /imgproc >}}
 
+## Cleaner madballs
+
+It was tough to avoid smushing the eye when doing gross eyelids, or to avoid destroying lips while sculpting teeth.
+
+{{< imgcard dn_madball Link "https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EQIt4CX5EBpPp9BKQZtt1EsBqQ8F1bqnkieUH32-4QDPRg?e=Uoj9sn" >}}
+David's clean base with subtools. Let's gross it up.
+{{< /imgcard >}}
+
+Grab David Neselius' Hornhead sculpt from week 1 (thanks David) and we'll explore easier ways to model where hard and soft things collide.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EQIt4CX5EBpPp9BKQZtt1EsBqQ8F1bqnkieUH32-4QDPRg?e=Uoj9sn" target="_blank">Download dn_maddball_class_handout.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Using masking and subtools to stay clean
+
+Ctrl+left mouse drag to mask.
+Ctrl+alt+left mouse drag to erase mask.
+Ctrl+left moue drag on background to clear mask. **Warning: disable dynamesh (click big orange button on bottom left of zbrush ui**
+
+### Exercise: infected horn
+
+{{< imgproc horn Resize "400x">}}
+Nathan Tucker's in-class horn infection 👍
+{{< /imgproc >}}
+
+Use masking to protect the horn while you gross up the surrounding flesh with your usual brushes. Don't forget *inflate*, *standard*, *damien standard*.
+
 ### Tools and Subtools
 
 To access the new files in _ZTools_ we'll start ZBrush and use the _lightbox_. It usually opens when ZBrush starts. If it doesn't, hit comma `,` or click the _lightbox_ button, top left.
@@ -82,29 +118,7 @@ To access the new files in _ZTools_ we'll start ZBrush and use the _lightbox_. I
 Projects, models, materials, brushes that don't load with ZBrush can be loaded from the lightbox.
 {{< /imgproc >}}
 
-## Modelling from existing base mesh
-
-A base mesh is essentially a reusable block out: a whole made out of smaller, simpler pieces.
-- don't have to worry about joining and topology
-- can edit pieces safely without messing up neighbouring anatomy.
-
-Brice Laville Saint Martin doing it:
-
-{{< youtube "Ay-UY6JTbF4" >}}
-
-### Let's look at his basemesh 👌
-
-* Open the 1mCube starting file in `Lightbox->Projects`
-* Select a star or cylinder tool from tool palette
-* Go to `Lightbox->Tools->Base Meshes` and double click `Brice_Head.ztl`
-
-### Pipehead
-
-Here's one I've started in my spare time, using the Brice base to model a Max Grecke concept. We'll open and look at the modified mesh.
-
-[![pipehead](pipehead_polys_low.png)](pipehead_demo.zip)
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="pipehead_demo.zip" target="_blank">Download pipehead_demo.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<!--  
 
 ### Load and save subtools
 
@@ -116,50 +130,45 @@ A Tool can have multiple subtools. While you're in a ZBrush project you can load
 Jaw is a subtool of our character tool. Note the ear subtool has two meshes.
 {{< /imgproc >}}
 
+-->  
+
 | Category |  Definition/Place                            |
 |-----|-----                                              |
 | Tools | Objects in the Tools palette.                   |
 | Subtools | Objects in the Subtools list                 |
 | Meshes   | Shells of contiguous polygons. Found inside subtools. |
 
-#### Importing Subtools
-
 {{< alert title="Definition: Subtools" color= "primary" >}}
 A bit like objects in Maya. Can have multiple meshes.
 {{< /alert >}}
-  
-<!--  
 
-# ---- REPLACE - Not a useful file. ----
-Need something to integrate eye and lids into. 
+### Exercise: infected eyesocket
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_class.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
+{{< imgproc eye_socket Resize "400x">}}
+Some gross eye exploration from a class demo.
+{{< /imgproc >}}
 
-1. Download My Madball Demo File
-2. Unzip, it contains `madball_demo.zpr` and `eyes.ztl` files. 
-3. Open `madball_demo.zpr`
-5. Click `tool->subtool->append` and choose the `polysphere3D`. 
+It's time to use subtools with ghost and solo modes to: 
+1. Smooth away Hornhead's eyelid
+2. Resize/move the eye
+3. Build up the nose bud
+4. Remake the eye socket with swollen, creased flesh and exposed muscle. Google "infected toenail" for choice reference 👌
 
--->  
+## Let's look at Brice SLVs basemesh 
+
+* Open the 1mCube starting file in `Lightbox->Projects`
+* Select a star or cylinder tool from tool palette
+* Go to `Lightbox->Tools->Base Meshes` and double click `Brice_Head.ztl`
+
+### Insert new subtools
+
+On the Tool menu (usually docked on the right side of *ZBrush*) is our *subtool palette*. Below the palette's list of subtools you can find the *Insert* and *Append* buttons. Clicking either will pop a selection of primitive shapes to choose from. 
+
+I prefer *Insert*: it not only inserts the mesh after the subtool you're working with, it also selects it.
   
 {{< imgcard ui_append>}}
 Append an object as a Subtool
 {{< /imgcard >}}
-
-### Basemesh vs Team Fortress 2 Spy 
-
-{{< imgproc "spy_base" Resize "600x">}}
-Beginnings of spy from TF2 concept art, again with Brice's base mesh.
-{{< /imgproc >}}
-
-You'll need [7zip](https://www.7-zip.org/) to extract this one. Reference included. 
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="spy_demo.7z" target="_blank">Download spy_demo.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-## Exercise
-
-Fool around with the brice base mesh.
 
 #### Moving With The Gizmo
 
@@ -198,20 +207,48 @@ Gizmo tool moving things
 Brice head with polygroups visible.
 {{< /imgproc >}}
 
+## Examples of the basemesh in action
 
+### Pipehead
+
+Here's one I've started in my spare time, using the Brice base to model a Max Grecke concept. We'll open and look at the modified mesh.
+
+[![pipehead](pipehead_polys_low.png)](pipehead_demo.zip)
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="pipehead_demo.zip" target="_blank">Download pipehead_demo.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<!--  
+
+# ---- REPLACE - Not a useful file. ----
+Need something to integrate eye and lids into. 
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_class.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
+
+1. Download My Madball Demo File
+2. Unzip, it contains `madball_demo.zpr` and `eyes.ztl` files. 
+3. Open `madball_demo.zpr`
+5. Click `tool->subtool->append` and choose the `polysphere3D`. 
+
+-->  
+  
+### Basemesh vs Team Fortress 2 Spy 
+
+{{< imgproc "spy_base" Resize "600x">}}
+Beginnings of spy from TF2 concept art, another spare time project using Brice's base mesh.
+{{< /imgproc >}}
+
+You'll need [7zip](https://www.7-zip.org/) to extract this one. Reference included. 
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="spy_demo.7z" target="_blank">Download spy_demo.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!-- 
 
-_**Coming soon: making eyes and lashes short tute*_
+## Exercise
 
-### Exercise: Madball Eyes
-
-Re-do them on your model.
+Fool around with the brice base mesh.
 
 --> 
-
-
-
 
 <!-- ### Joining The Pieces
 
