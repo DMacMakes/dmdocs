@@ -107,7 +107,7 @@ if ( ??? ? ??? ) {   // player guess too low
 _(hint: variable, relational operator, variable)_
 {{< /alert >}}
 
-### Exercise: Code _GuessyNumber_Help_
+### Exercise: Code *guessy\_number\_help*
 
 1. Create a new C++ *console* project in Visual Studio. Call it *guessy\_number\_help*.
 2. Replace the code in `guessy_number_help.cpp` with the following:
@@ -174,7 +174,7 @@ Right now we have a very simple test to end our game: `playerGuess == secretNumb
 
 ### Exercise 2: Enter guessy_number_limit
 
-{{< imgcard code_guessy_limit Link "code_guessy_limit.png">}}
+{{< imgcard code_guessy_limit Link "code_guessy_limit_blanks.png">}}
 Limiting the players to 3 games sets a new standard in high stakes gaming. 
 {{< /imgcard >}}
 
