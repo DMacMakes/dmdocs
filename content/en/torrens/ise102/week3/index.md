@@ -109,8 +109,8 @@ _(hint: variable, relational operator, variable)_
 
 ### Exercise: Code _GuessyNumber_Help_
 
-1. Create a new `ise102_console` project in Visual Studio. Call it _GuessyNumber_Help_.
-2. Replace the code in `main.cpp` with the following:
+1. Create a new C++ *console* project in Visual Studio. Call it *guessy\_number\_help*.
+2. Replace the code in `guessy_number_help.cpp` with the following:
 3. Test it out.
 
 {{< imgcard code_guessy_help_blanks Link "code_guessy_help_blanks.png">}}
@@ -172,9 +172,9 @@ while (secretNumber != playerGuess) {
 
 Right now we have a very simple test to end our game: `playerGuess == secretNumber`.  To make our game more interesting, we decide to limit the player to 3 guesses.
 
-### Exercise: Enter GuessyNumber_Limit
+### Exercise 2: Enter guessy_number_limit
 
-{{< imgcard code_guessy_tries_blanks Link "code_guessy_tries_blanks.png">}}
+{{< imgcard code_guessy_limit Link "code_guessy_limit.png">}}
 Limiting the players to 3 games sets a new standard in high stakes gaming. 
 {{< /imgcard >}}
 
@@ -238,23 +238,28 @@ This week we:
 * learned to use **multiple conditions** with logical operators
   - `&&`, `||` and `!`
 
-## Homework:
-This week you will again **submit your homework code**.
+## Homework
+Below there is reading and 2 coding exercises.
 
-1. Read the rest of [Chapter 2](../resources/cpp_through_games_2.pdf) of the textbook, where you'll learn about other types of loops. If you're caught up on the reading, you're beginning from **page 48**. If not, catch up from where you left off and continue to the end of chapter 2.
-    - Take notes  
-    - In a new `ise102_console` project, **type and run** _Play Again 2.0_ on **page 54**.
-    - Change the game to use a menu with 2 entries (shown below) and look for `1` or `2` as their input.
-      - tip: remember to change `char` to `int`
-    - `1` continues, `2` exits. If they don't input `1` or `2`, continue the loop.
-    - **Send me** your finished `main.cpp` **via email** before next class! I'll put my email in a Blackboard Announcement for those who don't have it.
-      - To **find** `main.cpp` right click your project name in the _solution explorer_ and click _open folder in file explorer_
+### Submission
+**Email me** the cpp files for `guessy_number_limit` and `play_again_2` by the **end of saturday**.
+
+### To do
+1. Complete [Exercise 2 Guessy number limit](#exercise-2-enter-guessy_number_limit)
+2. Read the rest of [Chapter 2](../resources/cpp_through_games_2.pdf) of the textbook, where you'll learn about other types of loops. You're beginning from **page 48**. 
+3. In a new C++ *console* project called `play_again_2`, **type and run** _Play Again 2.0_ on **page 54**. Now, **change the game** to use a menu with 2 entries (shown below) and look for `1` or `2` as their input.
 
 ```
-  **Played an exciting game**
+  **You just played an exciting game**
   
   Do you want to play again?
   1. Play again
   2. Quit
-  Enter 1 or 2 >
+  Enter 1 or 2 > _
 ```
+{{< alert title="Homework tips/details" color= "primary" >}}
+  - Remember to change `char` to `int`
+  - `1` continues (loops to show message and menu again), `2` exits the game. 
+  - Note the cursor (where they enter input) should sit where I've placed a fake one.. just after "Enter 1 or 2 > ", not on a new line. Remember, `cin` causes that cursor to appear.
+  - If they input some other number, print "!! Hey, only enter 1 or 2 !!" and loop.
+{{< /alert >}}
