@@ -3,19 +3,8 @@ title: "3: The Game Loop and Logic"
 linkTitle: "W.3 Loops, Logic"
 weight: 30
 description: >
-  Learning to repeat ourselves usefully and make anything.
+  Learning to repeat ourselves usefully.. and make anything.
 ---
-
-## Week 2 Recap And Homework
-
-* End of Chap 1, code.
-* Start of Chap 2, code.
-  
-[Week 2 Homework](../week2/#homework)
-
-## Assessment 1
-
-Read about Assessment 1 on [the ISE102 Asessments page](../assessments/#assessment-1-exam)
 
 ## Controlling Execution
 
