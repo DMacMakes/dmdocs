@@ -93,32 +93,8 @@ Portable software can run straight from its folder, no install required.
 ![](portable_folder_flowgorithm.png)
 
 {{% /alert %}}
-
-
-## Visual Studio C++ Templates
-
-Setting up projects for quick and easy exercise coding can be a little daunting. These templates, imported into Visual Studio 2019, will get you started.
-
-### Basic Console Program Template
-
-We'll use this as a starting point for new projects. Click to download:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="/torrens/ise102/resources/ise102_console.zip">Download ise102_console<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
-
-Next:  
-1. Make sure Visual Studio is closed/not running.  
-2. Move `ise_console.zip` from your `Downloads` folder to the `C:\Users\yourname\Documents\Visual Studio 2019\Templates\ProjectTemplates\` folder. Do not unzip it.  
-3. Open Visual Studio and choose **New Project**  
-4. Type `ise102` into the search box, then choose `ise102 console` and click _Next_.
-![ise102_console](new_project_ise102_console.png)  
-5. Enter a **Project name** and a **Location** were its folder can be created. Use a folder you'll remember and find again like `d:\torrens\subjects\ise102\code\week1`. If you're working on a Uni machine, use a usb drive or external hdd so you can take your work with you.  
-![project details](project_setup_vs_2019.png)  
-6. Check "Place solution and project in the same directory". Hit **Create**  
-7. Visual studio will now open your Solution/Project. Expand the `Source Files` folder in the **Solution Explorer** and double click `main.cpp` to view your source code.  
-![Project Open](project_open_main_cpp.png)  
-  
--->
+ 
+-->  
 
 ## Sololearn C++ Tutorial
 

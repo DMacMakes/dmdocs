@@ -283,7 +283,7 @@ The **output** or result of a function is called the **return value**. That's wh
 
 ### Exercise: Creating the twoTimes program.
 
-Using the code outline below and the real code above, create the twoTimes program in Visual Studio.
+Using the code outline below and the real code above, create the *two_times* program in Visual Studio.
 
 ```cpp
 #include <??????>  // Put the include needed for cout here.
@@ -443,7 +443,7 @@ ___
 On-time submission of weekly homework is part of assessment 2. Non-submission (or low effort submissions) will **impact your final mark.**
 {{< /alert >}} 
 
-It consists of assigned reading and two code projects. **Submit** your two `main.cpp` files (Calculate_more and Random_range) to Matt **by the end of Sunday, July 5.**
+It consists of assigned reading and two code projects. **Submit** your two `.cpp` files (calculate_more and random_range)  **by the end of Saturday.**
 
 ### 1: Reading
 
@@ -461,7 +461,7 @@ Be ready to see this in the textbook. Functions will be your bread and butter fr
 
 ### 2: Calculate_more
 
-Two times calculator is a bit limited. **Create a new project** called _Calculate\_more_. You can copy+paste the code from the old calculator's `main.cpp` as a starting point.
+Two times calculator is a bit limited. **Create a new project** called *calculate\_more*. You can copy+paste the code from the old calculator's `.cpp` file as a starting point.
 
 Instead of two times calculation, **give the program the features below**:
 * Ask the player to input a multiplier (int) and store it.

@@ -44,7 +44,7 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 <!--
 
-We'll make a text based slot machine using the `ise102_console` template. A _prompt and response_ game loop.
+We'll make a text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258118_1&course_id=_93608_1" target="_blank">A2 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
@@ -64,7 +64,7 @@ You'll deliver a **zip file** containing your Visual Studio solution. Work throu
 With your project open in Visual studio:
   * Right click the project in the _solution explorer_
   * Click _Open folder in file explorer_. 
-  * You'll see several files there, including your `main.cpp`.
+  * You'll see several files there, including your `.cpp` file.
 
 If you have **a subfolder** in there with the name of your project, message me or Matt! Do not move its contents or delete it.
 {{< /alert >}}

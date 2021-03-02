@@ -262,7 +262,7 @@ Visit the [ise102 Resources page](/torrens/ise102/resources/) and:
 
 ### Enter The Code
 
-1. Select and delete all the code in `main.cpp`
+1. Select and delete all the code in `knights_journey.cpp`
 2. Type in the following code, including the *comment* lines starting with `//`
 ![KnightsJourney No Input](cpp_knightsJourney_noInput.png)
 3. Run the program with <kbd>ctrl</kbd>+<kbd>F5</kbd>
@@ -349,8 +349,8 @@ bool isClassPresident     = true;
 Read through **pages 1-12** of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, *Beginning C++ Through Game Programming*. This will help you understand what **variables** are, and how they represent storage. 
 
 Then:
-1. Create a Visual Studio project for called `GameOver3`, using the _console app_ project type.
-2. Replace the contents of `main.cpp` with the code of the **Game Over 3.0** program (pages *11,12*).  
+1. Create a Visual Studio project for called `game_over_3`, using the *console app* project type.
+2. Replace the contents of `game_over_3.cpp` with the code of the **Game Over 3.0** program (pages *11,12*).  
 3. Run it with the <kbd>ctrl</kbd>+<kbd>F5</kbd> hotkey, or select *Debug -> Start Without Debugging* from the menu bar.  
 
 The textbook is also linked from the [ise102 resources page](https://dmdocs.netlify.com/torrens/ise102/resources/).  

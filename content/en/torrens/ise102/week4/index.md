@@ -204,8 +204,8 @@ A for loop puts them all together, at the start of the loop.
 
 #### Exercise: While Loop Age Code
 
-1. Create a new `ise102_console` project, _You\_old_ 
-2. Open main.cpp and enter the code below
+1. Create a new C++ *console* project, `you_are_old`
+2. Open `you_are_old.cpp` and enter the code below
 3. Run and test it. Try different starting and ending ages.
    
 {{< imgcard code_you_old_while Link "code_you_old_while.png">}}
