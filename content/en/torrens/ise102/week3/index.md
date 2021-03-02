@@ -163,7 +163,7 @@ Right now we have a very simple test to end our game: `playerGuess == secretNumb
 
 ### Exercise 2: Enter guessy_number_limit
 
-{{< imgcard code_guessy_limit Link "code_guessy_limit_blanks.png">}}
+{{< imgcard code_guessy_limit_blanks Link "code_guessy_limit_blanks.png">}}
 Limiting the players to 3 games sets a new standard in high stakes gaming. 
 {{< /imgcard >}}
 
