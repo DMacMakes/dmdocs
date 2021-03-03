@@ -17,12 +17,6 @@ resources:
 3. Working easily with multiple meshes in a single subtool
 4. Merging separate meshes with Easymesh/Dynamesh, and cleaning up the seams
    
-## Discussing Week 2 Sculpt
-
-What was good? What was tricky?
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week2/#homework" target="_blank">Week 2 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
 ## Refining The Sculpt
 
 {{< imgproc refining_pipehead_2 Resize "800x" Link "refining_pipehead_2.png" >}}
@@ -89,9 +83,9 @@ UI things to look for when polypainting.
 
 If you didn't get it done, borrow [Callum's](Long_head_joe_CA.zip).
 
-## Assessment 2: Character Bust
+## Assessment 1: Character Bust
 
-Here's the [assessment page](../assessments/#assessment-2-high-poly-character).
+Here's the [assessment page](https://dmdocs.netlify.app/torrens/aac202/assessments/#1-high-poly-character-week-4).
 
 This week we'll do the first page, jump to the [homework](#homework).
 
@@ -182,9 +176,11 @@ Hiding parts of meshes or polygroups makes it a lot easier to work in the spaces
 
 ## Homework
 
-Work on your assessment 1 bust, follow the instructions in the thread, and post your work before our work review:
+Work on your assessment 1 bust, follow the instructions in the thread, and **post your work before our work review**.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902734_1&message_id=_2344753_1" target="_blank">Assessment 1 Progress Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968743_1&message_id=_2510945_1" target="_blank">ULTIMO A1 Progress Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968728_1&message_id=_2510878_1" target="_blank">ONLINE A1 Progress Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!--
 ## Fusing and Remeshing with Dynamesh
