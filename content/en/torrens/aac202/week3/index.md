@@ -23,6 +23,10 @@ resources:
 Another sculpt based on the Brice basemesh. Some geometry added, polygroups used for repeat masking.
 {{< /imgproc >}}
 
+{{ {{< imgproc pipehead_arnold_2 Resize "800x" Link "pipehead_arnold_2.png" >}}
+Adding subdivisions to support some fleshy details. Notice it's still separate meshes.
+{{< /imgproc >}}
+
 We're still using a small subset of ZBrush's features, and some areas remain difficult to work with.
 
 * How can I work cleaner with last week's tools?
