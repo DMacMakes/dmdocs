@@ -26,7 +26,6 @@ Trials expire after 30 days :( but we have options:
 1. Easier ways to do the tricky things in the homework!
 2. Persistent masking to polygroups - it's the best.
 3. Working easily with multiple meshes in a single subtool
-4. Merging separate meshes with Easymesh/Dynamesh, and cleaning up the seams
 
 {{< alert title="When do your licenses expire?" color= "primary" >}}
 Jump into the *#class-AAC202* now and post your license expiry date. IIRC it's visible at top left of ZBrush.
