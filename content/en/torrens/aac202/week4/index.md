@@ -26,27 +26,26 @@ We're going to **push our model over to Painter**, which is different to last tr
 
 -->
 
-## Baldy in parts
+## Pipehead painting
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.dropbox.com/s/zd70nryct1p600y/Baldy_zb_to_painter.zip?dl=1" target="_blank">Download The Baldy Project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-He’ll have skull, lids, eyes, nose, ears, jaw.
-* No teeth or pipes.
-* His lips will be together and mouthbag deleted
-* pieces will have real subdivisions, not dynamic
+Open last week's pipehead detailing file. If you don't have it, [grab it from last week's notes](../week3/#download-updated-pipehead)
 
 ## Polypaint along review
 * Enable polypaint
-* Provide soft paint brush (just fix focal)
-* show how to pick colours 
+* Hard and soft brushes
+* Use <kbd>c</kbd> to pick colours from mesh
+* Look at the terrible results on low or dynamic subdivisions. Add real divisions - you'll have to do this on your own character.
 
 <!-- 
 Me prep: Add polypaint to him and see if can get it through the process. Bake as id map and duplicate texture
 -->
-## Activity: paint your character a bit.
+## Exercise: Paint your character a bit.
+
+Get started painting your own character using what you've just learned.
+
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866560_1&message_id=_2226746_1" target="_blank">In Class Painting Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-## Can I Add extra bits using Maya?
+## Can I add extra bits using Maya?
 
 There are a few easy ways to do this. You can use regular exporting and importing, or you can use the GoZ plugin.
 
