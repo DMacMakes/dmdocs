@@ -6,6 +6,8 @@ description: >
     Dynameshing, seam removal, rendering passes, compositing.
 ---
 
+<!--
+
 ## Review Of Progress
 
 Week 7 detail sculpting:
@@ -14,7 +16,7 @@ Week 7 detail sculpting:
 
 Stuff that was **easy**? Stuff **less easy** than expected?
 
-## A2 extension and delivery.
+ ## A2 extension and delivery.
 
 **Delivery:** Wednesday, July 29 (as discussed last week).
 
@@ -22,9 +24,11 @@ We're going to **push our model over to Painter**, which is different to last tr
 * I'll be **updating the deliverables** in the next few days.
 * It'll be a combination of working files and screenshots. 
 
+-->
+
 ## Baldy in parts
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.dropbox.com/s/zd70nryct1p600y/Baldy_zb_to_painter.zip?dl=0" target="_blank">Download The Baldy Project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.dropbox.com/s/zd70nryct1p600y/Baldy_zb_to_painter.zip?dl=1" target="_blank">Download The Baldy Project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 He’ll have skull, lids, eyes, nose, ears, jaw.
 * No teeth or pipes.
@@ -67,6 +71,40 @@ In the long run it's the much better process. It's fast and automated, removes a
 1. In the Maya GoZ shelf, push your mesh back to ZBrush.
 {{< /alert >}}
 
+## Topology
+
+A soccerball is always the same general **_form_**: a sphere. The panels that make up the surface can vary enormously. The layout of these panels is the ball's _**topology**_
+
+{{< imgcard topology_footballs>}}
+Some of the many panel layouts.
+{{< /imgcard >}}
+
+{{< alert title="Definition: Topology" color= "warning" >}}
+The shape, number and layout of polygons that make up the surface of your model.
+{{< /alert >}}
+
+{{< imgcard topology_cubes>}}
+A cube's topology can vary infinitely while remaining a cube.
+{{< /imgcard >}}
+
+### Character Topology
+
+We started with a lower density mesh, made of quads, and the quads flowed fairly well with the forms.
+
+{{< imgcard brice_head_pg>}}
+Our starting point, the brice head.
+{{< /imgcard >}}
+
+The polygon _density_ was fairly consistent on a lot of the surface, with extra density in areas like the features of the nose, the edges of the eyelids, the ears. We **increased the density** across entire subtools of the mesh by _subdividing_ (ctrl-d).
+
+{{< alert title="Definition: Polygon Density" color= "warning" >}}
+The number of polygons making up a given area of a mesh. It can change from location to location on the mesh.
+{{< /alert >}}
+
+### Continuity
+
+The Brice head is separated over multiple subtools, so **it's not a continuous mesh**.
+
 ##  merging, easymesh, clean up seams
 
 1. All joins should be good as can get while meshes not joined. Fix his nose so it doesn’t have gaps near face. Show this so everyone checks.
@@ -83,6 +121,8 @@ In the long run it's the much better process. It's fast and automated, removes a
 6. Go back to other tool, repeat process for eyes (in same tool as the headskin), eyes_high
 7. Short demo of seam fixing. 
 8. Export skin and eyes in baldy_high.fbx
+
+<!-- 
 
 ##  low poly auto
 8. Duplicate each tool, give _low suffix
@@ -110,8 +150,7 @@ In the long run it's the much better process. It's fast and automated, removes a
 5. Dupe id map and add to fill layer
 6. Celebrate.
 
-
-<!-- 
+-->
 
 ## Rendering How
 
@@ -146,7 +185,6 @@ Making passes and exporting to photoshop/Krita for more editing.
 Click the passes you want, let the plugin automate the exports.
 {{< /imgcard >}}
 
-
 ### No Photoshop Method
 
 * Ensure shadows, ambient occlusion are on in _Render \> Render Properties_
@@ -170,5 +208,3 @@ Here's a render with some a bit of quick processing/painting over
 {{< imgcard izzy_comp_passes Link "izzy_comp_passes.jpg">}}
 Left: Render passes exported to photoshop  Right: With some editing
 {{< /imgcard >}}
-
--->

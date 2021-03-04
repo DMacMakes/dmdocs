@@ -8,23 +8,38 @@ resources:
 - src: "*patri*"
   params:
     byline: "Art: Patri Balanovsky (Artstation)"
+- src: "pipehead_arnold_2.png"
+  params:
+    byline: "Rendered with Arnold in Maya"
+- src: "refining_pipehead_2.png"
+  params:
+    byline: "Zbrush preview render (second with polyframe enabled)"
 ---
 
-## Learning Today
+## Housekeeping: ZBrush licensing  
+Trials expire after 30 days :( but we have options:
+1. Use the lab computers
+2. Get a 1 month subscription zbrush license from [pixologic for USD $39.95](https://store.pixologic.com/zbrush-2021/) (or buy it outright)
+3. Use splashtop to remotely log into a uni machine and use ZBrush. Similar to Remote Desktop/VNC/Team Viewer/Steam link.
 
+## Learning Today  
 1. Easier ways to do the tricky things in the homework!
 2. Persistent masking to polygroups - it's the best.
 3. Working easily with multiple meshes in a single subtool
 4. Merging separate meshes with Easymesh/Dynamesh, and cleaning up the seams
-   
+
+{{< alert title="When do your licenses expire?" color= "primary" >}}
+Jump into the *#class-AAC202* now and post your license expiry date. IIRC it's visible at top left of ZBrush.
+{{< /alert >}}Please let me when your licenses are due to expire.
+
 ## Refining The Sculpt
 
 {{< imgproc refining_pipehead_2 Resize "800x" Link "refining_pipehead_2.png" >}}
-Another sculpt based on the Brice basemesh. Some geometry added, polygroups used for repeat masking.
+Pipehead, based on the Brice basemesh, with polygrouped lower lip for mouth editing
 {{< /imgproc >}}
 
-{{ {{< imgproc pipehead_arnold_2 Resize "800x" Link "pipehead_arnold_2.png" >}}
-Adding subdivisions to support some fleshy details. Notice it's still separate meshes.
+{{< imgproc "pipehead_arnold_2" Resize "800x" Link "pipehead_arnold_2.png" >}}
+Still in pieces but with more work and 1-2 subdivisions
 {{< /imgproc >}}
 
 We're still using a small subset of ZBrush's features, and some areas remain difficult to work with.
@@ -32,20 +47,47 @@ We're still using a small subset of ZBrush's features, and some areas remain dif
 * How can I work cleaner with last week's tools?
 * What new tools will help?
 
-### Demo Project
+### Sculpting the mouth
 
-Download this hand project:
+#### Download updated pipehead
+Subdivided and (in progress) detailed pipehead plus reference. The zpr file is a little messy - there are two merged heads, including one that was exported to Maya for rendering.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="Week7_hand.zip" target="_blank">Hand Basemesh Project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERnPVQnNq8ZFrT8PYF0wuXIBAVoJYld7r1VMngodfeB2LA?e=Fu7CRe" target="_blank">Download zbrush__pipehead_detail.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+#### Topological Automask
 
-{{< imgcard 1_hand_subtools Link "Week7_hand.zip">}}
-Hand basemesh (one subtool, multiple polygroups). <i>Click to download</I>
+Work an area with masking or hiding its not-closely-linked neighbours: _Brush->AutoMasking->Topological_.
+
+{{< imgcard automasking_ui>}}
+Several handy automask features are clustered on the left side of our custom UI.
 {{< /imgcard >}}
 
-### Masking: Revision
+## Polygroups!
 
-The masking The shortcuts below will be your main way of creating and editing masks in ZBrush.
+### Polygroups: Together, Alone
+
+If you don't have polygroups visible, hit `shift-f`.
+
+Auto groups, group visible (custom ui, _Tool->Polygroups_).
+
+In _Brush->AutoMasking_ there's a slider for Mask By Polygroups. 
+* Turn it up to 100 and it works just like Mask Topological for our hand subtool.
+* It's more powerful because you can have multiple polygroups on a single mesh with unbroken topology.
+
+To test it: 
+1. Select the upper eyelids and solo them (right side of custom ui), turn on polyframe.
+2. Choose the clay buildup brush and sculpt on the outside of the lids. Without lifting your pen, move around to the underside. 
+
+### Masking the mouth
+
+1. First, in draw mode <kbd>Q</kbd>, select the lower face/jaw with <kbd>alt</kbd> + <kbd>left mouse</kbd>.
+2. In the tool menu (right of screen or in menus) scroll down to *polygroups*, expand the palette and click on *group visible*.
+
+{{< imgcard "group_visible" Link "group_visible.png" >}}
+<i>GroupVisible</i> applies the same polygroup to any mesh visible <i>in the current subtool</i>.
+{{< /imgcard >}}
+
+Mask shortcuts again:
 
 | Command           | Shortcut                              |
 |-----------        |------------                           |
@@ -57,10 +99,27 @@ The masking The shortcuts below will be your main way of creating and editing ma
 | Blur mask           | `ctrl + left click` on mesh                     | 
 | Sharpen mask        | `ctrl + alt + left click` on mesh               | 
 
-There's also a helpful _Masking_ subpalette in the _Tools_ palette, which is on the right side of ZBrush by default.
-
 {{< imgproc mask_pipehead Resize "500x">}}
 Masking the upper face to move lower lip.
+{{< /imgproc >}}
+
+### Hiding And Showing
+
+Hiding parts of meshes or polygroups makes it a lot easier to work in the spaces between things. If you don't have Polygroups visible, hit `shift+f`.
+
+| Command           | Shortcut                              |
+|-----------        |------------                           |
+| Activate hiding    | `ctrl-shift (plus mouse)`                                     | 
+| Hide part of mesh   | `ctrl + shift + left drag (mouse)` a rectangle over it  | 
+| Invert hiding       | `ctrl + shift + left drag` on canvas                    | 
+| Show all            | `ctrl + shift + left click` on canvas                   | 
+| Solo a polygroup    | `ctrl + shift + left click` on mesh                     | 
+| Hide a polygroup    | `ctrl + shift + alt + left click` on mesh               | 
+
+Now, again in the *polygroups* palette, click *Group Masked Clear Mask*. Shortcut fans can use <kbd>ctrl</kbd> + <kbd>w</kbd>
+
+{{< imgproc group_masked Resize "800x" Link "group_masked.png">}}
+Groups are created, mask is cleared 👍
 {{< /imgproc >}}
 
 ## Colour
@@ -93,39 +152,15 @@ Here's the [assessment page](https://dmdocs.netlify.app/torrens/aac202/assessmen
 
 This week we'll do the first page, jump to the [homework](#homework).
 
-## Topology
+### Demo Project
 
-A soccerball is always the same general **_form_**: a sphere. The panels that make up the surface can vary enormously. The layout of these panels is the ball's _**topology**_
+Download this hand project:
 
-{{< imgcard topology_footballs>}}
-Some of the many panel layouts.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="Week7_hand.zip" target="_blank">Hand Basemesh Project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< imgcard 1_hand_subtools Link "Week7_hand.zip">}}
+Hand basemesh (one subtool, multiple polygroups). <i>Click to download</I>
 {{< /imgcard >}}
-
-{{< alert title="Definition: Topology" color= "warning" >}}
-The shape, number and layout of polygons that make up the surface of your model.
-{{< /alert >}}
-
-{{< imgcard topology_cubes>}}
-A cube's topology can vary infinitely while remaining a cube.
-{{< /imgcard >}}
-
-### Character Topology
-
-We started with a lower density mesh, made of quads, and the quads flowed fairly well with the forms.
-
-{{< imgcard brice_head>}}
-Our starting point, the brice head.
-{{< /imgcard >}}
-
-The polygon _density_ was fairly consistent on a lot of the surface, with extra density in areas like the features of the nose, the edges of the eyelids, the ears. We **increased the density** across entire subtools of the mesh by _subdividing_ (ctrl-d).
-
-{{< alert title="Definition: Polygon Density" color= "warning" >}}
-The number of polygons making up a given area of a mesh. It can change from location to location on the mesh.
-{{< /alert >}}
-
-### Continuity
-
-The Brice head is separated over multiple subtools, so **it's not a continuous mesh**.
 
 ## Combining And Polishing
 
@@ -137,45 +172,29 @@ The Brice head is separated over multiple subtools, so **it's not a continuous m
 **Pro:** You can run a brush along the palm and onto a finger now, making it easier to sculpt the joints.
 **Con:** Now you risk messing up nearby fingers while you sculpt.
 
-It's easy to **merge** the subtools:
-1. Pick the top subtool
-2. In _Tools->Subtools->Merge click _MergeDown_.
-3. It'll ask if you're sure. Click yes + don't ask again.
-3. Continue merging down.
-4. If you enable polyframe (the button next to finger1 and finger2 in the image below) you'll see it on all the parts you've merged.
+It's easy to **merge** the subtools. Make sure *polyframe* is turned on so you can see the changes more easily.
+   
+1. Enabled *polyframe* so you can see the changes more easily.
+2. In *Tools->Subtools->Merge* click *MergeDown*.
+3. It'll ask if you're sure. Click *Always OK..*.
+4. Continue merging down.
 
 {{< imgcard 1_hand_subtools Link "1_hand_subtools.jpg">}}
-Left: Multiple subtools with polyframe on. Right: After <pre>MergeDown</pre> applied to subtools.
+Left: multiple subtools. Right: single merged subtool.
 {{< /imgcard >}}
 
-### Topological Automask
+### Quick masking meshes within subtools
 
-Work on a finger without masking or hiding its neighbours.
+In move/gizmo mode (press w) you can control click a polygroup to instantly mask out all the others.
 
-_Brush->AutoMasking->Topological_. I've also added it to the custom UI.
+Command           | Shortcut                              | Details  
+-----------        |------------                           | -----
+Mask other polygroups    | `ctrl-shift left-click` in gizmo mode | Leaves the clicked polygroup unmasked
 
-### Polygroups: Together, Alone
+{{< alert title="Move mode vs move brush" color= "primary" >}}
+Remember, the move brush is a normal drawing mode brush, and there is also a move/gizmo mode
+{{< /alert >}}
 
-If you don't have polygroups visible, hit `shift-f`.
-
-Auto groups, group visible (custom ui, _Tool->Polygroups_).
-
-In _Brush->AutoMasking_ there's a slider for Mask By Polygroups. 
-* Turn it up to 100 and it works just like Mask Topological for our hand subtool.
-* It's more powerful because you can have multiple polygroups on a single mesh with unbroken topology.
-
-### Hiding And Showing
-
-Hiding parts of meshes or polygroups makes it a lot easier to work in the spaces between things. If you don't have Polygroups visible, hit `shift+f`.
-
-| Command           | Shortcut                              |
-|-----------        |------------                           |
-| Activate hiding    | `ctrl-shift (plus mouse)`                                     | 
-| Hide part of mesh   | `ctrl + shift + left drag (mouse)` a rectangle over it  | 
-| Invert hiding       | `ctrl + shift + left drag` on canvas                    | 
-| Show all            | `ctrl + shift + left click` on canvas                   | 
-| Solo a polygroup    | `ctrl + shift + left click` on mesh                     | 
-| Hide a polygroup    | `ctrl + shift + alt + left click` on mesh               | 
 
 
 ## Homework
