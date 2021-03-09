@@ -1,6 +1,6 @@
 ---
-title: "4. Painting characters in ZBrush"
-linkTitle: "4. Polypaint"
+title: "4. Finishing and rendering in ZBrush"
+linkTitle: "4. Finish"
 weight: "40"
 description: >
     Dynameshing, seam removal, rendering passes, compositing.
@@ -24,7 +24,6 @@ We're going to **push our model over to Painter**, which is different to last tr
 * I'll be **updating the deliverables** in the next few days.
 * It'll be a combination of working files and screenshots. 
 
--->
 
 ## Pipehead painting
 
@@ -36,14 +35,15 @@ Open last week's pipehead detailing file. If you don't have it, [grab it from la
 * Use <kbd>c</kbd> to pick colours from mesh
 * Look at the terrible results on low or dynamic subdivisions. Add real divisions - you'll have to do this on your own character.
 
-<!-- 
 Me prep: Add polypaint to him and see if can get it through the process. Bake as id map and duplicate texture
--->
+
 ## Exercise: Paint your character a bit.
 
 Get started painting your own character using what you've just learned.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866560_1&message_id=_2226746_1" target="_blank">In Class Painting Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->
 
 ## Can I add extra bits using Maya?
 
@@ -100,17 +100,18 @@ The polygon _density_ was fairly consistent on a lot of the surface, with extra 
 The number of polygons making up a given area of a mesh. It can change from location to location on the mesh.
 {{< /alert >}}
 
-### Continuity
+## Making one mesh from many
 
-The Brice head is separated over multiple subtools, so **it's not a continuous mesh**.
+The Brice head is separated over multiple subtools, so **it's not a continuous mesh**. Even if they're all merged into one subtool, the shells are still separate, made of their own polygons. We can join them all together with new topology. It won't follow the shapes with nice loops as the previous meshes did, so we'll need a lot of polygons to make up for it. This is why you don't do it before you have to!
 
-##  merging, easymesh, clean up seams
+  - merging, easymesh, clean up seams
 
-1. All joins should be good as can get while meshes not joined. Fix his nose so it doesn’t have gaps near face. Show this so everyone checks.
+1. All joins should be good as can get while meshes not joined. I fixed pipehead his nose so it doesn’t have gaps near face. Check your mesh for gaps where objects should meet. 
 3. remove all lower subdivs all subtools
 	1. Some have 4, 3, whatever. 
+**TODO: FIND THE COMMAND, SCREENSHOT**
 	2. Find this in a plugin: subtool master, clean tool master? Ryan’s?
-	3. Merge all except eyes.
+	3. Merge all objects with skin so we have no seams in skin. 
 	4. TIP: none of your meshes on uour own model should be over 1 million points. Del higher if u have this.
 1. Polygroups set up for uv later: one for ears, and keep eyelid groups that sep group for in, out, cut.
 2. Copy head skin into new subtool
