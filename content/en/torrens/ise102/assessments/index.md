@@ -15,6 +15,8 @@ description: >
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642073_1&course_id=_102573_1" target="_blank">ULTIMO: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9772420_1&course_id=_110422_1" target="_blank">ONLINE 2: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
 
 ### Deliverable
