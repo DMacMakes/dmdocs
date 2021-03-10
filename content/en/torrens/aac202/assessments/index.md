@@ -24,7 +24,7 @@ Order  | Deliverable       | Due     | Blackboard number
 **Due**: Sunday March 14 by 11:55pm. 
 
 **Create a bust from an existing 2D concept:**  
-1. Select one of the heads you _didn't_ already sculpt (concept art [below](#concepts))  
+1. Select one of the heads from the concept art [below](#concepts)  
 2. Starting with a clean copy of the provided base mesh, sculpt a high quality, polypainted 3D model of the character. Draw on what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh).
 3. Show your progress in the week 3 forum thread provided by your lecturer: your participation and display of process will contribute to your marks.
 4. Deliver your final ZBrush project and renders in week 4. 
