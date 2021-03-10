@@ -68,7 +68,8 @@ faces-12
   * Warming/cooling shadows, maybe improving the contrast
   * Adding rim light  
   * Adding gloss/specular hilight/shine to some elements
-  * painting in eyelashes and eyebrows that you didn't have geometry for
+  * Painting in eyelashes and eyebrows that you didn't have geometry for
+
 
 <!--
 ---
