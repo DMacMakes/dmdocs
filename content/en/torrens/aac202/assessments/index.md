@@ -3,7 +3,7 @@ title: "AAC202 Assessments"
 linkTitle: "Assessments"
 weight: 5
 description: >
-  Assessment dates, briefs, deliverables etc.
+  Assessment dates, briefs, deliverables.
 ---
 
 {{< alert title="Note: Order of assessment change" color= "warning" >}}
