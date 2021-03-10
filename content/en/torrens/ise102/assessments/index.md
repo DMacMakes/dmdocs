@@ -42,9 +42,12 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 ## Assessment 2: Slot Machine
 
+Coming soon.
+
 **Due:** End of week 8
 
 <!--
+
 
 We'll make a text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
