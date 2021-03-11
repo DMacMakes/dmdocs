@@ -107,6 +107,10 @@ The number of polygons making up a given area of a mesh. It can change from loca
 
 The Brice head is separated over multiple subtools, so **it's not a continuous mesh**. Even if they're all merged into one subtool, the shells are still separate, made of their own polygons. We can join them all together with new topology. It won't follow the shapes with nice loops as the previous meshes did, so we'll need a lot of polygons to make up for it. This is why you don't do it before you have to!
 
+{{< imgcard remeshed_eyes Link "remeshed_eyes.png">}}
+Pipehead topology after easymesh/dynamesh and some smoothing, modeling.
+{{< /imgcard >}}
+
 ### Exercise: Smoothing, merging, easymeshing
 
 1. All joins should be good as can get while meshes not joined. I fixed pipehead his nose so it doesn’t have gaps near face. Check your mesh for gaps where objects should meet. 
