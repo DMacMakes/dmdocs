@@ -45,7 +45,8 @@ Get started painting your own character using what you've just learned.
 
 -->
 
-## Can I add extra bits using Maya?
+
+## Can I edit/add bits using Maya?
 
 There are a few easy ways to do this. You can use regular exporting and importing, or you can use the GoZ plugin.
 
@@ -102,28 +103,42 @@ The number of polygons making up a given area of a mesh. It can change from loca
 
 ## Making one mesh from many
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERnPVQnNq8ZFrT8PYF0wuXIBAVoJYld7r1VMngodfeB2LA?e=Fu7CRe" target="_blank">Download zbrush__pipehead_detail.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 The Brice head is separated over multiple subtools, so **it's not a continuous mesh**. Even if they're all merged into one subtool, the shells are still separate, made of their own polygons. We can join them all together with new topology. It won't follow the shapes with nice loops as the previous meshes did, so we'll need a lot of polygons to make up for it. This is why you don't do it before you have to!
 
-  - merging, easymesh, clean up seams
+### Exercise: Smoothing, merging, easymeshing
 
 1. All joins should be good as can get while meshes not joined. I fixed pipehead his nose so it doesn’t have gaps near face. Check your mesh for gaps where objects should meet. 
-3. remove all lower subdivs all subtools
-	1. Some have 4, 3, whatever. 
-**TODO: FIND THE COMMAND, SCREENSHOT**
-	2. Find this in a plugin: subtool master, clean tool master? Ryan’s?
-	3. Merge all objects with skin so we have no seams in skin. 
-	4. TIP: none of your meshes on uour own model should be over 1 million points. Del higher if u have this.
-1. Polygroups set up for uv later: one for ears, and keep eyelid groups that sep group for in, out, cut.
-2. Copy head skin into new subtool
-3. Use easymesh on it at level 7
-	1. (Figure out polypaint and groups keep?)
-5. Name it headSkin_high
-6. Go back to other tool, repeat process for eyes (in same tool as the headskin), eyes_high
-7. Short demo of seam fixing. 
-8. Export skin and eyes in baldy_high.fbx
+2. SAVE A NEW VERSION WITH A NEW NAME.
+2. Add subdivs till everything is smooth.*TIP: none of your meshes on your own model should be over 1 million points. Del higher if u have this.*
+2. Reorder your subtools so all the things you want to merge are in sequence, with the non-mergey subtools at the end.
+3. Merge down till all your skin bits are merged.
+4. Duplicate that merged subtool and turn off visibility on the old one - it's good to have it to go back to
+5. Hold control and just do a few brushes on the mesh with the mask, and deselect the mask. It's a goofy workaround, but we need a few undo states on the mesh for the next bit.
+3. On the left of the ui is *Easymesh*. Grab the dragger on the little 1-10 detail slider and drag it to 7, then let go.
+	
+## Handling seams and wrinkles
+
+Once we've remeshed we can remove ugly seams (think around temples, ears,nose, neck) and add in character-enhancing wrinkles and creases around the eyes and nose.
+
+### Style reference matters!
+Now, how do we translate from 2D painting to 3D *in a style we'll be happy with*. Style defines how all those plane changes happen, how much of the wrinkles to leave in, how much we change them from realisticto get nice flow and contrast, etc etc.
+
+Let's have a look at my 3d-inspiration board on pinterest and the some pureRef files I use to remember what I want to achieve.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.pinterest.com.au/dmacdraws/3d-inspiration/" target="_blank">3d inspiration on Pinterest<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.pinterest.com.au/dmacdraws/face-inspiration/3d/" target="_blank">3d face inspiration on Pinterest<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< alert title="Pureref files" color= "secondary" >}}
+Jump into the **\#class-aac202** channel on the *Discord* server and check the pins/latest messages.
+{{< /alert >}}
+
+## Exercise
+Do some seam fixing.
 
 <!-- 
-
 ##  low poly auto
 8. Duplicate each tool, give _low suffix
 9. Decimate skin to 8k
@@ -208,3 +223,7 @@ Here's a render with some a bit of quick processing/painting over
 {{< imgcard izzy_comp_passes Link "izzy_comp_passes.jpg">}}
 Left: Render passes exported to photoshop  Right: With some editing
 {{< /imgcard >}}
+
+## Homework
+
+Finish and submit your [assessment](../assessments/#1-high-poly-character-week-4)
