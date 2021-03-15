@@ -237,11 +237,9 @@ This is one reason we call `rand()` a **pseudo-random number generator**. It can
 
 We can **change the starting point** of the random calculation.
 
-A **_seed_** is a number we feed to the computer something it doesn't control. 
+A **_seed_** is a number we feed to the computer something it doesn't control. But how do we do that? We use another free function in the standard library called `srand`! There's a theme emerging here.
 
-We can start with something pulled from thin air, like `10`.
-* `rand()` doesn't just accept a seed argument 😢
-* Instead we can pass 10 to `srand()`.  
+We can start with any number, try 10: `srand(10);`
 
 {{< imgproc rand1_b_code Resize "1280x" Link "rand1_b_code.png">}}
 New seed, new result?
@@ -255,15 +253,21 @@ Run it a few times. What's wrong??
 
 Now we have the respsibility of feeding `srand()` a different value whenever we start our program. It sounds like we've circled back to the same problem.. but **the number we feed in doesn't have to be random, just different each time**. 
 
-* We'll use a very basic one: the current time (to the second).
+* We'll get a number that changes every second by calling *another library function*, `time()`, to get the current time (to the second).
 
 {{< imgproc rand1_seed_code Resize "1280x" Link "rand1_seed_code.png">}}
 Click to expand
 {{< /imgproc >}}
 
+### Got it? Confused? See the big bright side!
+
+Whether or not you fully understood why the computer needed to be hand fed the extra values to be random, remember this: **for each new thing we needed to do, we just called a function** from the standard library. 
+
+That function was written by somebody way better than us at C++, math and computer science than us, so we let them do the work! We only have to look up what they called it.
+
 <!-- end learning how to just USE functions -->
-{{< alert title="Function: definition and synonyms" color= "primary" >}}
-A section of a computer program that is **defined only once** but can be **called on when needed**. 
+{{< alert title="Definition: Function" color= "secondary" >}}
+A section of a computer program that is **defined only once** but can be **called on when needed**.  They might be written by you, a team mate, the community, or whoever made our compiler.
 
 Though we'll (mostly) call them functions, they have several names across programming languages. Even within _C++_ you'll hear more than one. 
 
@@ -273,8 +277,6 @@ The most common are:
 * routine
 * subroutine
 * subprogram
-
-Are there any **you know** that aren't listed here?
 {{< /alert >}}
 
 ## Making your own functions
