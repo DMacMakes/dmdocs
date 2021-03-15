@@ -7,7 +7,7 @@ description: >
 ---
 
 <!-- First, what are functions and how do you use them? -->
-## Doing the same thing, but different
+## Doing the same thing all the time
 
 In a **shooter** like _Battlefield_, _Overwatch_ or _Fortnight_, what are you doing a lot of? **Shooting**. Hitting things, missing things. Weapon switching, reloading. 
 
@@ -24,62 +24,94 @@ A game, boiled down, is **a person performing a small set of actions, many times
 * Produce outcomes appropriate (following the game rules and world physics) to their current scenario.
 {{< /alert >}}
 
-**You as a programmer** then, have to do the **same thing** a lot, but that same thing has to react **dynamically** to different inputs/environments.
+As a programmer, you'll need to make the same things happen all the time. This means you'll want **the same code over and over again..** but without having to write it over and over again. Loops were one way to do it, but how to we get back to them? How can you be in one loop for jumping, and then another for shooting, then back to jumping.. WHILE shooting? 
+
+### The same but different.
+
+Even worse, you're **not really doing the same thing**. 
+
+You're sometimes pressing jump under water, sometimes in a tanooki suit while falling (Mario), sometimes while sliding across ice riding a dinosaur who's holding a giant egg in his mouth.. So it feels kinda like we need `whiles` in `fors`.. with `ifs` in those `whiles` and `fors` in those `ifs`.. it's like a Dr Seuss book. 
+
+{{< imgcard through_jumpers>}}
+Through-jumpers jumping through horns while their horns are jumped through.
+{{< /imgcard >}}
 
 ### Way too many `if`s
 
-Picture our little game loop in main: if we have to react dynamically to whatever button is pressed, under any circumstances, we're going to need **a loooot of conditionals**!
+Here's just a **tiny sample** of the sort of ifs you might handle if we kept going with just the tools we have. Imagine these three jump actions with all the yoshi riding  and mushroom powerup variations added, along with fire flower, speed boosts etc etc.  
+  
+> If she presses jump, if **running**, if not riding yoshi, if has a mushroom power up, **do this**.  
+> If she presses jump, if **walking**, if not riding yoshi, if has a mushroom power up, **do whatever**.  
+> If she presses jump, if **swimming**, if not riding yoshi, if she has a power up, **do that**  
+> etc etc.  
+  
+How does anyone even make games?  
+  
+Spoiler alert, we're going to use *functions* and other tools to get around these problems, but **they'll still be possible if we aren't careful**, so let's avoid this classic *code smell*:  
 
-> If she presses jump, if _running_, if not riding yoshi, if has a mushroom power up, **do this**.
-> If she presses jump, if _walking_, if not riding yoshi, if has a mushroom power up, **do this**.
-> etc etc.
-
-It'll mean a lot of **repetition** too.
-
-{{< imgcard bad_nesting_shapes >}}
-If you're able to draw big, long shapes like this beside your code, life gets hard.
-{{< /imgcard >}}
+{{< imgcard bad_nesting_shapes >}}  
+If you can draw big pyramids under your code like this, it's stinky.{{< /imgcard >}}
 
 ## Reusable code: Functions
 
-Functions are like little programs within your program, and they're written once to do a small, focussed job. 
+Functions! They're like **little programs within your program**! They're bits of code you want to use a lot, wrapped up in a bundle you can summon whenever you want. They do a single, focussed job, then tell you how it went/give you an answer.
 
-You then call on them whenever you need that thing, say starting a jump, checking for a hit, calculating damage.
+You could call them to:  
+* start a jump  
+* check if you've landed  
+* update the score  
+* show a menu  
+* whatever.  
 
-To use them:
-1) Evoke them by name 
-2) Give them some input (if they need it)
-3) They do some things
-4) They feed you back (usually) some output.
+Just like programs, they become really dynamic *when you feed them input* - change what goes in, you get something different coming out.  
 
-### Free functions!
+How they work:  
+1) You all them by name: maybe `fireCannon();` or `showExitMessage();`    
+2) Give them some input (if they need it): `bigOrc.takeDamage(20);`  
+3) They do whatever they are supposed to do   
+4) When finished, they feed you back (usually) some output. A card game might have `bool youWon = checkForWin(card1, card2, card3);` or I could find things out about a string with `numberOfLettersInMyName = myName.length();`    
 
-> Writing functions save you a lot of work. Using someone else's functions though, that's even better!
+Before we even learn how to really use or write them, you can see that function with a good name and the right input/output makes code read aloud like what you were trying to do 👍    
 
-Places we get free functions:
-* Packaged with _C++_, in the _**Standard Library**_
+## Functions we can already use in C++ for free  
+
+> Writing functions save you a lot of work. Using someone else's functions though, that's even better!  
+
+There are loads of free and super useful functions packaged with _C++_, in the _**Standard Library**_  
+
+```cpp
+float cash = 5400.23f;
+int cashRounded = roundf(bigCash); // Rounding to nearest int.
+
+string tweet = "I have every unlock in Mario Kart 8 #hotsawce";
+int tweetLength = tweet.length();
+
+int randomNumber = rand();  // See, they're pretty self explanatory.
+
+int myDogAge = ageInDogYears(myAge); // no.
+```
 
 {{< imgproc ceil_cppref Resize "300x" Link "http://www.cplusplus.com/reference/cmath/ceil/" >}}
 Cplusplus.com reference for the <code>ceil()</code> function
 {{< /imgproc >}}
 
-* Our **work colleagues**, friends or teams we're making games with, Github, game engines, operating systems, drivers and many, many more.
+* Our **work colleagues**, friends or teams we're making games with, Github, game engines, operating systems, drivers and many, many more.  
 
 ### The Standard Library
 
-The keywords of the language give you the basic building blocks to make whatever you need.  That leaves out a lot of everyday things you might need though like:
-* reading files
-* generating random numbers
-* rounding off numbers
-* trigonometry and much more.
+The keywords of the language give you the basic building blocks to make whatever you need.  That leaves out a lot of everyday things you might need though like:  
+* reading files  
+* generating random numbers  
+* rounding off numbers  
+* trigonometry and much more.  
 
-The Standard Library functions are spread out in a number of library files, but all use the same `std` prefix.
-1: **include** the right **header** like `#include <cmath>`
-2: Either use `std::` or `using namespace std` to access the function. Now you know what that really means.
+The Standard Library functions are spread out in a number of library files, but all use the same `std` prefix.  
+1: **include** the right **header** like `#include <cmath>`  
+2: Either use `std::` or `using namespace std` to access the function. Now you know what that really means.  
 
-> To find which header holds the function, google like so: for absolute values (turn a negative positive) google "absolute value C++" and click [abs - C++ Reference - Cplusplus.com](http://www.cplusplus.com/reference/cmath/abs/).
+> To find which header holds the function, google like so: for absolute values (turn a negative positive) google "absolute value C++" and click [abs - C++ Reference - Cplusplus.com](http://www.cplusplus.com/reference/cmath/abs/).  
 
-### Handy Math For Games
+### Handy Math For Games  
 
 Here's Some very basic but very necessary math you don't want to have to code yourself.
 
@@ -93,7 +125,7 @@ Here's Some very basic but very necessary math you don't want to have to code yo
 | **rand**  | cstdlib   | Generates a **random number** from 0 to RAND_MAX                | unsigned int        | [docs](http://www.cplusplus.com/reference/cstdlib/rand/)  |
 | **time**  | ctime     | **Time** in seconds since Jan 1 1970. Good seed for srand.      | time_t              | [docs](http://www.cplusplus.com/reference/ctime/time/)    |
 
-### Calling a function
+## Calling a function
 
 You _call_ a function by writing its name followed by parentheses.
 
@@ -102,21 +134,25 @@ You _call_ a function by writing its name followed by parentheses.
 int rand1 = rand();
 ```
 
+The function evaluates to some sort of value, just like expressions with operators do (say `4+8` or `y * 4`).
+
 ### Passing data to a function
 
 You _pass_ it input data, called _arguments_ or _parameters_ by putting variables or literals in the parentheses.
 
-If you're asking someone to do a real world job for you, say get you something while they're on holiday, they need data! What is it, where can they find it, how much will it cost?
+Think about it: if you're asking someone to do a real world job for you, maybe get you something while they're on holiday, they need info.  What is it, where can they find it, how much will it cost?
 
 ```cpp
-/// print out the result of flooring (rounding down) the decimal `5.7`
-cout << floor(5.7f);
+// round `5.7` down to the nearest int and give us the result.
+// See how you can use it where you'd use any other expression?
+cout << floor(5.7f);  // prints what?
 
-/// Using `pow` to get the square of a number.
-/// You can pass any data (variables, literals etc) to functions.
+// Using `pow` to get the square of a number. It's just an exponential function,
+// like using the x-to-the-power-of-y button on your calculator.
+///You can pass the usual data (variables, literals etc) to functions.
 int x = 5;
-int xSquared = pow(x, 2);
-cout << xSquared;
+int xSquared = pow(x, 2);  // Using 2 as the power is like using the x squared button
+cout << xSquared;   // prints what?
 ```
 
 **Output:**
@@ -166,13 +202,13 @@ Click for more info.
 
 ## Exercise: Random code
 
-[Type out and run the code below on JDoodle.com.](https://www.jdoodle.com/online-compiler-c++17/)
+Make a project called _randoms_ and  type out the following code:
 
-{{< imgcard rand1_code_jdoodle Link "https://www.jdoodle.com/online-compiler-c++17/">}}Printing the random number and the range of numbers possible.{{< /imgcard >}}
+{{< imgcard rand1_code_jdoodle Link "https://www.jdoodle.com/online-compiler-c++17/">}}Printing the random number and the range of numbers possible. (Written in the jDoodle.com editor){{< /imgcard >}}
 
 Now, edit the code to create and print 3 random numbers. 
 
-> Hints: Keep it simple, don't use a loop for now. Another `int` called `rand2` might help. 
+> Hints: Keep it simple, don't use a loop for now. Maybe an `int` called `rand2` might help.. maybe more?
 
 ### Not that random.
 
@@ -232,12 +268,12 @@ A section of a computer program that is **defined only once** but can be **calle
 Though we'll (mostly) call them functions, they have several names across programming languages. Even within _C++_ you'll hear more than one. 
 
 The most common are:
-* method
+* method 
 * procedure
 * routine
 * subroutine
 * subprogram
-  
+
 Are there any **you know** that aren't listed here?
 {{< /alert >}}
 

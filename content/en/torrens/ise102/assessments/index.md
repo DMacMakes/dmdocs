@@ -42,25 +42,29 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 ## Assessment 2: Slot Machine
 
-Coming soon.
-
-**Due:** End of week 8
-
-<!--
-
+**Due:** End of week 8 *(April 11 for T1 2021)*
 
 We'll make a text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258118_1&course_id=_93608_1" target="_blank">A2 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642074_1&course_id=_102573_1" target="_blank">ULTIMO Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642030_1&course_id=_102173_1" target="_blank">ONLINE 1 Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+If you're in the second online class (who joins the collaborate sessions via public link and watch recordings via Discord) this is your submission link:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9772423_1&course_id=_110422_1" target="_blank">ONLINE 2 Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 
 ### Deliverable 
 
-You'll deliver a **zip file** containing your Visual Studio solution. Work through the steps shown in the video carefully: if you miss submission requirements it will cost you easy marks.
+You'll deliver a **zip file** containing your Visual Studio solution. You DO NOT need to submit a build (with executable) as mentioned in the brief. Just a zip of your solution/project folder, as described below.
+
+Work through the steps shown in the video carefully: if you miss submission requirements it will cost you easy marks.
 
 {{< alert title="Correct zip name" color= "danger" >}}
 **Ignore** the naming in the video. Use this, which matches the brief pdf:
 
-**ISE102_Assessment1_Lastname_Firstname**
+**ISE102_Assessment2_Lastname_Firstname.zip**
 {{< /alert >}}
 
 {{< youtube H44emolQCz4 >}}
@@ -71,26 +75,24 @@ With your project open in Visual studio:
   * Click _Open folder in file explorer_. 
   * You'll see several files there, including your `.cpp` file.
 
-If you have **a subfolder** in there with the name of your project, message me or Matt! Do not move its contents or delete it.
+If you have **a subfolder** in there with the name of your project, message me on Discord! **Do not move its contents or delete it**.
 {{< /alert >}}
 
 ### What You Should Delete
-Your folder can be several hundred MB in size. The files you actually need are about 30-50KB in size.
+Your project file might be several hundred MB in size! Meanwhile, the files you actually need are about 30-50KB in size. Let's delete what we don't need.
 
 In your solution/project folder (same thing for us) you can **delete all** of these folders:
 * _.vs_ 
     * visual studio will probably have to be closed for this one
-    * If you can't see it, turn on "hidden items" in Windows explorer's _view_ ribbon.
+    * If you can't see it, **turn on "hidden items"** in Windows explorer's *view* ribbon.
 * _Debug_
 * _Release_
 * _x86_
 * _x64_
 
 {{< imgcard folder_cleaning>}}
-Delete the folders. DO NOT MOVE YOUR FILES if this folder is different to yours. Contact me.
+Here are some of the folders you'd delete. DO NOT MOVE YOUR FILES if your folder is missing the proj files and cpp files. Contact me.
 {{< /imgcard >}}
-
--->
 
 ## Assessment 3: Realtime Game
 
