@@ -39,9 +39,9 @@ Order  | Deliverable       | Due     | Blackboard number
 
 **Zipping and delivering:**  
 1. Put your beauty render, other ZB screenshots and your final ZPR file in a folder.  
-2. **Rename that folder** `AAC202_A2_Lastname_Firstname` and archive it with zip or 7zip.  
+2. **Rename that folder** `AAC202_A1_Lastname_Firstname` and archive it with zip or 7zip.  
 3. The file is likely large, so use the Torrens LFS to upload it. If you haven't used it, instructions are at [the end of this page](#torrens-large-file-system).   
-4. Submit on Blackboard as **Assessment 2**.  
+4. Submit on Blackboard under **Assessment 3** (Character model)
 {{< /alert >}}  
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586491_1&course_id=_102086_1" target="_blank">Online Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
