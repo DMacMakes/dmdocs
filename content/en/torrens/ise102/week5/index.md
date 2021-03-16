@@ -190,6 +190,183 @@ float roundedNumbersAverage = (roundl(3.6f) + roundl(1.2f)) / 2.0f;
 
 ```
 
+<!-- end learning how to just USE functions -->
+{{< alert title="Definition: Function" color= "secondary" >}}
+A section of a computer program that is **defined only once** but can be **called on when needed**.  They might be written by you, a team mate, the community, or whoever made our compiler.
+
+Though we'll (mostly) call them functions, they have several names across programming languages. Even within _C++_ you'll hear more than one. 
+
+The most common are:
+* method 
+* procedure
+* routine
+* subroutine
+* subprogram
+{{< /alert >}}
+
+## Assessment 2
+
+* Slot machine
+* Homework counts toward it!
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Assessment 2 Info<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+**Do not look at any slot machine code outside of class!** You'll end up using it even if you don't intend to. Look at fundamental code, documentation, other kinds of games: not a slot machine.
+
+## Making your own functions
+
+You can define them to handle whatever job you need done, then call them whenever needed. You can hand them new data to work on each time, and grab their results to use or pass to other functions to get even more done.
+
+They're easy to create because they have the same basic components as their parent programs: input, storage, processing and output.
+
+The function `twoTimes` takes a number and multiplies it by 2:
+
+### Declaring a function
+
+**Just like a variable**, a function needs to be _declared_. We have to tell _C++_ what it's **named**, what input it **accepts**, and what type of data it's going to **return**.
+* Like a variable, you write the _type_ followed by the _name_
+* Unlike a variable, you put **parentheses on the end** to tell C++ it's a function.
+
+```cpp
+// Declaring a function that returns my age as an int 
+int myAge();
+```
+
+If your function will accept inputs, you declare those in the parentheses
+
+```cpp
+// Declaring a function that multiply any (integer) input value by two and return the (integer) result.
+int twoTimes ( int inputValue );
+```
+
+### Defining the function body
+
+Just like a variable without a value isn't much use, a function without any code isn't much use.
+
+To make it useful, you have to _define_ the function body in curly braces `{}`. Just like code blocks for `if`, `for` and `while`, it can hold new variables (storage) and statements (processing).
+
+Here we'll **declare and define** twoTimes:
+
+<!-- ![](function_twoTimes_code.png) -->  
+```cpp
+int twoTimes(int inValue)
+{
+  int product = 2 * inValue;
+  return product; 
+}
+```
+The **output** or result of a function is called the **return value**. That's what will take the place of the function call when it has been processed
+
+<!-- ![call twoDozen](call_twoDozen_code.png) -->
+
+```cpp
+  // This Goes in main
+  int twoDozen = twoTimes(12);
+  cout << "\n\t" << "Two dozen, or 2x12 = " << twoDozen << ".\n\n";
+```
+### Exercise: Creating the twoTimes program.
+
+Using the code outline below and the real code above, create and complete the *multiplier* project in Visual Studio.
+
+```cpp
+#include <iostream>
+// What's missing here?? Add it.
+
+// Takes a value and multiplies it by two,
+// returning the result as an integer.
+// (create the twoTimes function here)
+
+int main ()
+{
+  // create a variable and initialise it with the 
+  // result of twoTimes(12)
+
+  // Print out a message, include the result from the call to twoTimes
+  // > Two dozen or 2 x 12 is [answer]
+}
+```
+The program should produce this output, with the real answer in place of `[answer]`.
+
+> Two dozen, or 2 x 12, is [answer] 
+
+---
+
+## Summary
+
+This week we learned:
+* Functions are like mini programs: 
+  * input, storage, processing, output
+* Creating and calling functions
+* How functions make programming easier
+* Ways to get more out of functions
+  * Passing arguments
+  * Descriptive function names
+  * Returning values.
+___
+
+## Homework
+
+{{< alert title="Homework is part of assessment 2" color= "danger" >}}
+On-time submission of weekly homework is part of assessment 2. Non-submission (or low effort submissions) will **impact your final mark.**
+{{< /alert >}} 
+
+The homework is **1)** assigned reading and **2)** a coding project. **Email danny** your `.cpp` file for the *multiplier\_improved* project **by midday Sunday**.
+
+### 1: Reading
+
+Read [Chapter 5](../resources/cpp_through_games_5.pdf), pages **143 to 153**. You can stop when you reach 'Working with scopes'. 
+
+{{< imgproc cpp_through_games Resize "200x" Link "../resources/cpp_through_games_5.pdf" >}}
+<b>Click to download</b> Chapter 5.
+{{< /imgproc >}}
+
+{{< alert title="Separating declaration and definition" color= "primary" >}}
+You can **declare a function before main()** (like a variable declaration) and **define the body after**. 
+
+Be ready to see this in the textbook. Functions will be your bread and butter from now on, so get your head around them!
+{{< /alert >}}
+
+### 2: Calculate_more
+
+Our two times calculator (in project *multiplier*) is a bit limited. **Create a new project** called *multiplier\_improved*. You can copy+paste the code from your *multiplier* `.cpp` file as a starting point.
+
+Instead of two times calculation, were going to do `a * b = c`, and the player will supply `a` and `b`. 
+
+**Give the program the features below**:    
+* Ask the player to input a multiplier (int) and store it.    
+* Also ask them for a multiplicand (int) and store it. These are math terms for `a` and `b`  
+* Calculate the product (or `c`) by calling a "multiply" function which takes the two ints as *parameters*. Return your int product. Store that returned value in a variable.
+* Print out your result in the following (example) format:    
+`The product of 12 and 321 is 3852.`  
+  
+> **Mathematical terminology for `a * b = c`:**  
+> *multiplier* * *multiplicand* = *product*    
+> (from [wikipedia](https://en.wikipedia.org/wiki/Multiplication))  
+ 
+<!-- 
+
+### 3: Random_range
+
+**Create a new project** called _Random\_range_. In it you'll make a function called `randInRange()`. When you call it and pass an integer `rangeMax`, it'll return a random in the range `0` to `rangeMax` inclusive.
+
+I've written the structure, it's up to you to replace the missing code. _Note: The lines (\_\_, \_\_\_\_\_) don't always match the length of the answer._
+
+{{< imgcard hw_rand_code_gaps Link "hw_rand_code_gaps.png">}}{{< /imgcard >}} 
+
+The output (with your own program name) should look like this:
+
+{{< imgcard hw_rand_range_output Link "hw_rand_code_gaps.png">}}{{< /imgcard >}} 
+
+{{< alert title="That random code" color= "primary" >}}
+The approach you use to change your random from the default range `0`-`RAND_MAX` to the custom range `0`-`range_max` is up to you. Use either technique from the section above (By remainder or ratio), whichever made more sense. Or do it your own way.
+{{< /alert >}}
+
+-->  
+  
+
+<!-- 
+
+
 ## Functions for random numbers
 
 C++, like most languages, offers functions that **generate random numbers** for you.
@@ -264,92 +441,6 @@ Click to expand
 Whether or not you fully understood why the computer needed to be hand fed the extra values to be random, remember this: **for each new thing we needed to do, we just called a function** from the standard library. 
 
 That function was written by somebody way better than us at C++, math and computer science than us, so we let them do the work! We only have to look up what they called it.
-
-<!-- end learning how to just USE functions -->
-{{< alert title="Definition: Function" color= "secondary" >}}
-A section of a computer program that is **defined only once** but can be **called on when needed**.  They might be written by you, a team mate, the community, or whoever made our compiler.
-
-Though we'll (mostly) call them functions, they have several names across programming languages. Even within _C++_ you'll hear more than one. 
-
-The most common are:
-* method 
-* procedure
-* routine
-* subroutine
-* subprogram
-{{< /alert >}}
-
-## Making your own functions
-
-You can define them to handle whatever job you need done, then call them whenever needed. You can hand them new data to work on each time, and grab their results to use or pass to other functions to get even more done.
-
-They're easy to create because they have the same basic components as their parent programs: input, storage, processing and output.
-
-The function `twoTimes` takes a number and multiplies it by 2:
-
-### Declaring a function
-
-**Just like a variable**, a function needs to be _declared_. We have to tell _C++_ what it's **named**, what input it **accepts**, and what type of data it's going to **return**.
-* Like a variable, you write the _type_ followed by the _name_
-* Unlike a variable, you put **parentheses on the end** to tell C++ it's a function.
-
-```cpp
-// Declaring a function that returns my age as an int 
-int myAge();
-```
-
-If your function will accept inputs, you declare those in the parentheses
-
-```cpp
-// Declaring a function that multiply any (integer) input value by two and return the (integer) result.
-int twoTimes ( int inputValue );
-```
-
-### Defining the function body
-
-Just like a variable without a value isn't much use, a function without any code isn't much use.
-
-To make it useful, you have to _define_ the function body in curly braces `{}`. Just like code blocks for `if`, `for` and `while`, it can hold new variables (storage) and statements (processing).
-
-Here we'll **declare and define** twoTimes:
-
-![](function_twoTimes_code.png)
-
-The **output** or result of a function is called the **return value**. That's what will take the place of the function call when it has been processed
-
-![call twoDozen](call_twoDozen_code.png)
-
-### Exercise: Creating the twoTimes program.
-
-Using the code outline below and the real code above, create the *two_times* program in Visual Studio.
-
-```cpp
-#include <??????>  // Put the include needed for cout here.
-
-// Declare and define twoTimes here
-
-int main ()
-{
-  // call twotimes from here, with an argument, and store the value.
-
-  // Print out a message, include the result from the call to 2X
-}
-```
-The program should produce this output:
-
-![twoDozen output](twoDozen_output.png)
-
----
-
-## Assessment 2 and homework
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Assessment 2 Info<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-* Slot machine!
-* Homework counts!
-
-**Do not look at any slot machine code outside of class!** You'll end up using it even if you don't intend to. Look at fundamental code, documentation, other kinds of games: not a slot machine.
-
----
 
 ## Randoms in range 1: Integer remainder
 
@@ -459,75 +550,4 @@ int outOf10 = ratio * 10;
 // Any decimal from 0 to 1 would be cut down to 0.
 ```
 
----
-
-## Summary
-
-This week we learned:
-* Functions are like mini programs: 
-  * input, storage, processing, output
-* Creating and calling functions
-* How functions make programming easier
-* Ways to get more out of functions
-  * Passing arguments
-  * Descriptive function names
-  * Returning values.
-
-___
-
-## Homework
-
-{{< alert title="Homework is part of assessment 2" color= "danger" >}}
-On-time submission of weekly homework is part of assessment 2. Non-submission (or low effort submissions) will **impact your final mark.**
-{{< /alert >}} 
-
-It consists of assigned reading and two code projects. **Submit** your two `.cpp` files (calculate_more and random_range)  **by the end of Saturday.**
-
-### 1: Reading
-
-Read [Chapter 5](../resources/cpp_through_games_5.pdf), pages **143 to 153**. You can stop when you reach 'Working with scopes'. 
-
-{{< imgproc cpp_through_games Resize "200x" Link "../resources/cpp_through_games_5.pdf" >}}
-<b>Click to download</b> Chapter 5.
-{{< /imgproc >}}
-
-{{< alert title="Separating declaration and definition" color= "primary" >}}
-You can **declare a function before main()** (like a variable declaration) and **define the body after**. 
-
-Be ready to see this in the textbook. Functions will be your bread and butter from now on, so get your head around them!
-{{< /alert >}}
-
-### 2: Calculate_more
-
-Two times calculator is a bit limited. **Create a new project** called *calculate\_more*. You can copy+paste the code from the old calculator's `.cpp` file as a starting point.
-
-Instead of two times calculation, **give the program the features below**:
-* Ask the player to input a multiplier (int) and store it.
-* Also ask them for a multiplicand (int) and store it
-* Calculate the product by calling a "multiply" function which takes the two numbers as _arguments_ and returns an _int_. Store that value.
-* Print the product.
-
-**Mathematical terminology** for `a * b = c`:
-> **multiplier** * **multiplicand** = **product**  
-
-(from [wikipedia](https://en.wikipedia.org/wiki/Multiplication))
- 
-### 3: Random_range
-
-**Create a new project** called _Random\_range_. In it you'll make a function called `randInRange()`. When you call it and pass an integer `rangeMax`, it'll return a random in the range `0` to `rangeMax` inclusive.
-
-I've written the structure, it's up to you to replace the missing code. _Note: The lines (\_\_, \_\_\_\_\_) don't always match the length of the answer._
-
-{{< imgcard hw_rand_code_gaps Link "hw_rand_code_gaps.png">}}{{< /imgcard >}} 
-
-The output (with your own program name) should look like this:
-
-{{< imgcard hw_rand_range_output Link "hw_rand_code_gaps.png">}}{{< /imgcard >}} 
-
-{{< alert title="That random code" color= "primary" >}}
-The approach you use to change your random from the default range `0`-`RAND_MAX` to the custom range `0`-`range_max` is up to you. Use either technique from the section above (By remainder or ratio), whichever made more sense. Or do it your own way.
-{{< /alert >}}
-
-
-  
-
+-->  
