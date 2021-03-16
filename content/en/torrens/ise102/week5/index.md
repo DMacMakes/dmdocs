@@ -326,7 +326,7 @@ You can **declare a function before main()** (like a variable declaration) and *
 Be ready to see this in the textbook. Functions will be your bread and butter from now on, so get your head around them!
 {{< /alert >}}
 
-### 2: Calculate_more
+### 2: *multiplier\_improved*
 
 Our two times calculator (in project *multiplier*) is a bit limited. **Create a new project** called *multiplier\_improved*. You can copy+paste the code from your *multiplier* `.cpp` file as a starting point.
 
