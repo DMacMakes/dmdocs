@@ -125,6 +125,10 @@ Here's Some very basic but very necessary math you don't want to have to code yo
 | **rand**  | cstdlib   | Generates a **random number** from 0 to RAND_MAX                | unsigned int        | [docs](http://www.cplusplus.com/reference/cstdlib/rand/)  |
 | **time**  | ctime     | **Time** in seconds since Jan 1 1970. Good seed for srand.      | time_t              | [docs](http://www.cplusplus.com/reference/ctime/time/)    |
 
+## SLEEP human maths are slow
+
+TODO: Add T1 2021's sleep code-along.
+
 ## Calling a function
 
 You _call_ a function by writing its name followed by parentheses.

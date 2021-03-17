@@ -106,6 +106,28 @@ Since we're doing new things, I've updated our tools and UI. Grab them and we'll
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ETsNpdQYe1NJpDtFYUZDE04Bawx7Di8-PfsyDlWfOCZwxw?e=75Dvru" target="_blank">zbrush_customisation.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 -->
+## Introducing ZModeler brush! 
+hotkey: b > z > m
+
+Zmodeler brush lets you work on geometry at the vert/edge/face level like Maya, but also lets you to work by flat islands, polygroup islands and more.
+
+![zmodeler tank frame](zmodeler_tank_1.png)
+An in-progress model with the zmodeler brush hilighting an edge.
+
+Watch a little of the Metal Slug tank modeling tute by Joseph Drust. Jump in around 13:40, watch a few minutes, skip around.
+
+{{< youtube jHOk2kCPK8Y >}}
+
+![zmodeler edge actions](zmodeler_edge_actions.png)
+Hitting <kbd>space</kbd> while using zmodeler shows you what you can do to the component type under your cursor.
+
+TODO: Screenshot of the custom zmodeler brushes
+
+Learn with Michael Pavlovic: watch videos 30-32
+[ZBrush concepting and ideation playlist on Youtube](https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq1ae09h1dht4S6M)
+
+Here's the first one: 
+{{< youtube 4VUSpcEBntw >}}
 
 ## Exercise 1: Explore breakfast
 
@@ -134,9 +156,6 @@ Turn on and off dynamic subdivs for the various bits. Look at the shapes we get.
 Pros: fine control
 Cons: Extra unwanted polygon density
 
-Introducing ZModeler brush! Use the b
-TODO: Screenshot of ZModeler brush popup
-TODO: Screenshot of the custom zmodeler brushes
 
 ### Arcade stick
 
