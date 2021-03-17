@@ -53,7 +53,7 @@ Armour from the upper arm of a robot.
 
 You can think of **creases** like the bendy poles in a tent. The hold the form very well where the cloth crosses them, and bend with the form along their length.
 
-//Need pic of crease in zbrush. Pref from my hearthstone things.
+TODO: Need pic of crease in zbrush. Pref from my hearthstone things.
 
 **Support edges** are more about strength in numbers.. The more there are and the closer together they are, they more they behave like a creased edge. You get more control with support edges, but it messes with your polygon density. 
 
@@ -95,6 +95,8 @@ The Super Wings?
 Wikipedia: <https://en.wikipedia.org/wiki/Subdivision_surface>
 {{< /alert >}}
 
+<!-- 
+
 ## New tools!
 
 Since we're doing new things, I've updated our tools and UI. Grab them and we'll install.
@@ -103,7 +105,9 @@ Since we're doing new things, I've updated our tools and UI. Grab them and we'll
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ETsNpdQYe1NJpDtFYUZDE04Bawx7Di8-PfsyDlWfOCZwxw?e=75Dvru" target="_blank">zbrush_customisation.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-## Exercise 1: ZBrush Subdivisions
+-->
+
+## Exercise 1: Explore breakfast
 
 <!--Open scene with cube and magnifying glass good topo, mag bad topo, in layers, only cube visible.-->
 Grab and open this ZBrush project
@@ -111,17 +115,28 @@ Grab and open this ZBrush project
 Breakfasty bits modeled in ZBrush.
 {{< /imgcard >}}
 
-### Preview Subdivisions
+TODO: Add more to breakfast: fork with creases and control loops.
 
-Let's explore previewing:
-* Dynamic subdivisions on/off
-* Controlling how many levels of subdivision are previewed
-* Look at the real poly count
+### Breakfast by Paul Chambers
 
-### Real subdivisions
+This is the pic I was modeling from.
 
-1. Copy paste the tool. Rename each element, removing "_subd"
-4. In _Tool -> Geometry -> Dynamic_ Subdiv hit **apply**.
+{{< imgproc style_big_breakfast_paul_chambers Resize "1024x" Link "style_big_breakfast_paul_chambers.png" >}}
+Big breakfast. Click to zoom.
+{{< /imgproc >}}
+
+### Creases and control loops.
+
+Turn on and off dynamic subdivs for the various bits. Look at the shapes we get.
+
+### Control loops and ZModeler
+
+Pros: fine control
+Cons: Extra unwanted polygon density
+
+Introducing ZModeler brush! Use the b
+TODO: Screenshot of ZModeler brush popup
+TODO: Screenshot of the custom zmodeler brushes
 
 ### Arcade stick
 
@@ -147,9 +162,7 @@ Pancake breakfast. Click to zoom.
 Chest. Click to zoom.
 {{< /imgproc >}}
  
-{{< imgproc style_big_breakfast_paul_chambers Resize "1024x" Link "style_big_breakfast_paul_chambers.png" >}}
-Big breakfast. Click to zoom.
-{{< /imgproc >}}
+
  
 #### Zoomed out: Lulemero
 
@@ -159,7 +172,10 @@ Nice rounded softness in this scene gives us an idea of how to approach our mode
 Everything looks sanded off, smooth to touch. Click to zoom.
 {{< /imgproc >}}
 
-## Subdiv learning and resources
+## Homework NEEDED
+TODO: Homework modeling/research
+
+### Subdiv learning and resources
 
 Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
 
@@ -169,9 +185,6 @@ for that reason, i'll be skimming several videos today, and leaving it to each o
 always work large to small. you don't know yet how many small details you'll need to get your point across, or how hard they'll be. get the silhouettes, proportions and corners right first.
 {{< /alert >}}
 
-### fundamentals
-
-
 ### metal slug tank start to finish zmodeler
 
 This video is timelapsed but it has **commentary** through the whole thing by Pixologic's demo guy (and former industry modeler guy). It doesn't slowly teach you any given feature, but it will give you a great **understanding of how he breaks up the model** into pieces, then repeats a small set of processes in different ways. He also solves common problems, and you'll see him use masking, polygroups and visiblity controls just like with the other brushes.
@@ -179,6 +192,8 @@ This video is timelapsed but it has **commentary** through the whole thing by Pi
 {{< youtube jHOk2kCPK8Y >}}
 
 https://www.youtube.com/watch?v=jHOk2kCPK8Y
+
+<!-- 
 
 ### Working with cylinders
 
@@ -223,15 +238,22 @@ This week we
 * Covered our first assessment
 * Introduced resources you'll need to learn from
 * Have homework to do!
+
+-->
+
 <!--
+
  Homework
 
 1. Watch videos provided, take notes about some of the techniques and challenges of subdivision/hard surface modeling that you discover.
 2. Consider what techniques you think will solve your problems.
 3. Draw over the concept in photoshop/krita to show pieces, and again to show ideas of edges/topology
 4. Document your answers in **your own new thread** in the module one forum. [See my post for instructions](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866553_1&message_id=_2124709_1).
+
 -->
-<!--
+
+<!--  
+
  NEW APPROACH
 Biggest cross-subject problem right now: assignments are due on a sunday, not 1 week after the class.
 
