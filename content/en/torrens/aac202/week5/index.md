@@ -123,11 +123,6 @@ Hitting <kbd>space</kbd> while using zmodeler shows you what you can do to the c
 
 TODO: Screenshot of the custom zmodeler brushes
 
-Learn with Michael Pavlovic: watch videos 30-32
-[ZBrush concepting and ideation playlist on Youtube](https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq1ae09h1dht4S6M)
-
-Here's the first one: 
-{{< youtube 4VUSpcEBntw >}}
 
 ## Exercise 1: Explore breakfast
 
@@ -156,7 +151,6 @@ Turn on and off dynamic subdivs for the various bits. Look at the shapes we get.
 Pros: fine control
 Cons: Extra unwanted polygon density
 
-
 ### Arcade stick
 
 {{< imgcard arcade_stick_zb Link "stick.zip">}}
@@ -181,8 +175,6 @@ Pancake breakfast. Click to zoom.
 Chest. Click to zoom.
 {{< /imgproc >}}
  
-
- 
 #### Zoomed out: Lulemero
 
 Nice rounded softness in this scene gives us an idea of how to approach our modeling.
@@ -191,26 +183,31 @@ Nice rounded softness in this scene gives us an idea of how to approach our mode
 Everything looks sanded off, smooth to touch. Click to zoom.
 {{< /imgproc >}}
 
-## Homework NEEDED
-TODO: Homework modeling/research
-
-### Subdiv learning and resources
+## Homework
 
 Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
 
-for that reason, i'll be skimming several videos today, and leaving it to each of you to watch the ones in the order that works for your prop.
+### 1. Watch metal slug tank modeling 
 
-{{< alert title="tip: work large to small" color= "warning" >}}
-always work large to small. you don't know yet how many small details you'll need to get your point across, or how hard they'll be. get the silhouettes, proportions and corners right first.
-{{< /alert >}}
+Watch at least half an hour of this 1 hour video. It doesn't have to be one sequential bit, you can pick 3 10 minute chunks for example. 
 
-### metal slug tank start to finish zmodeler
-
-This video is timelapsed but it has **commentary** through the whole thing by Pixologic's demo guy (and former industry modeler guy). It doesn't slowly teach you any given feature, but it will give you a great **understanding of how he breaks up the model** into pieces, then repeats a small set of processes in different ways. He also solves common problems, and you'll see him use masking, polygroups and visiblity controls just like with the other brushes.
+It's timelapsed but it has **commentary** through the whole thing by Pixologic's demo guy (and former industry modeler guy). It doesn't slowly teach you any given feature, but it will give you a great **understanding of how he breaks up the model** into pieces, then repeats a small set of processes in different ways. He also solves common problems, and you'll see him use masking, polygroups and visiblity controls just like with the other brushes. By the end you can see how appealing mechanical things can be made with the zmodeler brush/tools. 
 
 {{< youtube jHOk2kCPK8Y >}}
 
-https://www.youtube.com/watch?v=jHOk2kCPK8Y
+<!-- https://www.youtube.com/watch?v=jHOk2kCPK8Y -->  
+
+### 2. Watch Pavlovic tutorials
+
+This guy is the absolute source. Learn with Michael Pavlovic: watch videos 29-33.
+
+[ZBrush concepting and ideation playlist on Youtube](https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq0ae09h1dht4S6M
+
+### 3. Model object
+
+Likely modeling a knife or similar from breakfast reference. Remember, work big to small as always, but be aware of what's left to do.
+
+Post screenshots of the model with polyframe on and off, with dynamic subdivs on and off.
 
 <!-- 
 
