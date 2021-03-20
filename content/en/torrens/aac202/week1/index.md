@@ -226,7 +226,7 @@ Watch out:
 * Exiting edit mode by mistake (T)
 * Getting back into it.
 
-## Due This Week
+## Homework 
 
 Pick a different Madball (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. Do starting from the base sphere provided in `Trying_Out_Brushes.zpr`. If you already overwrote that file working on the class Madball, get a fresh copy from [aac202_zbrush_resources.zip](aac202_zbrush_resources.zip).  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
 
