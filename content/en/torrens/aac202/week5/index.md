@@ -219,9 +219,9 @@ Post screenshots of the model with polyframe on and off, with dynamic subdivs on
 Pancake breakfast. Click to zoom.
 {{< /imgproc >}}
 
-### Submission
+#### Submission
 
-Submit the files to the threads below. If you click a link and it has to authorize it may drop you at the subject's blackboard homepage. If so, come back here and click again.
+By midday Monday add a **reply** to your class's thread below and **insert your screenshots** so they're visible when we view the thread. If you click a link and it has to authorize it may drop you at the subject's blackboard homepage. If so, come back here and click again.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968745_1&message_id=_2575998_1" target="_blank">Ultimo W5 HW Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
