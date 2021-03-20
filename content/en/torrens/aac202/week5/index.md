@@ -185,6 +185,12 @@ Everything looks sanded off, smooth to touch. Click to zoom.
 
 ## Homework
 
+**Due Monday 12pm (midday)**
+
+1. Watch Metal Slug tank modeling.
+2. Watch Pavlovic Tutorials.
+3. Model breakfast object/s with ZModeler.
+
 Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
 
 ### 1. Watch metal slug tank modeling 
@@ -201,13 +207,25 @@ It's timelapsed but it has **commentary** through the whole thing by Pixologic's
 
 This guy is the absolute source. Learn with Michael Pavlovic: watch videos 29-33.
 
-[ZBrush concepting and ideation playlist on Youtube](https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq0ae09h1dht4S6M
+[ZBrush concepting and ideation playlist on Youtube](https://www.youtube.com/playlist?list=PLkzopwqcFevYqrk_0MKIaUwrWYILzYsp6)
 
 ### 3. Model object
 
-Likely modeling a knife or similar from breakfast reference. Remember, work big to small as always, but be aware of what's left to do.
+Using zmodeler and dynamic subdivisions, have a go at modeling the knife in this pancake breakfast scene. **Hint:** don't make it one single piece. use separate meshes for the blade, the handle and the rivet. If you finish it and want to explore more, try the teapot: separate lid, handle, body and spout.
 
 Post screenshots of the model with polyframe on and off, with dynamic subdivs on and off.
+
+{{< imgproc style_pancakes_paul_chambers Resize "1024x" Link "style_pancakes_paul_chambers.png" >}}
+Pancake breakfast. Click to zoom.
+{{< /imgproc >}}
+
+### Submission
+
+Submit the files to the threads below. If you click a link and it has to authorize it may drop you at the subject's blackboard homepage. If so, come back here and click again.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968745_1&message_id=_2575998_1" target="_blank">Ultimo W5 HW Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968730_1&message_id=_2575999_1" target="_blank">Online W5 HW Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!-- 
 
