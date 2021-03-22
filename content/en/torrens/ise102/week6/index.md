@@ -6,13 +6,7 @@ description: >
   Programs inside programs!
 ---
 
-## Week 5 Homework
-
-1. The reading
-2. The programs
-[Week 5 Homework tasks in Week 5 notes](../week5/#homework)
-
-## Assessment 2: Slots
+## Assessment 2 brief
 
 The brief pdf [on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948579_1&course_id=_90315_1)
 
@@ -26,16 +20,27 @@ What you're usually getting when you download a game, say a soccer game, is **a 
 A game program, at the highest level solves the problem of **wrapping up the game screen (and others) in a menu (loop)**
 {{< /alert >}}
 
-## Slots Level 1: The program as problem
+## Pokies Level 1: The program as problem
 
 Our game's big problem to solve is:
 
 > Starting up and displaying a menu _screen_ that accepts input providing access to other _screen(s)_ (slots game and related _screens_).  
 > Finally, if the user chose to exit, that has to happen.
 
-A big problem needs someone to solve it, and they usually need help. **`int main()`, our main function, is the lead problem solver in any program.** 
+### Solving starts with a solver.. 
 
-It can't handle the whole problem, so it breaks it into separate smaller problems, which it can hand off to other functions.
+A big problem needs lots of solving, and someone to coordinate all that solving. **`int main()`, our main function, is the lead problem solver in any program.** It should describe at the very highest level what our program does. To make sure that's the case,I'l write some comments into main to describe the veeerry top level solution we have so far:
+
+![Starting with comments](pokey_start_comments.png)
+
+### Solving a moon landing
+
+It's a bit like how the US govt solved going to the moon. You don't go to the moon by having the president sit down and draw the design for a jet cone or a space suit helmet.   
+  
+The way you go to the moon is by:  
+1. Picking a boss of going to the moon, and then they either make, rename or ring up an existing space agency (NASA).   
+2. They tell space agency you're now a going-to-the-moon space agency, and you have to figure out and deliver to me a moon landing.   
+3. It goes on from there, but whatever else happens, you know who to ask if the moon landing thing is ready yet.  
 
 ### The screens
 
@@ -83,9 +88,7 @@ Importantly, an abstraction isn't a single instance of thing. **A _car_ is an id
 1. Open _notepad_ and write down 5 abstractions you can find (written or implied) in that description.
 2. Choose one of them and write a brief description of that system, like I've done for car.
 3. Name 3 more abstractions within that system you've described.
-4. When that's all done, **open this thread and reply** to it with your answers. 
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_90315_1&nav=discussion_board_entry&conf_id=_153571_1&forum_id=_857301_1&message_id=_2200384_1" target="_blank">Abstraction Exercise Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+4. When that's all done, copy-paste your answers to the #class-ise102 Discord channel.
 
 #### Levels
 
@@ -193,7 +196,15 @@ MAIN
 END
 ```
 
-####  Psuedofunctions?
+## Breaking down to functions
+
+Big things worth doing are rarely small enough for main to do the whole job itself, just like the moon guy couldn't, but it'll be in charge and it'll make the calls that get it done. 
+
+We can't plan out all the functions that'll be called, all the jobs that'll be done in one go, that'd be mayhem. Instead we'll start at the top and keep splitting up and solving problems until there's nothing left to solve, and we'll have our game!
+
+The whole way through though, we'll try to keep main small and clear enough that it can be easily read, understood and checked.
+
+###  Psuedofunctions?
 
 I can see enough info there to give us our functions too. How?
 
