@@ -307,30 +307,26 @@ You have **two tasks:** to complete the code below and then plan two functions (
 
 The code below function declarations and function calls commented out, and they're incomplete. Your job is to complete the functions and move the appropriate code from `main` into them.
 
-1.**Create a project** _Slotso_base_ and write out the code below, **including the comments**.   
-2. **Run it.** Try the slots and credits screen. Finally, enter 2 to exit and make sure it all works.  
-3. **Uncomment** the `displayExitScreen()` function declaration (with definition), then do the same for the call to the function near the end of main.  
-4. **Identify the functionality** that belongs in `displayExitScreen()` and **move it** there.  
+1.**Start with the class code** which you can see below, **including the comments**.   
+2. **Run it.** Try the slots and credits screen. Finally, enter 2 to exit and make sure it all works. 
+3. There's a commented out call to "displayQuit()" in main. Uncomment it (delete the //) ike we did in class for the menu, but easier because it doesn't take parameters or return data.  
+4. Like we did in class for `displayMenu`, **Find the code** in main that should be in `displayQuit()` and **move it** there. It'll be even easier because you don't have parameters or a return value.
 5. **Run it**, and make sure the program outputs what it did before.   
-6. **Repeat** for the **other 3** functions.  
-  * You can figure out the function types and argument types from the comments, or the code you'll be moving into them. Look at the bullet lists and flowcharts too.  
-  * Meaningful variable names in the functions make life easier.  
+6. **Repeat the process** for the remaining functions including playslots.
+  * Look at the flowchart if you get lost.  
+
+{{< imgcard pokey_code_homework Link "pokey_code_homework.png" >}}
+Middle-click to open in a new window.
+{{< /imgcard >}}
   
-{{< alert title="Easy or impossible?" color= "secondary" >}}
-It **should be quite easy** if you've understood functions and the basic structure I built in class. If it's hard, if you find yourself moving things around and it never works, there's a good chance you haven't really watched and participated in class 5 and/or 6 with full focus. 
+{{< alert title="Building on previous study." color= "secondary" >}}
+This task **should be quite easy** if you've understood functions and the basic structure I built in class. If it's hard, if you find yourself moving things around and it never works, there's a good chance you haven't really watched and participated in class 5 and/or 6 with full focus. 
 * If you skim or 'watch' the classes while doing another subject's work, **you won't get there**.
-* If you **skipped week 5's homework** (at least half the class did) and think that moving on to week 6's will fix what you don't know about functions, **it probably won't**. 
+* If you **skipped week 5's and think that moving on to week 6's will fix what you don't know about functions, **it probably won't**. 
 * **This stuff becomes easy** when it clicks, but **it won't until you do the leg work**.
 * Read (don't skim) the required textbook sections. 
 {{< /alert >}}
 
-{{< imgproc slotso_code_homework Resize "800x" Link "slotso_code_homework.png" >}}
-Middle-click to open, larger, in new window.
-{{< /imgproc >}}
-
-{{< imgcard slotso_output>}}
-The output before changes.
-{{< /imgcard >}}
 
 ### Task two: Pseudocode two functions
 
