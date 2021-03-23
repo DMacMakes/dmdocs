@@ -37,16 +37,13 @@ It's just.. _confusing_ and weird when you rebel in here, because I'm literally 
 If you don't succeed in seeing and take those opportunities yourself, you will be asked to.
 -->
 
-## Assessment 1 progress
+## Assessment 2 progress
 
 Where did you get to?
-[Week 3 Homework in the notes](../week3/#homework)
 
 ### Reviewing and helping
 
-* Alex poly count
-* Lucas multi cut errors.
-
+<!--
 ## Transferring the details
 
 Normal mapping!
@@ -90,12 +87,14 @@ Watch this:
 
 {{< youtube v5b0z5FLXDk >}}
 
+-->
+
 ## Week 4 Final Submission details
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-4-submission-details">Week 4 submission details<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>  
-  
-<!--- 
+
+<!--   
 Open your Maya projects. We're going to try to resolve any problems you're having exporting your files for baking in Painter.
 
 First, if you:
