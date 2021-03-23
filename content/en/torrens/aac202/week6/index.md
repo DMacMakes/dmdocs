@@ -3,7 +3,7 @@ title: "6: Hard surfaces with subdivs 2"
 linkTitle: "6. Hard surf 2"
 weight: 61
 description: >
-  Modelling our chosen props as smooth, very high resolution models, leveraging subdivision surfaces. Creating a game rez version.
+  Modelling nes pads as smooth, very high resolution models, leveraging subdivision surfaces. 
 resources:
 - src: "*mp.*"
   params: 
