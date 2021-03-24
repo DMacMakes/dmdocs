@@ -21,7 +21,7 @@ Visit my [AAC202 Pinterest board](https://www.pinterest.com.au/dmacdraws/aac202/
 
 You'll need a few software packages on your pc, whether it's your home pc for assesments or a laptop you're bringing to class.
 
-### ZBrush
+## ZBrush
 
 {{< imgproc zbrush_app Resize "400x" Link "https://pixologic.com/zbrush/trial/signup.php" >}}
 ZBrush in action
@@ -32,14 +32,29 @@ _ZBrush_ is a digital sculpting application that provides an experience similar 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://pixologic.com/zbrush/trial/signup.php">Get ZBrush<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
-### Custom UI, Brushes, Materials
+### Custom ZBrush ui and resources
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/Ee2da8SsTu5Jlf4E10iHxCgBhxjyXKhXfMMnCeyzpibg_A?e=XlabCL" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+The zip contains:
+  - a custom user interface file (.cfg)
+  - a hotkey file (TXT)
+  - A `ZBrush 2020` folder full of resources (brushes, materials, basemeshes)
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ETsNpdQYe1NJpDtFYUZDE04Bawx7Di8-PfsyDlWfOCZwxw?e=qWvRbG" target="_blank">Download CFG files zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+{{< alert title="Installing the resources" color= "secondary" >}}
 
+1. Unzip to a new folder.
+2. Go to the folder, look for a `ZBrush 2020` folder, open that.
+3. Select and copy everything inside (*ZProjects, ZStartup, ZTools, wintab32.dll*)with <kbd>Ctrl</kbd> + <kbd>c</kbd>
+4. Open another explorer window and navigate to `C:\Program Files\Pixologic\ZBrush 2020` (or wherever you installed it, including maybe `Pixologic\ZBrush 2021`, or on `D:\` drive) and you should see a lot of folders, and most of them start with *Z*. **Paste** into this folder with <kbd>Ctrl</kbd> + <kbd>v</kbd>
+5. Run ZBrush 2020 and, in the lightbox, double-click the 1mCube project to open it.
+6. In the menu select *Preferences - Config - Load Ui* and load the `.cfg` file (it's in the same unzipped folder where you found `ZBrush 2020`, open it. The interface should change.
+7. Click *Preferences - Config - Store Config* to make sure the changes stick.
+8. Select *Preferences - Hotkeys - Load* and load the hotkeys TXT file from the unzipped folder. It should open that folder by default this tome.
+9. You can test if the hotkeys loaded properly by pressing <kbd>Alt</kbd>+<kbd>d</kbd> - the Damien Standard brush should become active.
+10. Click *Preferences - Hotkeys - Store* to make sure the changes stick.
 
+{{< /alert >}}
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ET6m0Fg3KNZIkxO9oRASN4YBWJQC1N5zsax3tF14CeZvWg?e=ZN3gBM" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Maya 2020
 

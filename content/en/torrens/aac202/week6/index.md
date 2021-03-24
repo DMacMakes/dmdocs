@@ -13,8 +13,12 @@ resources:
     byline: "Art: Krzysztof Maziarz (Artstation)"
 ---
 
+## New resources!
+
+Grab 'em from the [resources page](../resources//#custom-zbrush-ui-resources) and let's install.
+
 ## Modelling from objects
-Radio, snes.
+NES pad!
 
 [AAC202 Hard surface board on Pinterest \(register if you don't have a Pinterest account\)](https://www.pinterest.com.au/dmacdraws/aac202/hard-surface/)
 
@@ -52,14 +56,9 @@ D Pad | plus | spherical concave<sup>&dagger;</sup> | black shiny plastic
 ### Files
 Grab the project folder. This gives you an example project folder structure, which you need when you're combining multiple programs to get your results.
 
-[Download hard_surf_a2.zip](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ESSW2FSot4FOoGQuyNuU_JgBnqr5fhY7JEPP_WhTnXApWA?e=TCXs7V)
+[Download nes_pad.zip](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EY-qTlynY2dPrr_goeiuh5wBHOw2ls9hx8VCyHtBjKYyMg?e=VycjRi)
 
-TODO: We can start from scratch or with the base created last trimester (with the two half cylinders that make the ends)
-
-### A base for the snes pad
-
-1. In `snes_pad/zbrush_snes/` you'll find a zpr file to start from.
-2. In `snes_pad/ref_snes/` you'll find a pureref file to keep on top of zbrush while you work.
+<!-- 
 
 ## TODO: Is radio actually easier?
 
@@ -77,6 +76,7 @@ Adding flat colours early to help our eye.
 * Bevel around buttons? Can do later with booleans when we're more settled on their shape?
 * Adding and tweaking d pad?
 
+-->
 
 ## Homework
 
