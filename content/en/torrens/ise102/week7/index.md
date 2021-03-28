@@ -277,7 +277,9 @@ This week we:
 TODO: More info about submit, rework the code in the homework 7 page.
 Type out and complete the code. Submit it as you were shown today.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../homework7/" target="_blank">Week 7 Homework Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<!-- a class="btn btn-lg btn-primary mr-3 mb-4" href="../homework7/" target="_blank">Week 7 Homework Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a
+
+-->
 
 <!--  
 old more slots 
