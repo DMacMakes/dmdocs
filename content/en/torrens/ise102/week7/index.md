@@ -1,9 +1,9 @@
 ---
-title: "7: Debugging, Slots"
-linkTitle: "W.7 Debugging"
+title: "7: Redrawing the screen, Debugging."
+linkTitle: "W.7 Screen refresh"
 weight: 70
 description: >
-  X-Ray vision: looking at your program as it runs
+  *Clearing the screen* the difference between scrolling chatbot and switching between screens, menus, viewpoints. *Debugging* tells us what the machine is thinking.
 ---
 
 <!--
@@ -29,11 +29,17 @@ I will start from blanked out code you had to type out to get started. If you ha
 
 -->
 
-## Work review-review
+## Building on Week 6
 
+## TODO: Update to code built on T1 2021 class code 
+
+Generate during workshop. Some folks may have used this already.
+
+<!-- 
 {{< imgproc code_w7_slotso_base Resize "400x" Link "code_w7_slotso_base.png" >}}
 Middle click to view in new tab
 {{< /imgproc >}}
+-->
 
 <!--
 ## Simultaneous activities:
@@ -58,16 +64,37 @@ Common exam one problems.
 
 Our game is scrolling off down the screen like a chatroom. It's not a natural fit for our game, with its distinct screens.
 
-{{< alert title="cls: Clear Screen" color= "secondary" >}}
-`system("cls");` wipes the console clear and puts the cursor top left. 
-
-Basically we're using the `system()` function to run a command (`"cls"`) in the console by passing it as an argument.
+Run the windows command prompt by pressing <kbd>win</kbd> and typing `cmd`, then press <kdb>enter</kbd>. When the command prompt/console window appears:
+1. Type `dir`&#8629; 
+2. Type `cls`&#8629; to clear the directory listing from the screen.
 
 ![cls in the console](cls_console.png)
 Here's what happens if you type <i>cls &#8629;</i>  in a regular windows command prompt. Don't worry, in c++ we won't see the `c:\Users\username` prompt.
+
+
+### Clearing in C++
+
+C++ doesn't know a lot about the console, and doesn't have its own way to clear it. That's considered Window's own problem. We can get around it by running "cls" from inside C++ using `system()` like so:
+
+```cpp
+#include <cstdlib>   // Access the `system` command in the cstdlib header.
+...
+
+cout << "Line 1" << endl;
+system("cls");
+cout << "Line 2" << endl;
+```
+
+Why does that work?
+
+{{< alert title="cls: Clear Screen" color= "secondary" >}}
+`system("cls");` wipes the console clear and puts the cursor top left, because that's what `cls` would have done in the console. 
+
+We're using the special `system()` function in *C++*, it can run an external command if it it's available wherever our program runs. With a console program we could use `system` to run more than just `cls` - `dir` or `echo hello` for example.
+
 {{< /alert >}}
 
-### Add screen clear to Slots
+## Add screen clear to Slots
 
 Adding `system("cls")` between screens.
 
@@ -85,6 +112,12 @@ Adding `system("cls")` between screens.
 We have theories, and some of you know this answer right away. That might come from a bit of coding experience, or reading ahead, or just seeing the problem.
 
 **We can't always rely on intuiting the problem.** We need a way to see what's happening, to slow things down or stop them, to see inside our program as it runs on our cpu.
+
+We'll come back to it with the debugger.
+
+## Delivering code assessments
+
+## TODO: Locating, cleaning, compressing your assessment.
 
 ## Introducing the _Debugger_
 
@@ -241,7 +274,8 @@ This week we:
 
 ## Homework
 
-Type out and complete the code:  
+TODO: More info about submit, rework the code in the homework 7 page.
+Type out and complete the code. Submit it as you were shown today.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../homework7/" target="_blank">Week 7 Homework Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
