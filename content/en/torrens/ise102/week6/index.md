@@ -301,7 +301,7 @@ With other functions on hand, and well planned roles for each, `main()` becomes 
 -->
 ## Homework
 
-You have **two tasks:** to complete the code below and then plan two functions (including pseudocode).
+You have **two tasks:** to complete the code below and then add pseudocode to two functions as the planning for your next steps.
 
 ### Task one: Complete the functions
 
@@ -322,7 +322,7 @@ Middle-click to open in a new window.
 {{< alert title="Building on previous study." color= "secondary" >}}
 This task **should be quite easy** if you've understood functions and the basic structure I built in class. If it's hard, if you find yourself moving things around and it never works, there's a good chance you haven't really watched and participated in class 5 and/or 6 with full focus. 
 * If you skim or 'watch' the classes while doing another subject's work, **you won't get there**.
-* If you **skipped week 5's and think that moving on to week 6's will fix what you don't know about functions, **it probably won't**. 
+* If you **skipped week 5's** and think that moving on to week 6's will fix what you don't know about functions, **it probably won't**. 
 * **This stuff becomes easy** when it clicks, but **it won't until you do the leg work**.
 * Read (don't skim) the required textbook sections. 
 {{< /alert >}}
@@ -330,7 +330,7 @@ This task **should be quite easy** if you've understood functions and the basic 
 
 ### Task two: Pseudocode two functions
 
-1. Look at the bullet list in [_Next level down_](#next-level-down) below and **plan out + write pseudocode for:**
+1. Look at the bullet list in [_Next level down_](#next-level-down) below **then add pseudocode to two functions** as the planning for your next steps.
     * the **credits** screen
     * the **menu** screen.
 
