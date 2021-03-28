@@ -33,9 +33,13 @@ I will start from blanked out code you had to type out to get started. If you ha
 
 ## TODO: Update to code built on T1 2021 class code 
 
+Generate during workshop. Some folks may have used this already.
+
+<!-- 
 {{< imgproc code_w7_slotso_base Resize "400x" Link "code_w7_slotso_base.png" >}}
 Middle click to view in new tab
 {{< /imgproc >}}
+-->
 
 <!--
 ## Simultaneous activities:
@@ -270,7 +274,7 @@ This week we:
 
 ## Homework
 
-TODO: More info about submit, rework the code in the homework 7 page!
+TODO: More info about submit, rework the code in the homework 7 page.
 Type out and complete the code. Submit it as you were shown today.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../homework7/" target="_blank">Week 7 Homework Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
