@@ -1,19 +1,19 @@
-
-<!--
-
-
+---
 title: "Homework 7"
 linkTitle: "- Homework 7"
 weight: 71
 description: >
   Showing my thought and pseudocode process as I make a menu loop with input checking.
 type: "torrens"
+---
 
+<!-- 
 
 ## Homework task
 
 **After you have read and understood my planning and pseudocode below,** type out the code at the end of this page and fill in the gaps to complete it.
 
+-->
 
 ## The menu loop
 
@@ -126,5 +126,3 @@ To do this you'll need to **read the sections above**. Also notice the **new tex
 {{< imgproc code_hw7_finish_menu Resize "900x" Link "code_hw7_finish_menu.png" >}}
 <i>Click/middle click image for full size</i>
 {{< /imgproc >}}
-
--->
