@@ -14,6 +14,11 @@ resources:
  10 days left
  Complete and detail the NES pad, make some nice renders.
 
+The d pad:
+{{< imgproc dpad_from_boxes Resize "200x" Link "dpad_from_boxes.jpg" >}}
+The dpad as made from boxes, only bending is left.
+{{< /imgproc >}}
+
  ## What we'll learn today
 
 * Stamping details onto high resolution surfaces
