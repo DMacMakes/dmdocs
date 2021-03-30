@@ -38,13 +38,32 @@ TODO: pic of stamped surface in zbrush and play doh
 
 Alphas are **greyscale images** that can be applied to a brush and act as a mask or filter: where the image is white the brush has maximum effect, where the alpha is black it has none of the effect. Where the image is grey, the effect is applied proportionately.
 
-TODO: Picture of an alpha next to the result. check zbrush docs.
+![ornament alphas by jro](alphas_jro_ornament.jpg)
+*Ornament pack alphas by JRO on [the Flipped Normals store](https://flippednormals.com/downloads/ornament-alphas-vol-1/)*
+### Using alphas to stamp
 
+Dragrect brush stroke
+
+1. Pin brush palette to left of UI 
+2. try different stroke types - drag dots, dragrect.
+3. Try combining alpha and stroke with different brush types 
+  
+Here are some links to Pavlovich explaining alpha usage in depth (youtube) and reference info (zbrush official docs).
+
+Page      |       Link
+----      | -----
+Using dragrect, other stroke types | [Michael Pavlovich Youtube](https://www.youtube.com/watch?v=AdkZe1yKFTU&list=PLkzopwqcFevYP1Nm3wIKsyH-jQTkk8AhS&index=16)
+Alpha options | [Michael Pavlovich Youtube](https://www.youtube.com/watch?v=vjDZ3-fjwt8&list=PLkzopwqcFevYP1Nm3wIKsyH-jQTkk8AhS&index=17)
+Masking with alphas and more | [Michael Pavlovich Youtube](https://www.youtube.com/watch?v=8kWFv1cZlCE&list=PLkzopwqcFevYP1Nm3wIKsyH-jQTkk8AhS&index=20)
+Skin alphas with process gifs | [Flipped Normals Store](https://www.zbrushguides.com/zbrush-skin-brushes-pack/)
+JRO using alphas (beware flashing images) | [Youtube (flashing images)](https://www.youtube.com/watch?v=dNUHjB4YK5c)
+Alpha palette reference | [ZBrush Docs](http://docs.pixologic.com/reference-guide/alpha/)
+Alphas and sculpting reference | [ZBrush Docs](http://docs.pixologic.com/user-guide/3d-modeling/sculpting/sculpting-brushes/alphas/)
 
 Demo not on the pad but on sample objects: a block, a sphere.
 * Making/sourcing an alpha. Setting the alpha.
 * Brush drag modes: drag rect, dots.
-* What brush to use? Layer? Standard?
+* What brush to use? Layer? Standard? Chisel?
 * How much resolution to support our alpha? Density and evenness of polygons.
 
 {{< alert title="Booleans: keep your originals!" color= "secondary" >}}
@@ -58,13 +77,25 @@ Until you get to the final stages of your model it can be hard to know (in detai
 *If you feel like making predictions, spend a few hours watching Plainly Difficult's collection of brief documentaries. It'll fix you right up.*
 {{< /alert >}}
 
+## Screws
+
+Insert multimesh brushes!
+
+{{< youtube "U5u3RpI9In4" >}}
+
+## NoiseMaker
+
+Bumpy surface on face of graphics insert (with nintendo, button names).
+
 ## Cable bend protection
 
 It's a boolean hole containing two halfs of a trumpet thingy. How to make?
 
 Two circles using cylinder of 32 sides to generate. Bridge em with interactive elevation?. Crease ends. Dynamic subdiv settings. Cut it in half with boolean to make little gap? Cut in half with subdivs and hopefully still get rounded shape? Use more curves.
 
-
 ## Homework
 
-
+* Keep refining and finalising buttons.
+* Colour things
+* Duplicate your d pad and use alphas to create the arrow keys. You can make the bowl in the middle with alphas or geometry
+* Use booleans to cut the holes for the buttons into their trims.
