@@ -112,17 +112,6 @@ We have theories, and some of you know this answer right away. That might come f
 
 **We can't always rely on intuiting the problem.** We need a way to see what's happening, to slow things down or stop them, to see inside our program as it runs on our cpu.
 
-We'll come back to it with the debugger.
-
-## Delivering code assessments
-
-How to delete cache files (big, unneeded), zip your project and name it correctly.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable-1" target="_blank">Cleaning and delivering projects<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-
-
-
 ## Making the computer wait
 
 We need to **wait for people to read before clearing the screen**. We could wait for:
@@ -160,6 +149,12 @@ If you don't think about which functions should do the job, you can come unstuck
   * Yes, they do.
 
 Let's put them at the end of the functions, where our breakpoints went.
+
+## Delivering code assessments
+
+How to delete cache files (big, unneeded), zip your project and name it correctly.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable-1" target="_blank">Cleaning and delivering projects<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Fleshing out pseudocoded functions
 
