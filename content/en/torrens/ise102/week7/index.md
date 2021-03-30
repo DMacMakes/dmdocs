@@ -190,7 +190,9 @@ The main problem to solve is checking input and showing errors to the player.
   * Screen isn't scrolling so redraw the whole menu to show errors. Whole menu is inside the loop then.  
   * Since we clear and redraw screen to show error, we'll need to remember the error. (Can't just write it to screen as soon as it's discovered)
 
-
+## TODO :rework with last week's in-line pseudocode
+Write it based on the code i ended up writing in class, but throw in a bug or two to show how to work through them?
+Add homework!
 ## Pseudocode 
 
 {{< alert title="First pass" color= "primary" >}}
