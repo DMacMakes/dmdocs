@@ -12,10 +12,11 @@ resources:
 
 ## What are we learning today?
 
-1. Correctly **delivering** assessment 2.
 1. The next level of **abstraction**: the `playSlots()` function.
 1. Project management using sticky-note style _**agile/kanban** board_.
 1. Adding colour with **_colorterm.h_**
+
+<!--
 
 ## Delivering Your Assessment
 
@@ -24,6 +25,8 @@ resources:
 Visit the link, follow the instructions there carefully!!
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Delivery (Zip) File Creation on dmdocs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->
 
 ## Assessment 2 progress
 
@@ -227,6 +230,8 @@ I've implemented parts of the pseudocode here in a basic way along with dummy re
 
 The rest has the pseudocode as comments. It's not a big leap from here to the finished function!
 
+## TODO: better code with better pseudo. 
+
 {{< imgproc code_playSlots_wpseudo Resize "700x" Link "code_playSlots_wpseudo.png" >}}
 <i>Click/Middle click for full size.</i>
 {{< /imgproc >}}
@@ -271,6 +276,10 @@ END getValidBet
 
 {{< /alert >}}
 
+<!--
+
+TODO: checkforwin would be very useful. My descriptions before were a bit eh
+
 ## Filling in checkForWin
 
 lorem
@@ -292,7 +301,11 @@ END checkForWin
 
 {{< /alert >}}
 
+-->
+
 <!--
+
+aa
 
 ```
 START PlaySlots (needs: players cash amount to start)
