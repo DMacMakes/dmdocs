@@ -10,19 +10,25 @@ resources:
     byline: "Art: Alvaro Vera"
 ---
 
-## Assessment 2:
-10 days left
-Complete and detail the NES pad, make some nice renders.
+ ## What we'll learn today
 
+* Stamping details onto high resolution surfaces
+* Review: Generate a nice boolean
+
+## Assessment 2:
+* 10 days left
+* Complete and detail the NES pad, make some nice renders.
+* Updating assessment page today, creating forum threads
+
+## Dpad bending
 The d pad:
 {{< imgproc dpad_from_boxes Resize "200x" Link "dpad_from_boxes.jpg" >}}
 The dpad as made from boxes, only bending is left.
 {{< /imgproc >}}
 
- ## What we'll learn today
-
-* Stamping details onto high resolution surfaces
-* Review: Generate a nice boolean
+Things to try:
+* Masking with fall off + gizmo or deformation palette transform
+* Lattice modifier with gizmo
 
 ## Stamping in ZBrush
 
@@ -78,7 +84,6 @@ Until you get to the final stages of your model it can be hard to know (in detai
 {{< /alert >}}
 
 ## Screws
-
 Insert multimesh brushes!
 
 {{< youtube "U5u3RpI9In4" >}}
