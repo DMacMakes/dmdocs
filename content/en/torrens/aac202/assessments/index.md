@@ -78,12 +78,31 @@ faces-12
 
 ## Weeks 5-8: High Detail Props Assessment
 
+Model the NES pad as close as you can to completion. Focus on controlling the silhouettes and sharpness/softness of transitions between surfaces.
+
+More info on level of detail and finish is [available below](#level-of-detail).
+
+### What to submit
+
+* Screenshots
+* At least one beauty render, preferably composited and polished.
+* Your final ZPR project file.
+
+### Delivery
+
 While this was officially assessment 1, we'll be completing it in weeks 5-8
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586560_1&course_id=_102604_1" target="_blank">Ultimo Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586489_1&course_id=_102086_1" target="_blank">Online Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+#### Level of detail
+
+Element       | Detail
+---- | ----
+Objects | Focus on using edge loops and creases to control all the silhouettes and contours as well you can. Use booleans to cut openings around the buttons so they don't merge into solid plastic. In those places where you can see inside the model, put something inside (like a black block) to prevent seeing through.
+Materials | At a minimum use the ZBro Paint matcap. Try other materials to see if you can represent the glossy red plastic and metal screws better. 
+Color | If using ZBro paint, at a minimum fill with flat colour. You can add more subtle aging and colouration with polypaint if you like. If you use metal matcaps or pre-coloured plasticy matcaps, you might need to fill with just white to get the right result.
 
 
 <!--
