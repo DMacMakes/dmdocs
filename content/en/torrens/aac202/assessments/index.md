@@ -14,14 +14,16 @@ Due dates have been manually updated, so we're golden 👍
 
 Order  | Deliverable       | Due     | Blackboard number
 ---    | ---               | ---     | ---
-1      | character sculpt  | Week 1  | 3
-2      | prop model        | Week 1  | 1
-3      | prop texture      | Week 1  | 2
+1      | character sculpt  | Week 4  | 3
+2      | prop model        | Week 8  | 1
+3      | prop texture      | Week 12  | 2
 
 
 ## 1. High Poly Character (week 4)
 
-**Due**: Sunday March 14 by 11:55pm. 
+**Submitted**: Sunday March 14 by 11:55pm. 
+
+<!-- 
 
 **Create a bust from an existing 2D concept:**  
 1. Select one of the heads from the concept art [below](#concepts)  
@@ -70,13 +72,21 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * Painting in eyelashes and eyebrows that you didn't have geometry for
 
+-->
 
-<!--
 ---
 
 ## Weeks 5-8: High Detail Props Assessment
 
 While this was officially assessment 1, we'll be completing it in weeks 5-8
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586560_1&course_id=_102604_1" target="_blank">Ultimo Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586489_1&course_id=_102086_1" target="_blank">Online Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+
+
+<!--
 
 For Assessment 1 you'll create a **high detail, normal mapped** prop using **techniques shown in class** and developed at home. These will include subdivision modeling, normal mapping and PBR textures.
 
@@ -102,7 +112,6 @@ NEEDS UPDATING
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902733_1&message_id=_2278364_1" target="_blank">A1 Week 2 Submissions<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 -->
-
 
 <!--
 

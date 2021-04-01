@@ -12,13 +12,17 @@ resources:
 
  ## What we'll learn today
 
+* What to deliver for A2
 * Stamping details onto high resolution surfaces
-* Review: Generate a nice boolean
+* Creating bumpy/noisy surfaces
+* Texturing?
 
 ## Assessment 2:
 * 10 days left
 * Complete and detail the NES pad, make some nice renders.
 * Updating assessment page today, creating forum threads
+* Week 7 progress thread submission
+* Week 8 final submission
 
 ## Dpad bending
 The d pad:
