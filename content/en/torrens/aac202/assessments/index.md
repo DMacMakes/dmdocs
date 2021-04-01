@@ -76,21 +76,24 @@ faces-12
 
 ---
 
-## Weeks 5-8: High Detail Props Assessment
+## 2. Hard surface model: NES Controller   
+Model the NES pad as close as you can to completion. Focus on controlling the silhouettes and sharpness/softness of transitions between surfaces.  
 
-Model the NES pad as close as you can to completion. Focus on controlling the silhouettes and sharpness/softness of transitions between surfaces.
+![Nes pad](nes_pad.jpg)
 
 More info on level of detail and finish is [available below](#level-of-detail).
 
 ### What to submit
 
-* Screenshots
+Create a zip file named *aac202_a2_Lastname_Firstname.zip* containing the following.
+
+* Renders/screenshots showing your finished model off from varous angles, including closeups where they help.
 * At least one beauty render, preferably composited and polished.
 * Your final ZPR project file.
 
 ### Delivery
 
-While this was officially assessment 1, we'll be completing it in weeks 5-8
+While this our second assessment, you'll be delivering it to the *Assessment 1* section on Blackboard.  Upload your zip file to Torrens LFS (instructions below) and submit your link to Blackboard:
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586560_1&course_id=_102604_1" target="_blank">Ultimo Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
