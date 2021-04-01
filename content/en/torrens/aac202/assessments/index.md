@@ -100,7 +100,7 @@ While this was officially assessment 1, we'll be completing it in weeks 5-8
 
 Element       | Detail
 ---- | ----
-Objects | Focus on using edge loops and creases to control all the silhouettes and contours as well you can. Use booleans to cut openings around the buttons so they don't merge into solid plastic. In those places where you can see inside the model, put something inside (like a black block) to prevent seeing through.
+Objects | Focus on using edge loops and creases to **control all the silhouettes and contours** as well you can. Use **booleans** to cut openings around the buttons so they don't merge into solid plastic. In those places where you can see inside the model, put black blocking objects inside to **prevent seeing through**. Use **real subdivisions and alphas** to add embossed details to the d pad, and **noise maker** to add realistic bumpy finish to the graphics inset (bit with the button names). 
 Materials | At a minimum use the ZBro Paint matcap. Try other materials to see if you can represent the glossy red plastic and metal screws better. 
 Color | If using ZBro paint, at a minimum fill with flat colour. You can add more subtle aging and colouration with polypaint if you like. If you use metal matcaps or pre-coloured plasticy matcaps, you might need to fill with just white to get the right result.
 

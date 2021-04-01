@@ -109,9 +109,3 @@ Complete as much of the NES pad modelling as you can by **Midday Monday** and su
 [Ultimo class week 7 submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968747_1&message_id=_2597080_1) 
 
 [Online class week 7 submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968732_1&message_id=_2597097_1)
-
-[Online class week 7 submission thread]
-* Keep refining and finalising buttons.
-* Colour things
-* Duplicate your d pad and use alphas to create the arrow keys. You can make the bowl in the middle with alphas or geometry
-* Use booleans to cut the holes for the buttons into their trims.
