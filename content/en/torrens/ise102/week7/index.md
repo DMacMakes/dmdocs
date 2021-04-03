@@ -228,7 +228,7 @@ The goal this week is to practise cleaning and submitting a project, along with 
 
 1. At a minimum, you should have the class-demonstrated features in your program: screen clearing, waiting for the any key and an error-checking main menu.
 2. Given we have a week until the assessment is due, there should be other functionality coded by now and hopefully any remaining tasks at least noted in your comments if not pseudocoded.
-3. Close Visual Studio and clean up your project for submission as taught in week 7 class, then zip it. You can use the name `ise102_slots_week7_lastname_firstname.zip`. There is a short guide on the subject [resources page](https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable) and the full 25 minute walk through with all the reasoning behind the process in the [Class 7.2 recording here](https://discord.com/channels/748332379835465828/815484286357602345/826661545786343454)
+3. Close Visual Studio and clean up your project for submission as taught in week 7 class, then zip it. You can use the name `ise102_slots_week7_lastname_firstname.zip`. There is a short guide on the subject [resources page](https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable) and the full 25 minute walk through with all the reasoning behind the process in the [Class 7.2 recording here](https://au-lti.bbcollab.com/recording/87d7fbef0fc94cfe85032a2b01850e1c)
 
 ### Delivery
 
