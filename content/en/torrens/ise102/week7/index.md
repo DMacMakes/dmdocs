@@ -216,7 +216,25 @@ This week we:
 
 ## Homework
 
-TODO: Incoming
+**Due:**  12pm Midday, Monday Week 8 (05 Apr). I need the second half of Monday to look at submissions and hopefully offer some helpful feed back where possible.
+
+### Note: no review on Monday
+
+Due to everyone being at a different point and this being Easter weekend we won't have a review this Monday. Instead, I'll fold into Tuesday's class and try to leave some time open this week for individual questions people send me via Discord or email. As a result, the homework is due a bit later.
+
+### What to do
+
+The goal this week is to practise cleaning and submitting a project, along with showing your progress on the slot machine (simple program) assessment which is due shortly. 
+
+1. At a minimum, you should have the class-demonstrated features in your program: screen clearing, waiting for the any key and an error-checking main menu.
+2. Given we have a week until the assessment is due, there should be other functionality coded by now and hopefully any remaining tasks at least noted in your comments if not pseudocoded.
+3. Close Visual Studio and clean up your project for submission as taught in week 7 class, then zip it. You can use the name `ise102_slots_week7_lastname_firstname.zip`. There is a short guide on the subject [resources page](https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable) and the full 25 minute walk through with all the reasoning behind the process in the [Class 7.2 recording here](https://discord.com/channels/748332379835465828/815484286357602345/826661545786343454)
+
+### Delivery
+
+**Check the size of your zip file is <50KB**. If not, you haven't deleted all the cache folders and need to watch the video again. Do not send me an over-sized zip file. Did you turn on *show hidden files* in your Windows file explorer? 
+
+**Email me** your zip file (`ise102_slots_week7_lastname_firstname.zip`) to me  by Midday monday. 
 
 <!-- 
 
@@ -227,11 +245,11 @@ Type out and complete the code. Submit it as you were shown today.
 
 -->
 
-## Killing bugs with the _Debugger_
+## Extra learning: The _Debugger_
 
-The debugger is a few things: 
+Killing bugs with the debugger!
 
-It's a **special interface mode** of Visual Studio that
+The debugger is a few things. For one, it's a **special interface mode** of Visual Studio that:
 * Lets you stop and start program exection
 * Shows you the contents of variables without having to use `cout`
 
