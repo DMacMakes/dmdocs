@@ -345,19 +345,19 @@ There are *a lot* of ways to compare these three cards/numbers to check for thre
 
 ```
 START checkForWins (card1, card2, card3)
-  int multiplier = 0 ( NO_WIN)
+  int multiplier
   if three cards show sevens 
     multiplier is 10 (great idea to use a constant/enum THREE_SEVENS to represent 10)
   otherwise if three cards are the same
-    multiplier is 7
+    multiplier is 5
   otherwise if there's a pair
-    multiplier is 3
-
-  return multiplier, which will still be 0 if no matches were found.
+    multiplier is 3  
+  
+  return multiplier.
 END checkForWins
 ```
 
-Using multiple `return` statements instead of a variable. Okay for small functions but don't do this for long ones, it can become very confusing.
+Using multiple return values:
 
 ```
 START checkForWins (card1, card2, card3)
@@ -365,23 +365,18 @@ START checkForWins (card1, card2, card3)
     if three cards are 7
       return 10 (THREE_SEVENS)
     otherwise
-    return 5
+      return 5
   otherwise if just two cards are the same
     return 3
   otherwise 
     return 0
-END checkForWins()
-    
+
 END checkForWins
 ```
 
-### Exercise: checkForWins base 
-
-Here's the skeleton of our function waiting for that Pseudocode to be added. Go ahead and add it to your code, replacing the body with the pseudocode above, and complete the declaration of the function by adding it's return type and the type of the arguments.
-
 ```cpp
-// Receives 3 integers in range 2-7 representing what's on the cards/wheels in latest spin.
-// Returns a multiplier for the win type (no win, pair, three of a kind, three sevens)
+// Receives 3 ints in range 2-7 representing the cards/wheels in latest spin.
+// Returns a multiplier for the win type (no win, pair, three of kind, three sevens)
 // (We define an enum for this, WinMultiplier)
 // checkForWins(card1, card2, card3)
 //{
@@ -448,8 +443,7 @@ So, we just multiply the ratio by something other than 100.. say 16, to get the 
 
 **n / range_max** becomes **rand() / RANGE_MAX**. 
 
-#### But the result is always 0?
-
+#### but the answer is always 0.
 Divide an int by another int, you get an int. You need to *cast* the ints to floating point numbers for a floating point result.
 
 {{< alert title="Casting data from one type to another" color= "primary" >}}
