@@ -337,6 +337,58 @@ int getValidBet(/*pass in the player's total cash*/)
 
 {{< /alert >}}
 
+## Check for wins
+
+"Winning" in our game is based on something like simple Poker hands (two of a kind, three of a kind) with a special bonus hand (three 7s). Checking for a win then is a pretty straightforward bit of comparing using our boolean operators `&&` (AND) and `||` (OR).
+
+There are *a lot* of ways to compare these three cards/numbers to check for three 7s, a pair etc, I'll just loosely outline a couple of them here.
+
+```
+START checkForWins (card1, card2, card3)
+  int multiplier = 0 ( NO_WIN)
+  if three cards show sevens 
+    multiplier is 10 (great idea to use a constant/enum THREE_SEVENS to represent 10)
+  otherwise if three cards are the same
+    multiplier is 7
+  otherwise if there's a pair
+    multiplier is 3
+
+  return multiplier, which will still be 0 if no matches were found.
+END checkForWins
+```
+
+Using multiple `return` statements instead of a variable. Okay for small functions but don't do this for long ones, it can become very confusing.
+
+```
+START checkForWins (card1, card2, card3)
+  if three cards are the same
+    if three cards are 7
+      return 10 (THREE_SEVENS)
+    otherwise
+    return 5
+  otherwise if just two cards are the same
+    return 3
+  otherwise 
+    return 0
+END checkForWins()
+    
+END checkForWins
+```
+
+### Exercise: checkForWins base 
+
+Here's the skeleton of our function waiting for that Pseudocode to be added. Go ahead and add it to your code, replacing the body with the pseudocode above, and complete the declaration of the function by adding it's return type and the type of the arguments.
+
+```cpp
+// Receives 3 integers in range 2-7 representing what's on the cards/wheels in latest spin.
+// Returns a multiplier for the win type (no win, pair, three of a kind, three sevens)
+// (We define an enum for this, WinMultiplier)
+// checkForWins(card1, card2, card3)
+//{
+  //return 0; // NO_WIN
+//}
+```
+
 <!--
 
 TODO: checkforwin would be very useful. My descriptions before were a bit eh
@@ -361,37 +413,6 @@ END checkForWin
 ```
 
 {{< /alert >}}
-
--->
-
-<!--
-
-aa
-
-```
-START PlaySlots (needs: players cash amount to start)
-  
-  while we don't have a valid player bet
-    Ask user for a bet between 0 and playersCash
-    If they mess up, tell them how
-  end while
-  remove the bet from playerCash (cost of playing)
-
-  make and display 3 random numbers between 2 and 7
-  inspect those 3 numbers for a winning combination.
-  // Players receive x times their bet, depending on winning/losing combinations
-  Select a multiplier that matches the outcome:
-    No match: 0x, Pair: 3x, Three of a kind: 5x, Three 7s: 10x
-  Tell players they won and why.
-  Add (bet time multiplier) to playerCash
-  Tell players how much they won, and their new total.
-  
-  // extra: offer players chance to bet again
-  Tell players to hit a button to return to menu. Wait for them.
-
-  return playerCash value 
-END PlayerSlots
-```
 
 -->
 
@@ -427,7 +448,8 @@ So, we just multiply the ratio by something other than 100.. say 16, to get the 
 
 **n / range_max** becomes **rand() / RANGE_MAX**. 
 
-#### but the answer is always 0.
+#### But the result is always 0?
+
 Divide an int by another int, you get an int. You need to *cast* the ints to floating point numbers for a floating point result.
 
 {{< alert title="Casting data from one type to another" color= "primary" >}}
