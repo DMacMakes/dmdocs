@@ -1,47 +1,40 @@
 ---
-title: "8. Bake, Texture, Present"
-linkTitle: "8. Baking maps"
+title: "8. Finishing Assessment 2"
+linkTitle: "8. Finish A2"
 weight: 80
 description: >
-  Turning 3D art into playable game assets means exporting to a real time **game engine**. Today we'll learn how to move our models from Maya and Painter into Unreal/Unity. From there you can light and screenshot them for your **final deliverables** of Assessment 1.
+ Finalising details, texturing in ZBrush, rendering.
 ---
 
-<!-- ## Productive Class Time
+## Assessment 2 Final push 
 
- 
-We're here learning to do something extremely hard, in week 4 of a second year subject. The amount of knowledge and ability you need to have any chance in game art now is higher than it's ever been. 
+What are we delivering? That'll define how we spend our last few days on the project.
 
-The people already in the industry share a few qualities. They are:
-* self reliant
-* self critical
-* super driven
+[Assessment 2 - NES Controller on dmdocs](../assessments/#2-hard-surface-model-nes-controller)
 
-The only way I can get you guys there is by directing your focussed, hard work. Right now, that's not happening enough.
+## Last 5 percent
 
-### How To Get There
+Details should be 95% done (or done) by now, but you might have one or two hard-solves left to figure out.
 
-| Productive                          | Not Productive                            |
-|------------                         |----------------                           |
-| Building on what we learn in class and bringing the results to the next class    | Having nothing ready to go when class starts.                |
-| Examining and working through problems. Double checking previous lecture notes and trying the application help/web help.   |  Asking for the solution or giving up before you've tried.                         |
-| Working along with the class and asking questions about the new material | Getting lost and asking to cover old material because you haven't read the notes, watched the videos or taken part. |
-| Getting distracted but **recovering**. Centering during breaks so you're focussed again. | Sharing your distraction in class. Committing to giving up and spending 3 hours chipping away at the whole room's chance of getting into a flow. |
-| Knowing its on us to get better every day.   | Hoping 3 hours a week will do much beyond showing us what work there is to do, and what to learn at home. |
+### Hard geometry problems
 
-{{< alert title="Be Where You Need To Be" color= "primary" >}}
-Remember, since you're not at school, you can just _take a break any time_. We don't confine you like a school. If you're disconnecting and you can't wrestle it back in here, walk out, find somewhere you can: that's on you to solve now as an adult. If you're done, go sit in the sun with a coffee, or go to level 1 and watch videos somewhere you won't be shooshed. 
+Hit me with any surprise hard geo problems now, I might have easy solutions.
 
-It's just.. _confusing_ and weird when you rebel in here, because I'm literally the only person here who actually gets in trouble if I bail. 
-{{< /alert >}}
+### Week 7 problems - alphas/imm
 
-If you don't succeed in seeing and take those opportunities yourself, you will be asked to.
--->
+Any issues with alphas and insert mesh brushes that weren't covered in class or review?
 
-## Assessment 2 progress
+## Materials and textures
 
-Where did you get to?
+Note: If you absolutely *can't* texture the insert you can try photoshopping it into a render/composite. You'll do better marks-wise if you get this nutted out.
 
-### Reviewing and helping
+### Materials - when Matcaps won't do it.
+
+### Texture mapping
+Texture-mapping the graphic insert.
+Check out existing UVS (if any)
+UV Master?
+
 
 <!--
 ## Transferring the details
