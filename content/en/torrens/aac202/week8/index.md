@@ -28,13 +28,52 @@ Any issues with alphas and insert mesh brushes that weren't covered in class or 
 
 Note: If you absolutely *can't* texture the insert you can try photoshopping it into a render/composite. You'll do better marks-wise if you get this nutted out.
 
-### Materials - when Matcaps won't do it.
+### Standard Materials - when Matcaps won't do it.
+Matcaps use an image and some fancy tricks to act like materials do in other 3d renderers (think Arnold in Maya for example) while being less work for your computer. They're really limited though; matcaps get darker not only in colour as you add black, their fake lighting/hilights disappear too.
 
-### Texture mapping
-Texture-mapping the graphic insert.
-Check out existing UVS (if any)
-UV Master?
+If you want more control over the materials on your NES pad you can use the Zbrush *Standard Materials*.
 
+{{< imgcard standard_materials Link "standard_materials.png">}}
+The standard materials are found below the matcaps in the materials popup palette.
+{{< /imgcard >}}
+
+Here's an example of using a basic material to get closer (than zbro paint) to the shiny black plastic of the dpad. I used a dark grey, lowered the "diffuse" (non-shiney lighting) and raised the specular (shiney hilight brightness), while messing with the specular falloff curve (blurrier shiney hilight).
+
+{{< imgcard dpad_basic_material Link "dpad_basic_material.png">}}
+Turning up the specular lets the rounded edge pick up bright hilights.
+{{< /imgcard >}}mgcar
+
+{{< alert title="Making new materials is WEIRD" color= "primary" >}}
+To use another instance of a standard material like Basic Material or Toy Plastic you have to click *Copy Mat* (in the material palette), select another standard material *that you're happy to lose* and then *Paste Mat*. 
+
+ZBrush is definitely not a world class materials/rendering program.
+{{< /alert >}}
+
+### Material exercise
+
+Reproduce the d-pad's black plastic material. Duplicate it and make a red plastic, which will have a sharper hilight and be much brighter/more saturated.
+
+## Texture mapping
+
+Texture-mapping the graphic insert. Let's do it together.
+
+### Exercise
+
+Right click and save these images to your project folder.  
+
+<img src="insert_texture_buttons.png" width=320 /><img src="insert_texture_rough.png" width=320 />
+
+1. In your project, select your graphics insert (the piece of plastic with writing printed on it). Make a duplicate to work on, turn off the original's visibility (eye) icon.  
+2. Under *tool -> texture map* click the big empty texture and click *import*. Load `insert_texture_buttons.png`. Note it's not visible on your mesh. You might have even been warned that it doesn't have uvs.   
+![import texture](import_texture.png)  
+3. Open the *UV Map* palette (above the Texture Map one), set the *UV Map Size* slider to 1024 and just click *Create -> UVP*. Turn off the floor (shift-p) to make sure you can see the new texture.  
+![uvmap uvp](uvmap_uvp.png)  
+4. It might be dim or coloured strangely. Fill the graphics insert with ZBro paint (matcap) and white (colour) - the texture map is tinted/rendered based on whatever material is under it. Annoyingly, the texture has it's own Fill mat, so expand *Tool -> Texture Map -> Fill* and click *Fill Mat*  
+5. You can check the alignment of your buttons etc against this texture map, but this one's a really dodgey hack job. Make a polished version of the texture with clean lettering/shapes and better colouring. Add noise to the surface with noisemaker if you haven't already.  
+
+{{< imgcard textured_inset_rough_zbro Link "textured_inset_rough_zbro.png">}}
+The graphics insert with the rough texture applied and visible in the viewport+renders.
+{{< /imgcard >}}
 
 <!--
 ## Transferring the details

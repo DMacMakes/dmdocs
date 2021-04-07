@@ -98,12 +98,15 @@ int playSlots(int playerCash)
   // expect to >$0 and <=$playerCash, can't bet what you don't have. Function will 
   // need to know player's cash to check they don't bet above it..
   //  bet = getValidBet(playerCash)
-  int bet = 200;  // /dummy bet
+  int bet = 200;  // dummy bet
+  cout << "You bet $" << 200 << "\n\n";
   
   //  player cash = player cash minus bet  // (you always pay to play)
   playerCash -= bet;
 
-  // make and save 3 random numbers in range 2-7
+  // ------- SPIN WHEELS, WIN OR LOSE -----------------------------
+  // Create 3 variables to represent the wheels/cards.
+  // make random numbers in range 2-7, store them in the wheels/cards
   // Give numbers to a function that displays them pretty
   
   // ----- Check for a win and figure out the multiplier to apply to the bet
@@ -113,18 +116,21 @@ int playSlots(int playerCash)
   // that say what each multiplier means like PAIR = 2 and THREE_SEVENS = 10.
   // An enum would be perfect.
 
-  // multiplier = check for wins ( 3 random numbers )
-  int multiplier = 0; //  = NO_WIN
-  
+  // int multiplier = checkForWins(card1, card2, card3);
+  int multiplier = 5; //  = THREE_OF_A_KIND
 
-  // Calculate their winnings: the bet times the multiplier. 
+  // Calculate their winnings: 
+  // winnings = bet times the multiplier.
+  int winnings = bet * multiplier;
   // Add their winnings to their cash total. 
+  playerCash += winnings;
     // Note: If they didn't win this number will be 0 so no need for an if statement. 
           // Their bet was already taken from total, so loss is already handled.)
   
   //  Display win/loss info (You can check the multiplier to see what the outcome was)
-  cout << "You lost!\n"; 
-  cout << "You now have $" << playerCash;
+  // eg: if multiplier == PAIR tell player you got a pair, you win 3* bet!a
+  cout << "You got a pair, 3X multiplier!! $" << winnings << " won!\n"; 
+  cout << "You now have $" << playerCash << "\n\n";
   
   // -------- Play Again: nice to have. Press <esc> for menu, <space/whatever> play again
   // Tell player "Press <space> to to play again or <esc> to return to the main menu
@@ -133,8 +139,7 @@ int playSlots(int playerCash)
 
   // Wait for the any key.
   _getch();
-  // int pressed = _getch();  // play again version
-  
+  // int pressed = _getch();  // play again version 
   // Play again feature would need a loop here:
   // While the pressed key was not <escape>, loop back up to near the top of this function.
   // (need to put the `do` of this loop at start of function.
