@@ -15,6 +15,8 @@ resources:
 * Making frame based games: drawing the screen _30, 60 times a second_ (or more).
 * Drawing the the terminal, like it was a bitmap, but using text symbols!
 
+![snake huge pixels](snake_huge_pixels.png)
+
 ## Slots
 * Thanks for submissions
 
@@ -46,7 +48,7 @@ We've been making games in an environment like a chat, or a left-justified text 
 
 One major thing stands out as missing from our console/terminal games: the ability to draw to arbitrary locations. Well, we could afford a larger character set too.
 
-#### Drawing Anwywhere
+#### Drawing Anywhere
 
 We're really limited in **where we can place things** on screen. 
 
@@ -61,18 +63,13 @@ When you look at htop (like windows task manager) running in a console, it becom
 Rows and columns become obvious
 {{< /imgcard >}}
 
-If you could draw to each one **directly with x,y coordinates** you could do stuff like this:
+{{< imgcard "far-manager_windows_5" >}}
+Far manager takes it further, using colours and special characters to give the impression of windows and menus with shadows.
+{{< /imgcard >}}
 
+If you can draw a character in any colour ot any part of the screen **directly with x,y coordinates** you could do stuff like this without thinking about newline or tabbing across:
 {{< imgcard pro_football_fairchild_channel_f >}}
 Games on early consoles like the Fairchild Channel F are close to text mode but would be painful to make and play with our current method.
-{{< /imgcard >}}
-
-{{< imgcard ansi_voodoo_island >}}
-Low colour and a larger character set can be made to do a lot
-{{< /imgcard >}}
-
-{{< imgcard "far-manager_windows_5" >}}
-How programs looked in text terminal days
 {{< /imgcard >}}
 
 {{< imgcard textmode_2000 >}}
@@ -140,9 +137,6 @@ We'll get into how to use more of those later, but to get started we'll have **a
 
 ### Download The Example
 
-**OLD version:**  
-[Console_Drawing_Week_9.zip](Console_Drawing_Week_9.zip) (older)
-
 [Console_Drawing_w9.zip](Console_Drawing_w9.zip) (Updated with loop in demo function, additions to textpixels)
 **Updated W10 T4 2021**
 
@@ -150,122 +144,182 @@ We'll treat the characters on screen as giant pixels. Using the TextPixels libra
 
 **Load and run** the code. Examine the code provided for:
 
- * drawing a pixel
+ * drawing single pixels
  * drawing a string
- * Numbers to a string
+ * int to string conversion
  * filling a row with a character
- * Show fps
+ * filling a row with a 16bit unicode character (64,000 possibilities vs 256)
+ * checking if a key is held down
+ * Showing fps
 
-{{< imgcard output_console_drawing >}}
-The output
-{{< /imgcard >}}
+![console drawing](output_console_drawing.png)
 
-Here's a look at some of the `textpixels` function calls in `draw()`:
+Here's a look at some of the `textpixels` function calls in the demo
+
+![showGraphicsDemo_full](showGraphicsDemo_full.png)
+
+## The top level: a new game loop 
+
+There's a fair bit even in that small function, so let's just look at the very top level: how it loops and what it wants to do each frame. Here it is without the drawing/output bits:
+
+![showGraphicsDemo base](showGraphicsDemo_base.png) 
+
+In our old chat-bot style loop, the player was asked something and the program loop hung until they entered something.
+
+1. The program tells player something, prompts them for input, waits.
+2. Player inputs something, program processes that input, then loops back to 1.
+
+We don't wait for user input now, we check on it as we zoom past 30 or more times per second.. 
+
+<!-- 
 
 ```cpp
-//// WindowWidth and WindowHeight are both 30 by default.
-  //// Draw a rectangle that fills the screen with colour to clear it
-  //// From 0,0, and 30 total pixels wide and high.
-  fillRect(0, 0, windowWidth(), windowHeight(), FG_DARK_MAGENTA);
-  
-  //// Here I do exactly the same thing with fillRectByCoords
-  //// I draw from 0,0 to 29,29 because 0-29 is thirty (look at top border)
-  fillRectByCoords(0, 0, windowWidth()-1, windowHeight()-1, FG_DARK_MAGENTA);
+void showGraphicsDemo()
+{
+  bool playerHasQuit = false; // set up variables that persist
 
-  //// Draw a rectangle 2 pixels shorter and narrower, starting at 1,1.
-  //// That leaves us a 1 pixel border on all sides
-  fillRect(1, 1, windowWidth()-2, windowHeight()-2, FG_GREY);
-  
-  //// Draw a single pixel mid screen
-  drawPixel(windowWidth() / 2, windowHeight() / 2, FG_GREEN);
-  
-  //// Print the frames per second on the bottom visible row of the screen.
-  drawString(1, windowHeight() - 1, "FPS: " + getFpsString(), layerColours(FG_GREY, BG_DARK_MAGENTA));
-  
-  //// Draw column numbers along the top row, leaving off the 1 in numbers > 9
-  for (int x = 0; x < windowWidth(); x++) {
-    drawWString(x, 0, to_wstring(x % 10), layerColours(FG_GREY, BG_DARK_MAGENTA));
-  }
-  //// draw = all along a row, but not on the borders.
-  for (int x = 1; x < windowWidth()-1; x++) {
-      drawWCharacter(x, 20, L'=', layerColours(FG_DARK_BLUE, BG_GREY));
-  }
-
+  // Constantly loop while player hasn't quit the screen. By default this loop runs
+  // 30 times per second. If we draw every loop, we're drawing at 30fps (or 30hz)
+  do
+  {
+    textpixels::startFrame();   // Tell txtPixels we're doing things for this frame
+    //!----- DO EVERYTHING FOR THIS FRAME - input, processing, output via draw functions --
+    textpixels::endFrame();  // Tell texpixels we're done so it can batch draw to screen
+  } while (playerHasQuit == false);     // Only stop when playerHasQuit
+  return;
+}
 ```
+-->
 
-## Exercise
+### Frames Per Second
 
-Read the code and comments carefully. Hover over function names for an explanation of what they do.
+To make a bunch of drawings look like one drawing moving (animation) you have to clear and draw the screen quickly: a cinema projector shows a new frame on 24 times per second. A console game until fairly recently aimed for a minimum of 30fps, and PC games go for a more agressive 60 fps base, with some players aiming for 144 or higher to match their 144hz (screen draws per second). How long do these frames actually last for? 
 
-1. Change the '=" that is drawn across the row to something else.
-2. Make it go from top to bottom (y) instead of across (x).
-3. Change the foreground and background colour of your new character
-4. Change the border colour.
-
-{{< imgcard exercise1_by_waleed >}}
-Exercise 1 complete, by Waleed.
-{{< /imgcard >}}
-
-### How did we do?
-
-Good? Do more!
-
-5. Draw a 10 pixel square at the bottom right of the window, but don't draw over the border.
-   - Use either `fillRect` or `fillRectByCoords`, whichever makes the most sense to you
-6. Draw 3 pixels at random places in 3 different colours using `drawPixel`.
-7. Draw a Tetris L piece somewhere the screen. Falling at whatever orientation you like. 
-{{< imgcard tetris_L >}}
-The Tetris L piece.
-{{< /imgcard >}}
-8. Using loops, fill the screen with horizontal stripes, using one colour for even lines and another for odd lines. 
-    * Any two colours will do.
-    * Hint: modulus (the remainder of integer division) is good at telling odd from even.
-
-
-<!--
-## New Game Loop
-
-We've been waiting for input and reacting. Most modern games don't work that way.
-
-### FPS
-
-30, 60, 144 frames per second? How long is your output on screen before it's redrawn again? There are **1000 milliseconds in a second**. 1000 / fps gives us the **time on screen**.
-
-| FPS                        | Time (ms) per frame               |
+| FPS                        | Time (milliseconds*) per frame     |
 |--------                    |-----------------------------------|
 | **30** (console)           | 1000/30  = **33.3ms**             | 
 | **60** (most monitors)     | 1000/60  = **16.6ms**             | 
 | **144** (gaming monitor)   | 1000/144 = **6.9ms**              | 
+*\* There are 1000 milliseconds in a second*
 
 ### Our Old Game Loop
 
-Here's the game loop we know so far, in pseudocode:
+Here's our old game loop, simplified, in pseudocode:
 
 ```
 while (player hasn't quit)
-  Display a prompt (output), asking player for input
+  Display something (output), prompt player for input
   Wait for input.......
-  process input.
-  Display results of processing
+  store/process input.
 end while
-
-show quit message
 ```
+Basically the loop was *output, input, processing*
 
 ### Animated Game Loop
 
 We can't just leave output on the screen for as long as the player takes to react. Things have to move! At 60fps!
 
-A new game loop:
+Here's the game loop most commonly used in *frame-based* games, as opposed to prompt-response games:
 
 ```
 while (player hasn't quit)
-  check for input
-  update state of all things in game
-  draw graphics to screen
+  input: check for and remember input
+  processing: update state of all things in game
+  output:  draw graphics to screen
 end while
 ```
 
+**input, processing, output**, loop. Storage, or memory/variables, are present throughout the whole thing.
+
+## Exercise
+
+Read the code and comments carefully. Hover over function names for an explanation of what they do.
+
+1. Change the `O` that's drawn across the row to something else.
+2. Make the line go from top to bottom (y) instead of across (x).
+3. Change the foreground and background colour of the line
+4. Change the border colour of the demo.
+
+{{< imgcard exercise1_by_waleed >}}
+Exercise 1 complete, by Waleed.
+{{< /imgcard >}}
+
+## The Point2d type 
+
+Point2d is a special data type I've made to work with textpixels. It holds a pair of x and y coordinates. If you were trying to remember the spot where you left a cactus, you could make a `Point2d` variable called `cactusSpot`, then set its x and y values.
+
+```cpp
+Point2d cactusSpot;
+cactusSpot.x = 3;
+cactusSpot.y = 10;
+
+drawPixel(cactusSpot.x, cactusSpot.y, DARK_GREEN);
+```
+
+There's even a version of drawPixel that can take a single Point2d variable instead of needing two ints:
+
+
+```cpp
+Point2d cactusSpot;
+cactusSpot.x = 3;
+cactusSpot.y = 10;
+
+drawPixel(cactusSpot, DARK_GREEN);
+```
+
+{{< alert title="A box of variables" color= "primary" >}}
+If you think of an int or float variable as a box of memory with a value in it (`int age = 2;`), then you can think of any Point2d variable as a *box with two other boxes in it*; the x and y coordinates of the point. They're just a couple of `int`s. 
+
+```cpp
+cout << cactusSpot.x;  // print out the x coordinate of our cactus.
+```
+
+To check or change (read or write) those variables you can use *dot notation* like above. You just type the variable name, put a dot at the end, and see what it offers.
+{{< /alert >}}
+
+Just like two colons `::` gave you access to things inside a namespace/library or enum, a dot `.` gives you access to things inside an *object*. 
+
+## Objects
+
+Data types like the Point2D aren't like the fundamental types (int, float, double) They create data *objects*. That just means they are like a package, rather than a single, simple box in memory - they can hold multiple variables and even functions.
+
+It turns out `string` has quietly been an object the whole time. It lets you access it with `=` like it's the other data types, but it has a lot of handy functions you can use too. 
+
+You can find out how long a string called `name` is by calling `name.length();`. 
+
+```cpp 
+string myName = "Geena Baneena";
+int nameLength = myName.length();
+```
+
+The function exists inside that one string object and when called, will always give you up to date information - if you assign a new name to `myName`, say `"Princess Sharma Fishsauce"` then `myName.length()` will give you a different answer.
+
+Here's more about string's `length()` function on cplusplus: <https://www.cplusplus.com/reference/string/string/length/>
+
+<!-- TODO: Textbook homework on objects? --> 
+
+{{< alert title="Definition: Member Function" color= "primary" >}}
+A function that you can call inside an object is often called a *member function* or a *method* of that object. Just calling it *function* is still fine, it's just less specific.
+{{< /alert >}}
+
+### Homework 
+
+There are 5 tasks to complete at the top of the Console_Drawing's main.cpp file. Complete them and email me the cleaned, zipped solution.
+
+
+<!-- TODO TRI 2 add more with point2D
+
+, including  having the 
+
+
+Type a letter to change the colour of a letter in a string?
+Type in the start index of a substring to turn the start grey?
+Shows animation, which is useful.
+
+
+-->  
+
+<!--  OLD
 ### Pixels
 
 A grid. 
