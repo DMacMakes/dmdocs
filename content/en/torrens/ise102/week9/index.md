@@ -12,62 +12,22 @@ resources:
 
 ## What are we learning today?
 
-* Making frame based games: drawing the screen _30, 60 times a second_ (or more).
-* Drawing the the terminal, like it was a bitmap, but using text symbols!
+* Drawing in the console like it was a grid of large pixels, (but using text symbols)
+* Making fluid, frame based games: drawing the screen *30, 60 or more times a second*
+* How to use *objects*, powerful new data types.
 
 ![snake huge pixels](snake_huge_pixels.png)
 
 ## Slots
-* Thanks for submissions
+* Thanks for submissions! Marking will be happening over the next two weeks.
 
-<!--  
-* Check Blackboard. Some people submitted the wrong files and I've messaged you about resubmitting. Each day costs marks so act now.
-* I haven't looked at the code yet, just that the file structure looked right.
--->  
+## Beyond left-justified text
+The console's natural tendency is to start at the top left, and output along the line until we feed it `endl` or `"\n"`, or a player hits <kbd>enter</kbd>. Still, even with that limit, symbols and colour can do a lot; with careful use of tabs and spaces people can make some pretty sweet interfaces.
 
-## Beyond Text Entry Mode
+But what could we do if we could draw anywhere we want, in a grid?
 
-We've been making games in an environment like a chat, or a left-justified text document. 
+### Big-pixel games
 
-### Input and Storage
-
-* We can listen for input from a keyboard
-* People can type in characters, digits, sentences
-* Once they hit enter, we can store that data
-
-### Drawing 
-
-* We have symbols!
-* We can space stuff out.. from the top or left.
-![slots 1](output_slots_skeleton_1.png)
-
-* We have colours!
-![termcolor menu](output_termcolor_menu.jpg)
-
-### Limitations
-
-One major thing stands out as missing from our console/terminal games: the ability to draw to arbitrary locations. Well, we could afford a larger character set too.
-
-#### Drawing Anywhere
-
-We're really limited in **where we can place things** on screen. 
-
-**Text symbols are** actually **not bad** for drawing graphics
-- you can represent a lot with colour and symbols. 
-- Buuut **we have to stack them** up from the left of the screen, line by line
-- We can't change things we've drawn, except to clear the screen try again.
-
-When you look at htop (like windows task manager) running in a console, it becomes obvious that the command prompt is just a grid of characters.
-
-{{< imgcard console_htop_grid >}}
-Rows and columns become obvious
-{{< /imgcard >}}
-
-{{< imgcard "far-manager_windows_5" >}}
-Far manager takes it further, using colours and special characters to give the impression of windows and menus with shadows.
-{{< /imgcard >}}
-
-If you can draw a character in any colour ot any part of the screen **directly with x,y coordinates** you could do stuff like this without thinking about newline or tabbing across:
 {{< imgcard pro_football_fairchild_channel_f >}}
 Games on early consoles like the Fairchild Channel F are close to text mode but would be painful to make and play with our current method.
 {{< /imgcard >}}
@@ -84,24 +44,134 @@ ZZT
 We could make something like this more easily.
 {{< /imgcard >}}
 
-## Solution: TextPixels
+### First, we need a grid
+It turns out the console is based on a grid. It's pretty obvious when you type in dir and the columns line up. Now when you look at htop (like windows task manager) running in a linux console, it gets really obvious.
 
-I'll give you a Visual Studio solution today with a library that draws coloured unicode text characters anywhere in the console. 
-
-* It is effectively like changing big pixels on a low resolution screen
-* It can move to and draw at any x,y coordinate in any sequence
-    * no left to right, no tabs `\t` or spaces or newlines `\n` needed.
-* If you picture the command prompt completely full of text, like a find a word puzzle, those are our text pixels.
-
-{{< imgcard output_console_drawing >}}
-Some of the drawing routines in TextPixels demonstrated
+{{< imgcard console_htop_grid >}}
+Rows and columns give us tables, structure!
 {{< /imgcard >}}
 
-### Drawing To Screen Coordinates
+{{< imgcard "far-manager_windows_5" >}}
+Far manager takes it further, using colours and special characters to give the impression of windows and menus with shadows.
+{{< /imgcard >}}
 
-As you know, a computer screen is a big grid of pixels. Every time that grid is updated, that's one frame of your game, or 1 hz (hertz).
+### Drawing to any pixel
 
-Before LCDs computer monitors were, like televisions, cathode ray tubes. The shot a beam of electrons at the pixels to change their colour, and they only had one beam, so they had to sweep the screen pixel by pixel.
+For that we need a special mode in the Windows console, and it's too complicated to go into. Still, there's good news: I'll give you a project today that contains **TextPixels**, a library that draws coloured pixels and text/symbols anywhere we like in the console.
+
+{{< imgcard output_console_drawing >}}
+A work of art produced in TextPixels.
+{{< /imgcard >}}
+
+### Download The Example
+
+[Console_Drawing_w9.zip](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EXeQmzvBHRpAkKyVPNiAq8MBx_PKYGbcC3gUe6Us9QoOcQ?e=yFqN1n) (Updated with loop in demo function, additions to textpixels)
+
+**Load and run** the code. Examine the code provided for:
+
+ * drawing single pixels
+ * drawing a string
+ * int to string conversion
+ * filling a row with a character
+ * filling a row with a 16bit unicode character (64,000 possibilities vs 256)
+ * checking if a key is held down
+ * Showing fps
+
+Here's a look at some of the `textpixels` function calls in the demo
+
+![showGraphicsDemo_full](showGraphicsDemo_full.png)
+
+## The top level: a new game loop 
+
+It's great that we have functions like drawPixel and fillRect, but where's cin and cout? How can any of this work? **Let's look first** at the most important change to our program: enclosing that drawing code is a new paradigm, the ***frame-based game loop***:
+
+![showGraphicsDemo base](showGraphicsDemo_base.png) 
+
+### Frame based games!
+
+Our slot machine hung on user input, only processing or drawing if we hit a key or typed in an answer. Our new game will be like most real games you play: they keep animating and changing whether or not you move your mouse/touch the game pad. 
+
+![nap time](https://gameprogrammingpatterns.com/images/game-loop-simple.png)
+
+This new loop doesn't wait for user input now, it zooms by at 30 or more times per second whether you're ready or not. In the heart of each loop we're given a brief moment to do our work before it furiously redraws the screen, falls into a milliseconds-long hibernation, then wakes up to do it all again. 
+
+### Go deeper: Frames Per Second
+
+To make a bunch of drawings look like one drawing moving (animation) you have to clear and draw the screen quickly: a cinema projector shows a new frame on 24 times per second. A console game until fairly recently aimed for a minimum of 30fps, and PC games go for a more agressive 60 fps base, with some players aiming for 144 or higher to match their 144hz (screen draws per second). How long do these frames actually last for? 
+
+| FPS                        | Time (milliseconds*) per frame     |
+|--------                    |-----------------------------------|
+| **30** (console)           | 1000/30  = **33.3ms**             | 
+| **60** (most monitors)     | 1000/60  = **16.6ms**             | 
+| **144** (gaming monitor)   | 1000/144 = **6.9ms**              | 
+*\* There are 1000 milliseconds in a second*
+
+### If you've forgotten: our old Game Loop
+
+Here's our old, [input-dependent game loop](https://gameprogrammingpatterns.com/game-loop.html#interview-with-a-cpu), simplified, in pseudocode:
+
+```
+while (player hasn't quit)
+  Display something (output), prompt player for input
+  Wait for input.......
+  store/process input.
+end while
+```
+Basically the loop was *output, input, processing*
+
+### Animated Game Loop
+
+We can't just leave output on the screen for as long as the player takes to react. Things have to move! Remember our tiny window of opportunity, a few millseconds each loop? **It's up to us to use that moment to** 
+1. check the state of the keyboard/mouse/controller,
+2. make all our changes to our character, the world, run enemy ai, figure out the win/loss state of the game etc etc, then
+3. Draw pictures and words on our screen to explain the new reality to the player and the other end of this tiny slice of time.
+
+Here's the [game loop](https://en.wikipedia.org/wiki/Video_game_programming#Game_structure) most commonly used in *frame-based* games, as opposed to prompt-response games:
+
+```
+while (player hasn't quit)
+  input: check for and remember input
+  processing: update state of all things in game
+  output:  draw graphics to screen
+end while
+```
+**input, processing, output**, loop. Storage, or memory/variables, are present throughout the whole thing.
+
+### The game loop roughly applied in showGraphicsDemo
+
+Now compare that pseudocode loop to the base of showGraphicsDemo, and you'll see these three stages (input/ouput/processing) would all go between `textPixels::startFrame()` and `textPixels::endFrame()`.  
+
+![](showGraphicsDemo_base.png)
+
+What we actually do in the demo file, as you can see below, is mostly **output**, with one tiny check of the **input** to show the frames per second. 
+
+The input is a little out of place, but for this simple demo which has no actual game state, it's much simpler to understand.
+
+![](showGraphicsDemo_full.png)
+
+{{< alert title="What do startFrame() and endFrame() do?" color= "primary" >}}
+These two calls do handy things like:
+
+1. Measuring the time your code takes to execute in each frame
+2. Figuring out how long to sleep the program between frames so that it'll draw the requested number of frames per second
+3. Controls the console so that it draws everything you requested in one pass, avoiding flickering and slowdown.
+
+![nap time](https://gameprogrammingpatterns.com/images/game-loop-simple.png)
+[Read more at gameprogrammingpatterns.com](https://gameprogrammingpatterns.com/game-loop.html#a-world-out-of-time) about the game loop programming pattern and what's going on if our game isn't just running as fast as it possibly can (4000fps anyone)?
+{{< /alert >}}
+
+## Drawing To Screen Coordinates
+
+Back to the drawing-anywhwere question. It's pretty easy to see how drawPixel and fillRect are meant to work, but how do those numbers map to the actual locations in the console? You really want to know the details when you start doing things like drawing all the way across or down the screen, or one to stop shy of a border, like in our drawLines function:
+
+![drawLines function](drawLines.png)
+
+Spreadsheets have their column-letter and row-number system, crosswords have their "5 down" and "10 across" system. For games we use *screen coordinates*, which start at the top left, at `0,0`, but that's not going to stick in your mind without some background and some pictures.
+
+### The screen
+As you know, or don't know, a computer screen is a **big grid of pixels**. Every time that grid is updated, that's one frame of your game, or 1 hz (hertz).
+
+Before LCD screens our computer monitors were, like televisions, made with [*cathode ray tubes*](https://en.wikipedia.org/wiki/Cathode-ray_tube). The shot a beam of electrons at the pixels to change their colour, and they only had one beam, so they had to sweep the screen pixel by pixel.
 
 {{< imgcard screen_refresh_combined Link "https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/ac3-1/CRT_Monitors.html" >}}
 As you can see, the beam swept from top left to top right, and continued down the screen row by row.
@@ -135,102 +205,6 @@ Click for the Wikipeda page
 
 We'll get into how to use more of those later, but to get started we'll have **access to the solid pixel** with `drawPixel(x,y)`
 
-### Download The Example
-
-[Console_Drawing_w9.zip](Console_Drawing_w9.zip) (Updated with loop in demo function, additions to textpixels)
-**Updated W10 T4 2021**
-
-We'll treat the characters on screen as giant pixels. Using the TextPixels library, they'll be made square.
-
-**Load and run** the code. Examine the code provided for:
-
- * drawing single pixels
- * drawing a string
- * int to string conversion
- * filling a row with a character
- * filling a row with a 16bit unicode character (64,000 possibilities vs 256)
- * checking if a key is held down
- * Showing fps
-
-![console drawing](output_console_drawing.png)
-
-Here's a look at some of the `textpixels` function calls in the demo
-
-![showGraphicsDemo_full](showGraphicsDemo_full.png)
-
-## The top level: a new game loop 
-
-There's a fair bit even in that small function, so let's just look at the very top level: how it loops and what it wants to do each frame. Here it is without the drawing/output bits:
-
-![showGraphicsDemo base](showGraphicsDemo_base.png) 
-
-In our old chat-bot style loop, the player was asked something and the program loop hung until they entered something.
-
-1. The program tells player something, prompts them for input, waits.
-2. Player inputs something, program processes that input, then loops back to 1.
-
-We don't wait for user input now, we check on it as we zoom past 30 or more times per second.. 
-
-<!-- 
-
-```cpp
-void showGraphicsDemo()
-{
-  bool playerHasQuit = false; // set up variables that persist
-
-  // Constantly loop while player hasn't quit the screen. By default this loop runs
-  // 30 times per second. If we draw every loop, we're drawing at 30fps (or 30hz)
-  do
-  {
-    textpixels::startFrame();   // Tell txtPixels we're doing things for this frame
-    //!----- DO EVERYTHING FOR THIS FRAME - input, processing, output via draw functions --
-    textpixels::endFrame();  // Tell texpixels we're done so it can batch draw to screen
-  } while (playerHasQuit == false);     // Only stop when playerHasQuit
-  return;
-}
-```
--->
-
-### Frames Per Second
-
-To make a bunch of drawings look like one drawing moving (animation) you have to clear and draw the screen quickly: a cinema projector shows a new frame on 24 times per second. A console game until fairly recently aimed for a minimum of 30fps, and PC games go for a more agressive 60 fps base, with some players aiming for 144 or higher to match their 144hz (screen draws per second). How long do these frames actually last for? 
-
-| FPS                        | Time (milliseconds*) per frame     |
-|--------                    |-----------------------------------|
-| **30** (console)           | 1000/30  = **33.3ms**             | 
-| **60** (most monitors)     | 1000/60  = **16.6ms**             | 
-| **144** (gaming monitor)   | 1000/144 = **6.9ms**              | 
-*\* There are 1000 milliseconds in a second*
-
-### Our Old Game Loop
-
-Here's our old game loop, simplified, in pseudocode:
-
-```
-while (player hasn't quit)
-  Display something (output), prompt player for input
-  Wait for input.......
-  store/process input.
-end while
-```
-Basically the loop was *output, input, processing*
-
-### Animated Game Loop
-
-We can't just leave output on the screen for as long as the player takes to react. Things have to move! At 60fps!
-
-Here's the game loop most commonly used in *frame-based* games, as opposed to prompt-response games:
-
-```
-while (player hasn't quit)
-  input: check for and remember input
-  processing: update state of all things in game
-  output:  draw graphics to screen
-end while
-```
-
-**input, processing, output**, loop. Storage, or memory/variables, are present throughout the whole thing.
-
 ## Exercise
 
 Read the code and comments carefully. Hover over function names for an explanation of what they do.
@@ -244,27 +218,27 @@ Read the code and comments carefully. Hover over function names for an explanati
 Exercise 1 complete, by Waleed.
 {{< /imgcard >}}
 
-## The Point2d type 
+## A new, custom data type: Point2d
 
-Point2d is a special data type I've made to work with textpixels. It holds a pair of x and y coordinates. If you were trying to remember the spot where you left a cactus, you could make a `Point2d` variable called `cactusSpot`, then set its x and y values.
+Point2d is a special data type I've made to help us build games in textpixels. It holds a pair of x and y coordinates, locating a thing in a 2d space.. like our game window. If you wanted to remember where you left a cactus, you could make a `Point2d` variable called `cactusLocation`, then set its x and y values.
 
 ```cpp
-Point2d cactusSpot;
+Point2d cactusLocation;
 cactusSpot.x = 3;
 cactusSpot.y = 10;
 
-drawPixel(cactusSpot.x, cactusSpot.y, DARK_GREEN);
+drawPixel(cactusLocation.x, cactusLocation.y, DARK_GREEN);
 ```
 
 There's even a version of drawPixel that can take a single Point2d variable instead of needing two ints:
 
 
 ```cpp
-Point2d cactusSpot;
-cactusSpot.x = 3;
-cactusSpot.y = 10;
+Point2d cactusLocation;
+cactusLocation.x = 3;
+cactusLocation.y = 10;
 
-drawPixel(cactusSpot, DARK_GREEN);
+drawPixel(cactusLocation, DARK_GREEN);
 ```
 
 {{< alert title="A box of variables" color= "primary" >}}
