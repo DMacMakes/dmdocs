@@ -278,10 +278,25 @@ Here's more about string's `length()` function on cplusplus: <https://www.cplusp
 A function that you can call inside an object is often called a *member function* or a *method* of that object. Just calling it *function* is still fine, it's just less specific.
 {{< /alert >}}
 
-### Homework 
+## Homework 
 
-There are 5 tasks to complete at the top of the Console_Drawing's main.cpp file. Complete them and email me the cleaned, zipped solution.
-
+1. **Programming Exercise**  
+There are 5 homework tasks to complete at the top of the *Console_Drawing_w9* projects's main.cpp file. Complete them and email me the cleaned, zipped project as you did week 7 homework and the slots assessment.   
+   - **Due:** End of Saturday  
+   - **Filename:** ise102_week9_lastname_firstname.zip  
+   - **Email subject:** ise102 week9 homework  
+  
+2. **Read about the game loop pattern**   
+Read all of this page: <https://gameprogrammingpatterns.com/game-loop.html>  
+  
+3. **Read about objects in the textbook**    
+Read from *Understanding Objects* (page 82) through to the end of the *String object* functions (top of page 91) in [chapter 3 of the textbook](../resources/cpp_through_games_3.pdf).   
+  
+{{< alert title="Writing code == understanding" color= "primary" >}}
+As with any language feature, **if there's something you aren't sure about** go ahead and type out some of the example code in the textbook or write some of your own. **Change it, break it, fix it,** that's how programmers really gain their skills.   
+  
+I lead you to water, it's up to you guys to drink 👌  
+{{< /alert >}} 
 
 <!-- TODO TRI 2 add more with point2D
 
