@@ -81,9 +81,67 @@ Here's a look at some of the `textpixels` function calls in the demo
 
 ![showGraphicsDemo_full](showGraphicsDemo_full.png)
 
+## Drawing To Screen Coordinates
+
+It's pretty easy to see how drawPixel and fillRect are meant to work, but how do those numbers map to the actual locations in the console? You really want to know the details when you start doing things like drawing all the way across or down the screen, or one to stop shy of a border, like in our drawLines function:
+
+![drawLines function](drawLines.png)
+
+Spreadsheets have their column-letter and row-number system, crosswords have their "5 down" and "10 across" system. For games we use *screen coordinates*, which start at the top left, at `0,0`, but that's not going to stick in your mind without some background and some pictures.
+
+### The screen
+As you know, or don't know, a computer screen is a **big grid of pixels**. Every time that grid is updated, that's one frame of your game, or 1 hz (hertz).
+
+Before LCD screens our computer monitors were, like televisions, made with [*cathode ray tubes*](https://en.wikipedia.org/wiki/Cathode-ray_tube). The shot a beam of electrons at the pixels to change their colour, and they only had one beam, so they had to sweep the screen pixel by pixel.
+
+{{< imgcard screen_refresh_combined Link "https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/ac3-1/CRT_Monitors.html" >}}
+As you can see, the beam swept from top left to top right, and continued down the screen row by row.
+{{< /imgcard >}}
+
+When you draw to a screen in code we use the same coordinates, and textpixel uses this system as well.
+
+{{< imgproc arduino_oled Resize "500x">}}
+A tiny arduino screen
+{{< /imgproc >}}
+
+{{< imgcard screen_coords_3_mini_lcd >}}
+Coordinates on a tiny arduino screen
+{{< /imgcard >}}
+
+{{< imgcard screen_coords_4_pixels >}}
+Pixels at x,y coordinates
+{{< /imgcard >}}
+
+{{< imgcard fillRect_width_height >}}
+Drawing a filled rectangle on a screen
+{{< /imgcard >}}
+
+### Character Set
+
+Our projects so far have been limited to the basic 128 character set, which doesn't get you much more than what is on your keyboard. **TextPixels uses unicode,** which gives us handy stuff like the "box drawing" characters and pixels with different fills:
+
+{{< imgcard unicode_box_drawing_characters Link "https://en.wikipedia.org/wiki/Box-drawing_character">}}
+Click for the Wikipeda page
+{{< /imgcard >}}
+
+We'll get into how to use more of those later, but to get started we'll have **access to the solid pixel** with `drawPixel(x,y)`
+
+## Exercise
+
+Read the code and comments carefully. Hover over function names for an explanation of what they do.
+
+1. Change the `O` that's drawn across the row to something else.
+2. Make the line go from top to bottom (y) instead of across (x).
+3. Change the foreground and background colour of the line
+4. Change the border colour of the demo.
+
+{{< imgcard exercise1_by_waleed >}}
+Exercise 1 complete, by Waleed.
+{{< /imgcard >}}
+
 ## The top level: a new game loop 
 
-It's great that we have functions like drawPixel and fillRect, but where's cin and cout? How can any of this work? **Let's look first** at the most important change to our program: enclosing that drawing code is a new paradigm, the ***frame-based game loop***:
+It's great that we have functions like drawPixel and fillRect, but what happened to cin and cout? How's it getting input if the loop never stops? How can any of this work? **Let's look first** at the most important change to our program: enclosing that drawing code is a new paradigm, the ***frame-based game loop***:
 
 ![showGraphicsDemo base](showGraphicsDemo_base.png) 
 
@@ -160,63 +218,7 @@ These two calls do handy things like:
 [Read more at gameprogrammingpatterns.com](https://gameprogrammingpatterns.com/game-loop.html#a-world-out-of-time) about the game loop programming pattern and what's going on if our game isn't just running as fast as it possibly can (4000fps anyone)?
 {{< /alert >}}
 
-## Drawing To Screen Coordinates
 
-Back to the drawing-anywhwere question. It's pretty easy to see how drawPixel and fillRect are meant to work, but how do those numbers map to the actual locations in the console? You really want to know the details when you start doing things like drawing all the way across or down the screen, or one to stop shy of a border, like in our drawLines function:
-
-![drawLines function](drawLines.png)
-
-Spreadsheets have their column-letter and row-number system, crosswords have their "5 down" and "10 across" system. For games we use *screen coordinates*, which start at the top left, at `0,0`, but that's not going to stick in your mind without some background and some pictures.
-
-### The screen
-As you know, or don't know, a computer screen is a **big grid of pixels**. Every time that grid is updated, that's one frame of your game, or 1 hz (hertz).
-
-Before LCD screens our computer monitors were, like televisions, made with [*cathode ray tubes*](https://en.wikipedia.org/wiki/Cathode-ray_tube). The shot a beam of electrons at the pixels to change their colour, and they only had one beam, so they had to sweep the screen pixel by pixel.
-
-{{< imgcard screen_refresh_combined Link "https://api.ed2go.com/CourseBuilder/2.0/images/resources/prod/ac3-1/CRT_Monitors.html" >}}
-As you can see, the beam swept from top left to top right, and continued down the screen row by row.
-{{< /imgcard >}}
-
-When you draw to a screen in code we use the same coordinates, and textpixel uses this system as well.
-
-{{< imgproc arduino_oled Resize "500x">}}
-A tiny arduino screen
-{{< /imgproc >}}
-
-{{< imgcard screen_coords_3_mini_lcd >}}
-Coordinates on a tiny arduino screen
-{{< /imgcard >}}
-
-{{< imgcard screen_coords_4_pixels >}}
-Pixels at x,y coordinates
-{{< /imgcard >}}
-
-{{< imgcard fillRect_width_height >}}
-Drawing a filled rectangle on a screen
-{{< /imgcard >}}
-
-### Character Set
-
-Our projects so far have been limited to the basic 128 character set, which doesn't get you much more than what is on your keyboard. **TextPixels uses unicode,** which gives us handy stuff like the "box drawing" characters and pixels with different fills:
-
-{{< imgcard unicode_box_drawing_characters Link "https://en.wikipedia.org/wiki/Box-drawing_character">}}
-Click for the Wikipeda page
-{{< /imgcard >}}
-
-We'll get into how to use more of those later, but to get started we'll have **access to the solid pixel** with `drawPixel(x,y)`
-
-## Exercise
-
-Read the code and comments carefully. Hover over function names for an explanation of what they do.
-
-1. Change the `O` that's drawn across the row to something else.
-2. Make the line go from top to bottom (y) instead of across (x).
-3. Change the foreground and background colour of the line
-4. Change the border colour of the demo.
-
-{{< imgcard exercise1_by_waleed >}}
-Exercise 1 complete, by Waleed.
-{{< /imgcard >}}
 
 ## A new, custom data type: Point2d
 
