@@ -1,90 +1,83 @@
 ---
-title: "9. Environment Modeling"
-linkTitle: "9: Enviro 1"
+title: "9. Modern texturing with PBR"
+linkTitle: "9: PBR Texturing"
 weight: "90"
 description: >
-  Creating high res environments in ZBrush, working to a style.
+  Learning about the current state of surfacing/texturing meshes for games.
   
 ---
 
-## Assessment 3: Rock n Wood
+## Assessment 3: PBR Texturing
 
-The brief on the assessments (dmdocs) page:
+**Final Submission: End of week 12.**
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-high-poly-environments">Assessment 3</a>
+Not yet fully ready. What it'll involve is texturing a provided model, using Substance Painter, and exporting to a provided Unity scene/web viewer. 
 
-Teams of 2. 
-* Stone Mason
-* Carpenter
+**Week 11:** Progress will be submitted to a Blackboard thread for review.   
+**Week 12:** Models, textures and screenshots will be submitted.
 
-Note: If you have reachability and file exchange problems due to serious ongoing internet issues, work solo as carpenter or mason.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-pbr-texturing">Assessment 3</a>
 
-{{< imgcard mk_concept_all Link "mk_concept_all.jpg">}}
-Mercanary Kings concept (left) and the area we'll sculpt (right)
-{{< /imgcard >}}
+## See PBR in action
 
-{{< imgcard mk_concept_crop Link "mk_concept_crop.png">}}
-Close up of our zone
-{{< /imgcard >}}
+Overwatch
+Fortnight
+Other games..
 
-Michael vicente work
-[pinterest](https://pinterest.com/dmacdraws/aac202)
+Might need better example, something from meet mat if anyone released?
+  - Examples don't have to be all spp files.. Just pieces that create curiosity about how to do things.
+  - Meet Mat examples are up on sketchfab 
+    - Collection: https://sketchfab.com/substance3D/collections/meetmat17
+    - Adobe: https://sketchfab.com/substance3D 
+    - individual: https://sketchfab.com/3d-models/meet-mat-2017-medicbot-v2-fc160f297c7c4587b09a7b5a47b1b52e
+    - Substance staff picks: https://sketchfab.com/substance3D/collections/allegorithmic-staff-pick
+    - https://sketchfab.com/3d-models/soliders-helmet-rock-band-4-8c3464c1855248b2bc6c3428b4e9988d
 
-## Pier Project, New UI And Resources
+## What's Substance Painter like?
 
-1. Copy contents of the Zbrush 2020 folder to your ZBrush 2020 folder.
-2. Copy UI cfg file to your desktop and load UI into ZBrush
-[w10_zbr_resources.zip](w10_zbr_resources.zip)
+Opening some files in Substance and seeing what a project looks like. What, roughly, does an artist do there to texture meshes?
 
-1. Unzip into to a week 10 working folder.
-[w10_pier_base.zip](w10_pier_base.zip)
-2. Open the pureref file in ref__pier
-3. Open the ZPR file in ZBrush_pier
+### Sample file.
 
-## Michael Orb Vicente
+Open a file.
+The [spiderbot?](https://academy.substance3d.com/courses/Getting-Started-with-Substance-Painter-2021/youtube--ZbmRsOnApk)
 
-Michael vicente brushes and materials
+{{< alert title="Painter GPU warning" color= "primary" >}}
+Painter will ask you to change a few windows settings so the GPU can do longer tasks. 
 
-{{< imgcard orb_brushes >}}
-The stone brushes created by Orb.
-{{< /imgcard >}}
+*You can only do this if you're on your own computer. This lab machines won't allow you to make registry changes. If you're on a lab pc, just click continue.*
 
-## Stylised Wood And Stone
-
-Some examples of stylised wood and stone. If you want to go more detailed you can, by collecting your own reference. Keep in mind the brushes provided won't especially help with detailed work in default state.
-
-{{< imgcard fish_1_lary_kummer Link "https://www.artstation.com/artwork/xzAd9Y">}}
-Fishmonger store - more stylised, more dynamic shapes, less details
-{{< /imgcard >}}
-
-{{< imgcard fish_2_lary_kummer Link "https://www.artstation.com/artwork/xzAd9Y">}}
-Fishmonger store - Large, soft grain, big bevels.
-{{< /imgcard >}}
-
-{{< imgcard mountain_giant_1_michael_vicente Link "https://www.artstation.com/artwork/1eBN8">}}
-Mountain giant
-{{< /imgcard >}}
-
-{{< imgcard towers_alexis Link "https://www.artstation.com/artwork/Kz6x9">}}
-Towers.
-{{< /imgcard >}}
-
-## Modeling Stone
-
-Brushes, tools, techniques.
-Style reference.
-
-{{< imgproc howto_stone_zbrush Resize "200x" Link "howto_stone_zbrush.jpg">}}
-Great guide, click to view.
-{{< /imgproc >}}
-
-## Modeling Wood
-
-Brushes, tools, techniques.
-Style reference.
+If you're on your own PC, click the URL in the popup dialogue for more info, and click the quit button in the Painter warning dialogue. You'll be creating or updating these entries in the Windows registry:
+![registry tdr](registry_tdr.png)
+{{< /alert >}}
 
 ## Homework
 
-1. Gather style reference
-2. Gather photo reference
-3. Model up key pieces (two planks & two logs/ x amount of bricks & pavers) that will later be duplicated and modified to make up the rest of the structure.
+### Read PBR Guide part 1. 
+
+You can visit the html version of part 1, or read it in the all-in-one PDF.
+
+Guide parts | Format
+---- | ----
+[Part 1](https://academy.substance3d.com/courses/the-pbr-guide-part-1) - Light and matter | Online 
+[Parts 1 and 2](https://academy-api.substance3d.com/courses/b6377358ad36c444f45e2deaa0626e65/attachments/2b57526e-4bf3-4fd6-ae88-e9a9313a35cc) - All in one | PDF download 
+
+### Watch Part 1 of Getting Started
+
+I've gathered a Youtube playlist of Adobe's free learning material. [How to Substance Painter 2021](https://www.youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4)  
+
+![Getting started](substance_getting_started.png)
+
+Watch [the intro and then part 1 of getting started](https://www.youtube.com/watch?v=-ZbmRsOnApk&list=PLfWza-ietxywun4izsjHG6A69i-aLROK4&index=1) and try some of the things you see there. Add some materials, mask some things. *(Haven't yet confirmed this can be done in 2019.3.3 with provided project files)* 
+
+[How to Substance Painter 2021](https://www.youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4)  
+
+You can grab the [spider bot project files too](https://academy-api.substance3d.com/courses/88047015-c97e-48e8-9654-be65ca7c9809/attachments/ac082bf7-d343-4e1a-afd5-3edd4b4af287) \(268mb\)  
+
+
+
+If the 2021 version turns out too radically different to 2019.3.3 and you can't find things it shows in the interface (or figure out where they went), there is this playlist of the previous introduction vides from 2018: 
+
+[How to Substance Painter 2018](https://www.youtube.com/watch?v=IGGQl9kVB1M&list=PLB0wXHrWAmCxt86Aof15KxHnimg5Iowf6&index=9)
+
+There's other free learning material up on Substance Academy, and plenty of paid great guides to specific kinds of texturing on Gumroad, Flipped Normals.

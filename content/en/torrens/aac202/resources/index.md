@@ -80,6 +80,16 @@ Like _Maya_, _**Substance Painter**_ is available free to students once you've s
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.substance3d.com/education/">Substance Educational<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+### The PBR Guide by Allegorithmic
+
+By the makers of Substance:
+
+Guide parts | Format
+---- | ----
+[Part 1](https://academy.substance3d.com/courses/the-pbr-guide-part-1) - Light and matter | Online 
+[Part 2](https://academy.substance3d.com/courses/the-pbr-guide-part-2) - Practical creation guidelines | Online 
+[Parts 1 and 2](https://academy-api.substance3d.com/courses/b6377358ad36c444f45e2deaa0626e65/attachments/2b57526e-4bf3-4fd6-ae88-e9a9313a35cc) - All in one | PDF download 
+
 ### Pureref
 
 Opening your reference and concepts in Pureref throughout a project is key to good finished work.

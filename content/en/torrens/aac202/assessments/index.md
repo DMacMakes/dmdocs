@@ -77,6 +77,11 @@ faces-12
 ---
 
 ## 2. Hard surface model: NES Controller   
+
+**Subted.**
+
+<!--
+
 Model the NES pad as close as you can to completion. Focus on controlling the silhouettes and sharpness/softness of transitions between surfaces.  
 
 ![Nes pad](nes_pad.jpg)
@@ -107,7 +112,17 @@ Objects | Focus on using edge loops and creases to **control all the silhouettes
 Materials | At a minimum use the ZBro Paint matcap. Try other materials to see if you can represent the glossy red plastic and metal screws better. 
 Color | If using ZBro paint, at a minimum fill with flat colour. You can add more subtle aging and colouration with polypaint if you like. If you use metal matcaps or pre-coloured plasticy matcaps, you might need to fill with just white to get the right result.
 
+-->
 
+## Assessment 3: PBR Texturing
+
+Final Submission: **End of week 12.**
+
+Not yet fully ready. What it'll involve is texturing a provided model, using Substance Painter, and exporting to a provided Unity scene/web viewer.  
+
+**Week 11:** Progress will be submitted to a Blackboard thread for review.  
+**Week 12:** Models, textures and screenshots will be submitted.
+ 
 <!--
 
 For Assessment 1 you'll create a **high detail, normal mapped** prop using **techniques shown in class** and developed at home. These will include subdivision modeling, normal mapping and PBR textures.
