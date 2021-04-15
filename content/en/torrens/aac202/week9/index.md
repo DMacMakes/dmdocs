@@ -89,6 +89,21 @@ See next channel of our layered materials |
 
 ### Please explain those maps and channels
 
+Some pictures aren't representative, you don't look at them to see what something looks like. You look at them for information about something maybe. A graph is a bit like that. Closer:
+* A fingerprint
+* a qr code or bar code
+* consider an fbi recruit's file with a reduced photocopy of a shot up target from their practise at the shooting range.
+* a rubbing from a gravestone
+* polarised view of stressed plastic?
+
+### Baked?
+
+Not every image is drawn. Some can use the properties of the subject and a physical or chemical process to capture them. Consider an xray or a grave stone rubbing. Baking maps is looking at a little area of a high poly mesh from the nearest vantage point on a low poly copy of the mesh and storing it in a pixel.
+
+It's like putting scaffolding in front of a brick wall, covering it in post it notes, rubbing a crayon over all of them, then putting all those post its in a box (in order). You can go and stick them all up on your lounge wall or office wall and recreate the wall. Sorta.
+
+A normal map is like a plaster cast of a bootprint, but manages to store the same 3 dimensional impression in a 2d picture. (It stores x y z info in r g b channels
+
 Today we'll do the short version:
 
 **Baked maps** are the info Painter has analyzed and stolen from a sweet high poly mesh and saved into images (think of these images as data files, not pictures for looking at). The surface shader uses the info about the high poly mesh to make it look like the low poly mesh still has all that extra detail.  
