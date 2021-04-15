@@ -28,11 +28,14 @@ Current games all use it, yell out some games.
 
   - Meet Mat examples are up on sketchfab 
     - Collection: https://sketchfab.com/substance3D/collections/meetmat17
-    - Adobe: https://sketchfab.com/substance3D 
+    ![](mat_collection.png)
     - individual: https://sketchfab.com/3d-models/meet-mat-2017-medicbot-v2-fc160f297c7c4587b09a7b5a47b1b52e
-  
+
+
+  - Other models
     - Substance staff picks: https://sketchfab.com/substance3D/collections/allegorithmic-staff-pick
     - https://sketchfab.com/3d-models/soliders-helmet-rock-band-4-8c3464c1855248b2bc6c3428b4e9988d
+    - Adobe's profile page on sketchfab : https://sketchfab.com/substance3D 
 
 ## Diffuse, painted - most basic
 
