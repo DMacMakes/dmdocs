@@ -12,10 +12,11 @@ resources:
 
 ## What are we learning today?
 
-1. Correctly **delivering** assessment 2.
 1. The next level of **abstraction**: the `playSlots()` function.
 1. Project management using sticky-note style _**agile/kanban** board_.
 1. Adding colour with **_colorterm.h_**
+
+<!--
 
 ## Delivering Your Assessment
 
@@ -24,6 +25,8 @@ resources:
 Visit the link, follow the instructions there carefully!!
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Delivery (Zip) File Creation on dmdocs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->
 
 ## Assessment 2 progress
 
@@ -59,7 +62,7 @@ First, think of it at the topmost level:
 {{< alert title="Psuedocode: playSlots() outline" color= "secondary" >}}
 Keeping it pretty abstract, again half way between a bullet list and pseudocode.
 
-Variables and structure are implied mostly.
+Make sure you understand this before you go further!
 
 ```
 START playSlots (needs: players cash amount to start)
@@ -74,6 +77,77 @@ END playSlots
 ```
 {{< /alert >}}
 
+### Pseudocode comments in playSlots
+
+Fleshing it out further, and getting closer to code:
+
+```cpp
+// Provides the whole slot game experience
+// Takes in player's available cash as an argument
+// returns their new total available cash amount after winning/losing
+int playSlots(int playerCash)
+{
+  cout << "========= SPIN TO WIN! ===============\n";
+  cout << "===== Your Cash: $ " << playerCash << "\n\n"; 
+
+  // DON'T LEAVE ALL THESE LONG PSEUDOCODE COMMENTS IN YOUR FINAL SUBMISSION.
+
+  // -------- GET BET ----------------------------------------------
+  //  Should be one line, call a function, store bet it returns.
+  //  Get user bet, check that it's valid, so.. getValidBet, returns a bet that we can 
+  // expect to >$0 and <=$playerCash, can't bet what you don't have. Function will 
+  // need to know player's cash to check they don't bet above it..
+  //  bet = getValidBet(playerCash)
+  int bet = 200;  // dummy bet
+  cout << "You bet $" << 200 << "\n\n";
+  
+  //  player cash = player cash minus bet  // (you always pay to play)
+  playerCash -= bet;
+
+  // ------- SPIN WHEELS, WIN OR LOSE -----------------------------
+  // Create 3 variables to represent the wheels/cards.
+  // make random numbers in range 2-7, store them in the wheels/cards
+  // Give numbers to a function that displays them pretty
+  
+  // ----- Check for a win and figure out the multiplier to apply to the bet
+  // Give the 3 random numbers to a function that checks if they are 
+  // winners or losers. Whether it's a win or loss, get back the multiplier:
+  // 0, 3, 5 or 10. Those numbers are meaningless on their own so create constants
+  // that say what each multiplier means like PAIR = 2 and THREE_SEVENS = 10.
+  // An enum would be perfect.
+
+  // int multiplier = checkForWins(card1, card2, card3);
+  int multiplier = 5; //  = THREE_OF_A_KIND
+
+  // Calculate their winnings: 
+  // winnings = bet times the multiplier.
+  int winnings = bet * multiplier;
+  // Add their winnings to their cash total. 
+  playerCash += winnings;
+    // Note: If they didn't win this number will be 0 so no need for an if statement. 
+          // Their bet was already taken from total, so loss is already handled.)
+  
+  //  Display win/loss info (You can check the multiplier to see what the outcome was)
+  // eg: if multiplier == PAIR tell player you got a pair, you win 3* bet!a
+  cout << "You got a pair, 3X multiplier!! $" << winnings << " won!\n"; 
+  cout << "You now have $" << playerCash << "\n\n";
+  
+  // -------- Play Again: nice to have. Press <esc> for menu, <space/whatever> play again
+  // Tell player "Press <space> to to play again or <esc> to return to the main menu
+  
+  cout << "\t\tHit a key to go back to the menu . . .\n";
+
+  // Wait for the any key.
+  _getch();
+  // int pressed = _getch();  // play again version 
+  // Play again feature would need a loop here:
+  // While the pressed key was not <escape>, loop back up to near the top of this function.
+  // (need to put the `do` of this loop at start of function.
+
+  return playerCash;
+}
+```
+
 ### The bet
 
 There are two cards related to making a bet. There's an obvious repeat in the job too. 
@@ -86,10 +160,15 @@ From the <i>Trello</i>. Maybe these two can go in a function together.
 In `playslots()`, we'll do the equivalent of making a wish. We'll pretend we have a function to do the work for us, and describe it.
 
 ```
-START playSlots (playerCash)
-  // Get valid bet from player becomes:
-  bet = getValidBet(needs player Cash)
-  ...
+//... inside playSlots()
+  // -------- GET BET ----------------------------------------------
+  //  Should be one line, call a function, store bet it returns.
+  //  Get user bet, check that it's valid, so.. getValidBet, returns a bet that we can 
+  // expect to >$0 and <=$playerCash, can't bet what you don't have. Function will 
+  // need to know player's cash to check they don't bet above it..
+  // bet = getValidBet(playerCash)
+  int bet = -200; // dummy bet for now
+
 ```
 Looks good! So we need a function:
 ```
@@ -221,18 +300,6 @@ hint: enums (look at MenuChoices)
 I remember to check the Trello cards too.
 {{< /imgcard >}}
 
-### playSlots in C++ with pseudocode
-
-I've implemented parts of the pseudocode here in a basic way along with dummy results (faking a win by Pair). 
-
-The rest has the pseudocode as comments. It's not a big leap from here to the finished function!
-
-{{< imgproc code_playSlots_wpseudo Resize "700x" Link "code_playSlots_wpseudo.png" >}}
-<i>Click/Middle click for full size.</i>
-{{< /imgproc >}}
-
----
-
 ## Filling in getValidBet
 
 For this to work, the player should:
@@ -241,35 +308,90 @@ For this to work, the player should:
 3. Be prompted again for a valid bet.
 
 {{< alert title="Pseudocode: getValidBet in detail" color= "secondary" >}}
-It's a lot like the [menu functionality in the week 7 homework](../homework7/). It loops, has valid and invalid input to test for, and an error needs to be displayed.
+It's a lot like the menu functionality from week7. It loops, has valid and invalid input to test for, and an error needs to be displayed.
 
-```
-START getValidBet (playerCash)
-  betIsValid = false
-  bet = 0
-  error = ""
+**Week 7 menu:**  
+<a href="displayMenu_wk7.png" target="_blank"><img src="displaymenu_wk7.png" width = 400 /></a>
 
-  while we don't have a valid player bet (betIsValid == false)
-    
-    If they stuffed up previous attempt, show that error
+**getValidBet** function as mostly pseudocode comments.
 
-    Ask user for a bet between 0 and playersCash 
-    If bet is above zero and they can afford it:
-      set betIsValid to true
-    else
-      if (bet is zero)
-        set error to "You can't bet nothin"
-      else
-        set error to "You can't bet what you don't got."
-      end if
-    end if
-  end while
-  
-  return the bet
-END getValidBet
+```cpp
+// Get a valid bet from the user (more than $0, and no more than the
+// user actually has). Returns the amount that was bet.
+// If the user enters an invalid bet they are told so, how to do better,
+// and asked to try again until they succeed.
+int getValidBet(/*pass in the player's total cash*/)
+{
+  int bet = 0;
+  // string error
+
+  // do in a loop..
+    // Ask user to bet. Show an error message and more info if this
+       // isn't their first try.
+     // clear any previous errors
+    // Receive the bet amount
+    // if it's more than nothing and no more than they have (affordable)
+       // it's fine, no error, can return the bet.
+    // otherwise
+      // Set an error message
+  // while there's still a non-empty error message, keep looping till they make no errors
+
+  // return the bet. // note if we use return in the loop we'll never have to get this far.
+}
 ```
 
 {{< /alert >}}
+
+## Check for wins
+
+"Winning" in our game is based on something like simple Poker hands (two of a kind, three of a kind) with a special bonus hand (three 7s). Checking for a win then is a pretty straightforward bit of comparing using our boolean operators `&&` (AND) and `||` (OR).
+
+There are *a lot* of ways to compare these three cards/numbers to check for three 7s, a pair etc, I'll just loosely outline a couple of them here.
+
+```
+START checkForWins (card1, card2, card3)
+  int multiplier
+  if three cards show sevens 
+    multiplier is 10 (great idea to use a constant/enum THREE_SEVENS to represent 10)
+  otherwise if three cards are the same
+    multiplier is 5
+  otherwise if there's a pair
+    multiplier is 3  
+  
+  return multiplier.
+END checkForWins
+```
+
+Using multiple return values:
+
+```
+START checkForWins (card1, card2, card3)
+  if three cards are the same
+    if three cards are 7
+      return 10 (THREE_SEVENS)
+    otherwise
+      return 5
+  otherwise if just two cards are the same
+    return 3
+  otherwise 
+    return 0
+
+END checkForWins
+```
+
+```cpp
+// Receives 3 ints in range 2-7 representing the cards/wheels in latest spin.
+// Returns a multiplier for the win type (no win, pair, three of kind, three sevens)
+// (We define an enum for this, WinMultiplier)
+// checkForWins(card1, card2, card3)
+//{
+  //return 0; // NO_WIN
+//}
+```
+
+<!--
+
+TODO: checkforwin would be very useful. My descriptions before were a bit eh
 
 ## Filling in checkForWin
 
@@ -292,33 +414,6 @@ END checkForWin
 
 {{< /alert >}}
 
-<!--
-
-```
-START PlaySlots (needs: players cash amount to start)
-  
-  while we don't have a valid player bet
-    Ask user for a bet between 0 and playersCash
-    If they mess up, tell them how
-  end while
-  remove the bet from playerCash (cost of playing)
-
-  make and display 3 random numbers between 2 and 7
-  inspect those 3 numbers for a winning combination.
-  // Players receive x times their bet, depending on winning/losing combinations
-  Select a multiplier that matches the outcome:
-    No match: 0x, Pair: 3x, Three of a kind: 5x, Three 7s: 10x
-  Tell players they won and why.
-  Add (bet time multiplier) to playerCash
-  Tell players how much they won, and their new total.
-  
-  // extra: offer players chance to bet again
-  Tell players to hit a button to return to menu. Wait for them.
-
-  return playerCash value 
-END PlayerSlots
-```
-
 -->
 
 ## More about what to submit.
@@ -327,6 +422,73 @@ Academic integrity, demonstrating what you've learned in class, not submitting b
 
  <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://trello.com/b/aETa5OZN/slotsot2" target="_blank">Avoid submission dangers: Trello<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+## Random numbers in a range?
+
+`rand()` generates random numbers between 0 and.. whatever your compiler defines as the maximum. You can access that number in the constant `RAND_MAX`. To convert any number in one range to a number in another range we can use percentages. 
+
+Let's imagine that number is 16, and our random number is 8. What percentage of 16 is 8? You probably all thought "50%", but it came to you fairly automagically. The formula you learned in school and are unconsciously applying is 
+
+**n / range_max = ratio ( between 0 and 1).**
+
+A ratio is just a percentage expressed between 0 and 1. To convert to 0-100 we times by.. 100. 
+
+**0.5 * 100 = 50%.**
+
+### General rule for converting ratio to another range.
+
+So, we just multiply the ratio by something other than 100.. say 16, to get the number in that range.
+
+**0.5 * 16 = 8**
+
+**0.2 * 10 = 2** or..
+
+**ratio * range = number representing that ratio in that range.**
+
+### So to convert our 0-RAND_MAX to another range..
+
+**n / range_max** becomes **rand() / RANGE_MAX**. 
+
+#### but the answer is always 0.
+Divide an int by another int, you get an int. You need to *cast* the ints to floating point numbers for a floating point result.
+
+{{< alert title="Casting data from one type to another" color= "primary" >}}
+Think of the phrase "type cast". It means an actor is always cast to play a certain type. In the 90s Gary Oldman was cast as "character who is well spoken and slight in build but GETS VERY SHOUTY AND SCARY."  
+
+<img src="oldman_zorg.jpg" height=400 />  
+*Gary Oldman as Zorg in The Fifth Element*
+
+Casting in C++ forces one type of data to become another, like an int to a float. We write: `float(myInt)`, and it gives us the floating point version of `myInt`. It's just using the type name like a function.
+
+```cpp
+int eggs = 6;
+int dozen = 12;
+int noGoodRatio = eggs / dozen; // = 0
+float eggsDozenRatio = float(eggs) / float(dozen); // = 0.5
+```
+{{< /alert >}}
+
+### Ratio to new range
+
+Multiply any ratio from 0.0 to 1.0 by, say, 16, and you'll get a new float between 0 and 16. We **don't** want to just cast the new value to int though, because that'll just cut off the decimal points (5.9 becomes 5). 
+
+Use the `<cmath>` header's `round()` function. Annoyingly, that returns a float instead of an int (12.0, or 100.0, etc) so we have to turn that into an int. Fortunately, we can just assign to an int.
+
+```cpp
+// You can assign the result of the roundl to an int and you'll
+// be just cutting the .0 off the end of your rounded float.
+int eggRatioAppliedToSoccerTeam = roundl(11 * eggsDozenRatio);
+
+// or you can be more pedantic/careful like so:
+int eggRatioAppliedToSoccerTeam = int( roundl(11*eggsDozenRatio) );
+//.. the fun never ends.
+```
+
+### Pseudocode
+
+```cpp
+// randAsRatio = float(random number) over float(rand max).
+// Rand between 0 and 20 = round to nearest whole( randAsRatio * 20 )
+```
 
 ## Add Colour With Termcolor
 

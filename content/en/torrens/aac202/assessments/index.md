@@ -14,14 +14,16 @@ Due dates have been manually updated, so we're golden 👍
 
 Order  | Deliverable       | Due     | Blackboard number
 ---    | ---               | ---     | ---
-1      | character sculpt  | Week 1  | 3
-2      | prop model        | Week 1  | 1
-3      | prop texture      | Week 1  | 2
+1      | character sculpt  | Week 4  | 3
+2      | prop model        | Week 8  | 1
+3      | prop texture      | Week 12  | 2
 
 
 ## 1. High Poly Character (week 4)
 
-**Due**: Sunday March 14 by 11:55pm. 
+**Submitted**: Sunday March 14 by 11:55pm. 
+
+<!-- 
 
 **Create a bust from an existing 2D concept:**  
 1. Select one of the heads from the concept art [below](#concepts)  
@@ -70,13 +72,58 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * Painting in eyelashes and eyebrows that you didn't have geometry for
 
+-->
 
-<!--
 ---
 
-## Weeks 5-8: High Detail Props Assessment
+## 2. Hard surface model: NES Controller   
 
-While this was officially assessment 1, we'll be completing it in weeks 5-8
+**Subted.**
+
+<!--
+
+Model the NES pad as close as you can to completion. Focus on controlling the silhouettes and sharpness/softness of transitions between surfaces.  
+
+![Nes pad](nes_pad.jpg)
+
+More info on level of detail and finish is [available below](#level-of-detail).
+
+### What to submit
+
+Create a zip file named *aac202_a2_Lastname_Firstname.zip* containing the following.
+
+* Renders/screenshots showing your finished model off from varous angles, including closeups where they help.
+* At least one beauty render, preferably composited and polished.
+* Your final ZPR project file.
+
+### Delivery
+
+While this our second assessment, you'll be delivering it to the *Assessment 1* section on Blackboard.  Upload your zip file to Torrens LFS (instructions below) and submit your link to Blackboard:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586560_1&course_id=_102604_1" target="_blank">Ultimo Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586489_1&course_id=_102086_1" target="_blank">Online Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+#### Level of detail
+
+Element       | Detail
+---- | ----
+Objects | Focus on using edge loops and creases to **control all the silhouettes and contours** as well you can. Use **booleans** to cut openings around the buttons so they don't merge into solid plastic. In those places where you can see inside the model, put black blocking objects inside to **prevent seeing through**. Use **real subdivisions and alphas** to add embossed details to the d pad, and **noise maker** to add realistic bumpy finish to the graphics inset (bit with the button names). 
+Materials | At a minimum use the ZBro Paint matcap. Try other materials to see if you can represent the glossy red plastic and metal screws better. 
+Color | If using ZBro paint, at a minimum fill with flat colour. You can add more subtle aging and colouration with polypaint if you like. If you use metal matcaps or pre-coloured plasticy matcaps, you might need to fill with just white to get the right result.
+
+-->
+
+## Assessment 3: PBR Texturing
+
+Final Submission: **End of week 12.**
+
+Not yet fully ready. What it'll involve is texturing a provided model, using Substance Painter, and exporting to a provided Unity scene/web viewer.  
+
+**Week 11:** Progress will be submitted to a Blackboard thread for review.  
+**Week 12:** Models, textures and screenshots will be submitted.
+ 
+<!--
 
 For Assessment 1 you'll create a **high detail, normal mapped** prop using **techniques shown in class** and developed at home. These will include subdivision modeling, normal mapping and PBR textures.
 
@@ -102,7 +149,6 @@ NEEDS UPDATING
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902733_1&message_id=_2278364_1" target="_blank">A1 Week 2 Submissions<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 -->
-
 
 <!--
 

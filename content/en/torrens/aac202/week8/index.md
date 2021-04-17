@@ -1,47 +1,79 @@
 ---
-title: "8. Bake, Texture, Present"
-linkTitle: "8. Baking maps"
+title: "8. Finishing Assessment 2"
+linkTitle: "8. Finish A2"
 weight: 80
 description: >
-  Turning 3D art into playable game assets means exporting to a real time **game engine**. Today we'll learn how to move our models from Maya and Painter into Unreal/Unity. From there you can light and screenshot them for your **final deliverables** of Assessment 1.
+ Finalising details, texturing in ZBrush, rendering.
 ---
 
-<!-- ## Productive Class Time
+## Assessment 2 Final push 
 
- 
-We're here learning to do something extremely hard, in week 4 of a second year subject. The amount of knowledge and ability you need to have any chance in game art now is higher than it's ever been. 
+What are we delivering? That'll define how we spend our last few days on the project.
 
-The people already in the industry share a few qualities. They are:
-* self reliant
-* self critical
-* super driven
+[Assessment 2 - NES Controller on dmdocs](../assessments/#2-hard-surface-model-nes-controller)
 
-The only way I can get you guys there is by directing your focussed, hard work. Right now, that's not happening enough.
+## Last 5 percent
 
-### How To Get There
+Details should be 95% done (or done) by now, but you might have one or two hard-solves left to figure out.
 
-| Productive                          | Not Productive                            |
-|------------                         |----------------                           |
-| Building on what we learn in class and bringing the results to the next class    | Having nothing ready to go when class starts.                |
-| Examining and working through problems. Double checking previous lecture notes and trying the application help/web help.   |  Asking for the solution or giving up before you've tried.                         |
-| Working along with the class and asking questions about the new material | Getting lost and asking to cover old material because you haven't read the notes, watched the videos or taken part. |
-| Getting distracted but **recovering**. Centering during breaks so you're focussed again. | Sharing your distraction in class. Committing to giving up and spending 3 hours chipping away at the whole room's chance of getting into a flow. |
-| Knowing its on us to get better every day.   | Hoping 3 hours a week will do much beyond showing us what work there is to do, and what to learn at home. |
+### Hard geometry problems
 
-{{< alert title="Be Where You Need To Be" color= "primary" >}}
-Remember, since you're not at school, you can just _take a break any time_. We don't confine you like a school. If you're disconnecting and you can't wrestle it back in here, walk out, find somewhere you can: that's on you to solve now as an adult. If you're done, go sit in the sun with a coffee, or go to level 1 and watch videos somewhere you won't be shooshed. 
+Hit me with any surprise hard geo problems now, I might have easy solutions.
 
-It's just.. _confusing_ and weird when you rebel in here, because I'm literally the only person here who actually gets in trouble if I bail. 
+### Week 7 problems - alphas/imm
+
+Any issues with alphas and insert mesh brushes that weren't covered in class or review?
+
+## Materials and textures
+
+Note: If you absolutely *can't* texture the insert you can try photoshopping it into a render/composite. You'll do better marks-wise if you get this nutted out.
+
+### Standard Materials - when Matcaps won't do it.
+Matcaps use an image and some fancy tricks to act like materials do in other 3d renderers (think Arnold in Maya for example) while being less work for your computer. They're really limited though; matcaps get darker not only in colour as you add black, their fake lighting/hilights disappear too.
+
+If you want more control over the materials on your NES pad you can use the Zbrush *Standard Materials*.
+
+{{< imgcard standard_materials Link "standard_materials.png">}}
+The standard materials are found below the matcaps in the materials popup palette.
+{{< /imgcard >}}
+
+Here's an example of using a basic material to get closer (than zbro paint) to the shiny black plastic of the dpad. I used a dark grey, lowered the "diffuse" (non-shiney lighting) and raised the specular (shiney hilight brightness), while messing with the specular falloff curve (blurrier shiney hilight).
+
+{{< imgcard dpad_basic_material Link "dpad_basic_material.png">}}
+Turning up the specular lets the rounded edge pick up bright hilights.
+{{< /imgcard >}}mgcar
+
+{{< alert title="Making new materials is WEIRD" color= "primary" >}}
+To use another instance of a standard material like Basic Material or Toy Plastic you have to click *Copy Mat* (in the material palette), select another standard material *that you're happy to lose* and then *Paste Mat*. 
+
+ZBrush is definitely not a world class materials/rendering program.
 {{< /alert >}}
 
-If you don't succeed in seeing and take those opportunities yourself, you will be asked to.
--->
+### Material exercise
 
-## Assessment 2 progress
+Reproduce the d-pad's black plastic material. Duplicate it and make a red plastic, which will have a sharper hilight and be much brighter/more saturated.
 
-Where did you get to?
+## Texture mapping
 
-### Reviewing and helping
+Texture-mapping the graphic insert. Let's do it together.
+
+### Exercise
+
+Right click and save these images to your project folder.  
+
+<img src="insert_texture_buttons.png" width=320 /><img src="insert_texture_rough.png" width=320 />
+
+1. In your project, select your graphics insert (the piece of plastic with writing printed on it). Make a duplicate to work on, turn off the original's visibility (eye) icon.  
+2. Under *tool -> texture map* click the big empty texture and click *import*. Load `insert_texture_buttons.png`. Note it's not visible on your mesh. You might have even been warned that it doesn't have uvs.   
+![import texture](import_texture.png)  
+3. Open the *UV Map* palette (above the Texture Map one), set the *UV Map Size* slider to 1024 and just click *Create -> UVP*. Turn off the floor (shift-p) to make sure you can see the new texture.  
+![uvmap uvp](uvmap_uvp.png)  
+4. It might be dim or coloured strangely. Fill the graphics insert with ZBro paint (matcap) and white (colour) - the texture map is tinted/rendered based on whatever material is under it. Annoyingly, the texture has it's own Fill mat, so expand *Tool -> Texture Map -> Fill* and click *Fill Mat*  
+5. You can check the alignment of your buttons etc against this texture map, but this one's a really dodgey hack job. Make a polished version of the texture with clean lettering/shapes and better colouring. Add noise to the surface with noisemaker if you haven't already.  
+
+{{< imgcard textured_inset_rough_zbro Link "textured_inset_rough_zbro.png">}}
+The graphics insert with the rough texture applied and visible in the viewport+renders.
+{{< /imgcard >}}
 
 <!--
 ## Transferring the details
