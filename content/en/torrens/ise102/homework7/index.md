@@ -1,5 +1,4 @@
-
-<!--
+<!-- 
 
 
 title: "Homework 7"
@@ -10,9 +9,12 @@ description: >
 type: "torrens"
 
 
+
+
 ## Homework task
 
 **After you have read and understood my planning and pseudocode below,** type out the code at the end of this page and fill in the gaps to complete it.
+
 
 
 ## The menu loop

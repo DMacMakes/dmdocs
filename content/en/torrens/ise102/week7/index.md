@@ -29,17 +29,16 @@ I will start from blanked out code you had to type out to get started. If you ha
 
 -->
 
-## Building on Week 6
+## Code from the review
 
-## TODO: Update to code built on T1 2021 class code 
+Written during yesterday's review, it's the base we're moving forward on (or an equally functional base you wrote for homework).
 
-Generate during workshop. Some folks may have used this already.
+If you haven't watched the review and don't have this code ready, stop watching now and do that first. Watch the rest of this class recording afterwards
 
-<!-- 
-{{< imgproc code_w7_slotso_base Resize "400x" Link "code_w7_slotso_base.png" >}}
+{{< imgproc pokey_dokey_base_w7 Resize "200x" Link "pokey_dokey_base_w7.png" >}}
 Middle click to view in new tab
 {{< /imgproc >}}
--->
+
 
 <!--
 ## Simultaneous activities:
@@ -113,46 +112,6 @@ We have theories, and some of you know this answer right away. That might come f
 
 **We can't always rely on intuiting the problem.** We need a way to see what's happening, to slow things down or stop them, to see inside our program as it runs on our cpu.
 
-We'll come back to it with the debugger.
-
-## Delivering code assessments
-
-## TODO: Locating, cleaning, compressing your assessment.
-
-## Introducing the _Debugger_
-
-The debugger is a few things: 
-
-It's a **special interface mode** of Visual Studio that
-* Lets you stop and start program exection
-* Shows you the contents of variables without having to use `cout`
-
-{{< imgcard debugger_outcomes Link "debugger_outcomes.png">}}
-No cout required: the <i>debugger</i> halting and looking inside the program in real time
-{{< /imgcard >}}
-
-In the background it's also a program that is running and seeing into our program's memory, like Neo in the Matrix.
-   * It has special permission to **access and change** your program's data and instructions **in memory**
-   * It relies partly on code that visual studio compiles into your program
-
-{{< imgproc see_code_agents Resize "700x">}}
-Hello, Mr Smith.
-{{< /imgproc >}}
-
-### Breakpoints
-
-The first way we'll use it by **setting breakpoints**: points at which to take a break.
-  * Set a breakpoint in the credits screen function, just before it returns.
-  * Set a breakpoint in the play slots screen too.
-
-{{< imgcard debug_breakpoint_controls >}}
-Execution controls and the breakpoint marker
-{{< /imgcard >}}
-
-{{< alert title="The takeaway" color= "primary" >}}
-our program didn't start randomly going back to the menu screen. It was always displaying main after drawing screens, it just hadn't been wiping everything else away when it did. 
-{{< /alert >}}
-
 ## Making the computer wait
 
 We need to **wait for people to read before clearing the screen**. We could wait for:
@@ -191,6 +150,153 @@ If you don't think about which functions should do the job, you can come unstuck
 
 Let's put them at the end of the functions, where our breakpoints went.
 
+## Delivering code assessments
+
+How to delete cache files (big, unneeded), zip your project and name it correctly.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable-1" target="_blank">Cleaning and delivering projects<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+## Fleshing out pseudocoded functions
+
+Display menu loop.
+
+Pseudocode more detailed PlaySlots.
+
+## The menu loop
+
+I want the menu to **handle bad input gracefully**. This isn't just because it's good practice: **in the brief, 15%** of the marks go toward user testing and data validity checks:
+
+![](brief_data_validity.png)
+
+So we'll catch mistakes and prompt the user to try again. At a minimum, if they enter a number that isn't a menu choice, should be caught and an error message shown.
+
+![](menu_input_check.png)
+
+First, here's a simple bullet list breakdown.
+
+* Display cash total (argument)
+* Display choices
+* Ask for a choice
+* Check if their choice is valid (in the range of choices)
+* Show them an appropriate error and make them choose again until they succeed.
+* return choice
+
+### Planning
+
+Note, firstly, I've changed the name from displayMenuGetChoice. It's consistent with other functions now. The function signature and intellisense (little popup on hover) tell us the return value.
+
+The main problem to solve is checking input and showing errors to the player. 
+  * Multiple attempts (and showing errors) requires a loop
+  * Screen isn't scrolling so redraw the whole menu to show errors. Whole menu is inside the loop then.  
+  * Since we clear and redraw screen to show error, we'll need to remember the error. (Can't just write it to screen as soon as it's discovered)
+
+
+## Pseudocode 
+
+{{< alert title="First pass" color= "primary" >}}
+Thinking about the problem in a high level way, but with coding structure (A halfway point between bullet list and pseudocode).
+
+```
+start DISPLAY_MENU_SCREEN ( with playerCash )
+  Things to store:
+    A valid range of menu choices.
+    Their choice
+    A way to remember if the choice was in range so we don't repeat the checking code.
+    A relevant error message we can print.
+
+  Processing to do:
+  loop while validChoice isn't true
+    Show the player's cash
+    Tell user the menu options and number them
+    Show an error if one was previously made
+    Get their choice
+    If their choice is in range, set validChoice to true
+    else set an error message for next loop.
+  end while
+    
+```
+{{< /alert >}}
+
+{{< alert title="Second pass" color= "secondary" >}}
+Time to plan the structure properly, with variable names (storage), output, conditionals (processing) and input.
+
+```
+start DISPLAY_MENU_SCREEN ( playerCash )
+  error = ""
+  validChoice = false
+  choice = 0;
+  
+  while not validChoice
+    
+    print "You have " $playerCash
+    print menu choices
+    print error (if it's not empty/blank)
+    print "Enter 1 2 or 3 >"
+    
+    choice = player input
+    if choice isnt in range
+      error = "Nope, just press a number and hit enter."
+    else
+      validChoice = true
+    end if
+  end while
+    
+end DISPLAY_MENU_SCREEN
+```
+{{< /alert >}}
+
+## Summary
+
+This week we:
+* Learned to create screen-based program flow with `system("cls")` and `_getch()`;
+* Learned about the debugger
+
+## Homework
+
+TODO: Incoming
+
+<!-- 
+
+More info coming, rework the code in the homework 7 page.
+Type out and complete the code. Submit it as you were shown today.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../homework7/" target="_blank">Week 7 Homework Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->
+
+## Killing bugs with the _Debugger_
+
+The debugger is a few things: 
+
+It's a **special interface mode** of Visual Studio that
+* Lets you stop and start program exection
+* Shows you the contents of variables without having to use `cout`
+
+{{< imgcard debugger_outcomes Link "debugger_outcomes.png">}}
+No cout required: the <i>debugger</i> halting and looking inside the program in real time
+{{< /imgcard >}}
+
+In the background it's also a program that is running and seeing into our program's memory, like Neo in the Matrix.
+   * It has special permission to **access and change** your program's data and instructions **in memory**
+   * It relies partly on code that visual studio compiles into your program
+
+{{< imgproc see_code_agents Resize "700x">}}
+Hello, Mr Smith.
+{{< /imgproc >}}
+
+### Breakpoints
+
+The first way we'll use it by **setting breakpoints**: points at which to take a break.
+  * Set a breakpoint in the credits screen function, just before it returns.
+  * Set a breakpoint in the play slots screen too.
+
+{{< imgcard debug_breakpoint_controls >}}
+Execution controls and the breakpoint marker
+{{< /imgcard >}}
+
+{{< alert title="The takeaway" color= "primary" >}}
+our program didn't start randomly going back to the menu screen. It was always displaying main after drawing screens, it just hadn't been wiping everything else away when it did. 
+{{< /alert >}}
 
 ## Squashing other bugs
 
@@ -259,27 +365,6 @@ Watch it happen, find the unexpected.
 1) You still have to have expectations at each point of the program as you watch it run.
 2) When it does something totally unexpected, you have a new possible culprit!
 3) Form a new theory about the bug and test it.
-
-## Fleshing out pseudocoded functions
-
-Display menu loop.
-
-Pseudocode more detailed PlaySlots.
-
-## Summary
-
-This week we:
-* Learned to create screen-based program flow with `system("cls")` and `_getch()`;
-* Learned about the debugger
-
-## Homework
-
-TODO: More info about submit, rework the code in the homework 7 page.
-Type out and complete the code. Submit it as you were shown today.
-
-<!-- a class="btn btn-lg btn-primary mr-3 mb-4" href="../homework7/" target="_blank">Week 7 Homework Page<i class="fas fa-arrow-alt-circle-right ml-2"></i></a
-
--->
 
 <!--  
 old more slots 
