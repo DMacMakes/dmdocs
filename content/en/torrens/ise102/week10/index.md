@@ -115,21 +115,21 @@ Provide answers to questions in comments in your code inside the `playSnake()` f
 * _**CORE**_   
   
   1. Complete the remaining TODOs, adding up/down movement.
-  2. Try changing the moveEveryNFrames to different values, see how the speed changes.  
+  2. Try changing the slithers.moveInterval to different values, see how the speed changes.  
   3. Try the same with just the FPS values. 
   4. Question: Which offers more fine-grained speed control? Why?
 
 * _**ADVANCED**_  
-  * Set FPS to 180. What value for moveEveryNFrames will move you 20 times per second?
-  * Set moveEveryNFrames to 15.What framerate value would make snakey cross the level in approx 1.8 seconds?  
+  * Set slithers.moveInterval to 15. What framerate value would make snakey cross the level in approx 1.8 seconds?  
 
 * _**DELIVERY**_
 1. **Zip the solution**  like you would for an assessment submission, taking care to **delete cache folders** like Debug and x86 
-2. **Email** to Danny by **midday Monday, November 23rd**.
   
-**Danny will review**  in class Monday evening (this doesn't mean deliver the homework late. Deliver by **midday**).  
+**Danny will review**  Monday morning
 
-## Speeding up Snakey
+<!-- 
+
+## Speeding up Slithers
 
 **The game is too slow**. We need to move faster, so we need a way to **define our speed**. 
 
@@ -220,7 +220,7 @@ What if we move **more often**?
 
 1. Scroll to the `playSnake` function 
 2. Change the value we're passing to `the textpixels::setFps` to **23**. 
-3. Change `moveEveryNFrames` to 1, so we move every frame.
+3. Change `slithers.moveIntervald` to 1, so we move every frame.
 3. Try it out, see what it's like to cross the screen in about 1.5 seconds.
 
 {{< imgcard code_snake_fps>}}
@@ -283,4 +283,6 @@ If you don't understand **Integer Division** and **remainders**, it's officially
 Look it up on wikipedia, call your maths teacher, whatever, but DO IT NOW. 
 {{< /alert >}}
 
-> Programmers don't say I don't know, they say **I don't know _yet_.** 👍
+--> 
+
+> Programmers don't say "I don't know", they say **"I don't know _yet_."** 👍
