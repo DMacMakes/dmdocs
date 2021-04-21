@@ -70,14 +70,18 @@ For future reference, the design for that data type is called a ***class***.
 
 ## Moving
 
-Since our Snake has a position and a colour, it can be drawn somewhere. If we add its xDir and yDir (think of them as speed in a particular direction, what we called a *vector* in high school physics) to its position many times per second, it'll be a moving Snake.
+Since our Snake has a position and a colour, it can be drawn somewhere. If we add its xDir (value of -1, 0 or 1)  to it's location.x many times per second it'll appear to animate across the screen. 
+
+The same can be done for yDir/location. Think of the x and y directions as speed in a direction - in high school we called that *velocity*, something you used in science class when calculating *force*. In games/maths we often call it a *vector*.
+
+## TODO: ADD DIAGRAM of these four unit vectors.
 
 ### Up Down Left Right
 
 Reference: screen space.
 
 {{< imgcard xy_leftright_updown Link "xy_leftright_updown.jpg">}}
-We can move left and right by changing our x location. Up and down with y.
+We can move left and right by changing a snake's location.x. Up and down with y.
 {{< /imgcard >}}
 
 ## Controlling Movement
@@ -87,7 +91,7 @@ We'll use it now to move around. **Grab the base file** and help me **fill in** 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="Snake_A3_incomplete.zip" target="_blank">Download Snake_A3_incomplete.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 {{< imgcard code_playSnake_incomplete Link "code_playSnake_incomplete.png">}}
-The playGame function, like playSlots, just handles the gameplay screen.
+The playSnake function, like playSlots, just handles the gameplay screen.
 {{< /imgcard >}}
 
 {{< alert title="Frame based game loop" color= "primary" >}}
