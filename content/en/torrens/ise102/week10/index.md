@@ -111,6 +111,10 @@ I'll explain the codebase above, and together we'll add left-right player contro
 
 ## Homework
 
+Coming soon.
+
+<!-- 
+
 Moving up and down!
 **Everyone** needs to complete **at least the core homework**. Advanced and the learning below is for people who want to go further.
 
@@ -130,6 +134,8 @@ Provide answers to questions in comments in your code inside the `playSnake()` f
 1. **Zip the solution**  like you would for an assessment submission, taking care to **delete cache folders** like Debug and x86 
   
 **Danny will review**  Monday morning
+
+-->
 
 <!-- 
 
