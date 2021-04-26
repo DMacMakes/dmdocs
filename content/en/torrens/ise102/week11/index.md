@@ -210,7 +210,11 @@ drawString(0,0, "Number of strawberries in punnet: " + to_string( strawberryPunn
 
 ## Homework
 
-**Core:** 
+1. Core
+2. Go further
+3. Delivery
+  
+### Core:
 1. When you hit the fruit, **add 1** to the score.
 2. Pass the score to the gui drawing function
 3. Always **display the score** as part of the gui
@@ -226,7 +230,7 @@ If the player doesn't know something happened, it shouldn't affect them. Put ano
 * Whenever you die the game has to make it clear, and hold for a bit so the player knows the context and can accept responsibility + see how to do better.
 {{< /alert >}}
 
-**Go further:**  
+### Go further:
 1. Add a second fruit type that gives you more points. Show the fruit types in the gui (below the game) and their value.
 2. When the snake collides with a side wall, teleport it to the opposite side. Do the
    equivalent for top/bottom walls.
@@ -237,6 +241,8 @@ If the player doesn't know something happened, it shouldn't affect them. Put ano
    - You could add the modes to the main menu or provide them in an options screen (access from main menu) or game type screen (after menu, before game starts).
 4. Maybe create a deadly fruit that appears, is a terrifying hazard, and then disappears for a bit before appearing somewhere else.
 
+### Delivery
+Clean and zip the solution (as we do for assessments), email your zip to your lecturer by the end of Sunday.
 
 <!-- 
 ## Extra session this week
