@@ -8,34 +8,23 @@ description: >
 
 ## Learning this week
 
-1. Targeting speeds, using high frame rate and lazy drawing: Last week's _**medium**_ and **_advanced_** homework
-2. Creating a fruit object
-4. Add Score: Make a variable,show on gui.
-5. Colliding! Fruit.
-6. Adding to score on fruit hit.
-7. Game over?
+1. Creating a fruit object
+1. Add Score: Make a variable,show on gui.
+1. Colliding! Fruit.
+1. Adding to score on fruit hit.
+1. Game over?
+1. speed change options: frame rate or draw interval
 
 <!-- _Coming soon.._ -->
 
-## Homework due next week  
-
-**Homework:**  
-_easy:_ Collide with wall, end game. Add in a poison fruit.  
-_hard:_ Add in teleporting, remove deadly walls. Game over: Offer option to play again.  
-_advanced:_ Add second playmode, deadly walls. Pass as argument to playSnake.  
 
 ## A2 Slots marking
 
-Not ready yet, will be releasing in bunches as I go.
+Announced on Blackboard, Discord. Ultimo, Online 1 classes are marked, Online 2 in progress.
 
-## Assessment 3
+## Last week
 
-## Last week's homework and review
-
-We added up and down movement, controlled speed. In the review we learned more about controlling and calculating speed, and **found the txtpxls library had been broken by windows sdk changes**.
-
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week10b/#homework" target="_blank">Week10 Homework<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+We added up and down movement, set a high framrate and only moved when we needed to with `moveInterval()`.
 
 ## Creating your own objects
 
@@ -138,26 +127,118 @@ The debugger "Locals" window showing the contents and values for our banana (Fru
 4. Paste into Discord.
 5. Does the image match what the collision test and local variable values (in debug locals window) for the snake and piece of fruit are telling you? Why?
 
+## Things left to do
+
+Not sure what's left to do? Check the [Snake_A3 Trello](https://trello.com/b/aVYKZSK8/snakea3).
+
+{{< imgproc snake_trello Resize "650x" Link "https://trello.com/b/aVYKZSK8/snakea3" >}}
+Click image to visit the Trello
+{{< /imgproc >}}
+
+## Bunches of data: collections!
+ 
+ Games are full things, and a lot of those things are _almost_ the same.
+
+{{< youtube "09QaF345qZk?t=203" >}}
+(Jump to 3:20)
+
+Chickens, buildings, villagers, fishmen, trees, clumps of grass with or without hidden gems, treasure chests, bouncing fireballs, stone platforms, eaty flowers, stone tiles.
+
+Lots of each of them, and they don't all have variable names. We don't have time for garima, kevin, jacinta, and aram the chickens. Or stoneTile1, stoneTile2, stoneTile3. How would you even write code to deal with so many variable names?
+
+Instead we need **a way to deal with things as collections.**
+
+{{< alert title="A punnet of strawberries" color= "primary" >}}
+
+This little plastic container is a _punnet_, and it's full of strawberries. 
+
+![](strawberries_punnet.jpg)
+
+It has
+  - a type of thing it's holding: in this case strawberries, or more generally, Fruit
+  - an amount of fruit in it
+  - a limit to what it can hold in this case
+  - a way of retrieving the strawberries inside
+{{< /alert >}}
+
+### Virtual punnets: the Vector
+
+We've already used collections in C++: strings. They're just collections of characters, and they have properties like "size()" and functions to change or access the characters, like `append()` and `substr()`.  
+
+We need a more generic collection, something that lets us choose what type of things it contains: maybe a collection of integers, or even whole strings, or Fruit.  
+  
+The **`vector`** object is exactly that. If we add **`#include <vector>`** to `main.cpp`, we can make vectors of any size to hold whatever we need.  
+ 
+You can declare a new vector that holds `Fruit` objects like this:  
+
+```cpp
+  vector<Fruit> strawberryPunnet;
+  // vectors are objects. They are special because they can hold a punch of objects.
+  // vector is the type of container object, then <Fruit> specificies what type of objects it can hold.
+  // finally it has a name, punnet.
+```
+
+Add an existing fruit to your vector with **`.push_back(strawberry)`**. It's not a great name, but it means something like "add_to_end". If you imagine someone joining a queue, they join it at the end. They're kinda.. pushed onto the back?
+```cpp
+Fruit smallStrawberry;
+Fruit hugeStrawberry;
+strawberryPunnet.push_back(smallStrawberry);
+strawberryPunnet.push_back(hugeStrawberry);
+
+// punnet now contains 2 fruit.
+// punnet.size() returns the number of things added to the vector (as an integer)
+drawString(0,0, "Number of strawberries in punnet: " + to_string( strawberryPunnet.size() );
+```
+
+## Exercise: vectors
+
+1. Grab Fruit_vector_wk11_inc.zip (a special cut down version of snake) 
+2. Look for the //TODO: comments
+3. Finish the code by uncommenting lines and filling in the blanks.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="Fruit_vector_w11_inc.zip" target="_blank">Download Fruit_vector_wk11_inc.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Accessing objects in vectors by _**index**_
+
+ {{< alert title="Indexed Collections" color= "primary" >}}
+ A gallery contains lots of precious and small items. When you visit with your family then, you're not surprised that they don't want people taking in bags: they ask you to leave yours with security in the `bag check`. It's full of all different sizes and shapes of bags, and when they take yours they assign it a number so they can find it again.
+ 
+ When you've had your walk around the gallery you return and fish out the piece of paper with your bag's assigned number. Without needing any sort of description, they find and return your bag.
+ {{< /alert >}}
+ 
+ You create a single vector object, and can submit as many objects to it as you like for safe keeping. To access any object, just provide an _index_. Like with most indices in c++, it starts at 0.
+
 ## Homework
 
-You don't have to send me this homework, but you do have to do it if you want to have **a chance at finishing the assessment** on time and passing. I'll answer questions about it next week and help a bit, but I won't spell it all out.
-
-**CRITICAL:** 
+**Core:** 
 1. When you hit the fruit, **add 1** to the score.
 2. Pass the score to the gui drawing function
 3. Always **display the score** as part of the gui
-4. Reposition fruit when eaten (as if it's a new fruit)
-5. Check if the **snake hits the walls**: you can check side walls when moving left/right,
-   top and bottom when moving vertically.
-6. Test the wall collision with a breakpoint like we did in class for fruit collisions.
-   Once it works, try pausing the game for a while and displaying a message about 
-   the deadly wall collision.
+4. Reposition fruit when eaten (let's pretend it's a new fruit)
+5. Check if the **snake hits the walls**. If you're moving left/right, you can check if your x matches one of the boundary walls. If going up or down, check y against boundaries.
+6. When the snake hits the wall, try stopping the game and displaying a popup message about the deadly wall collision, layered over the game.
 
-Optional:  
-1. Give the second fruit type a different score.
+{{< alert title="The Golden Rule" color= "primary" >}}
+If the player doesn't know something happened, it shouldn't affect them. Put another way: a player should never have to guess what happened.
+
+* If there are deadly walls in one mode and teleporty in another, they should *look different*. 
+* If a player hits a poison fruit and dies you better have made it clear that fruit was deadly. 
+* Whenever you die the game has to make it clear, and hold for a bit so the player knows the context and can accept responsibility + see how to do better.
+{{< /alert >}}
+
+**Go further:**  
+1. Add a second fruit type that gives you more points. Show the fruit types in the gui (below the game) and their value.
 2. When the snake collides with a side wall, teleport it to the opposite side. Do the
    equivalent for top/bottom walls.
+3. Give the game basic easy+hard modes:
+   - easy: the walls teleport you.
+   - hard: the walls kill you
+   - Don't duplicate the whole `playSnake()` function to do this. If `playSnake()` receives a variable, say, `int mode`, that should be enough. You can use it in `if` statements to decide whether a collision is deadly or teleporty in the current mode.
+   - You could add the modes to the main menu or provide them in an options screen (access from main menu) or game type screen (after menu, before game starts).
+4. Maybe create a deadly fruit that appears, is a terrifying hazard, and then disappears for a bit before appearing somewhere else.
 
+
+<!-- 
 ## Extra session this week
 
 Covering collections aka arrays/vectors.
@@ -165,5 +246,6 @@ Covering collections aka arrays/vectors.
 Time and date incoming! 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../week11b" target="_blank">Week 11B<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+-->
 
   

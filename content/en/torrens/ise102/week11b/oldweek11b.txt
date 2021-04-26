@@ -1,10 +1,12 @@
----
+<!-- 
+
 title: "Week 11b: Collisions, Collections"
 linkTitle: "W.11b: Collections"
 weight: "111"
 description: >
   How do we check if things collide? How can we use bunches of related objects easily? How do we add more screens to our game?
----
+
+-->
 
 ## Learning today
 
