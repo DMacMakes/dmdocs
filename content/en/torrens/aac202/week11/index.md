@@ -14,6 +14,9 @@ When we all hear the same words all the time, we tend to define them the same wa
 <img src="troll_face.png" width="200" />
 
 #### *Realistic* game art:
+
+![last of us 1](realism_lastofus2_1.jpg)
+
 Element | Approach
 --- | ---
 **Characters, props and environments** | Have lots of fine, life-like detail referenced from real life. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are mostly laid out in according with the laws of physics/biology/material science, with little/no regard for rhythm, contrast, readability.  
@@ -21,6 +24,8 @@ Element | Approach
 **Post effects/filters\*** | Will usually enhance detail and contrast but in line with film grading of movies/tv. They'll often recreate the physical properties of lenses, and the way cameras are affected by light and the environment.  
 
 \* *graphic effects applied to the whole screen once the scene is rendered in 3d*
+
+![last of us 2](realism_lastofus2_2.png)
 
 #### *Stylized* game art  
 
