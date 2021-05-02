@@ -118,9 +118,35 @@ Color | If using ZBro paint, at a minimum fill with flat colour. You can add mor
 
 Final Submission: **End of week 12.**
 
-Not yet fully ready. What it'll involve is texturing a provided model, using Substance Painter, and exporting to a provided Unity scene/web viewer.  
+Texture on of the provided models using Substance Painter.
 
-**Week 11:** Progress will be submitted to a Blackboard thread for review.  
+Name | Pic | Substance File 
+---- | ---- | ----
+Service Drone | ![service_drone](service_drone.png) | [service_drone.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESXh4gp2iJFFh9dLbNnYjzQBcArqiT2OAQvl9KWQGmbrRA?e=P7a6xz)
+Mini Axe | ![mini axe](mini_axe.png) | [mini_axe.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EWhxYg7NmZdPh7KgPYHbdlkBOaJsUuUIa6EtRoPqywDvzw?e=dBlWxO)
+Knife | ![knife](knife.png) | [knife.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESwqpRmQvNNOjqrgkizkBk0BlHujqs_HVOlJoG9drjwX9A?e=DLMBho)
+Arcade Stick | ![arcade stick](arcade_stick.png) | [arcade_stick.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ER_K_UxRxOdBqUDZFWVbBzwBlrSSWW8zO-r_5ojKb7IFQA?e=OKKpYR)
+Boot* | ![boot](boot.png) | [boot_david.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESFT4HJ9hD9Nv8MSnHhUzVoBHw2VI6-SmQdHtq5nln6dcQ?e=NmFmkR)  
+  
+\* *Boot is here because David Neselius (online class) wanted to texture his own model, but you're welcome to choose it too - just remember to credit him as the modeller if it ends up inyour folio* 👍  
+
+### Reference   
+Here's some reference for cartoony styled 3D using with a PBR look:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ERA4hias9nhIhR7BR7gRS-wBxOEJcPHfESPt26k3y8Qayg?e=hiFZFO" target="_blank">PBRCartoonyLook1.pur.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a> 
+
+### Submitting your work:
+
+#### Week 11: Submit progress to Blackboard threads:
+
+You can find the submission threads and the requirements at the following links:
+
+Class location | Link to discussion thread
+----------- | ------------
+Ultimo class | [submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968751_1&message_id=_2632676_1)
+Online class | [submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968736_1)
+
+
 **Week 12:** Models, textures and screenshots will be submitted.
  
 <!--
