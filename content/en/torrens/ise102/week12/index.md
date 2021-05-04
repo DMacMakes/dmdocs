@@ -100,7 +100,7 @@ Drawing snake head, then the snake history in alternating colours.
 {{< /imgproc >}}
 
 
-### Exercise 1: Starting With 1
+<!-- ### Exercise 1: Starting With 1
 
 Slithers has one location, but we need many. Make another location in your Snake class (`snake.h`) called `lastLocation`. 
 
@@ -120,6 +120,8 @@ Two ways to store collections of things in C++ are
 
 Arrays are very basic, static things that don't grow and don't offer any tools to us. I suggest using `std::vector`, because they're super flexible, easier and safer to use, and not noticeably slower for our simple game. 
 
+-->  
+
 <!--  
 
 {{< imgcard snapshots_onionskin>}}
@@ -135,9 +137,12 @@ PREVIOUSLY COMMENTED
 
 What about all those damn variables though? Do you have to make like 100, 1000 variables to store them? How do you even make new variables at run time? Hell, we don't even need all the names. Just slithers0, 1, 2, 3.
 
+--> 
+<!-- 
+
 ## Storing History In Collections
 
- You need a collection of Creatures you can access with a single name (maybe oldBattys?) and a number or `index`.
+ You need a collection of past locations you can access with a single name (history, travelog?) and a number or `index`.
 
 {{< alert title="Indexed Collections" color= "primary" >}}
  A gallery contains lots of precious and small items. When you visit with your family then, you're not surprised that they don't want people taking in bags: they ask you to leave yours with security in the `bag check`. It's full of all different sizes and shapes of bags, and when they take yours they assign it a number, 104, so they can find it again.
@@ -151,7 +156,7 @@ A vector object can hold any number of a chosen data type(int, float, string, Ba
 
 -->  
 
-### Declaring a vector of stuff:
+## Declaring a vector of stuff:
 ```cpp
   // We declare a vector type, then the type it contains, and give it a name.
   vector<int> scores;
@@ -201,9 +206,20 @@ Note: array access notation
 Step by step.
 {{< /imgcard >}}
 
-### Drawing a snake, not our entire history
+## Drawing a snake, not our entire history
 
 Our snake isn't a trail all the way back to our origin. Each frame, we'll have to limit how many old locations we draw. Where's the cut off point? What property of a `Snake` might tell us how _long_ a `Snake` is?
+
+### Drawing a snake using history.
+
+Steps       | Details
+---------------- | ---
+1\. Snake history archive | Create an empty history collection in our snake ( vector of Point2d locations )
+2\. Snake length | Give our snake a length variable that we can add to when they eat (or other scenarios)
+3\. Storing locations | Just before we execute a snake move, push a copy of our current location into the history collection. (depending on your approach you can push it on the back or insert it at the front).
+4\. Drawing long snake | Draw that location history after (or before)  drawing our snake's head. **A** Only draw enough of our history to represent our snake's full length and **B** head will be one pixel, then draw length - 1 (for head) - 1(for count from zero math) bits of 4. snake. That's  *head and length-2 bits of snake history.*
+
+### Snake length 
 
 What variable does our `snake.h` need, then? 
 1. **Add it** to `snake.h`, initialise it somewhere (before the play loop), then make sure you respect it in your body-drawing loop. 
