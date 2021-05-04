@@ -65,7 +65,7 @@ A work of art produced in TextPixels.
 
 ### Download The Example
 
-[Console_Drawing_w9.zip](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EXeQmzvBHRpAkKyVPNiAq8MBx_PKYGbcC3gUe6Us9QoOcQ?e=yFqN1n) (Updated with loop in demo function, additions to textpixels)
+[Console_Drawing_w9.zip](Console_Drawing_w9.zip) (Updated with loop in demo function, additions to textpixels)
 
 **Load and run** the code. Examine the code provided for:
 
