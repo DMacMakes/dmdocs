@@ -25,6 +25,15 @@ Click image to visit the Trello
 
 ## A growing snake
 
+Try the segmented, growing snake in `4_snake_insert_erase.exe` from the zip below:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_executables.zip" target="_blank">Download week12_executables.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+> Q: How did I stop drawing?  
+> A: HMMM. How _did_ I stop drawing?
+
+### Break it down
+
 How can we change our `Snake` so that:
 * it has body segments as well as the existing head pixel.
 * the segments of the body follow the head as if on rails - no corner cutting
@@ -90,12 +99,6 @@ I'll be getting you started on this, but after that you'll have to fly on your o
 Drawing snake head, then the snake history in alternating colours.  
 {{< /imgproc >}}
 
-Try the segmented, growing snake in `4_snake_insert_erase.exe` from the zip below:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="week12_executables.zip" target="_blank">Download week12_executables.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-> Q: How did I stop drawing?  
-> A: HMMM. How _did_ I stop drawing?
 
 ### Exercise 1: Starting With 1
 

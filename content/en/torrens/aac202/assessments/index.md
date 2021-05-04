@@ -147,8 +147,10 @@ Ultimo class | [submission thread](https://laureate-au.blackboard.com/webapps/di
 Online class | [submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968736_1)
 
 
-**Week 12:** Models, textures and screenshots will be submitted.
- 
+#### Week 12: Working files, final textures
+
+Working Painter project, screenshots and probably Sketchfab.
+
 <!--
 
 For Assessment 1 you'll create a **high detail, normal mapped** prop using **techniques shown in class** and developed at home. These will include subdivision modeling, normal mapping and PBR textures.
