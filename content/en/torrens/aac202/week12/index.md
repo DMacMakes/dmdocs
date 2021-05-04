@@ -1,12 +1,52 @@
 ---
-title: "12. Rendering and post"
-linkTitle: "12. Rendering"
+title: "12. Final texture"
+linkTitle: "12. Finalising"
 weight: "120"
 description: >
-  Polishing our models, rendering for art director review. Submission!
+  Adding story to our textures, tuning style and wear.
 ---
 
 ## Today
+Wrapping up Painter, assessment 3 work.
+- Storytelling in texture
+- Human eye vs algorithm: tuning textures with hand masking/painting.
+- Help with stylising particular textures?
+- Remember that dirt is on all of your model, it doesn't know which area has what material, so it should be above those masked layers. Same with, say, a dust layer or ambient occlusion pass.
+- Working with post effects (exposure, contrast, vignette etc)
+- Export to sketchfab?
+
+### Recap - storytelling in texture. 
+
+See the second part of the week 11 reviews:  
+
+C11.2 <https://au-lti.bbcollab.com/recording/1b320fa84eec4bdb88f213f4bc06b8d4>
+
+1. We settle the colour blocking, materials, the style and extent of wear and surface features  
+2. We begin to tell the story of the object and reflect its functionality and environment in wear, stains, scorch marks, rust.  
+  
+ Ideally, picture | storytelling texture
+ ---------------- | -----------------------------
+ \[pic\] Hot zone | grease and smoke stains near seams/vents where hot components/motors are inside
+  \[pic\] Wear zone | rust were movable panels meet: their action grinds dust and other schmoo into the paint, revealing bare metal, which oxidises (rusts)
+ \[pic\] Exposed metal | If exposed metal doesn't rust, why? It's a precious metal maybe, or super fancy composite. It'll mostly be dull and oxidised/rusted if it is exposed except in spots where it's recently scratched or where it's constantly rubbing against a fabric or other soft abrasive.
+ \[pic\] Streaks of rust/grease | water gets into seams where rubbing/vibration has caused the coating to crack/wear, and then trails of rust descend from there
+ \[pic\] Paint ageing | Paint fades and glossy clearcoat is destroyed (becoming matte) under years of UV exposure. That's always on the surface pointing most directly at the sun, so upper areas.
+ \[pic\] Ground | Things that rest on the ground get dust, mold, rock scratches, rust from moisture in the ground/dew on grass.
+ \[pic\] Dust | Gravity is a thing. It makes fine schmoo in the air fall down eventually, and it lands on the top surfaces of objects.
+
+### Post effects?
+
+We covered a bit on glare. Look at others.
+
+### Real time render
+
+Iray's not appropriate for us because we're not outputting film/tv/print/promotional art. This is aimed for a game engine.
+
+### Sketchfab
+
+Upload to sketchfab. Each free account 1 model per month. Create with school account.
+
+<!-- 
 
 1. Some feedback  
 2. Defining the last task for the assessment (how to render it this week)  
