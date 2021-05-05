@@ -46,9 +46,11 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 ## Assessment 2: Slot Machine
 
-**Due:** End of week 8 *(April 11 for T1 2021)*
+**Completed:** End of week 8 *(April 11 for T1 2021)*
 
-We'll make a text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
+A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
+
+<!-- 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642074_1&course_id=_102573_1" target="_blank">ULTIMO Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
@@ -58,8 +60,36 @@ If you're in the second online class (who joins the collaborate sessions via pub
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9772423_1&course_id=_110422_1" target="_blank">ONLINE 2 Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+-->
 
-### Deliverable 
+#
+
+## Assessment 3: Realtime Game
+
+**Due:** End of week 12
+
+Make Snake! See the **brief provided on Blackboard** (in the assessments section discussed in *submission* below) but **also watch classes and reviews** to get all the important details. 
+
+> It's not enough to simply read the brief and make a program - your work has to reflect and demonstrate profiency with practises taught in class and should use code provided to you. This assessment must be built on the base code provided in class (weeks 10/11).
+
+### Deliverables 
+
+1. Weekly homework submission contributes to your marks.
+2. **Week 11 homework** submission is **required.**
+   **Due:** Midnight, Sunday, end of Week 11 (May 2 in Trimester 1 2021).
+3. Your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard. You must follow the method taught in class and described/demonstrated in [Delivering Visual Studio Solutions](#delivering-visual-studio-solutions) below.
+
+### Submission
+
+Submit your assessment by:
+1. Visiting your subject's page on Blackboard
+2. Selecting *Assessments* in the left nav 
+3. Clicking on *Assessment 3 - OOP Principles Program*
+4. Optional but wise: check your work fulfills the brief
+5. Click *Assessment 3 - Submission* and follow the instructions.
+
+## Delivering Visual Studio solutions
+<a name="deliverable"> </a>
 
 You'll deliver a **zip file** containing your Visual Studio solution. You DO NOT need to submit a build (with executable) as mentioned in the brief. Just a zip of your solution/project folder, as described below.
 
@@ -68,7 +98,7 @@ Work through the steps shown in the video carefully: if you miss submission requ
 {{< alert title="Correct zip name" color= "danger" >}}
 **Ignore** the naming in the video. Use this, which matches the brief pdf:
 
-**ISE102_Assessment2_Lastname_Firstname.zip**
+**ISE102_AssessmentX_Lastname_Firstname.zip** where X is the assessment number (1, 2 or 3).
 {{< /alert >}}
 
 {{< youtube H44emolQCz4 >}}
@@ -91,30 +121,8 @@ In your solution/project folder (same thing for us) you can **delete all** of th
     * If you can't see it, **turn on "hidden items"** in Windows explorer's *view* ribbon.
 * _Debug_
 * _Release_
-* _x86_
 * _x64_
 
 {{< imgcard folder_cleaning>}}
 Here are some of the folders you'd delete. DO NOT MOVE YOUR FILES if your folder is missing the proj files and cpp files. Contact me.
 {{< /imgcard >}}
-
-## Assessment 3: Realtime Game
-
-**Due:** End of week 12
-
-Make Snake!
-
-<!--
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9258119_1&course_id=_93608_1" target="_blank">A3 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-You must use base code provided in class (week 10) and use learnings and techniques from the streamed classes.
-
-### Deliverables 
-
-1. Weekly homework submission contributes to your marks.
-2. **Week 11 homework** submission is **required to be considered for a pass!**
-   **Due:** Midnight, Sunday August 16. Submit via email to Mat Carr.
-3. Your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard.
-
--->
