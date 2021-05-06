@@ -15,7 +15,11 @@ Wrapping up Painter, assessment 3 work.
 - Working with post effects (exposure, contrast, vignette etc)
 - Export to sketchfab?
 
-### Recap - storytelling in texture. 
+## Assessment 3 submission details on dmdocs
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="http://localhost:1313/torrens/aac202/assessments/#week-12-working-files-final-textures" target="_blank">How to submit assessment 3 (surfacing)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+## Recap - storytelling in texture. 
 
 See the second part of the week 11 reviews:  
 
@@ -34,17 +38,57 @@ C11.2 <https://au-lti.bbcollab.com/recording/1b320fa84eec4bdb88f213f4bc06b8d4>
  \[pic\] Ground | Things that rest on the ground get dust, mold, rock scratches, rust from moisture in the ground/dew on grass.
  \[pic\] Dust | Gravity is a thing. It makes fine schmoo in the air fall down eventually, and it lands on the top surfaces of objects.
 
-### Post effects?
+## When the texturing is done
 
-We covered a bit on glare. Look at others.
+Post effects, exporting. 
 
-### Real time render
+### Post effects
 
-Iray's not appropriate for us because we're not outputting film/tv/print/promotional art. This is aimed for a game engine.
+{{< imgcard post_colour_correction>}}
+An example of colour correction in Substance Painter (from the docs)
+{{< /imgcard >}}
 
-### Sketchfab
+Once the texture is on the model and the camera and lighting have been positioned/tweaked, what else can we do? From *ZBrush* we exported to *Photoshop* to do a bit of compositing, applying some post-processing by hand. That's fine for a single render, but a game engine renders 60+ frames per second - humans need minutes or hours in photoshop, so we're out. 
 
-Upload to sketchfab. Each free account 1 model per month. Create with school account.
+Only a computer could composite/post process those rendered frames fast enough, and that's what post-effects shaders/filters are for.
+
+
+{{< alert title="Definition: Post effects (post processing)" color= "primary" >}}
+*Post-Effects* are filters than can be applied to the images rendered in the viewport of Substance Painter to simulate common camera effects.
+
+*Post processing* is the general term for modifying the image/frame (by hand or by script/filter/plugin) produced by the 3D rendering process or produced by a camera. Post = after, as in post-mortem.
+{{< /alert >}}
+
+Each effect is broken down in the Substance documentation:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://docs.substance3d.com/spdoc/post-processing-172818692.html" target="_blank">Post effects on Substance Docs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Don't use IRay
+
+At least not for submitting this assessment. We're producing game assets for real time rendering, so we'll work on making that look as good as we can. Iray's renders require many seconds to minutes to produce, so it's giving us a view of our asset that would never appear in game. That really limits its usefulness for assessing our work.
+
+## Sketchfab
+
+> Sketchfab is a service that hosts 3D models and textures as well as offering an embeddable, webgl based viewer with advanced real-time rendering capabilities and handy tools for inspecting the model and textures.
+
+**Let's create an account.** The free account has 1 model per month. Feel free to create the account with your school email.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://sketchfab.com/signup" target="_blank">Register a free Sketchfab account<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<div class="sketchfab-embed-wrapper"> <iframe title="Mini Axe" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="480" height="480" src="https://sketchfab.com/models/c580dcae6f6e46568e5759eba18d3dc7/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/mini-axe-c580dcae6f6e46568e5759eba18d3dc7?utm_medium=embed&utm_campaign=share-popup&utm_content=c580dcae6f6e46568e5759eba18d3dc7" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Mini Axe </a> by <a href="https://sketchfab.com/dmacdraws?utm_medium=embed&utm_campaign=share-popup&utm_content=c580dcae6f6e46568e5759eba18d3dc7" target="_blank" style="font-weight: bold; color: #1CAAD9;"> dmacdraws </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=c580dcae6f6e46568e5759eba18d3dc7" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+
+[See mini axe on Sketchfab](https://sketchfab.com/3d-models/mini-axe-c580dcae6f6e46568e5759eba18d3dc7)
+
+Exporting once you have an account:
+
+Step | Screenshot
+---- | ----
+**1** Go to *file -> export*, choose *sketchfab*, log in. | ![export 1](sketchfab__export_1.png)
+**2** Configure the *Title*, *Description* etc | ![export 2](sketchfab__export_2.png)
+**3** Wait for the sketchfab elves to prep the model (a few minutes). | ![export 3](sketchfab__export_3.png)
+**4** Configure 3D settings - camera angle, transform, post effects etc. | ![sketchfab 3d settings](sketchfab_3d_settings.jpg)
+
+
 
 <!-- 
 

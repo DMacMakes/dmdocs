@@ -21,7 +21,7 @@ Order  | Deliverable       | Due     | Blackboard number
 
 ## 1. High Poly Character (week 4)
 
-**Submitted**: Sunday March 14 by 11:55pm. 
+**Submitted**
 
 <!-- 
 
@@ -78,7 +78,7 @@ faces-12
 
 ## 2. Hard surface model: NES Controller   
 
-**Subted.**
+**Submitted.**
 
 <!--
 
@@ -149,7 +149,22 @@ Online class | [submission thread](https://laureate-au.blackboard.com/webapps/di
 
 #### Week 12: Working files, final textures
 
-Working Painter project, screenshots and probably Sketchfab.
+What to Submit:
+1. Working Painter project
+2. Screenshots 
+3. Sketchfab link
+
+How to submit:
+1. **Zip** your working painter project and screenshots into a single zip
+2. Upload it to Torrens LFS. 
+3. Export the final version of your model+textures to Sketchfab.
+4. Submit the **LFS link and the Sketchfab link** to Blackboard under *Assessment 2: Model Surfacing*.
+
+Class | Submission link
+----  | -----
+Ultimo | [Assessment 2 on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586561_1&course_id=_102604_1)
+Online | [Assessment 2 on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?course_id=_102086_1&content_id=_9586490_1)
+
 
 <!--
 
