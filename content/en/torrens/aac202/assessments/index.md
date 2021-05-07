@@ -116,7 +116,7 @@ Color | If using ZBro paint, at a minimum fill with flat colour. You can add mor
 
 ## Assessment 3: PBR Texturing
 
-Final Submission: **End of week 12.**
+**Final Submission: Midday, Wednesday May 12** 
 
 Texture on of the provided models using Substance Painter.
 
@@ -147,15 +147,18 @@ Ultimo class | [submission thread](https://laureate-au.blackboard.com/webapps/di
 Online class | [submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968736_1)
 
 
-#### Week 12: Working files, final textures
+#### Week 12: Final submission 
+
+**Due: Midday, Wednesday May 12** 
 
 What to Submit:
-1. Working Painter project
+1. Final Painter project (*.spp file)
 2. Screenshots 
-3. Sketchfab link
+3. Your real life and style reference.
+4. Sketchfab link to your uploaded model
 
 How to submit:
-1. **Zip** your working painter project and screenshots into a single zip
+1. **Zip** your final painter project, reference files(pur) and screenshots into a single zip
 2. Upload it to Torrens LFS. 
 3. Export the final version of your model+textures to Sketchfab.
 4. Submit the **LFS link and the Sketchfab link** to Blackboard under *Assessment 2: Model Surfacing*.
