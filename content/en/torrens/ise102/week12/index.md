@@ -100,7 +100,9 @@ Drawing snake head, then the snake history in alternating colours.
 {{< /imgproc >}}
 
 
-<!-- ### Exercise 1: Starting With 1
+<!--
+
+### Exercise 1: Starting With 1
 
 Slithers has one location, but we need many. Make another location in your Snake class (`snake.h`) called `lastLocation`. 
 
@@ -138,6 +140,7 @@ PREVIOUSLY COMMENTED
 What about all those damn variables though? Do you have to make like 100, 1000 variables to store them? How do you even make new variables at run time? Hell, we don't even need all the names. Just slithers0, 1, 2, 3.
 
 --> 
+
 <!-- 
 
 ## Storing History In Collections

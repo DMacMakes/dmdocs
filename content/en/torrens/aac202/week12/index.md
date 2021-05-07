@@ -88,8 +88,6 @@ Step | Screenshot
 **3** Wait for the sketchfab elves to prep the model (a few minutes). | ![export 3](sketchfab__export_3.png)
 **4** Configure 3D settings - camera angle, transform, post effects etc. | ![sketchfab 3d settings](sketchfab_3d_settings.jpg)
 
-
-
 <!-- 
 
 1. Some feedback  
@@ -150,3 +148,5 @@ We'll use two new features for this: _live surface_ and _quad draw_.
 
 Deliverables and how to submit them on the assessments (dmdocs) page:
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-high-poly-environments">Assessment 3</a>
+
+-->
