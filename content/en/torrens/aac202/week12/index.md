@@ -17,7 +17,7 @@ Wrapping up Painter, assessment 3 work.
 
 ## Assessment 3 submission details on dmdocs
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="http://localhost:1313/torrens/aac202/assessments/#week-12-working-files-final-textures" target="_blank">How to submit assessment 3 (surfacing)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-12-working-files-final-textures" target="_blank">How to submit assessment 3 (surfacing)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Recap - storytelling in texture. 
 
