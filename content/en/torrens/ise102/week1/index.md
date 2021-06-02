@@ -15,11 +15,24 @@ Before we can do any programming, you need to have the right software on hand. I
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources">ISE102 Resources</a>
 
-## Discord server
+## Communication
 
+Stay on top of *announcements* and *torrens emails*. 
+
+Announcements: On blackboard, under each subject, is the announcements section. 
+Torrens Emails: Emails sent
+
+### Don't miss critical messages
+
+It's every student's responsibility to regularly check for any correspondence from the University and their lecturers. Due dates, extensions, chances to resubmit, changes of class time. Consider it the same as a notice from your real estate, a call to jury duty or an expiring car registration: events are in motion whether you read it or not, so read the emails and avoid surprises.
+
+#### Set up Outlook
+Set up Outlook on your phone with your uni address and leave notifications on. Don't miss any critical messages.
+
+### The Discord server
 Let's jump on Discord Join the Torrens class discord server if you haven't already. I'll be making announcements there but we'll be using the subject channels to post our work during class, ask questions when we get stuck, etc. *(PS - don't show your code in the channel, just screenshots)*
 
-### Quick intros
+#### Quick intros
 
 Introduce yourself in our #class-ise102 channel.
 
