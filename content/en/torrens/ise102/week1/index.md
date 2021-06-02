@@ -284,11 +284,11 @@ Visit the [ise102 Resources page](/torrens/ise102/resources/) and:
 
 People, like computers, feature *input, storage, processing and output*.
 
-**Harvey's mum:**
-  * Receives **input** via her ears, eyes and other senses
-  * Her brain **stores** instructions and remembers events
-  * She uses her hands and smarts to **process** the milk, moving it to a bottle and warming it
-  * She **outputs** a warm bottle of milk and a kiss to Harvey.
+**Dad:**
+  * Receives **input** via his ears, eyes and other senses
+  * His brain **stores** instructions and remembers events
+  * He processes the directions and traffic conditions.
+  * He **outputs** the gestures to control the car, the correct traffic signals, and outputs his daughter at her destination.
 
 {{< alert title="Abstractions Reduce Complexity" color="warning" >}}
 When we take the (at least) thousands of components of a PC and group them into a few simple functions, we call it **abstraction**, and it's a very powerful tool.
