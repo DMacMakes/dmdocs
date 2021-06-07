@@ -55,7 +55,7 @@ caption
 
 1. Make a **line graph** of the results (y axis: lists count, x axis: overall sort time in milliseconds) using **WEBSITE?** _need website_
 
-## Homework/assessment 1 lab 1.
+## Homework - Assessment 1 Lab 1.
 
 {{< alert title="The reading" color= "primary" >}}
 I've started this section with the exercise so you won't miss it, but make sure you **scroll down to the recommended reading**. There's not too much, and the extra understanding will help a lot with the lab work and understanding what's next.

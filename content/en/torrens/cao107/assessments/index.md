@@ -10,17 +10,13 @@ description: >
 
 ## Assessment 1
 
-_Complete_
-
-<!-- 
-
 Three coding, observation and analysis tasks (referred to as labs) in which we'll explore the challenges of writing code that executes in parallel.
 
 > We won't be working from the Blackboard brief for this. See the instructions below.
 
 ### Lab 1
 
-Complete.
+Complete (see [homework in week 2 notes](../week2/#homework---assessment-1-lab-1))
 
 ### Lab 2
 
@@ -79,17 +75,10 @@ Ignore the **correct naming** and leave out the **readme** file ONLY IF YOU WANT
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9219125_1&course_id=_94382_1" target="_blank">Submit Assessment 1 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
--->
-
 ---
 
 ## Assessment 2: Multi threaded loader
 
-_Complete_
-
-
-
-<!--  
 **Due:** End of Week 8 (Sunday 11:55pm)
 
 > Load images and sound in parallel, and then display/play multiple images and sounds. Using threads, solve the problems that emerge when we load large/many images/sounds. Keep the interface responsive, and keep the user informed. Allow the user to decide how many threads to use during loading.  
@@ -136,8 +125,6 @@ You can refer to [the brief found on the Blackboard Assessment 2 page](https://l
     - How do you avoid accessing images/sounds before they're fully loaded? Think about those data races!
     - Does the solution lock the entire vector of images/sounds? How can you avoid that
 {{< /alert >}}
-
--->  
 
 --- 
 

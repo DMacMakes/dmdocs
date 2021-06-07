@@ -9,10 +9,6 @@ description: >
 
 ## Assessment 1: Exam
 
-**Delivered:** End of week 4
-
-<!-- 
-
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642029_1&course_id=_102173_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642073_1&course_id=_102573_1" target="_blank">ULTIMO: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
@@ -42,15 +38,11 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 **#1 tip:** If you think you really understood the example you typed out and toyed with, close the project, create a new one and **rewrite it from memory.** If you don't get anything wrong first go, it's not a hard enough exercise!
 {{< /alert >}}
 
--->
-
 ## Assessment 2: Slot Machine
 
 **Completed:** End of week 8 *(April 11 for T1 2021)*
 
 A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
-
-<!-- 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642074_1&course_id=_102573_1" target="_blank">ULTIMO Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
@@ -59,10 +51,6 @@ A text based slot machine using the C++ *console* template. A _prompt and respon
 If you're in the second online class (who joins the collaborate sessions via public link and watch recordings via Discord) this is your submission link:
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9772423_1&course_id=_110422_1" target="_blank">ONLINE 2 Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
--->
-
-#
 
 ## Assessment 3: Realtime Game
 
