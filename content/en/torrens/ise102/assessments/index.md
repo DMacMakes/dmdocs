@@ -9,11 +9,9 @@ description: >
 
 ## Assessment 1: Exam
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642029_1&course_id=_102173_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+**Due:** End of week 4
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642073_1&course_id=_102573_1" target="_blank">ULTIMO: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9772420_1&course_id=_110422_1" target="_blank">ONLINE 2: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9917265_1&course_id=_112961_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
 
@@ -40,17 +38,11 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 ## Assessment 2: Slot Machine
 
-**Completed:** End of week 8 *(April 11 for T1 2021)*
+**Due:** End of week 8
 
 A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642074_1&course_id=_102573_1" target="_blank">ULTIMO Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9642030_1&course_id=_102173_1" target="_blank">ONLINE 1 Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-If you're in the second online class (who joins the collaborate sessions via public link and watch recordings via Discord) this is your submission link:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9772423_1&course_id=_110422_1" target="_blank">ONLINE 2 Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9917266_1&course_id=_112961_1" target="_blank">Online Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Assessment 3: Realtime Game
 
