@@ -207,8 +207,6 @@ We learned a few new and very powerful words today, and I don't want you to thin
 
 give you huge power because these are **common ideas in programming**. If you know how to look for these things in a **new language** you'll find them, and the language will open up very quickly.
 
-
-
 ## Summary
 
 Ths week we learned how to make comparisons between values, and then to decide what action to take. We matched the idea of **processing** and the use of **operators**.
@@ -237,16 +235,15 @@ Fill in the blurry bits. (click if the flowchart is too small to read)
   
 1. Read the rest of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, where you'll learn about arithmetic operators, data types and more.
     - Take notes
-    - In a new Visual Studio project, **type and run** _Game Stats 2.0_ on **page 24**.
 2. Read [Chapter 2](../resources/cpp_through_games_2.pdf) up to a **page 48**
     - Take notes
-    - Create another project _Score Rater 3_ and **type and run** the code on **page 47**.
+    - Create another project *score_rater_3* and **type and run** the code on **page 47**.
 
 ### Submission
 
 Make sure you've pasted your flowgorithm output into the Discord chat as described above.
 
-When you've completed typing and running the code in the text book **submit the `.cpp` files for both projects**. 
+When you've completed typing and running the code in the text book **submit the `score_rater_3.cpp` files**. 
    * Email to Danny with the subject _"ise102 homework week 2"_
    * Danny's email will be sent to you via Blackboard announcements (and _Discord_).
 
