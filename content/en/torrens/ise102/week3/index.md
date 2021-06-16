@@ -70,10 +70,10 @@ In <i>Street Fighter</i> victory goes to the winner of 2 out of 3 99 second roun
 {{< /imgproc >}}
 
 {{< alert title="Exercise: Your Favourites" color= "primary" >}}
-Go to the thread "Game loops: Your favourites" on blackboard ([Ultimo](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_84174_1&nav=discussion_board_entry&conf_id=_133815_1&forum_id=_800547_1&message_id=_1957190_1), [Online](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_84207_1&nav=discussion_board_entry&conf_id=_133864_1&forum_id=_800095_1&message_id=_1957191_1)) and reply to it. Think of and add to your post:
+Go to the class_ise102_danny Discord channel and post your answers to the following: and reply to it. Think of and add to your post:
 
-1. At least 3 game modes in games you've played.
-2. At least 3 examples of rounds, periods (sports) or levels in at games you've played.
+1. List 3 game modes in games you've played.
+2. List 3 examples of rounds, periods (sports) or levels within modes of games you've played.
 
 You have <b>5 minutes</b>.
 {{< /alert >}}
