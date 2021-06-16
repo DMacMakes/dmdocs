@@ -231,10 +231,10 @@ This week we:
 Below there is reading and 2 coding exercises.
 
 ### Submission
-**Email me** the cpp files for `guessy_number_limit` and `play_again_2` by the **end of saturday**.
+**Email me** the cpp files for `guessy_number_limit` and `play_again_2` by the **midday Sunday**.
 
 ### To do
-1. Complete [Exercise 2 Guessy number limit](#exercise-2-enter-guessy_number_limit)
+1. If you didn't complete it in class, complete [Exercise 2 Guessy number limit](#exercise-2-enter-guessy_number_limit)
 2. Read the rest of [Chapter 2](../resources/cpp_through_games_2.pdf) of the textbook, where you'll learn about other types of loops. You're beginning from **page 48**. 
 3. In a new C++ *console* project called `play_again_2`, **type and run** _Play Again 2.0_ on **page 54**. Now, **change the game** to use a menu with 2 entries (shown below) and look for `1` or `2` as their input.
 
