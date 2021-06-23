@@ -6,33 +6,14 @@ description: >
   Boolean logic, for loops, enums. Working through problems.
 ---
 
-<!-- 
-### Truth tables
 
-When your head can't hold it all or get it straight, write it down in a table! Like Einstein said, 'my pencil and I are smarter than I am.'
+## Assessment 1 Exam
 
-**Our brief was:** "1 continues, 2 exits. If they don’t input 1 or 2, continue the loop."
+We're preparing for the exam, which is happening this coming weekend.  
+  
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-1-exam" >Assessment 1 info on dmdocs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-The table shows us `(choice != 2)` is a useful test for this.
-
-| `choice` value | `choice != 2` | `while` loop.. |
-|----|----|---- |
-| `1` | `true` | continues |
-| `2` | `false` | ends  |
-| `3` | `true` | continues |
-| `4` | `true` | continues |
-| `5` | `true` | continues |
-
-How about `( !playerIsDead ) // keep playing`
-
-| `playerIsDead` value | `!playerIsDead` (_not_ player is dead) | `while` loop.. |
-|----|----|----|
-| `true` | `false` | ends, game over |
-| `false` | `true` | continues |
-
--->
-
-## Exercise: Grab and start Sololearn
+### Exercise: Grab and start Sololearn
 
 1. Jump to the [resources page](../resources/#sololearn-c-tutorial), install it along with the c++ tutorial.
 2. In the C++ tutorial, jump into _Basic Concepts_
@@ -63,17 +44,17 @@ Bashir is a 27 year old guy who thinks he's already old, but really he's just ag
 ```cpp
   while ( age <= 29 )     // Still true after first loop
   {
-    cout << "You ageing.. ";
+    cout << "Relax, you're just ageing.. ";
     age += 1;             // Age a year every time through the loop.   
 ```
 
 3. We **exit** by failing that test. Which means our tested variable must **change** value
 ```cpp
-    cout << "You ageing.. ";
+    cout << "Relax, you're just ageing.. ";
     age += 1;            
   }
   // At 30 we fail age <= 29
-  cout << "\n You old. \n";
+  cout << "\n Yep, you're old. \n";
 ```
 
 ### All requirements in one place
@@ -89,7 +70,7 @@ A for loop puts them all together, at the start of the loop.
 3. Run and test it. Try different starting and ending ages.
    
 {{< imgcard code_you_old_while Link "code_you_old_while.png">}}
-You old! Click for full size if hard to see (maybe you old)
+You're old! Click for full size if hard to see (maybe you're old)
 {{< /imgcard >}}
 
 #### Exercise: For loop age code
@@ -99,7 +80,7 @@ You old! Click for full size if hard to see (maybe you old)
 3. Run it. If there are any errors, can you guess what's causing them?
 
 {{< imgcard code_you_old_for Link "code_you_old_for.png">}}
-You old! Click for full size if hard to see (maybe you old)
+You're old! Click for full size if hard to see (maybe you're old)
 {{< /imgcard >}}
 
 4. Change the the line where `age` is causing the error: replace `age` with `OLD`.
@@ -245,18 +226,56 @@ When you start initialising some of the constants and not others, you might not 
 
 ## Literals
 
-Review them! If I can create an integer value out of thin air with `0` or a string with `"hi"`, how do I do it for:
+```cpp
+// Without a type declaration (int, string) you can still tell the C++ compiler
+// you're describing a string, an int or something else depending on how you 
+// write a literal. Maybe with quotes, maybe a leading or trailing letter, maybe
+// a decimal point. 
+cout << "Age: " << 20; // You've described a string and an integer to C++
+```
+
+Review and know your literals! If I can create an integer value out of thin air with `0` or a string with `"hi"`, how do I do it (write a literal) for:
   * float
   * char
   * double (double precision float)
   * bool
 <!--  scientific notation float  -->
 
+### Truth tables
+
+Truth tables are ways are describing what happens when you use "==" and logical operators between expressions, like `a==b && b==c` or `a + 2 != c`. When your head can't hold it all or get it straight, write it down in a table! Like Einstein said, 'my pencil and I are smarter than I am.'
+
+**Example from play_again_2:** 
+The brief was: "1 continues, 2 exits. If they don’t input 1 or 2, continue the loop." In the review we decided tha the simplest rule to do the job (taking account of errors, too)is that program should loop whenever the user doesn't quit.. That is, `choice != 2`.
+
+A truth table is useful for double checking or sharing/proving our solution. Here's one that suggests `(choice != 2)` was the right test:
+
+| `choice` value  | test against  | `choice != 2`  | `while` loop..  |
+|----             |----           |----            |----             |
+| -1              | 2             | true (yes)     | loops           |
+| 0               | 2             | true           | loops           |
+| 1               | 2             | true           | loops           |
+| 2               | 2             | false (no)     | ends            |
+| 3               | 2             | true           | loops           |
+| 4               | 2             | true           | loops           |
+
+If we had a variable called playerIsDead we could use `if (playerIsDead == false)`.
+The `!` operator is great for shortening this into `while ( !playerIsDead ); // keep playing`, but the syntax can confuse new programmers, a **truth table** makes it easy to see that it's an expression, and when evaluated we get the opposite of whatever boolean value (true or false) is in `playerIsDead`.
+
+It explains why `if (!playerIsDead)` can be read as `if NOT playerIsDead` or, in our regular English grammar, `if (player is NOT dead)`. 
+
+| `playerIsDead` value | `!playerIsDead` equates to.. | `while` loop.. |
+|----|----|----|
+| `true` | `false` | ends, game over |
+| `false` | `true` | continues |
+
+
 ## Summary
 
 This week we:
+* Jumped into SoloLearn
 * Learned `for` loops.
-* Reviewed
+* Reviewed enums, logical operators, nested loops (you had learned from textbook)
 
 ## Homework:
 
