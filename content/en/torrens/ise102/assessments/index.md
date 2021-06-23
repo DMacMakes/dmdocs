@@ -9,7 +9,7 @@ description: >
 
 ## Assessment 1: Exam
 
-**Due:** End of week 4
+**Due:** Before 11:55pm Monday, June 28
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9917265_1&course_id=_112961_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
@@ -17,18 +17,18 @@ Testing your understanding of the **ideas in programming**, along with knowledge
 
 ### Deliverable
 
-An online exam you will complete **on Blackboard**. The exam will be available to start at any point from Friday of week 4 **until Sunday end of week 4**. 
+An online exam you will complete **on Blackboard**. The exam will be available to start at any point from (and including) Friday June 25 **until 11:55pm Monday, June 28**.   
 
-* Once started, you have to complete it the time specified.
-* You can **return** to the exam **during** that time if your machine/internet goes down, but **not after**.
-* If a serious technical issue stops you from returning to it, please contact me. 
-    * The uni will require a legitimate reason, so make sure that when you sit down you have time to complete it without interruption from family/friends/responsibilities.  
+* Once started, you have to complete it the time specified.  
+* You can **return** to the exam **during** that time if your machine/internet goes down, but **not after**.  
+* If a serious technical issue stops you from returning to it, please contact me.   
+* The uni will require a legitimate reason, so make sure that when you sit down you have time to complete it without interruption from family/friends/responsibilities.  
 
 {{< alert title="Preparation" color= "secondary" >}}
 You will need to have 
 1. Attended and/or watch recordings of **ALL of EVERY class**, and worked through the **exercises and homework**
-1. Carefully read and understood the **first two chapters of the textbook** (available on the resources page)
-1. Work through sololearn.
+1. Carefully read and understood the **first three chapters of the textbook up to and including for loops** (available on the resources page)
+1. Worked through sololearn up to and including data types (tute 3).
 1. Reading and quizzes won't get you far on their own: for these principles to stick you need to have written, **tested and experimented/played with code** from the textbook and the weekly lectures. 
 
 Coding is like any other craft or science: if you don't practise, if you don't break it apart and put it back together, if you don't switch it around to see what happens, you won't learn it.
