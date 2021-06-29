@@ -54,9 +54,9 @@ A screenshot from our Linux Mint virtual machine.
 
 **If you know how to unpack 7z (7zip)** files, grab this smaller 3.2 GB file:
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EWFZ0tYV4D1MqOeXTIsD2rcBGhIlOi-LCCLuhdvjFJBLBQ?e=Bnj2hQ" target="_blank">Download Linux VM in 7z Archive (3.2GB)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EWFZ0tYV4D1MqOeXTIsD2rcBGhIlOi-LCCLuhdvjFJBLBQ?e=h2QOP8" target="_blank">Download Linux VM in 7z Archive (3.2GB)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERUaIyk5nP9Fgsacv5dRKMgBJOYQ7mpmrWf-B_LGnDrxGQ?e=tQALgo" target="_blank">Download Linux VM in Zip archive (4.4GB)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ERUaIyk5nP9Fgsacv5dRKMgBJOYQ7mpmrWf-B_LGnDrxGQ?e=op7Yd4" target="_blank">Download Linux VM in Zip archive (4.4GB)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 1. _File -> Open_ the virtual machine in _VMWare_.  
 2. If your pc only has 8GB of ram you can enter the virtal machine settings and lower the vm's ram to 3 or 4 GB. 

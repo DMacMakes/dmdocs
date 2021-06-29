@@ -98,16 +98,16 @@ Our Solution, layers of abstraction:
 > - Helpers:  
 >   - **ImGuiFileDialog**: Browse files  
 
-## Code: Your imgui base project 
+## Code: Your Media Loader base project 
 
 {{< imgcard Base_imgui_running >}}
 What you'll see when you run the project.
 {{< /imgcard >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EVOD7jD80J1GtDABECZyr_UB5ky57VX_lZTMZSv-t6Hpow?e=OkPnIN" target="_blank">Download imgui_base_updated.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+Your lecturer will provide you with the media loader base code.
 
-Unzip the contents into a folder, you'll see `libraries_cpp` and `weeks_5-8`.
-Go into `weeks_5-8\imgui_load_image` and double click `imgui_load_image.sln`. 
+Unzip the contents into a folder, you'll see `libraries_cpp_cao` and `cao107-loading`.
+Go into `cao107-loading\media-loader-base` and double click `media-loader.sln`. 
 
 Set build type to _Release, x64_ in the main toolbar of visual studio, hit **ctrl+F5** to run.
 
