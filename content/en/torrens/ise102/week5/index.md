@@ -127,7 +127,11 @@ Here's Some very basic but very necessary math you don't want to have to code yo
 
 ## SLEEP human maths are slow
 
-TODO: Add T1 2021's sleep code-along.
+Download and complete the Human Maths project.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="human_maths.zip" target="_blank">Download human_maths.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+
 
 ## Calling a function
 
