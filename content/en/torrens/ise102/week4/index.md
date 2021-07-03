@@ -111,7 +111,7 @@ The parentheses `()` in the first line of the `for` loop are familiar, we've see
 * The syntax is less beginner friendly at first
 * Only operates at the top of the loop (no `do.. while` equivalent)
 
-### Exercise: Structure And Variations
+### Exercise: for loop Structure And Variations
 
 Those 3 parts in the `for` loop parentheses can **vary their form** quite a bit, and some be **left out** entirely. 
 
@@ -170,14 +170,61 @@ int main()
 }
 ```
 
-
 ### Using the debugger to test our theory.
 
 The most important step is to develop a theory: what do I think will happen if I run this code I wrote/edited? If you don't have an expected answer?, who will you know if it the code is right/wrong? 
 
 The second most important step: testing that theory! We can run through the whole app and see the ouput, or we can use the debugger to walk through the program one line at a time, then see where it diverts from our expectations.
 
+## Looping.. with no loops!
 
+Sometimes, if you're working in a game engine or other special situation, someone else will provide the loop, and you just choose what to do in it. The Arduino works like this.
+
+### Instead of main..
+
+There's no `main()` function in an arduino program, it's hidden from you. Instead, you have two functions:
+
+**setup();** holds the things you want to do first, when the arduino is turned on.
+
+```cpp
+void setup()
+{
+  // Configure the arduino connections we plan to use.
+  // On one pin we'll OUTPUT commands to the light ring
+  pinMode(ringPin, OUTPUT);
+  // One another we'll read INPUT from the dial (what position is it in?)
+  pinMode(dialPin, INPUT);
+  neoRing.begin();          // Initialise the neoRing object
+}
+```
+
+**loop();** runs right after setup, and when it's done, it runs again.. forever. Or until the Arduino is turned off, whichever happens first. 
+
+```cpp
+void loop()
+{
+  racerPosition = add1Looping(racerPosition, totalLights);  // Set new position for racer
+  // The racer colour will range from red to yellow. Red light + Green light = yellow light.
+  int red = colourMax;                 // Plenty of red
+  int green = dialToRange(colourMax);  // green is moderated by dial rotation. dial at 0 = no green. 
+  int blue = 0;                        
+  
+  neoRing.clear();  // Wipe all previous light colours to black
+  // Set the colour of the light at racerPosition on the ring 
+  neoRing.setPixelColor(racerPosition, red, green,blue);
+  neoRing.show();   // only set 1 light's colour, that's all neoRing will show.
+  
+  // When the dial is at 0, we'll be waiting for the maximum delay. Try changing "true" to "false"
+  delay(minLightDelay + dialToRange(maxAddedLightDelay, true));
+}
+```
+### Exercise: Arduino racer
+
+Let's play with a simulation of an arduino computer and its code.
+
+[![](arduino_wokwiki.jpg)](https://wokwi.com/arduino/projects/303079642606076481)
+
+<https://wokwi.com/arduino/projects/303079642606076481>
 
 ## Enum
 
