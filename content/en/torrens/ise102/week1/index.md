@@ -239,6 +239,12 @@ You might come across (or he me say) any of these things, all meaning the  **com
 
   {{</alert>}}
 
+## Assessment 1 Workbook
+
+Open the work book at this link and make a copy of your own:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:w:/g/personal/daniel_mcgillick_torrens_edu_au/EdRS0jwX6ftGr6UO-3m7HqkBR4TLkoRnvYMm8778Edpu8A?e=NbQ3Vx" target="_blank">ISE102_Assessment1_Workbook.docx<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 ## Instructions.
 
 The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them. To give instructions though, we'll need a task for them to complete.  
