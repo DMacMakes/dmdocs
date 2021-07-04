@@ -176,11 +176,11 @@ The most important step is to develop a theory: what do I think will happen if I
 
 The second most important step: testing that theory! We can run through the whole app and see the ouput, or we can use the debugger to walk through the program one line at a time, then see where it diverts from our expectations.
 
-## Looping.. with no loops!
+## Looping with no loops!
 
 Sometimes, if you're working in a game engine or other special situation, someone else will provide the loop, and you just choose what to do in it. The Arduino works like this.
 
-### Instead of main..
+### Instead of main
 
 There's no `main()` function in an arduino program, it's hidden from you. Instead, you have two functions:
 
@@ -218,6 +218,17 @@ void loop()
   delay(minLightDelay + dialToRange(maxAddedLightDelay, true));
 }
 ```
+
+### Exercise: Arduino
+
+Let's play with a simulation of an arduino computer and its code.
+(Use a button to make a beep. So exciting!)
+
+![Tinkercad](tinker_button_beep.png)
+
+<https://www.tinkercad.com/things/lvWA7bM9qq7-button-beep>
+
+
 ### Exercise: Arduino racer
 
 Let's play with a simulation of an arduino computer and its code.
