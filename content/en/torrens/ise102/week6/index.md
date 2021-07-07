@@ -8,7 +8,9 @@ description: >
 
 ## Assessment 2 brief
 
-The brief pdf [on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8948579_1&course_id=_90315_1)
+The brief pdf [on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9917266_1&course_id=_112961_1)
+
+
 
 ## Solving programs
 
