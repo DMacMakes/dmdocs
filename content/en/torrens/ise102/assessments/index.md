@@ -9,9 +9,11 @@ description: >
 
 ## Assessment 1: Exam
 
-**Due:** Before 11:55pm Monday, June 28
+**Completed:** Monday, June 28
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9917265_1&course_id=_112961_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<!--
 
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
 
@@ -35,6 +37,7 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 **#1 tip:** If you think you really understood the example you typed out and toyed with, close the project, create a new one and **rewrite it from memory.** If you don't get anything wrong first go, it's not a hard enough exercise!
 {{< /alert >}}
+-->
 
 ## Assessment 2: Slot Machine
 
@@ -49,6 +52,8 @@ A text based slot machine using the C++ *console* template. A _prompt and respon
 **Due:** End of week 12
 
 Make Snake! See the **brief provided on Blackboard** (in the assessments section discussed in *submission* below) but **also watch classes and reviews** to get all the important details. 
+
+<!--
 
 > It's not enough to simply read the brief and make a program - your work has to reflect and demonstrate profiency with practises taught in class and should use code provided to you. This assessment must be built on the base code provided in class (weeks 10/11).
 
@@ -67,6 +72,8 @@ Submit your assessment by:
 3. Clicking on *Assessment 3 - OOP Principles Program*
 4. Optional but wise: check your work fulfills the brief
 5. Click *Assessment 3 - Submission* and follow the instructions.
+   
+-->
 
 ## Delivering Visual Studio solutions
 <a name="deliverable"> </a>
