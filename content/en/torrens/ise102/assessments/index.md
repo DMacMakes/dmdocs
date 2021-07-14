@@ -41,7 +41,7 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 ## Assessment 2: Slot Machine
 
-**Due:** End of week 8
+**Due:** End of week 8 (by 11:55pm, Sunday 25 July 2021 for T2 classes)
 
 A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
