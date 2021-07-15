@@ -164,18 +164,17 @@ start DISPLAY_MENU_SCREEN ( with playerCash )
   Things to store:
     A valid range of menu choices.
     Their choice
-    A way to remember if the choice was in range so we don't repeat the checking code.
     A relevant error message we can print.
 
   Processing to do:
-  loop while validChoice isn't true
+  loop..
     Show the player's cash
     Tell user the menu options and number them
-    Show an error if one was previously made
+    If there's an error to show (from a previous loop), show it.
     Get their choice
-    If their choice is in range, set validChoice to true
+    If their choice is in range, clear any errors
     else set an error message for next loop.
-  end while
+  keep looping while there's an error message
     
 ```
 {{< /alert >}}
@@ -186,27 +185,34 @@ Time to plan the structure properly, with variable names (storage), output, cond
 ```
 start DISPLAY_MENU_SCREEN ( playerCash )
   error = ""
-  validChoice = false
   choice = 0;
   
-  while not validChoice
+  do
     
     print "You have " $playerCash
     print menu choices
-    print error (if it's not empty/blank)
+    if error isn't empty print error
     print "Enter 1 2 or 3 >"
     
     choice = player input
-    if choice isnt in range
-      error = "Nope, just press a number and hit enter."
+    if choice is in range
+      error = ""  // clearing the error
     else
-      validChoice = true
+      error = "Nope, just press a number and hit enter."
     end if
-  end while
+  while error isn't empty
     
 end DISPLAY_MENU_SCREEN
 ```
 {{< /alert >}}
+
+### `displayMenu()`
+
+This is a little different from what I taught on stream. Instead of checking that the choice was *out of range* first, it checks if the choice was *in range* first, matching the pseudocode above. I also added `TOO_LOW` and `TOO_HIGH` to the MenuChoices enum. If you were in the class: do you think it's more readable this way? Tell me in the Discord ise102 chat.
+
+{{< imgcard "code_displayMenu" Link "code_displayMenu.png">}}
+Updated displayMenu, click to expand.
+{{< /imgcard >}}
 
 ## Summary
 
@@ -216,18 +222,12 @@ This week we:
 
 ## Homework
 
-**Due:**  12pm Midday, Monday Week 8 (05 Apr). I need the second half of Monday to look at submissions and hopefully offer some helpful feed back where possible.
-
-### Note: no review on Monday
-
-Due to everyone being at a different point and this being Easter weekend we won't have a review this Monday. Instead, I'll fold into Tuesday's class and try to leave some time open this week for individual questions people send me via Discord or email. As a result, the homework is due a bit later.
-
 ### What to do
 
 The goal this week is to practise cleaning and submitting a project, along with showing your progress on the slot machine (simple program) assessment which is due shortly. 
 
 1. At a minimum, you should have the class-demonstrated features in your program: screen clearing, waiting for the any key and an error-checking main menu.
-2. Given we have a week until the assessment is due, there should be other functionality coded by now and hopefully any remaining tasks at least noted in your comments if not pseudocoded.
+2. Given the assessment is due next week, there should be other functionality coded by now and hopefully any remaining tasks at least noted in your comments if not pseudocoded.
 3. Close Visual Studio and clean up your project for submission as taught in week 7 class, then zip it. You can use the name `ise102_slots_week7_lastname_firstname.zip`. There is a short guide on the subject [resources page](https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable) and the full 25 minute walk through with all the reasoning behind the process in the [Class 7.2 recording here](https://au-lti.bbcollab.com/recording/87d7fbef0fc94cfe85032a2b01850e1c)
 
 ### Delivery
