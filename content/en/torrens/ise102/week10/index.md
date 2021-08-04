@@ -74,11 +74,17 @@ Since our Snake has a position and a colour, it can be drawn somewhere. If we ad
 
 The same can be done for yDir/location. Think of the x and y directions as speed in a direction - in high school we called that *velocity*, something you used in science class when calculating *force*. In games/maths we often call it a *vector*.
 
-## TODO: ADD DIAGRAM of these four unit vectors.
+## Four Directions
 
-### Up Down Left Right
+Drawing time: our four directions Up Down Left Right as unit vectors
 
-Reference: screen space.
+Direction  | 1D   | 2D
+---        | ---  | ---
+right      | +x   | 1,0
+left       | -x   | -1,0
+up         | -y   | 0,-1
+down       | +y   | 0,-1
+
 
 {{< imgcard xy_leftright_updown Link "xy_leftright_updown.jpg">}}
 We can move left and right by changing a snake's location.x. Up and down with y.
