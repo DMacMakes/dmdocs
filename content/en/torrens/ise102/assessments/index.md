@@ -55,10 +55,28 @@ Make Snake! See the **brief provided on Blackboard** (in the assessments section
 
 > It's not enough to simply read the brief and make a program - your work has to reflect and demonstrate profiency with practises taught in class and should use code provided to you. This assessment must be built on the base code provided in class (weeks 10/11).
 
+### What To Prioritise 
+
+For a better grade,
+
+***DON'T:*** Get caught up in making a multi-segment snake that can bite itself unless you have the full game experience described above.  
+
+***DON'T:*** duplicate whole functions or sections of code and change just one or two things - that's what variables, if statements and function arguments are for.  
+
+**DO:** Have a complete game. The player can gain points, lose the game (maybe hitting a wall or a poison fruit, and see how they did. They know what's happening because the game tells them how to play, what fruit can do to them, why they died etc.   
+
+**DO:** Make sure your game doesn't look like what your facilitator gave out to you - consider colours, how you want information displayed. The gui section below the game should frame whatever is in it, so make it taller/shorter to suit your interface. Look at the week 9 notes for inspiration.   
+
+**DO:** Add features like pause, play modes, options, help, creative kinds of fruit that maybe speed you up for 3 seconds (bad!) or slow you down for a few seconds (good!).   
+
+**DO:** Use function arguments and variables when you add modes or options.  
+
+**DO:** Attempt to add the moving snake and self biting if you have the rest done, have read about vectors in the notes, looked at the week 12 notes and feel confident about implementing it.  
+
 ### Deliverables 
 
-1. Email your cleaned, zipped project to your facilitator **at the end of module 11**. This progress delivery matters, you can't catch up on this assessment in a week at the end!
-2. In week 12 your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard. You must follow the method taught in class and described/demonstrated in [Delivering Visual Studio Solutions](#delivering-visual-studio-solutions) below. DO NOT make a build and submit an additional build zip.
+1. Email your cleaned, zipped project to your facilitator **at the end of module 11**. This progress delivery matters, you can't catch up on this assessment in a week at the end!  
+2. In week 12 your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard. You must follow the method taught in class and described/demonstrated in [Delivering Visual Studio Solutions](#delivering-visual-studio-solutions) below. DO NOT make a build and submit an additional build zip.    
 
 ### Submission
 
