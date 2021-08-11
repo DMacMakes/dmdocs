@@ -13,18 +13,15 @@ description: >
 1. Colliding! Fruit.
 1. Adding to score on fruit hit.
 1. Game over?
-1. speed change options: frame rate or draw interval
-
-<!-- _Coming soon.._ -->
-
 
 ## A2 Slots marking
 
-Announced on Blackboard, Discord. Ultimo, Online 1 classes are marked, Online 2 in progress.
+A little delayed but starting this week.
 
 ## Last week
-
 We added up and down movement, set a high framrate and only moved when we needed to with `moveInterval()`.
+
+In the review session (yesterday) we figured out 90% of colliding with walls. **If you haven't watched it yet, leave this class and watch it now.** If you can't find it on Blackboard, the guest link is on Discord in _general-ise102-danny_.
 
 ## Creating your own objects
 
@@ -32,7 +29,7 @@ We added up and down movement, set a high framrate and only moved when we needed
 
 You can continue to use your work from last class or grab this. It has the fixed frame rate code, up and down movement, TODO comments for this class.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="Snake_A3_w11_incomplete.zip" target="_blank">Download Snake_A3_w11_incomplete.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="Snake_A3_week11_provided.zip" target="_blank">Download Snake_A3_week11_provided.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### The easy way: copy and edit 
 
