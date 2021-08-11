@@ -207,17 +207,17 @@ drawString(0,0, "Number of strawberries in punnet: " + to_string( strawberryPunn
 
 ## Homework
 
-1. Core
-2. Go further
-3. Delivery
+1. Assessment 3 classwork: Add to your assessment everything we've covered in class today
+2. Assessment 3: Go further! Trimester is ending soon!
+3. Zip and email to Facilitator.
+4. Collections
   
-### Core:
+### Assessment 3 Classwork
 1. When you hit the fruit, **add 1** to the score.
 2. Pass the score to the gui drawing function
 3. Always **display the score** as part of the gui
 4. Reposition fruit when eaten (let's pretend it's a new fruit)
 5. Check if the **snake hits the walls**. If you're moving left/right, you can check if your x matches one of the boundary walls. If going up or down, check y against boundaries.
-6. When the snake hits the wall, try stopping the game and displaying a popup message about the deadly wall collision, layered over the game.
 
 {{< alert title="The Golden Rule" color= "primary" >}}
 If the player doesn't know something happened, it shouldn't affect them. Put another way: a player should never have to guess what happened.
@@ -227,28 +227,25 @@ If the player doesn't know something happened, it shouldn't affect them. Put ano
 * Whenever you die the game has to make it clear, and hold for a bit so the player knows the context and can accept responsibility + see how to do better.
 {{< /alert >}}
 
-### Go further:
-1. Add a second fruit type that gives you more points. Show the fruit types in the gui (below the game) and their value.
-2. When the snake collides with a side wall, teleport it to the opposite side. Do the
+### Assessment 3: Go Further
+1. When the snake hits the wall, try stopping the game and displaying a popup message about the deadly wall collision, layered over the game.
+2. Add a second fruit type that gives you more points. Show the fruit types in the gui (below the game) and their value.
+3. When the snake collides with a side wall, teleport it to the opposite side. Do the
    equivalent for top/bottom walls.
-3. Give the game basic easy+hard modes:
+4. Give the game basic easy+hard modes:
    - easy: the walls teleport you.
    - hard: the walls kill you
    - Don't duplicate the whole `playSnake()` function to do this. If `playSnake()` receives a variable, say, `int mode`, that should be enough. You can use it in `if` statements to decide whether a collision is deadly or teleporty in the current mode.
    - You could add the modes to the main menu or provide them in an options screen (access from main menu) or game type screen (after menu, before game starts).
-4. Maybe create a deadly fruit that appears, is a terrifying hazard, and then disappears for a bit before appearing somewhere else.
+5. Maybe create a deadly fruit that appears, is a terrifying hazard, and then disappears for a bit before appearing somewhere else.
 
-### Delivery
-Clean and zip the solution (as we do for assessments), email your zip to your lecturer by the end of Sunday.
+### Zip and Email
+There are more files in this project, let's make sure you're still correctly delivering the assessment with all the files you need and none of the stuff you don't! 
+  1. Clean and zip the solution (as we do for assessments), email your zip to your lecturer by by next Tuesday.
 
-<!-- 
-## Extra session this week
+### Collections
+If you want to add multiple fruit and/or you want to attempt to make a make growing snake for the assessment, read about Collections in the notes above and work through the fruit vector exercise.
 
-Covering collections aka arrays/vectors.
-
-Time and date incoming! 
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week11b" target="_blank">Week 11B<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
--->
+I'll cover them in the homework review session, I'll also answer general questions.
 
   

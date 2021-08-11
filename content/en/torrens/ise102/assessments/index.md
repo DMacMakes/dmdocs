@@ -49,20 +49,16 @@ A text based slot machine using the C++ *console* template. A _prompt and respon
 
 ## Assessment 3: Realtime Game
 
-**Due:** End of week 12
+**Due:** Sunday, 11:55pm, End of Module 12 (22nd Aug for Trimester 2, 2021 students)
 
 Make Snake! See the **brief provided on Blackboard** (in the assessments section discussed in *submission* below) but **also watch classes and reviews** to get all the important details. 
-
-<!--
 
 > It's not enough to simply read the brief and make a program - your work has to reflect and demonstrate profiency with practises taught in class and should use code provided to you. This assessment must be built on the base code provided in class (weeks 10/11).
 
 ### Deliverables 
 
-1. Weekly homework submission contributes to your marks.
-2. **Week 11 homework** submission is **required.**
-   **Due:** Midnight, Sunday, end of Week 11 (May 2 in Trimester 1 2021).
-3. Your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard. You must follow the method taught in class and described/demonstrated in [Delivering Visual Studio Solutions](#delivering-visual-studio-solutions) below.
+1. Email your cleaned, zipped project to your facilitator **at the end of module 11**. This progress delivery matters, you can't catch up on this assessment in a week at the end!
+2. In week 12 your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard. You must follow the method taught in class and described/demonstrated in [Delivering Visual Studio Solutions](#delivering-visual-studio-solutions) below. DO NOT make a build and submit an additional build zip.
 
 ### Submission
 
@@ -73,8 +69,6 @@ Submit your assessment by:
 4. Optional but wise: check your work fulfills the brief
 5. Click *Assessment 3 - Submission* and follow the instructions.
    
--->
-
 ## Delivering Visual Studio solutions
 <a name="deliverable"> </a>
 
