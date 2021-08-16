@@ -132,7 +132,7 @@ Not sure what's left to do? Check the [Snake_A3 Trello](https://trello.com/b/aVY
 Click image to visit the Trello
 {{< /imgproc >}}
 
-## Bunches of data: collections!
+## Bunches of data: Containers!
  
  Games are full things, and a lot of those things are _almost_ the same.
 
@@ -143,11 +143,11 @@ Chickens, buildings, villagers, fishmen, trees, clumps of grass with or without 
 
 Lots of each of them, and they don't all have variable names. We don't have time for garima, kevin, jacinta, and aram the chickens. Or stoneTile1, stoneTile2, stoneTile3. How would you even write code to deal with so many variable names?
 
-Instead we need **a way to deal with things as collections.**
+C++ solves this problem with containers. We create one variable (say `bananas`), decide what type of data it should (`Fruit`) and stuff with that data type. 1000 yello Fruit? No problem.
 
 {{< alert title="A punnet of strawberries" color= "primary" >}}
 
-This little plastic container is a _punnet_, and it's full of strawberries. 
+This little plastic *container* is a punnet, and it's full of strawberries. 
 
 ![](strawberries_punnet.jpg)
 
@@ -160,7 +160,7 @@ It has
 
 ### Virtual punnets: the Vector
 
-We've already used collections in C++: strings. They're just collections of characters, and they have properties like "size()" and functions to change or access the characters, like `append()` and `substr()`.  
+We've already used Containers in C++: strings. They're just containers full of characters, and they have properties like "size()" and functions to change or access the characters, like `append()` and `substr()`.  
 
 We need a more generic collection, something that lets us choose what type of things it contains: maybe a collection of integers, or even whole strings, or Fruit.  
   
@@ -169,7 +169,7 @@ The **`vector`** object is exactly that. If we add **`#include <vector>`** to `m
 You can declare a new vector that holds `Fruit` objects like this:  
 
 ```cpp
-  vector<Fruit> strawberryPunnet;
+  vector<Fruit> strawberries;
   // vectors are objects. They are special because they can hold a punch of objects.
   // vector is the type of container object, then <Fruit> specificies what type of objects it can hold.
   // finally it has a name, punnet.
@@ -179,12 +179,12 @@ Add an existing fruit to your vector with **`.push_back(strawberry)`**. It's not
 ```cpp
 Fruit smallStrawberry;
 Fruit hugeStrawberry;
-strawberryPunnet.push_back(smallStrawberry);
-strawberryPunnet.push_back(hugeStrawberry);
+strawberries.push_back(smallStrawberry);
+strawberries.push_back(hugeStrawberry);
 
 // punnet now contains 2 fruit.
 // punnet.size() returns the number of things added to the vector (as an integer)
-drawString(0,0, "Number of strawberries in punnet: " + to_string( strawberryPunnet.size() );
+drawString(0,0, "Strawberry count: " + to_string( strawberries.size() );
 ```
 
 ## Exercise: vectors
@@ -197,7 +197,7 @@ drawString(0,0, "Number of strawberries in punnet: " + to_string( strawberryPunn
 
 ### Accessing objects in vectors by _**index**_
 
- {{< alert title="Indexed Collections" color= "primary" >}}
+ {{< alert title="Indexed Containers" color= "primary" >}}
  A gallery contains lots of precious and small items. When you visit with your family then, you're not surprised that they don't want people taking in bags: they ask you to leave yours with security in the `bag check`. It's full of all different sizes and shapes of bags, and when they take yours they assign it a number so they can find it again.
  
  When you've had your walk around the gallery you return and fish out the piece of paper with your bag's assigned number. Without needing any sort of description, they find and return your bag.
@@ -210,7 +210,7 @@ drawString(0,0, "Number of strawberries in punnet: " + to_string( strawberryPunn
 1. Assessment 3 classwork: Add to your assessment everything we've covered in class today
 2. Assessment 3: Go further! Trimester is ending soon!
 3. Zip and email to Facilitator.
-4. Collections
+4. Containers
   
 ### Assessment 3 Classwork
 1. When you hit the fruit, **add 1** to the score.
@@ -243,8 +243,8 @@ If the player doesn't know something happened, it shouldn't affect them. Put ano
 There are more files in this project, let's make sure you're still correctly delivering the assessment with all the files you need and none of the stuff you don't! 
   1. Clean and zip the solution (as we do for assessments), email your zip to your lecturer by by next Tuesday.
 
-### Collections
-If you want to add multiple fruit and/or you want to attempt to make a make growing snake for the assessment, read about Collections in the notes above and work through the fruit vector exercise.
+### Containers
+If you want to add multiple fruit and/or you want to attempt to make a make growing snake for the assessment, read about Containers in the notes above and work through the fruit vector exercise.
 
 I'll cover them in the homework review session, I'll also answer general questions.
 
