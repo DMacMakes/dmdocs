@@ -6,10 +6,12 @@ description: >
   How would a segmented snake work? How can I store all those segments?
 ---
 
-## Homework:
-Collisions: Fruit eating, score updating, wall hitting, options etc.
+## Assessments Marked
 
-## Reminders:
+1. All results should be visible on Blackboard.
+2. How marks accumulate, or "can I still pass?".
+
+## Reminders
 
 ### Trello
 
@@ -19,9 +21,44 @@ Not sure what's left to do? Check the [Snake_A3 Trello](https://trello.com/b/aVY
 Click image to visit the Trello
 {{< /imgproc >}}
 
+### Build On The Base
+
+A few people had this issue in the Slots assessment, and typically do if they haven't followed the streaming classes.
+
+We **won't be marking any old Snake code that's submitted**: you need to be attending or watching streams, and demonstrating what you've learned. That means your Snake game is **built on the provided base** code and uses *textpixels*.
+
 ### Submitting your files correctly
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable" target="_blank">Cleaning up and zipping your project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### A3 Required: Do More Than The Minimum
+
+The brief says the Snake game is a base. It rewards building new things, added settings and features. When your tinker with it, when you flex a little.. we know you really understand it.
+
+* Go through rubric
+* Extra features! Things you can run into that change the game, difficulty settings, extra lives, best score recorded to disk.
+* Do more than the minimum! 
+* Don’t just do exactly as i do visually. You could:
+  * Change the window dimensions (`setupWindow(50,25)`)
+  * Have a double-thick wall
+  * What can you display in unicode? Can you make the background or snake more interesting?
+* Use the gui to provide any info you want
+  * different fruit types what they give you
+  * Hints
+  * Your previous best score
+  * tell them how disappointing they are.
+* Action replay of the last 10 seconds?
+* Multiple game modes
+* Top 3 scores saved to disk and reopened each time app opens
+
+## What Was Covered In Review
+Collisions: Fruit eating, score updating, wall hitting, options etc.
+
+## How To Wait Without Sleep
+
+Some of you may have tried using sleep() in the `playSnake()` loop and discovered it isn't going to fly in a frame based application. Things need to keep happening, like Snakes slithering and keyboard input being checked.
+
+Demo of **Waiting** solution.
 
 ## A growing snake
 
@@ -261,26 +298,6 @@ If the they hit a poison fruit or deadly wall, tell them why the game ended.
   - Game over popover: "You ate a poison fuit, they kill!" Use your own words though.
   
 {{< /alert >}}
-
-## A3 Required:Doing more than the minimum
-
-The brief says the Snake game is a base. It rewards building new things, added settings and features. When your tinker with it, when you flex a little.. we know you really understand it.
-
-* Go through rubric
-* Extra features! Things you can run into that change the game, difficulty settings, extra lives, best score recorded to disk.
-* Do more than the minimum! 
-* Don’t just do exactly as i do visually. You could:
-  * Change the window dimensions (`setupWindow(50,25)`)
-  * Have a double-thick wall
-  * What can you display in unicode? Can you make the background or snake more interesting?
-* Use the gui to provide any info you want
-  * different fruit types what they give you
-  * Hints
-  * Your previous best score
-  * tell them how disappointing they are.
-* Action replay of the last 10 seconds?
-* Multiple game modes
-* Top 3 scores saved to disk and reopened each time app opens
 
 ## Colliding with your own body
 
