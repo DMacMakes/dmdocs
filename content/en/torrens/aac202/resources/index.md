@@ -54,7 +54,7 @@ The zip contains:
 
 {{< /alert >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ET6m0Fg3KNZIkxO9oRASN4YBWJQC1N5zsax3tF14CeZvWg?e=Q9SzUK" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EcE2KBxsyH5Ao712q_97uXABSh-CmCEpR9gGSOPc0AG9iA?e=K74C1v" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Maya 2020
 
