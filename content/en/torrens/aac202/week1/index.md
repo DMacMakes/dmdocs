@@ -66,11 +66,9 @@ You could work toward high detail assets using our low poly process but.. on its
 
 ## ZBrush installation
 
-You should all have now have ZBrush installed and, while watching [the review stream from Monday](https://au-lti.bbcollab.com/recording/5c0cd4de4ccd419d9a6f50fcbbc19f14), downloaded and added our custom UI, brushes etc. If not, you need to go and do that before watching this class.
-* For personal pcs you're using 30 day trial for now:
-* After that a 1 month subscription is an option, or using the uni lab machines remotely (more info as we approach week 5).
+You should all have now have ZBrush installed, lets add our custom UI, brushes etc. 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#zbrush">AAC202 Software Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#custom-zbrush-ui-and-resources">AAC202 Software Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
 
 ### Brush testing project.
@@ -228,11 +226,9 @@ Watch out:
 
 ## Homework 
 
-Pick a different Madball (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. Do starting from the base sphere provided in `Trying_Out_Brushes.zpr`. If you already overwrote that file working on the class Madball, get a fresh copy from [aac202_zbrush_resources.zip](aac202_zbrush_resources.zip).  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
+Pick a different Madball (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. Do starting from the base sphere provided in `Trying_Out_Brushes.zpr`. If you already overwrote that file working on the class Madball, download it again for a fresh copy.  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
 
 {{< alert title="Deliverables and Submission" color= "primary" >}}
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968741_1&message_id=_2511010_1" target="_blank">ULTIMO Madball Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968726_1&message_id=_2511002_1" target="_blank">ONLINE Madball Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
