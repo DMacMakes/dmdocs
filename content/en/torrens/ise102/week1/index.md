@@ -30,11 +30,17 @@ It's every student's responsibility to regularly check for any correspondence fr
 Set up Outlook on your phone with your uni address and leave notifications on. Don't miss any critical messages.
 
 ### The Discord server
-Let's jump on Discord Join the Torrens class discord server if you haven't already. I'll be making announcements there but we'll be using the subject channels to post our work during class, ask questions when we get stuck, etc. *(PS - don't show your code in the channel, just screenshots)*
+Let's jump on *Discord*. I'll be making announcements there and we'll be using the subject channels to post our work during class, ask questions when we get stuck, etc. *(PS - don't show your code in the channel, just screenshots)*. For those who haven't joined *Torrens Classes T3 2021* server yet, here's the invite link:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.gg/yPsSueVUvt" target="_blank">Invite to Torrens Classes T3<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+If you haven't yet installed Discord on the PC you're working on, do it now:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://discord.com/download" target="_blank">Discord Download<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 #### Quick intros
 
-Introduce yourself in our #class-ise102 channel.
+Introduce yourself in our #discussion-ise102 channel.
 
 1. Name
 2. Degree you're doing here
@@ -190,6 +196,66 @@ We'll be using **C++**, a programming language first created in the early 1980s.
 
 We'll use Visual Studio to write our source code and turn that into programs (though other environments exist).
 
+## Context: The Shell or Command Line
+
+We're going to make a text-based program. To do that we'll write a program that runs in a *Shell* or *Command Prompt*, or *Console*. For our purposes, consider them to mean pretty much the same thing. 
+
+A *command prompt* is essentially a chat style interface for running programs on your computer. It goes:
+1. Type something out (a command, like list folders or ping a server) and hit enter
+2. The computer does things.
+3. The computer responds with output, hopefully, confirming what it did.
+
+![Command Prompt](shell_command_prompt.png)
+<br /><br />
+Windows, MacOS, iOS, Linux, they're all variations on the same thing, an **operating system** It takes all those bits of silicon, gold, copper, plastic, tempered glass etc and makes them work together to act like our idea of a computer.
+
+That's the real job, under the hood. The interface you're used to using, with *Explorer* windows and the *Start Menu* and your browser etc, that all runs is a thing that sits on top, called a **window manager**. All the same things can be done from a command line, but instead of clicking buttons or using dropdowns, you're typing commands with switches after them, like `ls -l`. `ls` is a program that lists whatever is in a folder, and the `-l` switch means "long version". 
+
+<!--  
+ Under that lives the beast that actually controls network cards, drives the monitor, moves files around drives, sends sound to the speaker etc. It's the **kernel**. *Windows*, *MacOS* and *Linux* all have one.
+
+Before we had fancy graphical window managers,regular users were met with a black screen with some text on it. You typed in commands to run programs, and they controlled the kernel:  
+
+
+
+Here's the same sort of thing in Windows, in the *Command Prompt*.
+![Command Prompt](command_prompt_programs.png)
+<br /><br />
+
+`cd` (*change directory*) is a program for changing into a folder, `dir` (*directory*) lists the contents of a folder - the same as `ls` does in our replit shell.
+
+Why is it still in Windows? Because that's how a large portion of serious system administration is still done, by calling lots of programs in the command prompt!
+-->
+
+#### Exercise
+
+We're going to log into replit and duplicate a base C++ project. There you can play with the shell before we make anything.  
+  
+1. View my base project on Replit [at this link](https://replit.com/@dmacmakes/hello-ise102).  
+2. "Fork" the "Repl" - that means make your own copy of the project.  
+3. Click the shell tab on the right side of the window.  
+4. Type these commands, hitting `Enter` after each:  
+   * `ls`  
+   * `cd include`  
+   * `ls`  
+   * `cd ..`  
+  
+5. Also try these commands:  
+   * `echo "I am a computer"`  
+   * `date`  
+   * `lscpu`    
+
+<!--  
+
+{{<alert title="Many names" color="warning" >}}
+You might come across (or he me say) any of these things, all meaning the  **command prompt**.
+* console
+* the DOS prompt
+* a terminal
+* cmd
+* shell
+{{</alert>}} 
+
 ## Context: The windows command prompt
 
 We're going to make a text-based program. To do that we'll write a program that runs in the  *Windows Command Prompt*:
@@ -228,23 +294,18 @@ Open the Command Prompt and **try out the commands** above for yourself.
 
 {{<alert title="Many names" color="warning" >}}
 You might come across (or he me say) any of these things, all meaning the  **command prompt**.
-
 * console
-
 * the DOS prompt
-
 * a terminal
-
 * cmd
-
-  {{</alert>}}
+{{</alert>}}
 
 ## Assessment 1 Workbook
 
 Open the work book at this link and make a copy of your own:
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:w:/g/personal/daniel_mcgillick_torrens_edu_au/EdRS0jwX6ftGr6UO-3m7HqkBR4TLkoRnvYMm8778Edpu8A?e=NbQ3Vx" target="_blank">ISE102_Assessment1_Workbook.docx<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
+-->
 ## Instructions.
 
 The rest of this class is going to be about turning a task into instructions for our PCs, then getting them to execute them. To give instructions though, we'll need a task for them to complete.  
@@ -273,12 +334,15 @@ Before we write computer language, let's write the instructions in a language we
 
 ### Setting up
 
-Visit the [ise102 Resources page](/torrens/ise102/resources/) and: 
+1. If you closed the project we duplicated earlier, go back to replit.com and open it.
+2. Click on the file icon (a page with a turned corner) on the left side tool bar
+3. Click on the file `main.cpp`
+<!--Visit the [ise102 Resources page](/torrens/ise102/resources/) and: 
 1. Install *Visual Studio Community 2019* with Desktop development in C++ (if you haven't already)
 2. Create a new *C++* `Console App` with the project name `knights_journey`, in a location you'll remember, for example  `c:\Users\You\Documents\torrens/ise102/week1`. Make sure you **tick the checkbox** to *Place solution and project in the same directory*. 
 ![](new_proj_knights_journey.png)
 3. Run the project to make sure it works by hitting <kbd>ctrl</kbd>+<kbd>F5</kbd> 
-
+-->
 ### Enter The Code
 
 1. Select and delete all the code in `knights_journey.cpp`
