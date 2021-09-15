@@ -236,9 +236,12 @@ We're going to log into replit and duplicate a base C++ project. There you can p
 3. Click the shell tab on the right side of the window.  
 4. Type these commands, hitting `Enter` after each:  
    * `ls`  
-   * `cd include`  
+   * `cd include`    
    * `ls`  
+   * `ls -l`  
+   * `ls -lh`  
    * `cd ..`  
+   * `clear`  
   
 5. Also try these commands:  
    * `echo "I am a computer"`  
