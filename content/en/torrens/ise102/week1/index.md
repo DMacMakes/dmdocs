@@ -348,10 +348,10 @@ Before we write computer language, let's write the instructions in a language we
 -->
 ### Enter The Code
 
-1. Select and delete all the code in `knights_journey.cpp`
+1. Select and delete all the code in `main.cpp`
 2. Type in the following code, including the *comment* lines starting with `//`
 ![KnightsJourney No Input](cpp_knightsJourney_noInput.png)
-3. Run the program with <kbd>ctrl</kbd>+<kbd>F5</kbd>
+3. Click the "Run" button to run the program.
 
 ## Don't Panic: Four Basic Features
 
@@ -423,11 +423,10 @@ bool isClassPresident     = true;
 * To program you need:
     - A subject you will program(human, computer)
     - Common language 
-    - An agreed place the subject can do the work (car, kitchen, *Windows Command Prompt*)
+    - An agreed place the subject can do the work (car, kitchen, *Command Prompt*)
     - A list of instructions
-* We made a simple game, Knights Journey, with help from 3 of our basic categories (input, storage etc)
-    - Once, in *Visual Studio* with *C++*, for the *Windows Command Prompt/Console*
-    - Again as a flowchart in *Flowgorithm*.
+* You learned to fork (duplicate) a simple *hello world* project on Replit, then to add your own code and run the program.
+* You made a simple game, Knights Journey, and saw how it used 3 of our basic categories (input, storage etc).
 
 ## Homework
 
@@ -435,18 +434,28 @@ bool isClassPresident     = true;
 Read through **pages 1-12** of [Chapter 1](../resources/cpp_through_games_1.pdf) of the textbook, *Beginning C++ Through Game Programming*. This will help you understand what **variables** are, and how they represent storage. 
 
 Then:
-1. Create a Visual Studio project for called `game_over_3`, using the *console app* project type.
-2. Replace the contents of `game_over_3.cpp` with the code of the **Game Over 3.0** program (pages *11,12*).  
-3. Run it with the <kbd>ctrl</kbd>+<kbd>F5</kbd> hotkey, or select *Debug -> Start Without Debugging* from the menu bar.  
+1. Make another fork of <https://replit.com/@dmacmakes/hello-ise102>, our template C++ project on Replit.
+2. Click the name *hello-ise102* at the top left of the window. In the drop-down that appears, rename your project `game-over-3`.
+2. Replace the contents of `main.cpp` with the code of the **Game Over 3.0** program (pages *11,12*).  
+3. Click ***Run*** or hit <kbd>ctrl</kbd>+<kbd>enter</kbd> to compile and run it.
+4. If you encounter any errors, work at fixing them until it runs succesfully.
 
-The textbook is also linked from the [ise102 resources page](https://dmdocs.netlify.com/torrens/ise102/resources/).  
+The textbook is also linked from the [ise102 resources page](../resources/#ise102-textbook).  
 
 ### Knights Journey with player input 
 
-Add input to your `knights_journey` project. The code you need to type out is below; remember to include the comments!
+Add input to your *Knights Journey* project. 
+1. Rename your *Knights Journey* project to `knights-journey-input` the same way you named `game-over-3`.
+2. Update main.cpp with the code below: take care to catch all the changes, and remember to type out the comments as well.
 
 ![input](cpp_knightsJourney_input.png)
 
 ###  What to submit
 
-I only need the cpp file for your updated Knights Journey with input. Locate the `knights_journey.cpp` file in your project and email it to me by the deadline given in class/Discord. In your email use the subject line `ise102 homework week 1`.
+Email a link to the `knights-journey-input` project to your facilitator (or their assistant facilitator). The address, due date and other details will be announced on Blackboard and Discord.
+
+<!--  
+
+class/Discord. In your email use the subject line `ise102 homework week 1`.  
+  
+-->  
