@@ -21,10 +21,6 @@ Order  | Deliverable       | Due     | Blackboard number
 
 ## 1. High Poly Character (week 4)
 
-**Submitted**
-
-<!-- 
-
 **Create a bust from an existing 2D concept:**  
 1. Select one of the heads from the concept art [below](#concepts)  
 2. Starting with a clean copy of the provided base mesh, sculpt a high quality, polypainted 3D model of the character. Draw on what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh).
@@ -46,9 +42,8 @@ Order  | Deliverable       | Due     | Blackboard number
 4. Submit on Blackboard under **Assessment 3** (Character model)
 {{< /alert >}}  
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586491_1&course_id=_102086_1" target="_blank">Online Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055547_1&course_id=_115852_1" target="_blank">Online Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586562_1&course_id=_102604_1" target="_blank">Ultimo Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Concepts  
 Choose one of the concepts below, or click one and visit Patri Balanovsky's page to pick another **from the same artstation page** (not all of his artstation content). Be careful not to pick one that requires extra meshes (hair, horns, eyepatches) if you're not confident creating new meshes. Don't stretch the head to support large horns, hair etc.  
@@ -72,13 +67,11 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * Painting in eyelashes and eyebrows that you didn't have geometry for
 
--->
+
 
 ---
 
 ## 2. Hard surface model: NES Controller   
-
-**Submitted.**
 
 <!--
 
@@ -115,6 +108,8 @@ Color | If using ZBro paint, at a minimum fill with flat colour. You can add mor
 -->
 
 ## Assessment 3: PBR Texturing
+
+<!--  
 
 **Final Submission: Midday, Wednesday May 12** 
 
@@ -167,6 +162,8 @@ Class | Submission link
 ----  | -----
 Ultimo | [Assessment 2 on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586561_1&course_id=_102604_1)
 Online | [Assessment 2 on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?course_id=_102086_1&content_id=_9586490_1)
+
+-->  
 
 
 <!--
