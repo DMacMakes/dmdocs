@@ -88,13 +88,13 @@ This real clay chef sculpt from Pixar is extremely stylised. You can see the eye
 
 It was tough to avoid smushing the eye when doing gross eyelids, or to avoid destroying lips while sculpting teeth.
 
-{{< imgcard dn_madball Link "https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EQIt4CX5EBpPp9BKQZtt1EsBqQ8F1bqnkieUH32-4QDPRg?e=Uoj9sn" >}}
+{{< imgcard dn_madball Link "https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EQIt4CX5EBpPp9BKQZtt1EsBqQ8F1bqnkieUH32-4QDPRg?e=ebR0Gn" >}}
 David's clean base with subtools. Let's gross it up.
 {{< /imgcard >}}
 
 Grab David Neselius' Hornhead sculpt from week 1 (thanks David) and we'll explore easier ways to model where hard and soft things collide.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EQIt4CX5EBpPp9BKQZtt1EsBqQ8F1bqnkieUH32-4QDPRg?e=Uoj9sn" target="_blank">Download dn_maddball_class_handout.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EQIt4CX5EBpPp9BKQZtt1EsBqQ8F1bqnkieUH32-4QDPRg?e=ebR0Gn" target="_blank">Download dn_maddball_class_handout.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Using masking and subtools to stay clean
 
