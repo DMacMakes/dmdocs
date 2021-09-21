@@ -272,7 +272,7 @@ Brice: digital realm specific: block out low and clean, minimal final sculpting
 -->
 ## Homework
 
-Head modelling exercise, **due by Sunday night.** Details are in the linked thread. Concepts are below.
+Head modelling exercise, **due by Thursday night, for review in Friday's 10:30 am review.** Details are in the linked thread. Concepts are below.
 
 <!-- 
 
@@ -280,9 +280,8 @@ Head modelling exercise, **due by Sunday night.** Details are in the linked thre
 
 -->
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968742_1&message_id=_2527587_1" target="_blank">ULTIMO Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968727_1&message_id=_2527584_1" target="_blank">ONLINE Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064201_1&message_id=_2861261_1" target="_blank">ONLINE Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Concepts
 
