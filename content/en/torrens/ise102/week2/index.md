@@ -217,13 +217,13 @@ We discussed the importance and power of names.
 
 Lets implement the same game in **_Flowgorithm_**, using our new understanding of programming ideas.
 
-1. Grab _Flowgorithm_ (windows 64 bit) from the their [downloads page](http://flowgorithm.org/download/index.htm).
+1. Grab _Flowgorithm_ (windows 64 bit) from the their [downloads page](http://flowgorithm.org/download/).
 2. Open it, it should start with a new flowchart (main -> end).
 3. Click the arrow between (main -> end) and choose _declare_
 4. Name the variable `secretNumber`, and set it to `integer` in the drop down.
 5. Assign it a value.
 6. Continue on to make the rest of Guessy Number.
-7. Run Guessy Number and try a valid and invalid guess. Screenshot the output window (not your flowchart!) and paste it into the *Discord* `#class-ise102` chat.
+7. Run Guessy Number and try a valid and invalid guess. Screenshot the output window (not your flowchart!) and paste it into the *Discord* `#discussion-ise102` chat.
    
 {{< imgcard flow_guessy Link "flow_guessy.png" >}}
 Fill in the blurry bits. (click if the flowchart is too small to read)
