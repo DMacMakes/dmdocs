@@ -18,15 +18,14 @@ We're exploring a new game called **_Guessy Number_**. Let's type it in, then br
 ### Exercise: Coding guessy number
 
 1. Fork your own copy of the [*hello-ise102* project on Replit](https://replit.com/@dmacmakes/hello-ise102).
-1. Click the name of the project, *hello-ise102* and rename it *guessy-number*;
-2. Enter the following code in main.cpp:
+2. Click the name of the project, *hello-ise102* and rename it *guessy-number*;
+3. Enter the following code in main.cpp:
 {{< imgcard guessy_code_vs Link "guessy_code_vs.png" >}}
 Click the code if it's too small.
 {{< /imgcard >}}
- 
-1. Click Run. Try to work through any errors you may have.
-2. Test the game with a few guesses.
-3. Take a **screenshot** of the *output* of the program (in the console tab) and **paste/insert it into the _#discussion-ise102 channel_** on our *Torrens Classes* Discord server.
+4. Click Run. Try to work through any errors you may have.
+5. Test the game with a few guesses.
+6. Take a **screenshot** of the *output* of the program (in the console tab) and **paste/insert it into the _#discussion-ise102 channel_** on our *Torrens Classes* Discord server.
 
 ## The power to choose!
 
@@ -156,9 +155,9 @@ Let's say our character is falling from the sky, and only needs to stop falling 
 _Conditional logic_ or _control logic_ is code that lets us choose what is executed next. It allows branching: we can choose our code to divert along one branch (do this) or another (do that).
 {{< /alert >}}
 
-## Assessment 1: Exam
+## Assessment 1: Quiz 
 
-Let's pop over to my [ise102 assessment page](../assessments/#assessment-1-exam)
+Let's pop over to my [ise102 assessment page](../assessments/#assessment-1-quiz)
 
 ## Other relationship tests
 
@@ -236,15 +235,20 @@ Fill in the blurry bits. (click if the flowchart is too small to read)
     - Take notes
 2. Read [Chapter 2](../resources/cpp_through_games_2.pdf) up to a **page 48**
     - Take notes
-    - Create another project *score_rater_3* and **type and run** the code on **page 47**.
+   1. Fork another copy of the [*hello-ise102* project on Replit](https://replit.com/@dmacmakes/hello-ise102).
+   2. Click the name of the project, *hello-ise102* and rename it *score-rater-3*;
+   3. **Type and run** the code on **page 47**.
 
 ### Submission
 
+The homework, each week, is due the day before your review session.
 Make sure you've pasted your flowgorithm output into the Discord chat as described above.
 
-When you've completed typing and running the code in the text book **submit the `score_rater_3.cpp` files**. 
-   * Email to Danny with the subject _"ise102 homework week 2"_
-   * Danny's email will be sent to you via Blackboard announcements (and _Discord_).
+When you've completed typing and running the code in the text book you'll submit the  `score-rater-3` project via email, as you did with module 1's homework. 
+   * Each week's homework has the subject line _"ise102 homework week N"_, where N is the module number. 
+   * See our Discord #announcements-ise102 channel or Blackboard Announcements for contact details. 
+
+<!-- 
 
 {{< alert title="Where's my source code?" color= "secondary" >}}
 You can find the `.cpp` file for a project in its **project folder**. For `guessy_number` you'll be looking for `guessy_number.cpp`.
@@ -252,3 +256,5 @@ You can find the `.cpp` file for a project in its **project folder**. For `guess
 * If you're following our class conventions, those project folders will be in `ise102/code/week2`.
 * If you aren't sure were to find it or just want to go there from within Visual Studio, right click the project name in the _solution explorer_ panel and go to _open folder in file explorer_.
 {{< /alert >}}
+
+-->

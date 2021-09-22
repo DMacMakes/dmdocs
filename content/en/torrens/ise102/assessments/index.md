@@ -7,7 +7,7 @@ description: >
 ---
 
 
-## Assessment 1: Exam
+## Assessment 1: Quiz
 
 **Due:** 11:55pm, Sunday, end of module 4.
 
@@ -35,7 +35,6 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 **#1 tip:** If you think you really understood the example you typed out and toyed with, close the project, create a new one and **rewrite it from memory.** If you don't get anything wrong first go, it's not a hard enough exercise!
 {{< /alert >}}
--->
 
 ## Assessment 2: Slot Machine
 
