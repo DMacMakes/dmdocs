@@ -17,17 +17,16 @@ We're exploring a new game called **_Guessy Number_**. Let's type it in, then br
 
 ### Exercise: Coding guessy number
 
-1. Make a **new project** using the C++ *console app* template.
-    - Put it in a new folder `week2` and call the project `guessy_number`.
-    - Remember: click the checkbox to **keep project and solution in the same folder.**
-2. When `guessy_number.cpp` opens, select and delete all the code, then **type this in**:
- 
+1. Fork your own copy of the [*hello-ise102* project on Replit](https://replit.com/@dmacmakes/hello-ise102).
+1. Click the name of the project, *hello-ise102* and rename it *guessy-number*;
+2. Enter the following code in main.cpp:
 {{< imgcard guessy_code_vs Link "guessy_code_vs.png" >}}
 Click the code if it's too small.
 {{< /imgcard >}}
  
-3. Select _Debug > Start without debugging_ from the top menu, or press `ctrl+F5`.
-4. Test the game.
+1. Click Run. Try to work through any errors you may have.
+2. Test the game with a few guesses.
+3. Take a **screenshot** of the *output* of the program (in the console tab) and **paste/insert it into the _#discussion-ise102 channel_** on our *Torrens Classes* Discord server.
 
 ## The power to choose!
 
