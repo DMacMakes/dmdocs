@@ -217,20 +217,6 @@ Here's one I've started in my spare time, using the Brice base to model a Max Gr
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="pipehead_demo.zip" target="_blank">Download pipehead_demo.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<!--  
-
-# ---- REPLACE - Not a useful file. ----
-Need something to integrate eye and lids into. 
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="hornhead_sketch_class.zip">Download hornhead_sketch_class.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
-
-1. Download My Madball Demo File
-2. Unzip, it contains `madball_demo.zpr` and `eyes.ztl` files. 
-3. Open `madball_demo.zpr`
-5. Click `tool->subtool->append` and choose the `polysphere3D`. 
-
--->  
   
 ### Basemesh vs Team Fortress 2 Spy 
 
@@ -242,46 +228,13 @@ You'll need [7zip](https://www.7-zip.org/) to extract this one. Reference includ
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="spy_demo.7z" target="_blank">Download spy_demo.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<!-- 
-
-## Exercise
-
-Fool around with the brice base mesh.
-
---> 
-
-<!-- ### Joining The Pieces
-
-Dynamesh is a magical tool that didn't exist in ZBrush until it was over 15 years old. Everything changed for cartoony artists, concept artists. You could truly experiment and explore whole creatures in ZBrush with little friction.
-
-It'll be hard to see, but Brice merges everything with Dynamesh around 0:25. After that, you'll see the seams and cleanup. He's meticulous.
-{{< youtube "-ElecAWzP_Y" >}}
-
-{{< imgcard brice_tao_dynamesh Link "brice_tao_dynamesh.jpg">}}
-Captured frame where he looks at the new topology. Teeny tiny quads.
-{{< /imgcard >}}
-
-Then I’ll dynamesh (give settings) and start cleaning up with sculptris (give settings).
-
-###  Ways To Generate/Merge Geometry
-
-Show girl face vid by follygon, then the brice saville one.
-Approaches: 
-Follygon: traditional clay, very steoke intensice
-Brice: digital realm specific: block out low and clean, minimal final sculpting
--->
 ## Homework
 
-Head modelling exercise, **due by Thursday night, for review in Friday's 10:30 am review.** Details are in the linked thread. Concepts are below.
+Head modelling exercise
+Due: before our review session
+Details are in the linked thread. Concepts are below.
 
-<!-- 
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902733_1&message_id=_2328678_1" target="_blank">Homework Thread: Alien Doe<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
--->
-
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064201_1&message_id=_2861261_1" target="_blank">ONLINE Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064201_1&message_id=_2861261_1" target="_blank">Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Concepts
 
@@ -305,11 +258,6 @@ faces-12
 Here I'm attempting to get as far as I can (on a different concept) towards final before adding more subdivisions. <I>Click for high res.</I>
 {{< /imgproc >}}
 
-<!-- 
-Week 8 we’ll use goZ to add stuff in maya and begin work on our final charcter. Learn material fill.
-
-Week 9 polypaint and solve people’s problems workshop.
--->
 #### Resources
 
 ZBrush keyboard shortcuts:

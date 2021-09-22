@@ -196,8 +196,7 @@ Pixelation?? Subdivision up down
 
 Play around and make a madball for 25 mins. 
 
-Screenshot it and paste it into the **#class-aac202** channel on our Discord class server.
-
+Screenshot it and paste it into the **#discussion-aac202** channel on our Discord class server.
 
 {{< imgcard madballz Link "madballz.png">}}
 Madballz
@@ -230,7 +229,7 @@ Pick a different Madball (the real foam ball, not a 2D  drawing from their site)
 
 {{< alert title="Deliverables and Submission" color= "primary" >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968726_1&message_id=_2511002_1" target="_blank">ONLINE Madball Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064200_1&message_id=_2852851_1" target="_blank">Madball Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 {{< /alert >}}
 
@@ -264,21 +263,6 @@ Hornhead
 Madballs
 {{< /imgcard >}}
 
-<!-- 
-## Assessment 2: Character Sculpt
-
-* What to make
-* Milestones/deliverables
-* Baldy character head
-* Or keycap/artisan
--->
-<!--
-### Today, Pick Concept
-
-Offer selection.
-If your own character's head is very well realised in multiple angles, you can make them (without hair)
--->
-
 ## Learning Resources
 
 #### Great sculpts
@@ -299,19 +283,3 @@ One of the great vids by Follygon in this playlist.
 #### Brush Palette and Move Brush
 
 {{< youtube fb7WHVhKxu8 >}}
-
-<!--
-### Docs
-
-Link to key zb docsumentation
-
-### Videos
-Link up:
-ZClassroom (specific videos)
-Michael Pavlovic Intro
-Shane Olsen (does a sculpt in 3 hours each stream with Pixologic)
-Follygon
-
------
--->
-
