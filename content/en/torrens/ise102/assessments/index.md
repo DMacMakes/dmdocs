@@ -9,17 +9,15 @@ description: >
 
 ## Assessment 1: Exam
 
-**Completed:** Monday, June 28
+**Due:** 11:55pm, Sunday, end of module 4.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9917265_1&course_id=_112961_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-<!--
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10262683_1&course_id=_116055_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
 
 ### Deliverable
 
-An online exam you will complete **on Blackboard**. The exam will be available to start at any point from (and including) Friday June 25 **until 11:55pm Monday, June 28**.   
+An online exam you will complete **on Blackboard**. The exam will be available for 3 days - you can begin at any point from (and including) Friday of Module 4 until 11:55pm Sunday, end of Module 4.   
 
 * Once started, you have to complete it the time specified.  
 * You can **return** to the exam **during** that time if your machine/internet goes down, but **not after**.  
@@ -29,9 +27,9 @@ An online exam you will complete **on Blackboard**. The exam will be available t
 {{< alert title="Preparation" color= "secondary" >}}
 You will need to have 
 1. Attended and/or watch recordings of **ALL of EVERY class**, and worked through the **exercises and homework**
-1. Carefully read and understood the **first three chapters of the textbook up to and including for loops** (available on the resources page)
-1. Worked through sololearn up to and including data types (tute 3).
-1. Reading and quizzes won't get you far on their own: for these principles to stick you need to have written, **tested and experimented/played with code** from the textbook and the weekly lectures. 
+2. Carefully read and understood the **first three chapters of the textbook up to and including for loops** (available on the resources page)
+3. Worked through sololearn up to and including data types (tute 3).
+4. Reading and quizzes won't get you far on their own: for these principles to stick you need to have written, **tested and experimented/played with code** from the textbook and the weekly lectures. 
 
 Coding is like any other craft or science: if you don't practise, if you don't break it apart and put it back together, if you don't switch it around to see what happens, you won't learn it.
 
@@ -41,19 +39,25 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 ## Assessment 2: Slot Machine
 
-**Due:** End of week 8 (by 11:55pm, Sunday 25 July 2021 for T2 classes)
+**Due:** 11:55pm, Sunday, end of module 8.
+
+<!--  
 
 A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9917266_1&course_id=_112961_1" target="_blank">Online Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+-->  
+
 ## Assessment 3: Realtime Game
 
-**Due:** Sunday, 11:55pm, End of Module 12 (22nd Aug for Trimester 2, 2021 students)
+**Due:** Sunday, 11:55pm, End of Module 12
 
 Make Snake! See the **brief provided on Blackboard** (in the assessments section discussed in *submission* below) but **also watch classes and reviews** to get all the important details. 
 
 > It's not enough to simply read the brief and make a program - your work has to reflect and demonstrate profiency with practises taught in class and should use code provided to you. This assessment must be built on the base code provided in class (weeks 10/11).
+
+<!--  
 
 ### What To Prioritise 
 
@@ -85,8 +89,10 @@ Submit your assessment by:
 2. Selecting *Assessments* in the left nav 
 3. Clicking on *Assessment 3 - OOP Principles Program*
 4. Optional but wise: check your work fulfills the brief
-5. Click *Assessment 3 - Submission* and follow the instructions.
-   
+5. Click *Assessment 3 - Submission* and follow the instructions.  
+  
+-->  
+
 ## Delivering Visual Studio solutions
 <a name="deliverable"> </a>
 
