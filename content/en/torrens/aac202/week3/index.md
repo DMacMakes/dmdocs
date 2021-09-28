@@ -51,7 +51,7 @@ We're still using a small subset of ZBrush's features, and some areas remain dif
 #### Download updated pipehead
 Subdivided and (in progress) detailed pipehead plus reference. The zpr file is a little messy - there are two merged heads, including one that was exported to Maya for rendering.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERnPVQnNq8ZFrT8PYF0wuXIBAVoJYld7r1VMngodfeB2LA?e=Fu7CRe" target="_blank">Download zbrush__pipehead_detail.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ERnPVQnNq8ZFrT8PYF0wuXIBAVoJYld7r1VMngodfeB2LA?e=fIH2Mq" target="_blank">Download zbrush__pipehead_detail.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 #### Topological Automask
 
