@@ -198,9 +198,9 @@ Remember, the move brush is a normal drawing mode brush, and there is also a mov
 
 ## Homework
 
-Work on your assessment 1 bust, follow the instructions in the thread, and **post your work before our work review**.
+Work on your assessment 1 bust, follow the instructions in the thread, and **post your work before our work review**. The Module 3 submission thread is linked from our assessments page (in step 3).
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968743_1&message_id=_2510945_1" target="_blank">ULTIMO A1 Progress Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/" target="_blank">Assessment 1 Submission Details<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968728_1&message_id=_2510878_1" target="_blank">ONLINE A1 Progress Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
