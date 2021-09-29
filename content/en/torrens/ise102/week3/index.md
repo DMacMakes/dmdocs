@@ -70,7 +70,7 @@ In <i>Street Fighter</i> victory goes to the winner of 2 out of 3 99 second roun
 {{< /imgproc >}}
 
 {{< alert title="Exercise: Your Favourites" color= "primary" >}}
-Go to the discussion-ise102 Discord channel and post your answers to the following: and reply to it. Think of and add to your post:
+Go to the #discussion-ise102 Discord channel and post your answers to the following: and reply to it. Think of and add to your post:
 
 1. List 3 game modes in games you've played.
 2. List 3 examples of rounds, periods (sports) or levels within modes of games you've played.
@@ -83,7 +83,7 @@ You have <b>5 minutes</b>.
 Guessy Number involved blind guessing. Let's help players by telling them if their guess is too low or too high. But first...
 
 {{< alert title="DIS-CODE QUIZ" color="primary" >}}
-I need to know if the player's guess was too low, but the test on line 4 is missing! Type your answer in #ise102-discussion on Discord.
+I need to know if the player's guess was too low, but the test on line 4 is missing! Type your answer in #discussion-ise102 on Discord.
 
 ```cpp {linenos=inline,hl_lines=[4]}
 secretNumber = 2
@@ -96,9 +96,9 @@ if ( ??? ? ??? ) {   // player guess too low
 _(hint: variable, relational operator, variable)_
 {{< /alert >}}
 
-### Exercise: Code *guessy\_number\_help*
+### Exercise: Code *guessy-number-help*
 
-1. Fork the [hello-ise102 project on replit](https://replit.com/@torrensdct/hello-ise102#main.cpp). Rename the repl (left side of top bar of replit interface) to `guessy_number_help`
+1. Fork the [hello-ise102 project on replit](https://replit.com/@torrensdct/hello-ise102#main.cpp). Rename the repl (left side of top bar of replit interface) to `guessy-number-help`
 2. Replace the code in `main.cpp` with the following:
 
 {{< imgcard code_guessy_help_blanks Link "code_guessy_help_blanks.png">}}
@@ -163,7 +163,7 @@ Right now we have a very simple test to end our game: `playerGuess == secretNumb
 ### Exercise 2: Enter guessy_number_limit
 
 1. Navigate to the "my repls" area on Replit. It's accessible from the top left "burger" nav menu (three horizontal lines) or you can try visiting <https://replit.com/repls> while logged in. 
-2. In the list of repls you should see your 'guessy_number_help' project; click the three dots nav (far right) and choose *fork*.
+2. In the list of repls you should see your 'guessy-number-help' project; click the three dots nav (far right) and choose *fork*.
 3. Name the duplicated project 'guessy_number_limt'.
 4. Modify the code in `main.cpp` to limit the player to 3 guesses (and no tips).
 
@@ -237,11 +237,11 @@ Below there is reading and 2 coding exercises.
 ### Submission
 **Email Atif** a link to your play again 2 repo **by Sunday night**.
 
-### Guessy_number_limit.
+### Guessy-number-limit.
 1. If you didn't complete it in class, complete [Exercise 2 Guessy number limit](#exercise-2-enter-guessy_number_limit)
-    1b Extra: If you want an extra challenge, and you've already completed the rest of the homework (including the menu), try adding the help prompts from `guessy_number_help` into `guessy_number_limit`.
+    1b Extra: If you want an extra challenge, and you've already completed the rest of the homework (including the menu), try adding the help prompts from `guessy-number-help` into `guessy-number-limit`.
 2. Read the rest of [Chapter 2](../resources/cpp_through_games_2.pdf) of the textbook, where you'll learn about other types of loops. You're beginning from **page 48**. 
-3. Fork a new project from [hello-ise102](https://replit.com/@torrensdct/hello-ise102#main.cpp) and name it `play_again_2`, **type and run** _Play Again 2.0_ on **page 54**. Now, **change the game** to use a menu with 2 entries (shown below) and look for `1` or `2` as their input.
+3. Fork a new project from [hello-ise102](https://replit.com/@torrensdct/hello-ise102#main.cpp) and name it `play-again-2`, **type and run** _Play Again 2.0_ on **page 54**. Now, **change the game** to use a menu with 2 entries (shown below) and look for `1` or `2` as their input.
 
 ```
   **You just played an exciting game**
