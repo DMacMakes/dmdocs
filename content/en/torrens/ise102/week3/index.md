@@ -70,7 +70,7 @@ In <i>Street Fighter</i> victory goes to the winner of 2 out of 3 99 second roun
 {{< /imgproc >}}
 
 {{< alert title="Exercise: Your Favourites" color= "primary" >}}
-Go to the class_ise102_danny Discord channel and post your answers to the following: and reply to it. Think of and add to your post:
+Go to the discussion-ise102 Discord channel and post your answers to the following: and reply to it. Think of and add to your post:
 
 1. List 3 game modes in games you've played.
 2. List 3 examples of rounds, periods (sports) or levels within modes of games you've played.
@@ -83,7 +83,7 @@ You have <b>5 minutes</b>.
 Guessy Number involved blind guessing. Let's help players by telling them if their guess is too low or too high. But first...
 
 {{< alert title="DIS-CODE QUIZ" color="primary" >}}
-I need to know if the player's guess was too low, but the test on line 4 is missing! Type your answer in [ise102 on Discord](https://discord.gg/ZDyHS6N).
+I need to know if the player's guess was too low, but the test on line 4 is missing! Type your answer in #ise102-discussion on Discord.
 
 ```cpp {linenos=inline,hl_lines=[4]}
 secretNumber = 2
@@ -98,9 +98,8 @@ _(hint: variable, relational operator, variable)_
 
 ### Exercise: Code *guessy\_number\_help*
 
-1. Create a new C++ *console* project in Visual Studio. Call it *guessy\_number\_help*.
-2. Replace the code in `guessy_number_help.cpp` with the following:
-3. Test it out.
+1. Fork the [hello-ise102 project on replit](https://replit.com/@torrensdct/hello-ise102#main.cpp). Rename the repl (left side of top bar of replit interface) to `guessy_number_help`
+2. Replace the code in `main.cpp` with the following:
 
 {{< imgcard code_guessy_help_blanks Link "code_guessy_help_blanks.png">}}
 Using <i>repetition</i> for multiple guesses and <i>selection</i> for hints.
@@ -162,6 +161,11 @@ while (secretNumber != playerGuess) {
 Right now we have a very simple test to end our game: `playerGuess == secretNumber`.  To make our game more interesting, we decide to limit the player to 3 guesses.
 
 ### Exercise 2: Enter guessy_number_limit
+
+1. Navigate to the "my repls" area on Replit. It's accessible from the top left "burger" nav menu (three horizontal lines) or you can try visiting <https://replit.com/repls> while logged in. 
+2. In the list of repls you should see your 'guessy_number_help' project; click the three dots nav (far right) and choose *fork*.
+3. Name the duplicated project 'guessy_number_limt'.
+4. Modify the code in `main.cpp` to limit the player to 3 guesses (and no tips).
 
 {{< imgcard code_guessy_limit_blanks Link "code_guessy_limit_blanks.png">}}
 Limiting the players to 3 games sets a new standard in high stakes gaming. 
@@ -231,12 +235,13 @@ This week we:
 Below there is reading and 2 coding exercises.
 
 ### Submission
-**Email me** the cpp files for `guessy_number_limit` and `play_again_2` by the **midday Sunday**.
+**Email Atif** a link to your play again 2 repo **by Sunday night**.
 
-### To do
+### Guessy_number_limit.
 1. If you didn't complete it in class, complete [Exercise 2 Guessy number limit](#exercise-2-enter-guessy_number_limit)
+    1b Extra: If you want an extra challenge, and you've already completed the rest of the homework (including the menu), try adding the help prompts from `guessy_number_help` into `guessy_number_limit`.
 2. Read the rest of [Chapter 2](../resources/cpp_through_games_2.pdf) of the textbook, where you'll learn about other types of loops. You're beginning from **page 48**. 
-3. In a new C++ *console* project called `play_again_2`, **type and run** _Play Again 2.0_ on **page 54**. Now, **change the game** to use a menu with 2 entries (shown below) and look for `1` or `2` as their input.
+3. Fork a new project from [hello-ise102](https://replit.com/@torrensdct/hello-ise102#main.cpp) and name it `play_again_2`, **type and run** _Play Again 2.0_ on **page 54**. Now, **change the game** to use a menu with 2 entries (shown below) and look for `1` or `2` as their input.
 
 ```
   **You just played an exciting game**
@@ -252,3 +257,4 @@ Below there is reading and 2 coding exercises.
   - Note the cursor (where they enter input) should sit where I've placed a fake one.. just after "Enter 1 or 2 > ", not on a new line. Remember, `cin` causes that cursor to appear.
   - If they input some other number, print "!! Hey, only enter 1 or 2 !!" and loop.
 {{< /alert >}}
+
