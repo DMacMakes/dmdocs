@@ -103,7 +103,7 @@ The number of polygons making up a given area of a mesh. It can change from loca
 
 ## Making one mesh from many
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ERnPVQnNq8ZFrT8PYF0wuXIBAVoJYld7r1VMngodfeB2LA?e=Fu7CRe" target="_blank">Download zbrush__pipehead_detail.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ERnPVQnNq8ZFrT8PYF0wuXIBAVoJYld7r1VMngodfeB2LA?e=rE124g" target="_blank">Download zbrush__pipehead_detail.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 The Brice head is separated over multiple subtools, so **it's not a continuous mesh**. Even if they're all merged into one subtool, the shells are still separate, made of their own polygons. We can join them all together with new topology. It won't follow the shapes with nice loops as the previous meshes did, so we'll need a lot of polygons to make up for it. This is why you don't do it before you have to!
 
