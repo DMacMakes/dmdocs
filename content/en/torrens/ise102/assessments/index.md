@@ -9,7 +9,7 @@ description: >
 
 ## Assessment 1: Quiz
 
-**Due:** 11:55pm, Sunday, end of module 4.
+**Due:** Available to take from Friday, Module 4, until **11:55pm, Sunday, end of Module 4** (3 days).
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10262683_1&course_id=_116055_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
@@ -19,7 +19,7 @@ Testing your understanding of the **ideas in programming**, along with knowledge
 
 An online exam you will complete **on Blackboard**. The exam will be available for 3 days - you can begin at any point from (and including) Friday of Module 4 until 11:55pm Sunday, end of Module 4.   
 
-* Once started, you have to complete it the time specified.  
+* Once started, you have to complete it the time specified (60 minutes)
 * You can **return** to the exam **during** that time if your machine/internet goes down, but **not after**.  
 * If a serious technical issue stops you from returning to it, please contact me.   
 * The uni will require a legitimate reason, so make sure that when you sit down you have time to complete it without interruption from family/friends/responsibilities.  
@@ -52,10 +52,13 @@ A text based slot machine using the C++ *console* template. A _prompt and respon
 
 **Due:** Sunday, 11:55pm, End of Module 12
 
-Make Snake! See the **brief provided on Blackboard** (in the assessments section discussed in *submission* below) but **also watch classes and reviews** to get all the important details. 
+<!--
+
+ Make Snake! See the **brief provided on Blackboard** (in the assessments section discussed in *submission* below) but **also watch classes and reviews** to get all the important details. 
 
 > It's not enough to simply read the brief and make a program - your work has to reflect and demonstrate profiency with practises taught in class and should use code provided to you. This assessment must be built on the base code provided in class (weeks 10/11).
 
+--> 
 <!--  
 
 ### What To Prioritise 

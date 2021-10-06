@@ -65,8 +65,8 @@ A for loop puts them all together, at the start of the loop.
 
 #### Exercise: While loop age code
 
-1. Create a new C++ *console* project, `you_are_old`
-2. Open `you_are_old.cpp` and enter the code below
+1. Fork a new replit project from [hello ise](https://replit.com/@torrensdct/hello-ise102#main.cpp), rename it `you-are-old`
+2. Open `main.cpp` and enter the code below
 3. Run and test it. Try different starting and ending ages.
    
 {{< imgcard code_you_old_while Link "code_you_old_while.png">}}
@@ -75,7 +75,7 @@ You're old! Click for full size if hard to see (maybe you're old)
 
 #### Exercise: For loop age code
 
-1. Comment out everything inside `main` except `return(0);`
+1. Comment out everything inside `main`.
 2. Type in the `for` loop version of the loop. 
 3. Run it. If there are any errors, can you guess what's causing them?
 
@@ -115,7 +115,13 @@ The parentheses `()` in the first line of the `for` loop are familiar, we've see
 
 Those 3 parts in the `for` loop parentheses can **vary their form** quite a bit, and some be **left out** entirely. 
 
+1. Fork another new project from [hello ise102 on Replit](https://replit.com/@torrensdct/hello-ise102#main.cpp) and rename it `for-loop-variations`.
+2. Try out the variations below in your `main()` function.
+<!-- 
+
 **Open a browser** and sign up for [Repl.it's C++ IDE](https://repl.it/). Try each of the `for` loops below inside `main()` (delete the contents of `main` first).
+
+-->
 
 ```cpp
 // The most common form of the `for` loop, declaring and using a variable called `i`.
@@ -176,6 +182,7 @@ The most important step is to develop a theory: what do I think will happen if I
 
 The second most important step: testing that theory! We can run through the whole app and see the ouput, or we can use the debugger to walk through the program one line at a time, then see where it diverts from our expectations.
 
+<!-- 
 ## Looping with no loops!
 
 Sometimes, if you're working in a game engine or other special situation, someone else will provide the loop, and you just choose what to do in it. The Arduino works like this.
@@ -236,6 +243,8 @@ Let's play with a simulation of an arduino computer and its code.
 [![](arduino_wokwiki.jpg)](https://wokwi.com/arduino/projects/303079642606076481)
 
 <https://wokwi.com/arduino/projects/303079642606076481>
+
+-->
 
 ## Enum
 
