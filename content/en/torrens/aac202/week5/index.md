@@ -208,9 +208,9 @@ It's timelapsed but it has **commentary** through the whole thing by Pixologic's
 
 ### 2. Watch Pavlovic tutorials
 
-This guy is the absolute source. Learn with Michael Pavlovic: watch videos 29-33.
+This guy is the absolute source. Learn with Michael Pavlovic: **watch videos *33-37*.**
 
-[ZBrush concepting and ideation playlist on Youtube](https://www.youtube.com/playlist?list=PLkzopwqcFevYqrk_0MKIaUwrWYILzYsp6)
+[ZModeler in the 2021 intro to Zbrush series](https://www.youtube.com/watch?v=XcR5TzvIaoc&list=PLkzopwqcFevYP1Nm3wIKsyH-jQTkk8AhS&index=33)
 
 ### 3. Model object
 
