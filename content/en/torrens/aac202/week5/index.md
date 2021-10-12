@@ -132,6 +132,8 @@ Grab and open this ZBrush project
 Breakfasty bits modeled in ZBrush.
 {{< /imgcard >}}
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="breakfast_zbrush.zip" target="_blank">breakfast_zbrush.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 TODO: Add more to breakfast: fork with creases and control loops.
 
 ### Breakfast by Paul Chambers
@@ -157,6 +159,7 @@ Cons: Extra unwanted polygon density
 Download, unzip and open the arcade stick in ZBrush
 {{< /imgcard >}}
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="stick.zip" target="_blank">stick.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 ## Style reference is critical 
 
 Detailed subdivision modelling is way beyond the scope of this subject. Instead, we'll use the techniques to add **charming roundness** and **light catching** chamfers to our props.
@@ -223,9 +226,8 @@ Pancake breakfast. Click to zoom.
 
 By midday Monday add a **reply** to your class's thread below and **insert your screenshots** so they're visible when we view the thread. If you click a link and it has to authorize it may drop you at the subject's blackboard homepage. If so, come back here and click again.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968745_1&message_id=_2575998_1" target="_blank">Ultimo W5 HW Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064204_1&message_id=_2899265_1" target="_blank">HW Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968730_1&message_id=_2575999_1" target="_blank">Online W5 HW Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!-- 
 
