@@ -274,7 +274,7 @@ The **output** or result of a function is called the **return value**. That's wh
 ```
 ### Exercise: Creating the twoTimes program.
 
-Using the code outline below and the real code above, create and complete the *multiplier* project in Visual Studio.
+Using the code outline below and the real code above, create and complete the *multiplier* project on Replit.
 
 ```cpp
 #include <iostream>
