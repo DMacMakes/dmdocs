@@ -127,9 +127,9 @@ Here's Some very basic but very necessary math you don't want to have to code yo
 
 ## SLEEP human maths are slow
 
-Download and complete the Human Maths project.
+Fork and complete the Human Maths project.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="human_maths.zip" target="_blank">Download human_maths.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://replit.com/@torrensdct/m5-human-math#main.cpp" target="_blank">m5-human-maths on Replit<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 
 
