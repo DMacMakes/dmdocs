@@ -11,6 +11,8 @@ description: >
 
 **Due:** Available to take from Friday, Module 4, until **11:55pm, Sunday, end of Module 4** (3 days).
 
+<!--  
+
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10262683_1&course_id=_116055_1" target="_blank">ONLINE: Exam and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 Testing your understanding of the **ideas in programming**, along with knowledge of C++ **data types**, **operators**, **evaluation** and more. 
@@ -36,17 +38,15 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 **#1 tip:** If you think you really understood the example you typed out and toyed with, close the project, create a new one and **rewrite it from memory.** If you don't get anything wrong first go, it's not a hard enough exercise!
 {{< /alert >}}
 
+-->  
+
 ## Assessment 2: Slot Machine
 
 **Due:** 11:55pm, Sunday, end of module 8.
 
-<!--  
-
 A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9917266_1&course_id=_112961_1" target="_blank">Online Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
--->  
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10262686_1&course_id=_116055_1" target="_blank">Online Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Assessment 3: Realtime Game
 
