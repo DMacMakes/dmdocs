@@ -307,18 +307,17 @@ You have **two tasks:** to complete the code below and then add pseudocode to tw
 
 The code below function declarations and function calls commented out, and they're incomplete. Your job is to complete the functions and move the appropriate code from `main` into them.
 
-1.**Start with the class code** which you can see below, **including the comments**.   
-2. **Run it.** Try the slots and credits screen. Finally, enter 2 to exit and make sure it all works. 
-3. There's a commented out call to "displayQuit()" in main. Uncomment it (delete the //) ike we did in class for the menu, but easier because it doesn't take parameters or return data.  
-4. Like we did in class for `displayMenu`, **Find the code** in main that should be in `displayQuit()` and **move it** there. It'll be even easier because you don't have parameters or a return value.
-5. **Run it**, and make sure the program outputs what it did before.   
-6. **Repeat the process** for the remaining functions including playslots.
-  * Look at the flowchart if you get lost.  
-
-{{< imgcard pokey_code_homework Link "pokey_code_homework.png" >}}
-Middle-click to open in a new window.
-{{< /imgcard >}}
+   1.**Start with** the class code (plus a few additions) below, adding in any bits you're missing. Remember to **include the comments**, especially the TODOs.  
+   2. **Run it.** If there are any errors/bugs, find and fix them (again using the code below as a reference).  
+   3. **Find the code** in main that should be in `displayExit()` and **move it** there. The most basic version won't need any parameters, but try adding one to support commenting on the player's results.  
+   4. Add input to the displayMenu() function and return that screen choice as an int.  
+   5. **Run it**, and make sure the program outputs what it did before.     
+   6. Add simple messages to displaySlotMachine() and displayCredits(); test that menu choices `1`, `2` and `3` go to the right screens and return to the menu.  
   
+{{< imgcard week6_slots_base_replit Link "week6_slots_base_replit.png" >}}
+Middle-click to open in a new window.
+{{< /imgcard >}}  
+    
 {{< alert title="Building on previous study." color= "secondary" >}}
 This task **should be quite easy** if you've understood functions and the basic structure I built in class. If it's hard, if you find yourself moving things around and it never works, there's a good chance you haven't really watched and participated in class 5 and/or 6 with full focus. 
 * If you skim or 'watch' the classes while doing another subject's work, **you won't get there**.
@@ -337,8 +336,6 @@ This task **should be quite easy** if you've understood functions and the basic 
 ### Next level down
 
 Our screens so far are basic abstractions. Our next step is to describe those in more detail, so we can plan their code too.
-
-Of course, youll find new abstractions, like we did with the in **car abstraction exercise**, and some of those will be worth writing a function for.
 
 You just keep going down levels, doing this till everything is done and no further functions are needed.
 
@@ -365,8 +362,6 @@ You just keep going down levels, doing this till everything is done and no furth
     * Wait for key press, return to menu
 4. Make **quitting screen**
     * Depending on their score, thank them or console/pick on them
-
-
 
 
 <!--
