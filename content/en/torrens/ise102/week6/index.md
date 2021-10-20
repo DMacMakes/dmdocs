@@ -157,7 +157,7 @@ They're just ways of organising your thinking and better exploring your plan.
 
 ### Step two: Psuedocode
 
-This step is very important. Try writing your top level program in pseudocode. This helps you formalise what you've outlined above without having to think about c++ syntax or enter visual studio. Use whatever text editor is on hand.
+This step is very important. Try writing your top level program in pseudocode. This helps you formalise what you've outlined above without having to think about c++ syntax or go to replit. Use whatever text editor is on hand.
 
 Here's a very top level bit of psuedocode, keeping things very abstract. It just covers what jobs need doing, but not how we pass around the data.
 ```
