@@ -12,11 +12,12 @@ Written during yesterday's review, it's the base we're moving forward on (or an 
 
 If you haven't watched the review and don't have this code ready, stop watching now and do that first. Watch the rest of this class recording afterwards
 
-{{< imgproc pokey_dokey_base_w7 Resize "200x" Link "pokey_dokey_base_w7.png" >}}
+{{< imgproc week6_review_slots_pseud Resize "200x" Link "week6_review_slots_pseudo.png" >}}
 Middle click to view in new tab
 {{< /imgproc >}}
 
 
+<!--  
 ## Exercise 1: Refreshing the console
 
 Our game is scrolling off down the screen like a chatroom. It's not a natural fit for our game, with its distinct screens.
@@ -48,18 +49,24 @@ Why does that work?
 
 We're using the special `system()` function in *C++*, it can run an external command if it it's available wherever our program runs. With a console program we could use `system` to run more than just `cls` - `dir` or `echo hello` for example.
 
-{{< /alert >}}
+{{< /alert >}}  
 
+-->  
 ## Add screen clear to Slots
 
-Adding `system("cls")` between screens.
+`clearScreen()` is a function I've provided in the include file `include/ise102.h`. It wipes all the text from the screen and places the cursor back at the top left. With this new power we can make a gui-like, screen-based experience in the console.
 
-`main()`, the boss, controls what's showing next on screen by calling functions. 
-- functions don't know what happens before or after they're done. They just output stuff and pause.
-- This makes it `main()`'s job to trigger the clear.
+<!-- Good spot for SCREENSHOTS of before and after a clear with a little message. -->  
+
+{{< alert title="Why use a custom clearScreen()?" color= "primary" >}}
+The C++ standard library doesn't offer a way to clear consoles! Basically it's considered a platform thing (like how to draw to the screen in openGL, or draw a window in windows).Consoles look basic and generic to us, but they hail from the old timey wild-west days of computers - on Windows and Linux they work differently, and we won't burn the limited time in this class going into it. 
+{{< /alert >}}
+
+### Exercise: Replacing screen clear pseudocode
+
+In the review I showed you where to add screen-clearing pseudocode in the slots game. Replace the pseudocode clears from **Review 6** with real `clearScreen()` calls.
 
 **Demo** adding clear.
-
 ### A bug appears
 
 > Our game returns to the main menu at random points? Why?
@@ -73,7 +80,6 @@ We have theories, and some of you know this answer right away. That might come f
 We need to **wait for people to read before clearing the screen**. We could wait for:
 
 {{< alert title="Time" color= "secondary" >}}
-
 Waiting for x seconds might work.
   * When a screen is done, we tell the program to wait or sleep for the right amount of time.. but do we know it?
   * what about slow readers? 
@@ -86,6 +92,12 @@ Let the user decide.
   * How do we ask the computer to wait for a single key to be pressed?
   * Where do we put the code?
 {{< /alert >}}
+
+
+<!-- 
+* Change to getChar() (maybe?), 
+* give students updated conio.h 
+-->  
 
 ### Wait for key press: _getch()
 `_getch` is a function available in `<conio.h>` that pauses the program until a key is pressed. It stands for _get character_ and returns a code for the key/character.
@@ -108,9 +120,22 @@ Let's put them at the end of the functions, where our breakpoints went.
 
 ## Delivering code assessments
 
+TODO: Exporting finished project from replit (for record keeping)
+
+{{< imgcard "replit_download_zip">}}
+"Download as Zip" is located in menu at the top right of the **Files** section title bar
+{{< /imgcard >}}
+
+Do not make changes to the code after submission, a diff program will identify any changes added and this will be 
+- considered cheating if you *don't* notify your lecturer of changes
+- considered a late delivery if you *do* notify your lecturer of changes.
+
+<!-- 
+
 How to delete cache files (big, unneeded), zip your project and name it correctly.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable-1" target="_blank">Cleaning and delivering projects<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+-->  
 
 ## Fleshing out pseudocoded functions
 
@@ -154,6 +179,7 @@ Add homework!
 
 -->
 
+TODO: Replace old pseudocode where necessary
 ## Pseudocode 
 
 {{< alert title="First pass" color= "primary" >}}
@@ -210,6 +236,8 @@ end DISPLAY_MENU_SCREEN
 
 This is a little different from what I taught on stream. Instead of checking that the choice was *out of range* first, it checks if the choice was *in range* first, matching the pseudocode above. I also added `TOO_LOW` and `TOO_HIGH` to the MenuChoices enum. If you were in the class: do you think it's more readable this way? Tell me in the Discord ise102 chat.
 
+TODO: Replace this older displayMenu code, reflect week 6 review version on replit.
+
 {{< imgcard "code_displayMenu" Link "code_displayMenu.png">}}
 Updated displayMenu, click to expand.
 {{< /imgcard >}}
@@ -223,6 +251,8 @@ This week we:
 ## Homework
 
 ### What to do
+
+TODO: Take out all this visual-studio-project-delivery related stuff.
 
 The goal this week is to practise cleaning and submitting a project, along with showing your progress on the slot machine (simple program) assessment which is due shortly. 
 
