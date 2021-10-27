@@ -255,8 +255,22 @@ This week we:
 The goal this week is to make strong progress on the slot machine, building out your remaining functions using the methods I showed today, and to practise zipping and delivering the work.
 
 1. At a minimum, you should have the class-demonstrated features in your program: screen clearing, waiting for the any key and an error-checking main menu.
-2. Given the assessment is due next week, there should be other functionality coded by now and hopefully any remaining tasks at least noted in your comments if not pseudocoded.
-3. Download your project from Replit and rename the zip file as follows:
+2. Given the assessment is due next week, there should be other functionality coded and hopefully any remaining tasks at least noted in your comments if not pseudocoded.
+3. Using the bullet list from the week 6 notes as a paste, write pseudocode for the `displaySlotMachine()` function:  
+    * Show cash  
+    * Get user bet, check it  
+    * if valid, Take away bet  
+    * if invalid, say why and ask again.  
+    * generate and show 3 random numbers 2-7  
+    * Check for winning combos  
+    * Calculate winnings  
+    * Display win/loss info  
+    * Return to menu.  
+> Think of `displaySlotMachine()` as a top level function, a bit like `main()`: it will **call some other functions** because it has so much to do. Getting a valid bet, checking if the 3 cards/wheels showed 3 of a kind/pair etc.  
+>  
+> Write pseudocode that would call these functions, **giving them the info they need and saving the value they return**.  
+
+4. Download your project from Replit and rename the zip file as follows:
    _ise102_slots_week7_lastname_firstname.zip_  
    <!-- 3. Close Visual Studio and clean up your project for submission as taught in week 7 class, then zip it. You can use the name `ise102_slots_week7_lastname_firstname.zip`. There is a short guide on the subject [resources page](https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable) and the full 25 minute walk through with all the reasoning behind the process in the [Class 7.2 recording here](https://au-lti.bbcollab.com/recording/87d7fbef0fc94cfe85032a2b01850e1c) -->
 
