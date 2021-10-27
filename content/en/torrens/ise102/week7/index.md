@@ -233,13 +233,13 @@ end DISPLAY_MENU_SCREEN
 ```
 {{< /alert >}}
 
-### `displayMenu()`
+### `displayMenu()` code
 
+<!--  
 This is a little different from what I taught on stream. Instead of checking that the choice was *out of range* first, it checks if the choice was *in range* first, matching the pseudocode above. I also added `TOO_LOW` and `TOO_HIGH` to the MenuChoices enum. If you were in the class: do you think it's more readable this way? Tell me in the Discord ise102 chat.
+-->  
 
-TODO: Replace this older displayMenu code, reflect week 6 review version on replit.
-
-{{< imgcard "code_displayMenu" Link "code_displayMenu.png">}}
+{{< imgcard "week7_slots_displayMenu_validated" Link "week7_slots_displayMenu_validated.png">}}
 Updated displayMenu, click to expand.
 {{< /imgcard >}}
 
@@ -250,12 +250,9 @@ This week we:
 * Learned about the debugger
 
 ## Homework
-
 ### What to do
 
-<!-- TODO: Take out all this visual-studio-project-delivery related stuff. -->
-
-The goal this week is to practise cleaning and submitting a project, along with showing your progress on the slot machine (simple program) assessment which is due shortly. 
+The goal this week is to make strong progress on the slot machine, building out your remaining functions using the methods I showed today, and to practise zipping and delivering the work.
 
 1. At a minimum, you should have the class-demonstrated features in your program: screen clearing, waiting for the any key and an error-checking main menu.
 2. Given the assessment is due next week, there should be other functionality coded by now and hopefully any remaining tasks at least noted in your comments if not pseudocoded.
@@ -267,7 +264,9 @@ The goal this week is to practise cleaning and submitting a project, along with 
 
 <!-- **Check the size of your zip file is <50KB**. If not, you haven't deleted all the cache folders and need to watch the video again. Do not send me an over-sized zip file. Did you turn on *show hidden files* in your Windows file explorer?  -->
 
-**Email Atif** your zip file (`ise102_slots_week7_lastname_firstname.zip`) by end of Sunday. 
+**Email Atif** the following by end of Sunday:
+1. A link to your assessment 2 repl
+2. The zipped project (`ise102_slots_week7_lastname_firstname.zip`) 
 
 <!-- 
 
@@ -278,6 +277,7 @@ Type out and complete the code. Submit it as you were shown today.
 
 -->
 
+<!-- 
 ## Extra learning: The _Debugger_
 
 Killing bugs with the debugger!
@@ -370,6 +370,9 @@ Watch it happen, find the unexpected.
 1) You still have to have expectations at each point of the program as you watch it run.
 2) When it does something totally unexpected, you have a new possible culprit!
 3) Form a new theory about the bug and test it.
+
+-->  
+
 
 <!--
 
