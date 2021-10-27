@@ -120,7 +120,7 @@ Let's put them at the end of the functions, where our breakpoints went.
 
 ## Delivering code assessments
 
-TODO: Exporting finished project from replit (for record keeping)
+In addition to providing the link to your finished assessment on Replit, you'll provide a zipped archive of your project. It's a simple process, let's give it a quick try.
 
 {{< imgcard "replit_download_zip">}}
 "Download as Zip" is located in menu at the top right of the **Files** section title bar
@@ -179,7 +179,8 @@ Add homework!
 
 -->
 
-TODO: Replace old pseudocode where necessary
+<!-- TODO: Replace old pseudocode where necessary -->  
+
 ## Pseudocode 
 
 {{< alert title="First pass" color= "primary" >}}
@@ -252,19 +253,21 @@ This week we:
 
 ### What to do
 
-TODO: Take out all this visual-studio-project-delivery related stuff.
+<!-- TODO: Take out all this visual-studio-project-delivery related stuff. -->
 
 The goal this week is to practise cleaning and submitting a project, along with showing your progress on the slot machine (simple program) assessment which is due shortly. 
 
 1. At a minimum, you should have the class-demonstrated features in your program: screen clearing, waiting for the any key and an error-checking main menu.
 2. Given the assessment is due next week, there should be other functionality coded by now and hopefully any remaining tasks at least noted in your comments if not pseudocoded.
-3. Close Visual Studio and clean up your project for submission as taught in week 7 class, then zip it. You can use the name `ise102_slots_week7_lastname_firstname.zip`. There is a short guide on the subject [resources page](https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable) and the full 25 minute walk through with all the reasoning behind the process in the [Class 7.2 recording here](https://au-lti.bbcollab.com/recording/87d7fbef0fc94cfe85032a2b01850e1c)
+3. Download your project from Replit and rename the zip file as follows:
+   _ise102_slots_week7_lastname_firstname.zip_  
+   <!-- 3. Close Visual Studio and clean up your project for submission as taught in week 7 class, then zip it. You can use the name `ise102_slots_week7_lastname_firstname.zip`. There is a short guide on the subject [resources page](https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable) and the full 25 minute walk through with all the reasoning behind the process in the [Class 7.2 recording here](https://au-lti.bbcollab.com/recording/87d7fbef0fc94cfe85032a2b01850e1c) -->
 
 ### Delivery
 
-**Check the size of your zip file is <50KB**. If not, you haven't deleted all the cache folders and need to watch the video again. Do not send me an over-sized zip file. Did you turn on *show hidden files* in your Windows file explorer? 
+<!-- **Check the size of your zip file is <50KB**. If not, you haven't deleted all the cache folders and need to watch the video again. Do not send me an over-sized zip file. Did you turn on *show hidden files* in your Windows file explorer?  -->
 
-**Email me** your zip file (`ise102_slots_week7_lastname_firstname.zip`) to me  by Midday monday. 
+**Email Atif** your zip file (`ise102_slots_week7_lastname_firstname.zip`) by end of Sunday. 
 
 <!-- 
 
