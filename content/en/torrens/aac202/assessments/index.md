@@ -94,7 +94,7 @@ Create a zip file named *aac202_a2_Lastname_Firstname.zip* containing the follow
 While this our second assessment, you'll be delivering it to the *Assessment 1* section on Blackboard.  Upload your zip file to Torrens LFS (instructions below) and submit your link to Blackboard:
 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586489_1&course_id=_102086_1" target="_blank">Online Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055546_1&course_id=_115852_1" target="_blank">Online Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 #### Level of detail
 
