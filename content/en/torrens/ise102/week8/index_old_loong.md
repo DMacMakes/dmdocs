@@ -1,48 +1,32 @@
----
-title: "8: Finalising Slots"
-linkTitle: "W.8 Final Slots"
-weight: 80
-description: >
-  User experience, submission of projects.
-resources:
-  - src: "dad_car.jpg"
-    params:
-      byline: "Credit: http://annx.asianews.network"
----
 
 ## What are we learning today?
 
-1. Project management using a _**Trello/job** board_.
-1. The next level of **abstraction**: the **`playSlots()`** function and its children.
-1. **Visual Studio** requirements for modules 9-12 (starting next week!)
+1. The next level of **abstraction**: the `playSlots()` function.
+1. Project management using sticky-note style _**agile/kanban** board_.
+1. Adding colour with **_colorterm.h_**
 
-Self learning: Adding colour with **_colorterm.h_**
-## Assessment 2
+<!--
 
-Assessment 2 is due THIS COMING SUNDAY.
-
-### Delivering A2
+## Delivering Your Assessment
 
 * If anything is going to stop you delivering on time, reach out/request extension BEFORE the day it's due.
 
-Visit the link and follow the instructions there carefully!!
+Visit the link, follow the instructions there carefully!!
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Assessment 2 on dmdocs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-2-slot-machine" target="_blank">Delivery (Zip) File Creation on dmdocs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-### A2 progress
+-->
+
+## Assessment 2 progress
 
 **What's done?**
 * Screens, menu loop (if homework done)
-* `playSlots()` function pseudocode is mostly there
+* `playSlots()` function dummy structure is there
 * Some real playslots structure basic user inputs of bet
 * Good formula for calculating new cash amount, it's returned to Menu.
 
-### End-of-review code:
-
-<a href="code_week8_start.png" target="_blank"><img src="code_week8_start.png" width=250 /></a>
-
-### Trello Board: What's left to do?
-You might be struggling at this stage to track what's done and what isn't. Trello and similar job-board tools are a very common solution to these problems in large product, software and game development projects. [Here's a Trello for slots week 8](https://trello.com/b/aETa5OZN/slotsot2), set up to reflect (approximately) our progress by now.
+### What's left to do?
+This will be easier [using Trello](https://trello.com/b/aETa5OZN/slotsot2):
 
 {{< imgproc trello_slotso_w8 Resize "700x" Link "https://trello.com/b/aETa5OZN/slotsot2" >}}
 Click the image to visit the board.
@@ -71,7 +55,7 @@ Make sure you understand this before you go further!
 
 ```
 START playSlots (needs: players cash amount to start)
-  Get legal bet from player.
+  Get valid bet from player.
   Remove bet from playerCash
   Make and display random numbers
   Set bet multiplier based on win/loss by matching random numbers
@@ -99,10 +83,10 @@ int playSlots(int playerCash)
 
   // -------- GET BET ----------------------------------------------
   //  Should be one line, call a function, store bet it returns.
-  //  Get user bet, check that it's valid, so.. getLegalBet, returns a bet that we can 
+  //  Get user bet, check that it's valid, so.. getValidBet, returns a bet that we can 
   // expect to >$0 and <=$playerCash, can't bet what you don't have. Function will 
   // need to know player's cash to check they don't bet above it..
-  //  bet = getLegalBet(playerCash)
+  //  bet = getValidBet(playerCash)
   int bet = 200;  // dummy bet
   cout << "You bet $" << 200 << "\n\n";
   
@@ -161,25 +145,25 @@ There are two cards related to making a bet. There's an obvious repeat in the jo
 From the <i>Trello</i>. Maybe these two can go in a function together.
 {{< /imgcard >}}
 
-{{< alert title="Psuedocode: playSlots() calls getLegalBet()" color= "secondary" >}}
+{{< alert title="Psuedocode: playSlots() calls getValidBet()" color= "secondary" >}}
 In `playslots()`, we'll do the equivalent of making a wish. We'll pretend we have a function to do the work for us, and describe it.
 
 ```
 //... inside playSlots()
   // -------- GET BET ----------------------------------------------
   //  Should be one line, call a function, store bet it returns.
-  //  Get user bet, check that it's valid, so.. getLegalBet, returns a bet that we can 
+  //  Get user bet, check that it's valid, so.. getValidBet, returns a bet that we can 
   // expect to >$0 and <=$playerCash, can't bet what you don't have. Function will 
   // need to know player's cash to check they don't bet above it..
-  // bet = getLegalBet(playerCash)
+  // bet = getValidBet(playerCash)
   int bet = -200; // dummy bet for now
 
 ```
 Looks good! So we need a function:
 ```
-FUNCTION getLegalBet
+FUNCTION getValidBet
 needs: playerCash
-returns: a legal bet in dollars
+returns: a valid bet in dollars
 ```
 {{< /alert >}}
 
@@ -197,12 +181,12 @@ Since we don't yet know how to get 3 values back from a function, we'll have to 
 
 ```
 START playSlots (playerCash)
-  // Get legal bet from player becomes:
-  bet = getLegalBet(needs player Cash)
+  // Get valid bet from player becomes:
+  bet = getValidBet(needs player Cash)
 
-  wheel1 = a random in the range 2-7
-  wheel2 = another random in the range 2-7
-  wheel3 = another random in the range 2-7
+  rand1 = a random in the range 2-7
+  rand2 = another random in the range 2-7
+  rand3 = another random in the range 2-7
   
   display the numbers on cards/pokie wheels/whatever
   ...
@@ -210,8 +194,8 @@ START playSlots (playerCash)
 Let's make a wish again! Those lines could become:
 
 ``` 
-wheel1 = getRandInRange(2,7)
-wheel2 = getRandInRange(2,7)   // and so on
+rand1 = getRandInRange(2,7)
+rand2 = getRandInRange(2,7)   // and so on
 ```
 
 You can guess what our function definition might look like 
@@ -238,15 +222,15 @@ The job we need done then is:
 
 ```
 START playSlots (playerCash)
-  // Get legal bet from player becomes:
-  bet = getLegalBet(needs player Cash)
+  // Get valid bet from player becomes:
+  bet = getValidBet(needs player Cash)
 
-  wheel1 = a random in the range 2-7
-  wheel2 = another random in the range 2-7
-  wheel3 = another random in the range 2-7
+  rand1 = a random in the range 2-7
+  rand2 = another random in the range 2-7
+  rand3 = another random in the range 2-7
   display the numbers on cards/pokie wheels/whatever
 
-  multiplier = checkForWin(wheel1, wheel2, wheel3)
+  multiplier = checkForWin(rand1, rand2, rand3)
 
   ...
 ```
@@ -273,15 +257,15 @@ From the assessment brief pdf.
 
 ```
 START playSlots (playerCash)
-  // Get legal bet from player becomes:
-  bet = getLegalBet(needs player Cash)
+  // Get valid bet from player becomes:
+  bet = getValidBet(needs player Cash)
 
-  wheel1 = a random in the range 2-7
-  wheel2 = another random in the range 2-7
-  wheel3 = another random in the range 2-7
+  rand1 = a random in the range 2-7
+  rand2 = another random in the range 2-7
+  rand3 = another random in the range 2-7
   display the numbers on cards/pokie wheels/whatever
 
-  multiplier = checkForWin(wheel1, wheel2, wheel3)
+  multiplier = checkForWin(rand1, rand2, rand3)
   playerCash = playerCash plus (bet times multiplier))
   Tell player about win/loss, new total etc
   
@@ -305,27 +289,27 @@ hint: enums (look at MenuChoices)
 I remember to check the Trello cards too.
 {{< /imgcard >}}
 
-## Filling in getLegalBet
+## Filling in getValidBet
 
 For this to work, the player should:
 1. Know what to input: what a valid(correct) bet is.
 2. Be told if they make a mistake, and what it was.
-3. Be prompted again for a legal bet.
+3. Be prompted again for a valid bet.
 
-{{< alert title="Pseudocode: getLegalBet in detail" color= "secondary" >}}
+{{< alert title="Pseudocode: getValidBet in detail" color= "secondary" >}}
 It's a lot like the menu functionality from week7. It loops, has valid and invalid input to test for, and an error needs to be displayed.
 
 **Week 7 menu:**  
 <a href="displayMenu_wk7.png" target="_blank"><img src="displaymenu_wk7.png" width = 400 /></a>
 
-**getLegalBet** function as mostly pseudocode comments.
+**getValidBet** function as mostly pseudocode comments.
 
 ```cpp
-// Get a legal bet from the user (more than $0, and no more than the
+// Get a valid bet from the user (more than $0, and no more than the
 // user actually has). Returns the amount that was bet.
-// If the user enters an illegal bet they are told so, how to do better,
+// If the user enters an invalid bet they are told so, how to do better,
 // and asked to try again until they succeed.
-int getLegalBet(/*pass in the player's total cash*/)
+int getValidBet(/*pass in the player's total cash*/)
 {
   int bet = 0;
   // string error
@@ -427,23 +411,9 @@ Academic integrity, demonstrating what you've learned in class, not submitting b
 
  <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://trello.com/b/aETa5OZN/slotsot2" target="_blank">Avoid submission dangers: Trello<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-## Random numbers
+## Random numbers in a range?
 
-`rand()` generates random numbers between 0 and.. whatever your compiler defines as the maximum. Typically this might be  You can access that number in the constant `RAND_MAX`. 
-
-### Seeding pseudorandom numbers
-
-If you don't "seed" the random number generator in C++ with an arbitratary number, it'll always use the same big book of random numbers. A single seed can generate all the fresh random numbers you need, but you'll have to remember to do it when your program starts (in main).
-
-https://www.cplusplus.com/reference/cstdlib/srand/
-### Random numbers in a range
-
-To convert any number from one range (0..RAND_MAX) to a number in another range (2..7) we can use modulus or good old ratios/percentages. You can find an explanation and a technique - using modulus (`%`) - for converting random numbers to a range on cplusplus.com's rand() reference page.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.cplusplus.com/reference/cstdlib/rand/">cplusplus.com: rand()<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-### Doing it with ratios
-
+`rand()` generates random numbers between 0 and.. whatever your compiler defines as the maximum. You can access that number in the constant `RAND_MAX`. To convert any number in one range to a number in another range we can use percentages. 
 
 Let's imagine that number is 16, and our random number is 8. What percentage of 16 is 8? You probably all thought "50%", but it came to you fairly automagically. The formula you learned in school and are unconsciously applying is 
 
@@ -508,11 +478,7 @@ int eggRatioAppliedToSoccerTeam = int( roundl(11*eggsDozenRatio) );
 // randAsRatio = float(random number) over float(rand max).
 // Rand between 0 and 20 = round to nearest whole( randAsRatio * 20 )
 ```
-## Install Visual Studio Community 2019 This Week
 
-As of next week we'll be working in a coding environment installed on our own computer, Microsoft's Visual Studio (Community) 2019. **You will need Windows 10 (or 11) installed**: you need to get started on this so it's ready to go next week, but **especially so if you're working on a mac, particularly an m1-based mac**.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#c-microsoft-visual-studio-community-2019">Resources: Visual Studio<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 ## Add Colour With Termcolor
 
 What does it achieve, and how do can you add it?
