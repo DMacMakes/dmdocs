@@ -31,7 +31,7 @@ Click to read
 {{% alert title="Important: Windows Required" color="primary" %}}
 The software and projects in this subject require the _Windows Operating System_.
 
-If you run a different operating system on your laptop/home machine, there are free solutions. See the instructions at the [end of this page](#windows-options).
+If you run a different operating system on your laptop/home machine read the instructions at the [end of this page](#windows-options).
 {{% /alert %}}
 
 ## C++: Microsoft Visual Studio Community 2019
@@ -47,7 +47,7 @@ What's critical for us is that, when asked what `Workloads` you want to install,
 
 ![Desktop development with C++](visual_studio_cpp_desktop.png)
 
-### Handy extra: Repl.it
+### Coding in the Cloud: Repl.it
 This isn't an install, but instead a on online IDE where you can write out and compile c++ without having to open Visual Studio. It has syntax hilighting and some auto completion too. 
 
 {{< imgproc replit Resize "600x" Link "https://repl.it/">}}
@@ -114,11 +114,15 @@ Download from the [iOS App Store](https://apps.apple.com/us/app/sololearn-learn-
 
 ### 1. Install Inside/Alongside Your OS
 
-If you are on a **Mac** or **Linux** laptop [Download this Windows iso](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EUs2E8Oj_-dNroXMb_tg0O8BhM4nTzv3g98UZ4VPnlmRCQ?e=digodN) (free unactivated). You can then either:
+If you are on an **Mac or Linux** laptop you'll need to either install Windows 10 into a virtual machine or dual boot it. 
 
-1a. Install Windows in a **virtual machine** using [Virtual Box](https://www.virtualbox.org/wiki/Downloads) (free) **or**  
-1b. Install Windows alongside your main OS and **dual boot** using bootcamp (Mac) or grub (Linux)  
+1. [Download the Windows iso here](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EUs2E8Oj_-dNroXMb_tg0O8BhM4nTzv3g98UZ4VPnlmRCQ?e=digodN) (free unactivated). 
+
+2. If you're on an Intel machine, either:
+   a. Install** Windows in a **virtual machine** using [Virtual Box](https://www.virtualbox.org/wiki/Downloads) (free) **or**  
+   b. Install Windows alongside your main OS and **dual boot** using bootcamp (Mac) or grub (Linux)  
   
+3. If you're on an M1 mac you only have once option, and that is to acquire and install [Parallels Desktop 17 for MacOS](https://www.parallels.com/au/products/desktop/). There is a 14 day trial, but we'll need it for 4 weeks, and you'll need Windows in subjects further down the road. I recommend buying [the Academic version (50% off)](https://www.parallels.com/au/landingpage/pd/education/) if you intend continue your studies on the M1 mac.
 ### 2. Use A Lab Computer  
 
 The lab computers run Windows.
