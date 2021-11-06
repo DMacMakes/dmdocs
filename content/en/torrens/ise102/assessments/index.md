@@ -113,8 +113,8 @@ In addition to providing the link to your finished assessment on Replit, you'll 
    * a link to your Replit project online
    * the zip file.
 
-{{< imgcard "replit_download_zip">}}
-"Download as Zip" is located in menu at the top right of the **Files** section title bar
+{{< imgcard "17796C37-1C35-47ED-A1EE-F92F10EF9985">}}
+"Download as Zip" is located yin menu at the top right of the **Files** section title bar
 {{< /imgcard >}}
 
 
