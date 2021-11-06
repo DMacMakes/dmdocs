@@ -46,7 +46,13 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
+### Deliverables
+
+1. Follow the general instructions further down this page under [Delivering Replit Projects](#Delivering-Replit-projects) to create a zip of your project. This is just as you practised in Module 7's class.
+2. Submit your zip file and Replit link on the submission page for Assessment 2 on Blackboard, linked below. 
+
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10262686_1&course_id=_116055_1" target="_blank">Online Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 
 ## Assessment 3: Realtime Game
 
@@ -94,6 +100,29 @@ Submit your assessment by:
 5. Click *Assessment 3 - Submission* and follow the instructions.  
   
 -->  
+
+## Delivering _Replit_ projects
+
+In addition to providing the link to your finished assessment on Replit, you'll provide a zipped archive of your project. 
+1. The zip file is easily downloaded from the *kebab* menu in the *Files* panel, as in the screenshot below.
+2. Rename the file using the following pattern:
+   *ise102_AX_lastname_firstname.zip*
+   Replace the *X* with the assessment number and add your own name.
+   Example: *ise102_A2_mcgillick_danny.zip*
+3. On Blackboard, navigate to the assessment submission page and submit:
+   * a link to your Replit project online
+   * the zip file.
+
+{{< imgcard "replit_download_zip">}}
+"Download as Zip" is located in menu at the top right of the **Files** section title bar
+{{< /imgcard >}}
+
+
+### Important!
+**Do not make changes to the code after submission** - your replit history will identify any changes added and this will be 
+- considered cheating if you *don't* notify your lecturer of changes
+- considered a late delivery if you *do* notify your lecturer of changes.
+
 
 ## Delivering Visual Studio solutions
 <a name="deliverable"> </a>
