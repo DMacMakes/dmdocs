@@ -112,6 +112,8 @@ You can choose **installer or portable** from the dropdowns on the download page
 
 [Cartoony PBR - zipped Pureref file](PBRCartoonyLook1.pur.zip)
 
+<!-- 
+
 ## Project Files Coming
 
 Files to fill the following niches are coming soon:
@@ -124,3 +126,5 @@ Maya:
 
 Unity:
 * Project with imported painter object, textures, pbr.
+
+-->
