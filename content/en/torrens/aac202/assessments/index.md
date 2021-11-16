@@ -21,6 +21,9 @@ Order  | Deliverable       | Due     | Blackboard number
 
 ## 1. High Poly Character (week 4)
 
+**Submitted**
+
+<!-- 
 **Create a bust from an existing 2D concept:**  
 1. Select one of the heads from the concept art [below](#concepts)  
 2. Starting with a clean copy of the provided base mesh, sculpt a high quality, polypainted 3D model of the character. Draw on what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh).
@@ -68,7 +71,7 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * Painting in eyelashes and eyebrows that you didn't have geometry for
 
-
+-->
 
 ---
 
@@ -107,9 +110,8 @@ Color | If using ZBro paint, at a minimum fill with flat colour. You can add mor
 
 ## Assessment 3: PBR Texturing
 
-<!--  
-
-**Final Submission: Midday, Wednesday May 12** 
+**Final Submission: 11:55pm Sunday, Module 12** 
+*For T3 2021 that's December 5.*
 
 Texture on of the provided models using Substance Painter.
 
@@ -119,10 +121,7 @@ Service Drone | ![service_drone](service_drone.png) | [service_drone.7z](https:/
 Mini Axe | ![mini axe](mini_axe.png) | [mini_axe.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EWhxYg7NmZdPh7KgPYHbdlkBOaJsUuUIa6EtRoPqywDvzw?e=dBlWxO)
 Knife | ![knife](knife.png) | [knife.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESwqpRmQvNNOjqrgkizkBk0BlHujqs_HVOlJoG9drjwX9A?e=DLMBho)
 Arcade Stick | ![arcade stick](arcade_stick.png) | [arcade_stick.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ER_K_UxRxOdBqUDZFWVbBzwBlrSSWW8zO-r_5ojKb7IFQA?e=OKKpYR)
-Boot* | ![boot](boot.png) | [boot_david.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESFT4HJ9hD9Nv8MSnHhUzVoBHw2VI6-SmQdHtq5nln6dcQ?e=NmFmkR)  
   
-\* *Boot is here because David Neselius (online class) wanted to texture his own model, but you're welcome to choose it too - just remember to credit him as the modeller if it ends up inyour folio* 👍  
-
 ### Reference   
 Here's some reference for cartoony styled 3D using with a PBR look:
 
@@ -142,26 +141,21 @@ Online class | [submission thread](https://laureate-au.blackboard.com/webapps/di
 
 #### Week 12: Final submission 
 
-**Due: Midday, Wednesday May 12** 
+**Due: 11:55pm Sunday, Module 12 (Dec 5)** 
 
-What to Submit:
+**What to Submit:**
 1. Final Painter project (*.spp file)
 2. Screenshots 
 3. Your real life and style reference.
 4. Sketchfab link to your uploaded model
 
-How to submit:
+**How to submit:**
 1. **Zip** your final painter project, reference files(pur) and screenshots into a single zip
 2. Upload it to Torrens LFS. 
 3. Export the final version of your model+textures to Sketchfab.
 4. Submit the **LFS link and the Sketchfab link** to Blackboard under *Assessment 2: Model Surfacing*.
 
-Class | Submission link
-----  | -----
-Ultimo | [Assessment 2 on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9586561_1&course_id=_102604_1)
-Online | [Assessment 2 on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?course_id=_102086_1&content_id=_9586490_1)
-
--->  
+[Assessment 2 on Blackboard](https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055546_1&course_id=_115852_1)
 
 
 <!--
