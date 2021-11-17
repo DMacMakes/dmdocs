@@ -1,16 +1,66 @@
 ---
-title: "Week 10: Movement, Speed and Responsiveness"
+title: "Week 10: Objects, Movement and Controls"
 linkTitle: "W.10: Movement"
 weight: "100"
 description: >
   Moving a character object around. Controlling speed and reacting to input.
 ---
 
+## A new, custom data type: Point2d
+
+Point2d is a special data type I've made to help us build games in textpixels. It holds a pair of x and y coordinates, locating a thing in a 2d space.. like our game window. If you wanted to remember where you left a cactus, you could make a `Point2d` variable called `cactusLocation`, then set its x and y values.
+
+```cpp
+Point2d cactusLocation;
+cactusSpot.x = 3;
+cactusSpot.y = 10;
+
+drawPixel(cactusLocation.x, cactusLocation.y, DARK_GREEN);
+```
+
+There's even a version of drawPixel that can take a single Point2d variable instead of needing two ints:
+
+```cpp
+Point2d cactusLocation;
+cactusLocation.x = 3;
+cactusLocation.y = 10;
+
+drawPixel(cactusLocation, DARK_GREEN);
+```
+
+{{< alert title="A Box Of Variables" color= "primary" >}}
+If you think of an int or float variable as a box of memory with a value in it (`int age = 2;`), then you can think of any Point2d variable as a *box with two other boxes in it*; the x and y coordinates of the point. They're just a couple of `int`s. 
+
+```cpp
+cout << cactusSpot.x;  // print out the x coordinate of our cactus.
+```
+
+To check or change (read or write) those variables you can use *dot notation* like above. You just type the variable name, put a dot at the end, and see what it offers.
+{{< /alert >}}
+
+Just like two colons `::` gave you access to things inside a namespace/library or enum, a dot `.` gives you access to things inside an *object*. 
+
+## Objects
+
+Data types like the Point2D aren't like the fundamental types (int, float, double) They create data *objects*. That just means they are like a package, rather than a single, simple box in memory - they can hold multiple variables and even functions.
+
+It turns out `string` has quietly been an object the whole time. It lets you access it with `=` like it's the other data types, but it has a lot of handy functions you can use too. 
+
+You can find out how long a string called `name` is by calling `name.length();`. 
+
+```cpp 
+string myName = "Geena Baneena";
+int nameLength = myName.length();
+```
+
+The function exists inside that one string object and when called, will always give you up to date information - if you assign a new name to `myName`, say `"Princess Sharma Fishsauce"` then `myName.length()` will give you a different answer.
+
+Here's more about string's `length()` function on cplusplus: <https://www.cplusplus.com/reference/string/string/length/>
 ## Introducing the Snake Object
 
-Remember, last week, when I put x and y into a Point2d (cactusLocation) so we wouldn't have variables coming out our ears? We're going to keep doing that this week so it's easier to move not just locations but characters, pickups and props.
+I put x and y into a Point2d (cactusLocation) so we wouldn't have variables coming out our ears, and that was just for setting a position once. What if you had to move something every frame, and check if it was bumping into other things with positions, like walls and powerups? `Point2d` will definitely come in handy for all these things. Our Snake will need an x,y position, but they're going to have a colour, a length, who knows what other info.. **We're going to need a Snake data type** 🤔
 
-To help us start moving snakes around our game I've lumped together some things you'll need and called the data type `Snake`. If you `#include "snake.h"` and it's in your project + project directory, you can do this:
+Let's start with moving a Snake around our game - I've already lumped together some things you'll need and in a data type called `Snake`. If you `#include "snake.h"` and it's in your project + project directory, you can do this:
 
 ```cpp
 // Make some snakes with nice names
