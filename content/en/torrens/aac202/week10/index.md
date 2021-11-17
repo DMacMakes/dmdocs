@@ -1,146 +1,65 @@
 ---
-title: "10. Environments 2"
-linkTitle: "10. Enviro 2"
+title: "10. Painter"
+linkTitle: "10. Painter"
 weight: "100"
 description: >
-  Turning parts into structures.
+  Texturing in Painter, Assessment 3.
 ---
 
-## Detailing: Fixes/improvements to parts we did
 
-Your progress:
+This week:
+* Other resources: Danny's Painter playlist
+* Assessment 3
+* The Substance ecosystem: Designer vs Painter. Alchemist?
+* Looking through example files
+* Approaching the task of texturing: Having a plan, working large to small, style reference, photo reference, pureref!
 
-[Week 10 Discussion](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866561_1&message_id=_2243100_1)
+## Painter Playlist
 
-* Polygon density!
-* Style
-* Repetition
+## Assessment 3
+[Assessment 3 on dmdocs](../assessments/#assessment-3-pbr-texturing)
 
-## Finishing Our Assets
+## Substance Ecosystem
 
-{{< alert title="PSA: Ask Michael" color= "primary" >}}
-Each of you will be facing different challenges now and need to go deeper. Since I can't cover it all in class, it's time to spread your wings and start learning what you need to. 
+Designer: design substances as procedural graph, maths, composites
+Substance Painter: Surfacing real models using substances, smart materials, filters, masks, hand painting etc.
 
-To do that, your primary source should be [this playlist](https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq1ae09h1dht4S6M) by Michael Pavlovic.
+## Example Files, Assessment Files
+Axe? Drone?
 
-<a href="https://www.youtube.com/playlist?list=PLkzopwqcFevbxxNfZtq1ae09h1dht4S6M"><img src="pavlovic_zbrush_basics.jpg"></a>
-{{< /alert >}}
+## Approaching texturing
+Choose your model, then we have to begin. But where to start?
 
+Having a plan, working large to small, style reference, photo reference, pureref!
 
-### Modules
+## Style in video games.
 
-Consider how you could break up the larger form into Modules to save time/resources
-(drawover)
+### Defining terms
+When we all hear the same words all the time, we tend to define them the same way and like to agree about it.  
 
-### Dupe And Flip
+<img src="troll_face.png" width="200" />
 
- Dupe Subtool: Tool > Subtool > Duplicate 
+#### *Realistic* game art:
 
-* Methods for duplication
+![last of us 1](realism_lastofus2_1.jpg)
   
-* Mirroring
-  * Axis
-  * Local symmetry
+Element | Approach
+--- | ---
+**Characters, props and environments** | Have lots of fine, life-like detail referenced from real life. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are mostly laid out in according with the laws of physics/biology/material science, with little/no regard for rhythm, contrast, readability.  
+**Lighting** | Comes from sources available in the environment and is reflected by objects in accordance with the properties of their real life counterparts, or the closes thing if we're dealing with fantasy/sci fi.  
+**Post effects/filters\*** | Will usually enhance detail and contrast but in line with film grading of movies/tv. They'll often recreate the physical properties of lenses, and the way cameras are affected by light and the environment.  
 
-### Subtools Vs Polygroups Again
+\* *graphic effects applied to the whole screen once the scene is rendered in 3d*
 
-Gizmo: duplicating within a subtool
+![last of us 2](realism_lastofus2_2.png)
 
-{{< youtube F8O8gq2l4LE >}}
+Danny's stylized cartoony PBR reference
+[Cartoony PBR - zipped Pureref file](../resources/PBRCartoonyLook1.pur.zip)
 
-* Splitting to sep subtools, using solo/xray mode (performance upside too)
-* Working with many meshes in one subtool
-  * Only do this when close to done
-  * Make sure your subdivision levels match (example: 5 levels in all meshes)
+#### *Stylized* game art  
 
-### Moving Subtools Alone Or Together
-
-Gizmo!
-
-{{< youtube ECzbIVoVHOI >}}
-
-### Modeling for reuse
-
-**Demo**
-
-It's tricky to model pieces that:
-* Repeat without being too samey or too different
-* Have plenty of style without standing out
-* Serve the role of unique piece without being too unique!
-
-## Homework
-Build out the asset using the parts you made last week.
-Differentiate them without losing your silhouette.
-Block in some other bits.
-
-## Making The Other Bits
-You've got the main piece sorted. Now add the features and props to give it character. Arrow in the wood? Oysters? Crab?
-
-### Model In Maya, Import
-
-Importing fbx files.
-Decimating and exporting to Maya .
-
-{{< youtube "PmymBtiO9tw" >}}
-
-### ZBrush Primitives
-
-Ways to make primitives in ZBrush.
-1. Primitives + init + make polymesh3d
-4. Intermediate: Using the Gizmo cog.
-
-Creating starting shapes using _primitives_
-{{< youtube "wkBo64Ciapc" >}}
-
-Turning a primitive into a usable, sculptable _polymesh3D_
-{{< youtube "2cFUMTjGz6I" >}}
-
-### ZBrush Poly Modeling 
-
-Start with a cube (or other _polymesh3D_), use **ZModeler** brush.
-
-1. Start with a 2x2 cube by clicking the button in my UI's right tray.
-   * Select the cube it appended to the end of your subtool list
-   * Turn on solo: **alt-shift-s**
-   * Turn on polyframe: **shift + f**
-2. Select the ZModeler Brush: **b, z**
-3. Hover over an edge
-5. Click and drag on any edge to insert a loop.
-4. Hover over an edge
-5. Hold `space` to see all edge tools. 
-
-{{< imgcard zmodeler_insert_loop >}}
-A whole new wooorld.
-{{< /imgcard >}}
-
-Watch this great demo and explanation by Michael Pavlovic. You can 100% learn ZBrush to an industry level from this guy's tutorials.
-
-{{< youtube "UJ1-UfKfzh0" >}}
-
-### Creases And Subdivision
-
-With no subdivisions we can use dynamic subdivisions. This is the same as hitting 3 in Maya.
-
-You can use support edges to make corners, like we did in Maya, but then when you subdivide you'll end up with a lot of density there. In ZBrush you can mostly get there with creases.
-
-1. Create a 2x2 cube.
-2. Click **Dynamic** in the right tray, or hit `d`.
-3. You can toggle it on and off with `d`, `shift d`. 
-4. Try setting _SmoothSubdiv_ to 3, 4, 5 in righ tray.
-2. Select _ZModeler_ brush.
-3. Hover over an edge and choose _crease_ and _edge loop complete_
-4. Set CreaseLvl to 3. Click an edge to crease it. 
-
-{{< imgcard crease_edgeloop >}}
-{{< /imgcard >}}
-
-{{< imgcard dynamic_subdivs_creases >}}
-Crease level 3 means the crease will only hold till the 3rd subdivide. Afte that it starts to smooth the edge.
-{{< /imgcard >}}
-
-
-### GoZ
-
-Another Maya option where you can go back and forth
-
-
+Element | Approach
+--- | ---
+**Characters, props and environments** | Often have only as much detail as is required to communicate broadly the nature of their surface and materials. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are often rendered in a simplified way, sufficient to communicate their nature, and often grouped, altered or exaggerated to add contrast, improve readability, add appeal and rhythm.  
+**Lighting** | May come from sources available in the environment but also from hidden lights, or extra lighting is implied in shaders. It will often be reflected by objects in ways that are correct on some level but also exaggerated/simplified to improve our ability to read silhouettes, distinguish materials more readily, add an exciting dynamism or to alter mood dramatically.   
+**Post effects/filters** | Can be used in a huge variety of ways. They too may add contrast and enhance detail. Typically they'll be used in many varied/creative ways that are often based more on principles of graphic design or illustration/painting than on physical properties of lenses/film. They'll do so to create mood, control/encourage the eye towards important characters/features (exaggerated depth of field), enhance a sense of action/motion, to evoke a style of poster/cartoon/school of painting, the possibilities are endless.  

@@ -16,7 +16,7 @@ When we all hear the same words all the time, we tend to define them the same wa
 #### *Realistic* game art:
 
 ![last of us 1](realism_lastofus2_1.jpg)
-
+  
 Element | Approach
 --- | ---
 **Characters, props and environments** | Have lots of fine, life-like detail referenced from real life. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are mostly laid out in according with the laws of physics/biology/material science, with little/no regard for rhythm, contrast, readability.  

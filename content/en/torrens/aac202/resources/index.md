@@ -74,11 +74,16 @@ Photoshop is preferred and will be demonstrated in class. Krita is a quality, fr
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://krita.org/en/download/krita-desktop/">Krita Downloads<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 
-### Substance Painter
+## Substance Painter
 
 Like _Maya_, _**Substance Painter**_ is available free to students once you've signed up.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.substance3d.com/education/">Substance Educational<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+### Learning Painter 2021 Playlist
+
+Looking for more Painter learning resources? Try my youtube playlist; I like the one about quick stylized work in Painter.  
+<https://youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4>
 
 ### The PBR Guide by Allegorithmic
 
@@ -103,6 +108,12 @@ You can choose **installer or portable** from the dropdowns on the download page
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://www.pureref.com/download.php">Pureref downloads<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+## Danny's Reference
+
+[Cartoony PBR - zipped Pureref file](PBRCartoonyLook1.pur.zip)
+
+<!-- 
+
 ## Project Files Coming
 
 Files to fill the following niches are coming soon:
@@ -115,3 +126,5 @@ Maya:
 
 Unity:
 * Project with imported painter object, textures, pbr.
+
+-->
