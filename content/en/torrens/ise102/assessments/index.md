@@ -42,9 +42,11 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 ## Assessment 2: Slot Machine
 
-**Due:** 11:55pm, Sunday, end of module 8.
+**Delivered:** 11:55pm, Sunday, end of module 8.
 
 A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
+
+<!-- 
 
 ### Deliverables
 
@@ -53,21 +55,31 @@ A text based slot machine using the C++ *console* template. A _prompt and respon
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10262686_1&course_id=_116055_1" target="_blank">Online Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+-->  
 
 ## Assessment 3: Realtime Game
 
 **Due:** Sunday, 11:55pm, End of Module 12
 
-<!--
-
  Make Snake! See the **brief provided on Blackboard** (in the assessments section discussed in *submission* below) but **also watch classes and reviews** to get all the important details. 
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10262689_1&course_id=_116055_1" target="_blank">Assessment 3 Brief and Submission Page (2021 T3)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
 > It's not enough to simply read the brief and make a program - your work has to reflect and demonstrate profiency with practises taught in class and should use code provided to you. This assessment must be built on the base code provided in class (weeks 10/11).
+### Deliverables 
 
---> 
-<!--  
+1. Email your cleaned, zipped project to your facilitator **at the end of module 11**. This progress delivery matters, you can't catch up on this assessment in a week at the end!  
+2. In week 12 your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard. You must follow the method taught in class and described/demonstrated in [Delivering Visual Studio Solutions](#delivering-visual-studio-solutions) below. DO NOT make a build and submit an additional build zip.    
 
-### What To Prioritise 
+### Submission
+
+Submit your assessment by:
+1. Visiting your subject's page on Blackboard
+2. Selecting *Assessments* in the left nav 
+3. Clicking on *Assessment 3 - OOP Principles Program*
+4. Optional but wise: check your work fulfills the brief
+5. Click *Assessment 3 - Submission* and follow the instructions.  
+#### What To Prioritise 
 
 For a better grade,
 
@@ -84,23 +96,6 @@ For a better grade,
 **DO:** Use function arguments and variables when you add modes or options.  
 
 **DO:** Attempt to add the moving snake and self biting if you have the rest done, have read about vectors in the notes, looked at the week 12 notes and feel confident about implementing it.  
-
-### Deliverables 
-
-1. Email your cleaned, zipped project to your facilitator **at the end of module 11**. This progress delivery matters, you can't catch up on this assessment in a week at the end!  
-2. In week 12 your **entire** Visual Studio solution must be cleaned of unnecessary folders, zipped and submitted on Blackboard. You must follow the method taught in class and described/demonstrated in [Delivering Visual Studio Solutions](#delivering-visual-studio-solutions) below. DO NOT make a build and submit an additional build zip.    
-
-### Submission
-
-Submit your assessment by:
-1. Visiting your subject's page on Blackboard
-2. Selecting *Assessments* in the left nav 
-3. Clicking on *Assessment 3 - OOP Principles Program*
-4. Optional but wise: check your work fulfills the brief
-5. Click *Assessment 3 - Submission* and follow the instructions.  
-  
--->  
-
 ## Delivering _Replit_ projects
 
 In addition to providing the link to your finished assessment on Replit, you'll provide a zipped archive of your project. 
