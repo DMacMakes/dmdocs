@@ -46,16 +46,12 @@ Coding is like any other craft or science: if you don't practise, if you don't b
 
 A text based slot machine using the C++ *console* template. A _prompt and response_ game loop.
 
-<!-- 
-
 ### Deliverables
 
 1. Follow the general instructions further down this page under [Delivering Replit Projects](#https://dmdocs.netlify.app/torrens/ise102/assessments/#delivering-replit-projects) to create a zip of your project. This is just as you practised in Module 7's class.
 2. Submit your zip file and Replit link on the submission page for Assessment 2 on Blackboard, linked below. 
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10262686_1&course_id=_116055_1" target="_blank">Online Assessment 2 on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
--->  
 
 ## Assessment 3: Realtime Game
 
