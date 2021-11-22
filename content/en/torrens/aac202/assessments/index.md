@@ -131,12 +131,9 @@ Here's some reference for cartoony styled 3D using with a PBR look:
 
 #### Week 11: Submit progress to Blackboard threads:
 
-You can find the submission threads and the requirements at the following links:
+You can find the submission thread and the requirements at the following link:
 
-Class location | Link to discussion thread
------------ | ------------
-Ultimo class | [submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968751_1&message_id=_2632676_1)
-Online class | [submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968736_1)
+[Week 11 Deliverable Submission Thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064210_1&message_id=_2948345_1)
 
 
 #### Week 12: Final submission 
