@@ -12,25 +12,26 @@ description: >
 1. Add Score: Make a variable,show on gui.
 1. Colliding! Fruit.
 1. Adding to score on fruit hit.
-1. Game over?
-
 ## A2 Slots marking
 
-A little delayed but starting this week.
+About half of you have your marks. Atif and I have been collaborating on the marking, and he should have the remaining assessments to you this week.
 
 ## Last week
 We added up and down movement, set a high framrate and only moved when we needed to with `moveInterval()`.
 
-In the review session (yesterday) we figured out 90% of colliding with walls. **If you haven't watched it yet, leave this class and watch it now.** If you can't find it on Blackboard, the guest link is on Discord in _general-ise102-danny_.
+<!-- 
 
+In the review session (yesterday) we figured out 90% of colliding with walls. **If you haven't watched it yet, leave this class and watch it now.** If you can't find it on Blackboard, the guest link is on Discord in _general-ise102-danny_.  
+
+-->  
 ## Creating your own objects
+
+<!-- 
 
 ### Slightly updated base
 
-You can continue to use your work from last class or grab this. It has the fixed frame rate code, up and down movement, TODO comments for this class.
-
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="Snake_A3_week11_provided.zip" target="_blank">Download Snake_A3_week11_provided.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
+-->
 ### The easy way: copy and edit 
 
 Creating an object is as easy as   
@@ -132,8 +133,13 @@ Not sure what's left to do? Check the [Snake_A3 Trello](https://trello.com/b/aVY
 Click image to visit the Trello
 {{< /imgproc >}}
 
-## Bunches of data: Containers!
- 
+## Going Deeper: Containers!
+
+Objects have reduced the number of different variables we have, and helped us group together related variables of different types and meaning.
+
+What about big collections of the same kind of thing though? 110 different coins (or rings) in a map, 1215 student ids in a school, 67,871 crypto trades, millions of Blizzard account records? 
+### Bunches of data:
+
  Games are full things, and a lot of those things are _almost_ the same.
 
 {{< youtube "09QaF345qZk?t=203" >}}
