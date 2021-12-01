@@ -9,9 +9,10 @@ description: >
 ## Assessments Marked
 
 1. All results should be visible on Blackboard.
-2. How marks accumulate, or "can I still pass?".
+2. How marks accumulate, or "can I still pass?"
+   - Fail, Pass, Credit, Distinction, High Distinction
+   - F is not 0, it's <50. It still contributes to your overall mark.
 
-## Reminders
 
 ### Trello
 
@@ -29,8 +30,11 @@ We **won't be marking any old Snake code that's submitted**: you need to be atte
 
 ### Submitting your files correctly
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://dmdocs.netlify.app/torrens/ise102/assessments/#deliverable" target="_blank">Cleaning up and zipping your project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+Watch the review video again if you're not sure.
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://au-lti.bbcollab.com/recording/657bbe01394d4c7fb991a6e85dc46314" target="_blank">Cleaning up and zipping your project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://au-lti.bbcollab.com/recording/631e6bb1ef6a46b6ae6263451a14d097" target="_blank">Testing your zipped project<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 ### A3 Required: Do More Than The Minimum
 
 The brief says the Snake game is a base. It rewards building new things, added settings and features. When your tinker with it, when you flex a little.. we know you really understand it.
@@ -51,14 +55,25 @@ The brief says the Snake game is a base. It rewards building new things, added s
 * Multiple game modes
 * Top 3 scores saved to disk and reopened each time app opens
 
-## What Was Covered In Review
-Collisions: Fruit eating, score updating, wall hitting, options etc.
 
-## How To Wait Without Sleep
+## State, and How To Wait Without Sleep
 
 Some of you may have tried using sleep() in the `playSnake()` loop and discovered it isn't going to fly in a frame based application. Things need to keep happening, like Snakes slithering and keyboard input being checked.
 
+This requires an understanding of the *state* of the game, and why I'm focussed more on you delivering game modes, pause/game over screens, the full experience. Making a snake grow and wiggle is tricky, but it's more of a localised problem, an algorithm, it's on the detailed end of our problem solving. 
+
+One word: state. What state is your program in? What screen are we on? Are we mid game, are we about to fight a boss? 
+
+"Play again" is a good example from the Slots assessment, and is a challenge again here. If we show a game over message and loop back to the start of the game, what state have we left our variables in? Is the game still running as fast as it did after eating 30 fruit, or a haste fruit? How do we get it all back to the starting state. 
+
+> To react to these changes of state, we have to know what they encompass, and what one we're in! It's that high level abstract thinking we need to get back to all the time, keeping our brain in the problem space rather than the code.
+### No Sleep()
+
 Demo of **Waiting** solution.
+
+ ## State
+
+
 
 ## A growing snake
 
