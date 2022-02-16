@@ -229,8 +229,9 @@ Pick a different Madball (the real foam ball, not a 2D  drawing from their site)
 
 {{< alert title="Deliverables and Submission" color= "primary" >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064200_1&message_id=_2852851_1" target="_blank">Madball Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127461_1&message_id=_3008344_1" target="_blank">Madball Homework Submission ONLINE<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127446_1" target="_blank">Madball Homework Submission ULTIMO<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 {{< /alert >}}
 
 _**Bonus:**_ ZBrush has a super helpful filter called **Clay Polish**. Look it up in the zbrush documentation or on youtube. To try it out, add some random shapes to your free-play sculpt and hit Clay Polish. For this kind of sculpt it's a bit of a magic "make art" button.
