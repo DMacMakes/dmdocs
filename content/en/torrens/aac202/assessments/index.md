@@ -23,17 +23,16 @@ Order  | Deliverable       | Due     | Blackboard number
 
 **Due:** End of week 4
 
-**Create a bust from an existing 2D concept:**  
+**Create a bust from an existing 2D concept:**   
 1. Select one of the heads from the concept art [below](#concepts)    
 2. Starting with a clean copy of the provided base mesh, sculpt a high quality, polypainted 3D model of the character. Draw on what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh).  
-3. **Progress Delivery:** Before your **Module 3 review** session, show your progress in the week 3 forum thread. Your participation and display of process **is worth 30% of total marks** for this assessment.  
-* [Ultimo week 3 forum thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127448_1&message_id=_3011510_1)  
-* [Online week 3 forum thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127463_1&message_id=_3011522_1)  
-
-4. **Final Delivery:** Deliver your final ZBrush project and renders at the end of **Module 4** for the **remaining 70%** as described below.
-
-{{< alert title="Final (Module 4) Delivery" color= "primary" >}}
-
+3. **Progress Delivery:** Before your **Module 3 review** session, show your progress in the week 3 forum thread. Your participation and display of process **is worth 30% of total marks** for this assessment.   
+   * [Ultimo week 3 forum thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127448_1&message_id=_3011510_1)  
+   * [Online week 3 forum thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127463_1&message_id=_3011522_1)        
+4. **Final Delivery:** Deliver your final ZBrush project and renders at the end of **Module 4** for the **remaining 70%** as described below.  
+  
+{{< alert title="Final (Module 4) Delivery" color= "primary" >}}  
+  
 **Elements:**  
 1. Your final **ZPR file**  
 2. **Renders** (`shift+r`) of your character from multiple angles, with polypaint on.  
