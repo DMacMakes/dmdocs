@@ -44,7 +44,7 @@ The zip contains:
 1. Unzip to a new folder.
 2. Go to the folder, look for a `ZBrush 2020` folder, open that.
 3. Select and copy everything inside (*ZProjects, ZStartup, ZTools, wintab32.dll*)with <kbd>Ctrl</kbd> + <kbd>c</kbd>
-4. Open another explorer window and navigate to `C:\Program Files\Pixologic\ZBrush 2020` (or wherever you installed it, including maybe `Pixologic\ZBrush 2021`, or on `D:\` drive) and you should see a lot of folders, and most of them start with *Z*. **Paste** into this folder with <kbd>Ctrl</kbd> + <kbd>v</kbd>
+4. Open another explorer window and navigate to `C:\Program Files\Pixologic\ZBrush 2021`  (or ZBrush 2022 FL on a uni machine) and you should see a lot of folders, and most of them start with *Z*. **Paste** into this folder with <kbd>Ctrl</kbd> + <kbd>v</kbd>
 5. Run ZBrush 2020 and, in the lightbox, double-click the 1mCube project to open it.
 6. In the menu select *Preferences - Config - Load Ui* and load the `.cfg` file (it's in the same unzipped folder where you found `ZBrush 2020`, open it. The interface should change.
 7. Click *Preferences - Config - Store Config* to make sure the changes stick.
@@ -56,7 +56,7 @@ The zip contains:
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/zb_resources_v2020.zip?csf=1&web=1&e=OYcNvn" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-### Maya 2020
+### Maya
 
 Autodesk provides their industry standard 3D software to students. Sign up, download _Maya_ and use the serial number they provide.
 
