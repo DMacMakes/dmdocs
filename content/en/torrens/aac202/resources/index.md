@@ -54,7 +54,7 @@ The zip contains:
 
 {{< /alert >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="zb_resources_v2020.zip" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/zb_resources_v2020.zip?csf=1&web=1&e=OYcNvn" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Maya 2020
 
