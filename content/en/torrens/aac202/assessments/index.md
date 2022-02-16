@@ -19,11 +19,10 @@ Order  | Deliverable       | Due     | Blackboard number
 3      | prop texture      | Week 12  | 2
 
 
-## 1. High Poly Character (week 4)
+## 1. High Poly Character 
 
-**Submitted**
+**Due:** End of week 4
 
-<!-- 
 **Create a bust from an existing 2D concept:**  
 1. Select one of the heads from the concept art [below](#concepts)  
 2. Starting with a clean copy of the provided base mesh, sculpt a high quality, polypainted 3D model of the character. Draw on what you've learned in your first attempt plus your week 3 ZBrush class (polypaint, merging, dynamesh).
@@ -46,8 +45,9 @@ Order  | Deliverable       | Due     | Blackboard number
 4. Submit on Blackboard under **Assessment 3** (Character model)
 {{< /alert >}}  
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055547_1&course_id=_115852_1" target="_blank">Online Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10329945_1&course_id=_120651_1" target="_blank">Ultimo Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?course_id=_120652_1&content_id=_10330018_1" target="_blank">Online Students: Submit Character Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Concepts  
 Choose one of the concepts below, or click one and visit Patri Balanovsky's page to pick another **from the same artstation page** (not all of his artstation content). Be careful not to pick one that requires extra meshes (hair, horns, eyepatches) if you're not confident creating new meshes. Don't stretch the head to support large horns, hair etc.  
@@ -71,17 +71,18 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * Painting in eyelashes and eyebrows that you didn't have geometry for
 
--->
 
 ---
 
 ## 2. Hard surface model: NES Controller   
 
+**Due:** End of week 8
 
 Model the NES pad as close as you can to completion. Focus on controlling the silhouettes and sharpness/softness of transitions between surfaces.  
 
 ![Nes pad](nes_pad.jpg)
 
+<!-- 
 More info on level of detail and finish is [available below](#level-of-detail).
 
 ### What to submit
@@ -106,14 +107,15 @@ Objects | Focus on using edge loops and creases to **control all the silhouettes
 Materials | At a minimum use the ZBro Paint matcap. Try other materials to see if you can represent the glossy red plastic and metal screws better. 
 Color | If using ZBro paint, at a minimum fill with flat colour. You can add more subtle aging and colouration with polypaint if you like. If you use metal matcaps or pre-coloured plasticy matcaps, you might need to fill with just white to get the right result.
 
-
+-->
 
 ## Assessment 3: PBR Texturing
 
-**Final Submission: 11:55pm Sunday, Module 12** 
-*For T3 2021 that's December 5.*
+**Final Submission: End of Week 12** 
 
 Texture on of the provided models using Substance Painter.
+
+<!--  
 
 Name | Pic | Substance File 
 ---- | ---- | ----
@@ -154,106 +156,11 @@ You can find the submission thread and the requirements at the following link:
 
 [Assessment 2 on Blackboard](https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055546_1&course_id=_115852_1)
 
-
-<!--
-
-For Assessment 1 you'll create a **high detail, normal mapped** prop using **techniques shown in class** and developed at home. These will include subdivision modeling, normal mapping and PBR textures.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_9223157_1&course_id=_94273_1" target="_blank">A1 submission and brief on Blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-You'll be **targeting an environment concept** provided in the Week 1 notes, and **working to a style** provided there:
-[Assessment 1 in Week 1 Notes](../week5/#assessment-1-high-detail-props)
-
-There are deliverables for **week 1**, **week 2** and **week 4**.
-
-### Week 5: Concept, style, tutorials
-**Select** a prop to model, share your choice. Choose style reference, watch and take notes on subdivision modeling videos. Follow the link for details and to submit your work:
-
-NEEDS UPDATING
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902732_1&message_id=_2295833_1" target="_blank">A1 Week 1 Submissions<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
-### Week 6: Assessing, drafting, modelling.
-
-**Assessing** style, **drafting** your topology, **modelling** your prop. You'll share the results with your classmates and offer eachother **feedback**. Follow the link to the discussion forum for details and to submit your work:
-
-NEEDS UPDATING
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_94273_1&nav=discussion_board_entry&conf_id=_170634_1&forum_id=_902733_1&message_id=_2278364_1" target="_blank">A1 Week 2 Submissions<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-
 -->
 
-<!--
-
-#### Work to do  
-
-Copy the concept image into a new file and:  
-  1. Add notes/drawings to the concept of the prop to **plan style**
-  2. Add notes and draw over a duplicate of the concept to plan your **topology**
- 
-**Model** your prop :
-  1. **Block in** the model (in pieces) with:   
-      * dynamic silhouettes considered   
-      * topology that won't cause problems for subdivisions  
-  2. Then use edges and creases to create **bevelling/rounding** and smooth shapes.  
-  3. **Refine** your model, add details.
-  
-#### Process images due TUESDAY by end of day:
-
-1. Add a reply to [the discussion here](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866554_1&message_id=_2100660_1), containing:
-    * **1 image** of the concept with your notes/drawings planning style and topology solutions
-    * **2+ images** of your model with smooth preview off (press `1`)
-    * **2+ images** of your model with smooth preview on (press `3`)
-    * **1 image** of your model with all parts selected and the **outliner** visible (to see your objects and their naming)
-  
-{{< alert title="Image qualities" color= "secondary" >}}
-> All images should have plenty of resolution (at least **1024x768** and preferably higher). Deliver as 24bit PNGs or JPGs of 85% or greater quality.  
-> 
-> Screenshots of the model in Maya:
-> * Have shaded view, wireframe on shaded and ambient occlusion enabled
-> * Use camera angles that show off the model and also the geometry you used to achieve the right smoothed forms.
-> * Are from a viewport that is large and with the model zoomed large within it, producing clear images. No tiny thumbnails.
-{{< /alert >}}
-  
-#### Comments due WEDNESDAY, before class (3pm)
-Comment on two other students work, offering well thought out feedback:
-1. In matching capturing the concepts and matching the 3D style what did they do well?
-2. What changes/additions might improve the model?
-
--->
-
-<!--
-### Week 8 submission details
-
-**Delivery:**
-1. Create a folder for your final deliverables. Call it `Firstname_Lastname_A1Final_AAC202`
-2. Copy into the folder:
-    * Your **final maya scene file**. In your scenes folder, find your latest `.ma` or `.mb` file. This contains your final `_game` and `_subd` meshes.
-    * The **renders and screenshots** described below
-3. Zip up the folder and submit the `Firstname_Lastname_A1Final_AAC202.zip` file to the [assessment 1 page on blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8989774_1&course_id=_89547_1)
-
-**Images Required:**
-**Normal Mapped Renders**  
-Screenshots of your normal mapped prop in Substance Painter (as shown in week4 baking video). Bake your textures at 2048 and turn on 4x4 anti aliasing.
-
-**Hero shots** Pick a camera angle and lighting that shows your model at its best. Then screenshot once with wireframes on, once with them off (also in baking video)
-**3/4 isometric** shot. From 45 degree vantage points as seen below
-**Detail shots**. A few closer in shots of your details, showing how the normal mapping worked out.
-
-{{< imgproc isometric_angle_rgbfumes Resize "300x">}}
-Isometric projection.
-{{< /imgproc >}}
-
-Deliver **PNG24 files** or jpgs of at least 85% (8.5/10) compression quality.
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../week4/#baking-your-model-in-painter">Back to Week 4 Baking<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
-
--->
-
-<!--
+<!--  
 
 ---
-
 
 ## Assessment 3: High Poly Environments
 
