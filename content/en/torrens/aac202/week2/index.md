@@ -88,13 +88,13 @@ This real clay chef sculpt from Pixar is extremely stylised. You can see the eye
 
 It was tough to avoid smushing the eye when doing gross eyelids, or to avoid destroying lips while sculpting teeth.
 
-{{< imgcard dn_madball Link "https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EQIt4CX5EBpPp9BKQZtt1EsBqQ8F1bqnkieUH32-4QDPRg?e=ebR0Gn" >}}
+{{< imgcard dn_madball Link "https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/dn_madball_class_handout.zip?csf=1&web=1&e=tkt6GN" >}}
 David's clean base with subtools. Let's gross it up.
 {{< /imgcard >}}
 
 Grab David Neselius' Hornhead sculpt from week 1 (thanks David) and we'll explore easier ways to model where hard and soft things collide.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EQIt4CX5EBpPp9BKQZtt1EsBqQ8F1bqnkieUH32-4QDPRg?e=ebR0Gn" target="_blank">Download dn_maddball_class_handout.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/dn_madball_class_handout.zip?csf=1&web=1&e=tkt6GN" target="_blank">Download dn_maddball_class_handout.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Using masking and subtools to stay clean
 
@@ -234,7 +234,9 @@ Head modelling exercise
 Due: before our review session
 Details are in the linked thread. Concepts are below.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064201_1&message_id=_2861261_1" target="_blank">Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127447_1&message_id=_3023650_1" target="_blank">ULTIMO: Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127462_1&message_id=_3023655_1" target="_blank">ONLINE: Alien Homework Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Concepts
 
@@ -254,7 +256,7 @@ faces-12
 
 ### Staying low subdiv
 
-{{< imgproc pipehead_polys_low Resize "600x" Link "pipehead_polys_low?" >}}
+{{< imgproc pipehead_polys_low Resize "600x" Link "pipehead_polys_low.png" >}}
 Here I'm attempting to get as far as I can (on a different concept) towards final before adding more subdivisions. <I>Click for high res.</I>
 {{< /imgproc >}}
 
