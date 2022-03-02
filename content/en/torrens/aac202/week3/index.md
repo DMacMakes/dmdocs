@@ -19,7 +19,7 @@ resources:
 ## Housekeeping: ZBrush licensing  
 Trials expire after 30 days :( but we have options:
 1. Use the lab computers
-2. Get a 1 month subscription zbrush license from [pixologic for USD $39.95](https://store.pixologic.com/zbrush-2021/) (or buy it outright)
+2. Get a 1 month subscription zbrush license from [pixologic for USD $39.95](https://store.pixologic.com/zbrush-2022/) (or buy it outright)
 3. Use splashtop to remotely log into a uni machine and use ZBrush. Similar to Remote Desktop/VNC/Team Viewer/Steam link.
 
 ## Learning Today  
@@ -51,7 +51,7 @@ We're still using a small subset of ZBrush's features, and some areas remain dif
 #### Download updated pipehead
 Subdivided and (in progress) detailed pipehead plus reference. The zpr file is a little messy - there are two merged heads, including one that was exported to Maya for rendering.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ERnPVQnNq8ZFrT8PYF0wuXIBAVoJYld7r1VMngodfeB2LA?e=fIH2Mq" target="_blank">Download zbrush__pipehead_detail.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/zbrush__pipehead_detail.zip?csf=1&web=1&e=fL1Jrn" target="_blank">Download zbrush__pipehead_detail.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 #### Topological Automask
 
@@ -147,7 +147,7 @@ If you didn't get it done, borrow [Callum's](Long_head_joe_CA.zip).
 
 ## Assessment 1: Character Bust
 
-Here's the [assessment page](https://dmdocs.netlify.app/torrens/aac202/assessments/#1-high-poly-character-week-4).
+Here's the [assessment page](../assessments/#1-high-poly-character).
 
 This week we'll do the first page, jump to the [homework](#homework).
 
@@ -198,11 +198,10 @@ Remember, the move brush is a normal drawing mode brush, and there is also a mov
 
 ## Homework
 
-Work on your assessment 1 bust, follow the instructions in the thread, and **post your work before our work review**. The Module 3 submission thread is linked from our assessments page (in step 3).
+Work on your assessment 1 bust, follow the instructions in the thread, and **post your work before our work review**. The Module 3 **submission threads** for each class are linked from our assessments page (in step 3). 
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/" target="_blank">Assessment 1 Submission Details<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#1-high-poly-character" target="_blank">Assessment 1 Submission Details<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968728_1&message_id=_2510878_1" target="_blank">ONLINE A1 Progress Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <!--
 ## Fusing and Remeshing with Dynamesh
