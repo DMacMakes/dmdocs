@@ -14,9 +14,9 @@ Due dates have been manually updated, so we're golden 👍
 
 Order  | Deliverable       | Due     | Blackboard number
 ---    | ---               | ---     | ---
-1      | character sculpt  | Week 4  | 3
-2      | prop model        | Week 8  | 1
-3      | prop texture      | Week 12  | 2
+1      | character sculpt  | Week **4**  | 3
+2      | prop texture      | Week **8**  | 2
+3      | prop model        | Week **12**  | 1
 
 
 ## 1. High Poly Character 
@@ -75,10 +75,55 @@ faces-12
 
 
 ---
+## Assessment 2: PBR Texturing
 
-## 2. Hard surface model: NES Controller   
+**Final Submission: End of Week 8** 
 
-**Due:** End of week 8
+Texture on of the provided models using Substance Painter.
+
+Name | Pic | Substance File 
+---- | ---- | ----
+Service Drone | ![service_drone](service_drone.png) | [service_drone.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESXh4gp2iJFFh9dLbNnYjzQBcArqiT2OAQvl9KWQGmbrRA?e=P7a6xz)
+Mini Axe | ![mini axe](mini_axe.png) | [mini_axe.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EWhxYg7NmZdPh7KgPYHbdlkBOaJsUuUIa6EtRoPqywDvzw?e=dBlWxO)
+Knife | ![knife](knife.png) | [knife.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESwqpRmQvNNOjqrgkizkBk0BlHujqs_HVOlJoG9drjwX9A?e=DLMBho)
+Arcade Stick | ![arcade stick](arcade_stick.png) | [arcade_stick.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ER_K_UxRxOdBqUDZFWVbBzwBlrSSWW8zO-r_5ojKb7IFQA?e=OKKpYR)
+  
+### Reference   
+Here's some reference for cartoony styled 3D using with a PBR look:
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ERA4hias9nhIhR7BR7gRS-wBxOEJcPHfESPt26k3y8Qayg?e=hiFZFO" target="_blank">PBRCartoonyLook1.pur.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a> 
+
+### Submitting your work:
+
+#### Week 7: Submit progress to Blackboard threads:
+// TODO: Move this thread to week 7 forum, swap with hardsurface thread
+You can find the submission thread and the requirements at the following link:
+
+[Week 11 Deliverable Submission Thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064210_1&message_id=_2948345_1)
+
+
+#### Week 8: Final submission 
+
+**Due: 11:55pm Sunday, Module 8 (10 Apr)** 
+
+**What to Submit:**
+1. Final Painter project (*.spp file)
+2. Screenshots 
+3. Your real life and style reference.
+4. Sketchfab link to your uploaded model
+
+**How to submit:**
+1. **Zip** your final painter project, reference files(pur) and screenshots into a single zip
+2. Upload it to Torrens LFS. 
+3. Export the final version of your model+textures to Sketchfab.
+4. Submit the **LFS link and the Sketchfab link** to Blackboard under *Assessment 2: Model Surfacing*.
+
+[Texturing Assessment on Blackboard](https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055546_1&course_id=_115852_1)
+
+
+## 3. Hard surface model: NES Controller   
+
+**Due:** End of week 12
 
 Model the NES pad as close as you can to completion. Focus on controlling the silhouettes and sharpness/softness of transitions between surfaces.  
 
@@ -108,55 +153,6 @@ Element       | Detail
 Objects | Focus on using edge loops and creases to **control all the silhouettes and contours** as well you can. Use **booleans** to cut openings around the buttons so they don't merge into solid plastic. In those places where you can see inside the model, put black blocking objects inside to **prevent seeing through**. Use **real subdivisions and alphas** to add embossed details to the d pad, and **noise maker** to add realistic bumpy finish to the graphics inset (bit with the button names). 
 Materials | At a minimum use the ZBro Paint matcap. Try other materials to see if you can represent the glossy red plastic and metal screws better. 
 Color | If using ZBro paint, at a minimum fill with flat colour. You can add more subtle aging and colouration with polypaint if you like. If you use metal matcaps or pre-coloured plasticy matcaps, you might need to fill with just white to get the right result.
-
--->
-
-## Assessment 3: PBR Texturing
-
-**Final Submission: End of Week 12** 
-
-Texture on of the provided models using Substance Painter.
-
-<!--  
-
-Name | Pic | Substance File 
----- | ---- | ----
-Service Drone | ![service_drone](service_drone.png) | [service_drone.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESXh4gp2iJFFh9dLbNnYjzQBcArqiT2OAQvl9KWQGmbrRA?e=P7a6xz)
-Mini Axe | ![mini axe](mini_axe.png) | [mini_axe.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EWhxYg7NmZdPh7KgPYHbdlkBOaJsUuUIa6EtRoPqywDvzw?e=dBlWxO)
-Knife | ![knife](knife.png) | [knife.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESwqpRmQvNNOjqrgkizkBk0BlHujqs_HVOlJoG9drjwX9A?e=DLMBho)
-Arcade Stick | ![arcade stick](arcade_stick.png) | [arcade_stick.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ER_K_UxRxOdBqUDZFWVbBzwBlrSSWW8zO-r_5ojKb7IFQA?e=OKKpYR)
-  
-### Reference   
-Here's some reference for cartoony styled 3D using with a PBR look:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ERA4hias9nhIhR7BR7gRS-wBxOEJcPHfESPt26k3y8Qayg?e=hiFZFO" target="_blank">PBRCartoonyLook1.pur.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a> 
-
-### Submitting your work:
-
-#### Week 11: Submit progress to Blackboard threads:
-
-You can find the submission thread and the requirements at the following link:
-
-[Week 11 Deliverable Submission Thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064210_1&message_id=_2948345_1)
-
-
-#### Week 12: Final submission 
-
-**Due: 11:55pm Sunday, Module 12 (Dec 5)** 
-
-**What to Submit:**
-1. Final Painter project (*.spp file)
-2. Screenshots 
-3. Your real life and style reference.
-4. Sketchfab link to your uploaded model
-
-**How to submit:**
-1. **Zip** your final painter project, reference files(pur) and screenshots into a single zip
-2. Upload it to Torrens LFS. 
-3. Export the final version of your model+textures to Sketchfab.
-4. Submit the **LFS link and the Sketchfab link** to Blackboard under *Assessment 2: Model Surfacing*.
-
-[Assessment 2 on Blackboard](https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055546_1&course_id=_115852_1)
 
 -->
 
