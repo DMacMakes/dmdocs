@@ -76,7 +76,7 @@ faces-12
 
 
 ---
-## Assessment 2: PBR Texturing
+## Assessment 2: Model Surfacing
 
 **Final Submission: End of Week 8** 
 
@@ -97,11 +97,11 @@ Here's some reference for cartoony styled 3D using with a PBR look:
 ### Submitting your work:
 
 #### Week 7: Submit progress to Blackboard threads:
-// TODO: Move this thread to week 7 forum, swap with hardsurface thread
 You can find the submission thread and the requirements at the following link:
 
-[Week 11 Deliverable Submission Thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064210_1&message_id=_2948345_1)
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127452_1&message_id=_3063104_1" target="_blank">ULTIMO Students: Week 7 Submission Discussion<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127467_1&message_id=_3063106_1" target="_blank">ONLINE Students: Week 7 Submission Discussion<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 #### Week 8: Final submission 
 
@@ -118,6 +118,10 @@ You can find the submission thread and the requirements at the following link:
 2. Upload it to Torrens LFS. 
 3. Export the final version of your model+textures to Sketchfab.
 4. Submit the **LFS link and the Sketchfab link** to Blackboard under *Assessment 2: Model Surfacing*.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10329944_1&course_id=_120651_1" target="_blank">ULTIMO Students: Submit Model Surfacing Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10330017_1&course_id=_120652_1" target="_blank">ONLINE Students: Submit Model Surfacing Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 [Texturing Assessment on Blackboard](https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055546_1&course_id=_115852_1)
 
