@@ -1,16 +1,16 @@
 ---
-title: "8. Finishing Assessment 2"
-linkTitle: "8. Finish A2"
-weight: 80
+title: "12. Finishing Assessment 2"
+linkTitle: "12. Finish A2"
+weight: 120
 description: >
  Finalising details, texturing in ZBrush, rendering.
 ---
 
-## Assessment 2 Final push 
+## Assessment 3 Final push 
 
 What are we delivering? That'll define how we spend our last few days on the project.
 
-[Assessment 2 - NES Controller on dmdocs](../assessments/#2-hard-surface-model-nes-controller)
+[Assessment 3 - NES Controller on dmdocs](../assessments/#2-hard-surface-model-nes-controller)
 
 ## Last 5 percent
 

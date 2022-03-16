@@ -1,7 +1,7 @@
 ---
-title: "7: ZModeler 3 - Detailing hard surface models"
-linkTitle: "7. Detailing"
-weight: 70
+title: "11: ZModeler 3 - Detailing hard surface models"
+linkTitle: "11. Detailing"
+weight: 110
 description: >
   Starting a second model, the radio. How do we add parts? New primitives, import from Maya? 
 resources:

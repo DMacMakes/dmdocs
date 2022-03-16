@@ -81,6 +81,7 @@ faces-12
 **Final Submission: End of Week 8** 
 
 Texture on of the provided models using Substance Painter.
+// TODO: Move all 3d files to lf curriculum
 
 Name | Pic | Substance File 
 ---- | ---- | ----
@@ -91,8 +92,8 @@ Arcade Stick | ![arcade stick](arcade_stick.png) | [arcade_stick.7z](https://lau
   
 ### Reference   
 Here's some reference for cartoony styled 3D using with a PBR look:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ERA4hias9nhIhR7BR7gRS-wBxOEJcPHfESPt26k3y8Qayg?e=hiFZFO" target="_blank">PBRCartoonyLook1.pur.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a> 
+// TODO: move to lf curriculum
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/model-surfacing/PBRCartoonyLook1.pur.7z?csf=1&web=1&e=chEU70" target="_blank">PBRCartoonyLook1.pur.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a> 
 
 ### Submitting your work:
 

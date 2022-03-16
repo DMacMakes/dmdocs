@@ -1,9 +1,9 @@
 ---
-title: "5. Hard surface modelling with subdivs"
-linkTitle: "5. Hard surf 1"
-weight: 50
+title: "9. Hard surface modelling with subdivs"
+linkTitle: "9. Hard surf 1"
+weight: 0
 description: >
-  Weeks 5-8: Hard surface modelling time
+  Weeks 9-12: Hard surface modelling time
 ---
 
 <!--

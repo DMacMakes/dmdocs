@@ -1,25 +1,25 @@
 ---
-title: "9. Modern texturing with PBR"
-linkTitle: "9: PBR Texturing"
-weight: "90"
+title: "5. Modern texturing with PBR"
+linkTitle: "5: PBR Texturing"
+weight: "50"
 description: >
   Learning about the current state of surfacing/texturing meshes for games.
 ---
 
-## Assessment 3: PBR Texturing
+## Assessment 2: Surfacing
 
-**Final Submission: End of week 12.**
+**Final Submission: End of week 8.**
 
 Not yet fully ready. What it'll involve is texturing a provided model, using Substance Painter, and exporting to a provided Unity scene/web viewer. 
 
-**Week 11:** Progress will be submitted to a Blackboard thread for review.   
-**Week 12:** Models, textures and screenshots will be submitted.
+**Week 7:** Progress will be submitted to a Blackboard thread for review.   
+**Week 8:** Models, textures and screenshots will be submitted.
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-pbr-texturing">Assessment 3</a>
 
 ## Download these examples!
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EQSgGyMiDvJNtHQDgXoeDY4BrjF73IEZutuCpVnQG9Gsig?e=GZnOwF" target="_blank">Download week9_examples.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+// TODO: move file to lf curriculum
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EQSgGyMiDvJNtHQDgXoeDY4BrjF73IEZutuCpVnQG9Gsig?e=GZnOwF" target="_blank">Download week5_examples.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## See PBR in action
 

@@ -1,7 +1,7 @@
 ---
-title: "12. Final texture"
-linkTitle: "12. Finalising"
-weight: "120"
+title: "8. Final texture"
+linkTitle: "8. Finalising"
+weight: "80"
 description: >
   Adding story to our textures, tuning style and wear.
 ---
@@ -17,13 +17,9 @@ Wrapping up Painter, assessment 3 work.
 
 ## Assessment 3 submission details on dmdocs
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-12-working-files-final-textures" target="_blank">How to submit assessment 3 (surfacing)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-12-working-files-final-textures" target="_blank">How to submit Model Surfacing Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## Recap - storytelling in texture. 
-
-See the second part of the week 11 reviews:  
-
-C11.2 <https://au-lti.bbcollab.com/recording/1b320fa84eec4bdb88f213f4bc06b8d4>
 
 1. We settle the colour blocking, materials, the style and extent of wear and surface features  
 2. We begin to tell the story of the object and reflect its functionality and environment in wear, stains, scorch marks, rust.  

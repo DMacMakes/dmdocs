@@ -1,9 +1,9 @@
 ---
-title: "10. Painter"
-linkTitle: "10. Painter"
-weight: "100"
+title: "6. Painter"
+linkTitle: "6. Painter"
+weight: "60"
 description: >
-  Texturing in Painter, Assessment 3.
+  Texturing in Painter, Assessment 2.
 ---
 
 
@@ -16,8 +16,8 @@ This week:
 
 ## Painter Playlist
 
-## Assessment 3
-[Assessment 3 on dmdocs](../assessments/#assessment-3-pbr-texturing)
+## Assessment 2
+[Assessment 2 on dmdocs](../assessments/#assessment-2-model-surfacing)
 
 ## Substance Ecosystem
 

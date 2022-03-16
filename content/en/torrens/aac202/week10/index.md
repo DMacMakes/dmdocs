@@ -1,7 +1,7 @@
 ---
-title: "6: Hard surfaces with subdivs 2"
-linkTitle: "6. Hard surf 2"
-weight: 61
+title: "10: Hard surfaces with subdivs 2"
+linkTitle: "10. Hard surf 2"
+weight: 100 
 description: >
   Modelling nes pads as smooth, very high resolution models, leveraging subdivision surfaces. 
 resources:

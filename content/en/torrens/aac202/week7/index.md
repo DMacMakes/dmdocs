@@ -1,7 +1,7 @@
 ---
-title: "11. Style in texturing, Assessment 3"
-linkTitle: "11: PBR Style"
-weight: "110"
+title: "7. Style in texturing, Assessment 3"
+linkTitle: "7: PBR Style"
+weight: "70"
 description: >
   Style applied to texturing.
 ---
@@ -12,8 +12,8 @@ description: >
 2. Surfacing from macro to micro
 3. Implementing style
 
-## A3 Deliverables due this week
-**30% of assessment 3 marks,** according to the rubric, are tied to the process you go through in these first 3 weeks **as evidenced in your post to the discussion thread this week**. If you don't post to the thread you're risking a lot of marks, potentially a fail.
+## A2 Deliverables due this week
+**30% of assessment 2 marks,** according to the rubric, are tied to the process you go through in these first 3 weeks **as evidenced in your post to the discussion thread this week**. If you don't post to the thread you're risking a lot of marks, potentially a fail.
 
 ![Subtle metaphor](./baby_marks.gif)  
 *Subtle metaphor.*
