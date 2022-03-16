@@ -17,7 +17,7 @@ This week:
 ## Painter Playlist
 
 ## Assessment 2
-[Assessment 2 on dmdocs](../assessments/#assessment-2-model-surfacing)
+[Assessment 2 on dmdocs](../assessments/#2-model-surfacing)
 
 ## Substance Ecosystem
 

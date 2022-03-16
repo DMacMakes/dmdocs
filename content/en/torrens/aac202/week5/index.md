@@ -15,11 +15,11 @@ Not yet fully ready. What it'll involve is texturing a provided model, using Sub
 **Week 7:** Progress will be submitted to a Blackboard thread for review.   
 **Week 8:** Models, textures and screenshots will be submitted.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-pbr-texturing">Assessment 3</a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#2-model-surfacing">Assessment 2</a>
 
 ## Download these examples!
-// TODO: move file to lf curriculum
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EQSgGyMiDvJNtHQDgXoeDY4BrjF73IEZutuCpVnQG9Gsig?e=GZnOwF" target="_blank">Download week5_examples.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/model-surfacing/week5_examples.7z?csf=1&web=1&e=CKXhDG" target="_blank">Download week5_examples.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ## See PBR in action
 
@@ -39,7 +39,7 @@ Current games all use it, yell out some games.
 
 ## Diffuse, painted - most basic
 
-Load up the dagger from week9 examples and apply the texture to the colour channel of the material.
+Load up the dagger from week 5 examples and apply the texture to the colour channel of the material.
 
 Before PBR, a shader used a diffuse texture (the ones you've made in ACR103) to give the impression that a mesh (a bunch of triangles) actually had a surface which, thanks to colour, could be mossy bricks, wood with nails in, maybe skin and armour and cloth all in a single triangle.  
 

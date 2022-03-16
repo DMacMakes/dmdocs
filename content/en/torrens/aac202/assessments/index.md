@@ -76,23 +76,21 @@ faces-12
 
 
 ---
-## Assessment 2: Model Surfacing
+## 2: Model Surfacing
 
 **Final Submission: End of Week 8** 
 
 Texture on of the provided models using Substance Painter.
-// TODO: Move all 3d files to lf curriculum
 
-Name | Pic | Substance File 
----- | ---- | ----
-Service Drone | ![service_drone](service_drone.png) | [service_drone.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESXh4gp2iJFFh9dLbNnYjzQBcArqiT2OAQvl9KWQGmbrRA?e=P7a6xz)
-Mini Axe | ![mini axe](mini_axe.png) | [mini_axe.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/EWhxYg7NmZdPh7KgPYHbdlkBOaJsUuUIa6EtRoPqywDvzw?e=dBlWxO)
-Knife | ![knife](knife.png) | [knife.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ESwqpRmQvNNOjqrgkizkBk0BlHujqs_HVOlJoG9drjwX9A?e=DLMBho)
-Arcade Stick | ![arcade stick](arcade_stick.png) | [arcade_stick.7z](https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_torrens_edu_au/ER_K_UxRxOdBqUDZFWVbBzwBlrSSWW8zO-r_5ojKb7IFQA?e=OKKpYR)
+Name | Pic | Substance File   
+---- | ---- | ----  
+Service Drone | ![service_drone](service_drone.png) | [service_drone.7z](https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/model-surfacing/service_drone.7z?csf=1&web=1&e=h9sKpu)  
+Mini Axe | ![mini axe](mini_axe.png) | [mini_axe.7z](https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/model-surfacing/mini_axe.7z?csf=1&web=1&e=LgSog0)  
+Knife | ![knife](knife.png) | [knife.7z](https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/model-surfacing/knife.7z?csf=1&web=1&e=jYdzEQ)  
+Arcade Stick | ![arcade stick](arcade_stick.png) | [arcade_stick.7z](https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/model-surfacing/arcade_stick.7z?csf=1&web=1&e=0bjcYK)  
   
 ### Reference   
 Here's some reference for cartoony styled 3D using with a PBR look:
-// TODO: move to lf curriculum
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/model-surfacing/PBRCartoonyLook1.pur.7z?csf=1&web=1&e=chEU70" target="_blank">PBRCartoonyLook1.pur.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a> 
 
 ### Submitting your work:
