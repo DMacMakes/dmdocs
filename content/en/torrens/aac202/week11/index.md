@@ -1,123 +1,111 @@
 ---
-title: "11. Style in texturing, Assessment 3"
-linkTitle: "11: PBR Style"
-weight: "110"
+title: "7: ZModeler 3 - Detailing hard surface models"
+linkTitle: "7. Detailing"
+weight: 70
 description: >
-  Style applied to texturing.
+  Starting a second model, the radio. How do we add parts? New primitives, import from Maya? 
+resources:
+- src: "barrel_alvaro_vera.jpg"
+  params:
+    byline: "Art: Alvaro Vera"
 ---
 
-## Learning this week
+ ## What we'll learn today
 
-1. A3 Deliverables due this week
-2. Surfacing from macro to micro
-3. Implementing style
+* What to deliver for A2
+* Stamping details onto high resolution surfaces
+* Creating bumpy/noisy surfaces
+* Texturing?
 
-## A3 Deliverables due this week
-**30% of assessment 3 marks,** according to the rubric, are tied to the process you go through in these first 3 weeks **as evidenced in your post to the discussion thread this week**. If you don't post to the thread you're risking a lot of marks, potentially a fail.
+## Assessment 2:
+* 10 days left
+* Complete and detail the NES pad, make some nice renders.
+* Updating assessment page today, creating forum threads
+* Week 7 progress thread submission
+* Week 8 final submission
 
-![Subtle metaphor](./baby_marks.gif)  
-*Subtle metaphor.*
+## Dpad bending
+The d pad:
+{{< imgproc dpad_from_boxes Resize "200x" Link "dpad_from_boxes.jpg" >}}
+The dpad as made from boxes, only bending is left.
+{{< /imgproc >}}
 
-## Surfacing from macro to micro
-It's easy to get lost in:
-* The layer palette.
-* The first or second surface you start texturing, for ever.
-* The poperties palette for a material, a layer, an alpha etc.
-* The fine details in one tiny nook of your model.
-* The library of materials, filters, alphas, generators, brushes
-* The web docs/lessons/discussions of all of the above.
+Things to try:
+* Masking with fall off + gizmo or deformation palette transform
+* Lattice modifier with gizmo
 
-It's the same problem when we're programming, 3d modelling, drawing characters and backgrounds, anything reall. We get so scared of the details and the finished product that we forget lots of things we know. Especially because we know those things so well, we forget we know them.. or don't know we know them.
+## Stamping in ZBrush
 
-All of these things can lead to:
-  * a model that, while textured, looks strange and digital, awkward for reasons that are hard to define, 
-  * A massive file with lots of duplicated work
-  * Wonky, complicated layer structure, friction that stops you making changes.
-  * Sadness.
+*Stamping* here refers back to how a regular ink stamp bangs down a whole, repeatable image in one go. A smiley face, the word "DENIED", a cafe's logo on a coffee cup.
+
+![coffee cup stamp](stamp_coffee.jpg)
+
+Stamps are basically instant ways to draw a thing **once you've done the work** of crafting the original image. When I say stamping in *ZBrush* I mean using a brush on a surface to emboss an image into the surface or onto it. It's a bit more like pressing something into play-doh than stamping onto a sheet of paper, but it relies on the same thing - a finished piece of art.
+
+TODO: pic of stamped surface in zbrush and play doh
+
+### Alphas
+
+Alphas are **greyscale images** that can be applied to a brush and act as a mask or filter: where the image is white the brush has maximum effect, where the alpha is black it has none of the effect. Where the image is grey, the effect is applied proportionately.
+
+![ornament alphas by jro](alphas_jro_ornament.jpg)
+*Ornament pack alphas by JRO on [the Flipped Normals store](https://flippednormals.com/downloads/ornament-alphas-vol-1/)*
+### Using alphas to stamp
+
+Dragrect brush stroke
+
+1. Pin brush palette to left of UI 
+2. try different stroke types - drag dots, dragrect.
+3. Try combining alpha and stroke with different brush types 
   
-### Thinking macro!
+Here are some links to Pavlovich explaining alpha usage in depth (youtube) and reference info (zbrush official docs).
 
-![macro thumbnails muddycolors](macro_thumbnails_muddycolors.jpg)
-*https://www.muddycolors.com/2020/02/10-errors-to-avoid-when-composing-thumbnails/*
+Page      |       Link
+----      | -----
+Using dragrect, other stroke types | [Michael Pavlovich Youtube](https://www.youtube.com/watch?v=AdkZe1yKFTU&list=PLkzopwqcFevYP1Nm3wIKsyH-jQTkk8AhS&index=16)
+Alpha options | [Michael Pavlovich Youtube](https://www.youtube.com/watch?v=vjDZ3-fjwt8&list=PLkzopwqcFevYP1Nm3wIKsyH-jQTkk8AhS&index=17)
+Masking with alphas and more | [Michael Pavlovich Youtube](https://www.youtube.com/watch?v=8kWFv1cZlCE&list=PLkzopwqcFevYP1Nm3wIKsyH-jQTkk8AhS&index=20)
+Skin alphas with process gifs | [Flipped Normals Store](https://www.zbrushguides.com/zbrush-skin-brushes-pack/)
+JRO using alphas (beware flashing images) | [Youtube (flashing images)](https://www.youtube.com/watch?v=dNUHjB4YK5c)
+Alpha palette reference | [ZBrush Docs](http://docs.pixologic.com/reference-guide/alpha/)
+Alphas and sculpting reference | [ZBrush Docs](http://docs.pixologic.com/user-guide/3d-modeling/sculpting/sculpting-brushes/alphas/)
 
-![Matisse steps back](macro_step_back_matisse.jpg)
-Henri Matisse demonstrates stepping back for the big picture, also slick stick tricks.
+Demo not on the pad but on sample objects: a block, a sphere.
+* Making/sourcing an alpha. Setting the alpha.
+* Brush drag modes: drag rect, dots.
+* What brush to use? Layer? Standard? Chisel?
+* How much resolution to support our alpha? Density and evenness of polygons.
 
-### Working down in steps to micro
+{{< alert title="Booleans: keep your originals!" color= "secondary" >}}
+Creating geometry from a boolean commits you to a certain topology that isn't easy to change: you won't be able to add loops easily or add bevels. If we create them early and delete our original separate objects (including cutters) we lose our ability to make those changes. This'll be fine.. if you've perfectly predicted everything you'll need.
 
-1. What affects the whole/multiple sections of model?
-   * Dust, rain fall from above.
-   * Dirt/splatters/damage from ground/near ground contact.
-   * Ambient occlusion
-   * Unifying tints/overlays
-   * Artistic lightening of the focal point (often face and chest)
-   * Various muck associated with usage
-   * Emissions/secretions
-2. What affects all of a single surface type, say varnished cherry wood
-   * The same kind of surface damage due to it all being the same hardness
-   * The same kind of UV fading/yellowing/dessication/cracking from sun exposure on all upward facing surfaces of that kind
-3. What differentiates each surface of that same single type (again varnished wood)
-   * Wood grain is different on the planks/panels of wood that came from different sections of one or many trees. If the grain goes from panel to panel it'll look unnatural, and it's something we'll all feel in a picture, though many of us will not realise what's actually wrong. Thinking about the big picture though, if you're making a giant wooden tank you probably would know that it's not going to be carved from a single, enormous piece of wood. Equally, a 5cm long carved wooden tank is probably not going to be make of 20 separate components, it'll be from one small piece of wood (a *blank*, if you're looking for a term).
+Bingeing disaster shows on netflix/youtube tells us to always assume there's something you haven't predicted. 
 
-### Saving time big to small
+Until you get to the final stages of your model it can be hard to know (in detail) everything you'll need your mesh to do. You'll discover things that change the situation a little, like maybe a font that has very thin elements or the way an alpha with a spiral creates weird effects at a certain resolution.
 
-Working large at first, hitting all your surfaces with a basic material, balancing them against eachother as you iterate. This will save you a lot of time in reversing work later, or struggling to find a complementary material for a mismatched set as you get deeper. 
+{{< youtube kjWM0wJHVTY >}}
+*If you feel like making predictions, spend a few hours watching Plainly Difficult's collection of brief documentaries. It'll fix you right up.*
+{{< /alert >}}
 
-If you get the relationships close at the start, then can modify them easily in the early stages - since you don't have any complex layer stacks yet - you'll find that the easy read and broad appeal of the overall model will reduce the amount of detail you feel you need to pack in to get it working. 
+## Screws
+Insert multimesh brushes!
 
-### You'll always overestimate the need for fine details
+{{< youtube "U5u3RpI9In4" >}}
 
-We often don't see models from certain angles, or closer than a certain distance. Maybe we see the bottom of the feet, but only rarely, and heavily shadowed.
+## NoiseMaker
 
-Detail also looks detailed not because there's so much detail.. but because an adjacent surface or feature has less detail. Our vision and cognition are based on movement and contrast - sharp vs soft, light vs dark, detailed/busy vs not.
+Bumpy surface on face of graphics insert (with nintendo, button names).
 
-Detail can also be too heavy when it happens in multiple colours, but fine if it's all in a given hue, changing only in tone (brightness).
+## Cable bend protection
 
-The Valve [Dota 2 Character Workshop Character Art Guide](https://help.steampowered.com/en/faqs/view/0688-7692-4D5A-1935)
+It's a boolean hole containing two halfs of a trumpet thingy. How to make?
 
-### ..and underestimate the importance of big, unifying details
-  
-This is often what makes work look appealing and/or real, work we'll subconsciously upgrade to "professional".  
-  
-* Top down dust, uv fading.  
-* Inconsistent finish - every mm of a conceptually uniform surface is different.   
-  
-Even the toy-like simplicity of the Cars in Cars 3 is not as simple as your brain tells you it was. While you were watching, by the way, that same brain was kept happy by all the subtle details.  
-  
-An incredible resource: <https://renderman.pixar.com/stories/cars-3>  
-  
-![louise_1](https://pixar-community-production.s3-us-west-1.amazonaws.com/Cars_3/louise-nash-micro-vs-wide.jpg)
+Two circles using cylinder of 32 sides to generate. Bridge em with interactive elevation?. Crease ends. Dynamic subdiv settings. Cut it in half with boolean to make little gap? Cut in half with subdivs and hopefully still get rounded shape? Use more curves.
 
-![louise_2](https://pixar-community-production.s3-us-west-1.amazonaws.com/Cars_3/louise-nash-micro-vs-closeup.jpg)
+## Homework
 
-![louise render](cars3_louise_render.jpg)
+Complete as much of the NES pad modelling as you can by **Midday Monday** and submit images. Remember, it's an assessment deliverable worth up to 30%! More info in the submission threads below.
 
-## Style in video games
-We touched on this last week as a concept. Implementing requires some deeper detail.
+[Ultimo class week 7 submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968747_1&message_id=_2597080_1) 
 
-### Defining terms
-When we all hear the same words all the time, we tend to define them the same way and like to agree about it.  
-
-<img src="troll_face.png" width="200" />
-
-#### *Realistic* game art:
-
-![last of us 1](realism_lastofus2_1.jpg)
-  
-Element | Approach
---- | ---
-**Characters, props and environments** | Have lots of fine, life-like detail referenced from real life. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are mostly laid out in according with the laws of physics/biology/material science, with little/no regard for rhythm, contrast, readability.  
-**Lighting** | Comes from sources available in the environment and is reflected by objects in accordance with the properties of their real life counterparts, or the closes thing if we're dealing with fantasy/sci fi.  
-**Post effects/filters\*** | Will usually enhance detail and contrast but in line with film grading of movies/tv. They'll often recreate the physical properties of lenses, and the way cameras are affected by light and the environment.  
-
-\* *graphic effects applied to the whole screen once the scene is rendered in 3d*
-
-![last of us 2](realism_lastofus2_2.png)
-
-#### *Stylized* game art  
-
-Element | Approach
---- | ---
-**Characters, props and environments** | Often have only as much detail as is required to communicate broadly the nature of their surface and materials. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are often rendered in a simplified way, sufficient to communicate their nature, and often grouped, altered or exaggerated to add contrast, improve readability, add appeal and rhythm.  
-**Lighting** | May come from sources available in the environment but also from hidden lights, or extra lighting is implied in shaders. It will often be reflected by objects in ways that are correct on some level but also exaggerated/simplified to improve our ability to read silhouettes, distinguish materials more readily, add an exciting dynamism or to alter mood dramatically.   
-**Post effects/filters** | Can be used in a huge variety of ways. They too may add contrast and enhance detail. Typically they'll be used in many varied/creative ways that are often based more on principles of graphic design or illustration/painting than on physical properties of lenses/film. They'll do so to create mood, control/encourage the eye towards important characters/features (exaggerated depth of field), enhance a sense of action/motion, to evoke a style of poster/cartoon/school of painting, the possibilities are endless.  
+[Online class week 7 submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968732_1&message_id=_2597097_1)

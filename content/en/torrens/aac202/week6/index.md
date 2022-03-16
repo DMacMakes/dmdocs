@@ -1,140 +1,65 @@
 ---
-title: "6: Hard surfaces with subdivs 2"
-linkTitle: "6. Hard surf 2"
-weight: 61
+title: "10. Painter"
+linkTitle: "10. Painter"
+weight: "100"
 description: >
-  Modelling nes pads as smooth, very high resolution models, leveraging subdivision surfaces. 
-resources:
-- src: "*paul_chambers*"
-  params:
-    byline: "Art: Paul Chambers (Artstation)"
-- src: "*krzysztof-maziarz*"
-  params:
-    byline: "Art: Krzysztof Maziarz (Artstation)"
+  Texturing in Painter, Assessment 3.
 ---
 
-## Modelling from objects
-NES pad!
 
-[AAC202 Hard surface board on Pinterest \(register if you don't have a Pinterest account\)](https://www.pinterest.com.au/dmacdraws/aac202/hard-surface/)
+This week:
+* Other resources: Danny's Painter playlist
+* Assessment 3
+* The Substance ecosystem: Designer vs Painter. Alchemist?
+* Looking through example files
+* Approaching the task of texturing: Having a plan, working large to small, style reference, photo reference, pureref!
 
-## Exercise (together)
-Begin modeling the snes controller. 
-<!--   
-Do I have to be able to understand and easily reproduce the wacom pen button modeling bit (including surrounds with crease) in zbrush to defensibly start with the snes pad? What about an NES pad? Or the radio/other boxier things?  
--->
+## Painter Playlist
 
-![NES pad](nes_pad.jpg)
+## Assessment 3
+[Assessment 3 on dmdocs](../assessments/#assessment-3-pbr-texturing)
 
-### Plan
+## Substance Ecosystem
 
-How would we model the nes pad? To make something this structured and with multiple pieces we need at least a rough plan.
+Designer: design substances as procedural graph, maths, composites
+Substance Painter: Surfacing real models using substances, smart materials, filters, masks, hand painting etc.
 
-### Body
-Rounded box. There are some exceptions to this, we'll return to those in a minute.
-![NES pad back](nes_pad_back.jpg)
-![NES pad classic top](nes_pad_classic.jpg)
-![NES pads crusty](nes_pads_crusty.jpg)
+## Example Files, Assessment Files
+Axe? Drone?
 
-### Buttons
-Buttons have a variety of shapes, finishes and top surface profiles.
+## Approaching texturing
+Choose your model, then we have to begin. But where to start?
 
-Buttons     |  Shape   |  Top profile  |   Material
-----  | ---- | ---- | ----
-A B | circle | concave (valley) | red shiny plastic
-Start / Select | Line rounded ends | convex (hill) | black matte rubber
-D Pad | plus | spherical concave<sup>&dagger;</sup> | black shiny plastic 
+Having a plan, working large to small, style reference, photo reference, pureref!
 
-*<sup>&dagger;</sup> Like a large sphere has pushed down into the plus, leaving a rounded depression.*
+## Style in video games.
 
-## Files
-Grab the project folder. This gives you an example project folder structure, which you need when you're combining multiple programs to get your results.
+### Defining terms
+When we all hear the same words all the time, we tend to define them the same way and like to agree about it.  
 
-[Download nes_pad.zip](nes_pad.zip)
+<img src="troll_face.png" width="200" />
 
-## Body as Rounded Box
-Making the body.
-* This isn't a soft squishy shape, the 6 faces of the pad (think cube) are all machine-flat, so our roundovers need to be fairly controlled.
-* Are the rounded over edges all the same radius? The edges of the front face (where the controls are) vs the edges of the four corners on the sides?
-* Does rounding the four corners cause problems when we go to round the front face edges?
+#### *Realistic* game art:
 
-## Body cutouts
-There are several features on the body of the main pad that cut into the otherwise basic rounded rectangle shape. 
-* Tray in middle for select/start - sep object, dip.
-* Cable opening - sep object, trumpet/flared cylinder.
-* Notch 
-* Button openings? Around buttons there's a small gap, sharp cut.
-* Screw holes in back
-* Indent for sticker on back.
-
-These could quickly make things complicated as we add loops to support the shapes. Eventually this might be your preferred method (it offers control), but for now we need something quicker and easier. We can use Live Booleans.
-
-### Boolean operations
-
-An interaction between volumes. You can combine them, subtract one from the other (cut a hole), or keep their overlap/intersection.
-
-![booleans 2d](booleans_2d_hackernoon.png)
-Boolean operations on 2D shapes. *credit: hackernoon.com* 
-
-![booleans 3d simlab](booleans_3d_simlab.png)
-Boolean operations on 3D shapes *credit: simlab.com*
-
-![booleans 3d live](booleans_zbrush_live_create3dart.gif)
-Live Booleans in Zbrush - real time preview as you work *credit: create3dart*
-
-**Pros:** 
-* Non destructive (while working live)
-* machine-like results
-* works on multiple objects at once, also separate groups of multiples.
-
-![booleans live result](booleans_live_result_create3dart.jpg)
-Downside: The resulting geometry is not pretty or quad based. *credit: create3dart*
-
-**Cons:** 
-* You have to commit at some stage, and the result can be very gnarly geometry.  
-* Performance takes quite a hit rendering live booleans
-* Limits: not everything renders perfectly and it doesn't render in all modes.  
-
-### Learning links
-
-**ZBrush Docs**  
-<http://docs.pixologic.com/user-guide/3d-modeling/modeling-basics/creating-meshes/live-boolean/basic-process/>  
+![last of us 1](realism_lastofus2_1.jpg)
   
-**Create 3d art quick intro**  
-<https://create3dart.com/using-live-boolean-in-zbrush/>  
+Element | Approach
+--- | ---
+**Characters, props and environments** | Have lots of fine, life-like detail referenced from real life. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are mostly laid out in according with the laws of physics/biology/material science, with little/no regard for rhythm, contrast, readability.  
+**Lighting** | Comes from sources available in the environment and is reflected by objects in accordance with the properties of their real life counterparts, or the closes thing if we're dealing with fantasy/sci fi.  
+**Post effects/filters\*** | Will usually enhance detail and contrast but in line with film grading of movies/tv. They'll often recreate the physical properties of lenses, and the way cameras are affected by light and the environment.  
 
-**Pavlovic intros** 
+\* *graphic effects applied to the whole screen once the scene is rendered in 3d*
 
-{{< youtube 03BMMabyK8U >}}  
+![last of us 2](realism_lastofus2_2.png)
 
-{{< youtube HXnKnrhlFpA >}}  
+Danny's stylized cartoony PBR reference
+[Cartoony PBR - zipped Pureref file](../resources/PBRCartoonyLook1.pur.zip)
 
-<!-- 
+#### *Stylized* game art  
 
-## TODO: Is radio actually easier?
-
-It doesn't have those shoulder buttons to worry about, or the off-angle start and option buttons needing bevels.
-Maybe change how the middle is added so we're not as bothered by extra geo?
-Adding flat colours early to help our eye.
-
-
-## The rest
-
-* Cut off bits of end cylinders
-* bridge ends
-* Add geo to middle alrea
-* Making buttons
-* Bevel around buttons? Can do later with booleans when we're more settled on their shape?
-* Adding and tweaking d pad?
-
--->
-
-## Homework
-
-Keep working on nes pad model.
-
-<!-- 
-Plan feature a.
-Implement a and b.
--->
-Post progress in [Module 6 Discussion Forum - Your NES Pad Modelling Progress](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064205_1&message_id=_2909653_1) *before* our next review & feedback sesion. 
+Element | Approach
+--- | ---
+**Characters, props and environments** | Often have only as much detail as is required to communicate broadly the nature of their surface and materials. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are often rendered in a simplified way, sufficient to communicate their nature, and often grouped, altered or exaggerated to add contrast, improve readability, add appeal and rhythm.  
+**Lighting** | May come from sources available in the environment but also from hidden lights, or extra lighting is implied in shaders. It will often be reflected by objects in ways that are correct on some level but also exaggerated/simplified to improve our ability to read silhouettes, distinguish materials more readily, add an exciting dynamism or to alter mood dramatically.   
+**Post effects/filters** | Can be used in a huge variety of ways. They too may add contrast and enhance detail. Typically they'll be used in many varied/creative ways that are often based more on principles of graphic design or illustration/painting than on physical properties of lenses/film. They'll do so to create mood, control/encourage the eye towards important characters/features (exaggerated depth of field), enhance a sense of action/motion, to evoke a style of poster/cartoon/school of painting, the possibilities are endless.  

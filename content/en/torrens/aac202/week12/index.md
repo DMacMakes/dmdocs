@@ -1,152 +1,269 @@
 ---
-title: "12. Final texture"
-linkTitle: "12. Finalising"
-weight: "120"
+title: "8. Finishing Assessment 2"
+linkTitle: "8. Finish A2"
+weight: 80
 description: >
-  Adding story to our textures, tuning style and wear.
+ Finalising details, texturing in ZBrush, rendering.
 ---
 
-## Today
-Wrapping up Painter, assessment 3 work.
-- Storytelling in texture
-- Human eye vs algorithm: tuning textures with hand masking/painting.
-- Help with stylising particular textures?
-- Remember that dirt is on all of your model, it doesn't know which area has what material, so it should be above those masked layers. Same with, say, a dust layer or ambient occlusion pass.
-- Working with post effects (exposure, contrast, vignette etc)
-- Export to sketchfab?
+## Assessment 2 Final push 
 
-## Assessment 3 submission details on dmdocs
+What are we delivering? That'll define how we spend our last few days on the project.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-12-working-files-final-textures" target="_blank">How to submit assessment 3 (surfacing)<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+[Assessment 2 - NES Controller on dmdocs](../assessments/#2-hard-surface-model-nes-controller)
 
-## Recap - storytelling in texture. 
+## Last 5 percent
 
-See the second part of the week 11 reviews:  
+Details should be 95% done (or done) by now, but you might have one or two hard-solves left to figure out.
 
-C11.2 <https://au-lti.bbcollab.com/recording/1b320fa84eec4bdb88f213f4bc06b8d4>
+### Hard geometry problems
 
-1. We settle the colour blocking, materials, the style and extent of wear and surface features  
-2. We begin to tell the story of the object and reflect its functionality and environment in wear, stains, scorch marks, rust.  
-  
- Ideally, picture | storytelling texture
- ---------------- | -----------------------------
- \[pic\] Hot zone | grease and smoke stains near seams/vents where hot components/motors are inside
-  \[pic\] Wear zone | rust were movable panels meet: their action grinds dust and other schmoo into the paint, revealing bare metal, which oxidises (rusts)
- \[pic\] Exposed metal | If exposed metal doesn't rust, why? It's a precious metal maybe, or super fancy composite. It'll mostly be dull and oxidised/rusted if it is exposed except in spots where it's recently scratched or where it's constantly rubbing against a fabric or other soft abrasive.
- \[pic\] Streaks of rust/grease | water gets into seams where rubbing/vibration has caused the coating to crack/wear, and then trails of rust descend from there
- \[pic\] Paint ageing | Paint fades and glossy clearcoat is destroyed (becoming matte) under years of UV exposure. That's always on the surface pointing most directly at the sun, so upper areas.
- \[pic\] Ground | Things that rest on the ground get dust, mold, rock scratches, rust from moisture in the ground/dew on grass.
- \[pic\] Dust | Gravity is a thing. It makes fine schmoo in the air fall down eventually, and it lands on the top surfaces of objects.
+Hit me with any surprise hard geo problems now, I might have easy solutions.
 
-## When the texturing is done
+### Week 7 problems - alphas/imm
 
-Post effects, exporting. 
+Any issues with alphas and insert mesh brushes that weren't covered in class or review?
 
-### Post effects
+## Materials and textures
 
-{{< imgcard post_colour_correction>}}
-An example of colour correction in Substance Painter (from the docs)
+Note: If you absolutely *can't* texture the insert you can try photoshopping it into a render/composite. You'll do better marks-wise if you get this nutted out.
+
+### Standard Materials - when Matcaps won't do it.
+Matcaps use an image and some fancy tricks to act like materials do in other 3d renderers (think Arnold in Maya for example) while being less work for your computer. They're really limited though; matcaps get darker not only in colour as you add black, their fake lighting/hilights disappear too.
+
+If you want more control over the materials on your NES pad you can use the Zbrush *Standard Materials*.
+
+{{< imgcard standard_materials Link "standard_materials.png">}}
+The standard materials are found below the matcaps in the materials popup palette.
 {{< /imgcard >}}
 
-Once the texture is on the model and the camera and lighting have been positioned/tweaked, what else can we do? From *ZBrush* we exported to *Photoshop* to do a bit of compositing, applying some post-processing by hand. That's fine for a single render, but a game engine renders 60+ frames per second - humans need minutes or hours in photoshop, so we're out. 
+Here's an example of using a basic material to get closer (than zbro paint) to the shiny black plastic of the dpad. I used a dark grey, lowered the "diffuse" (non-shiney lighting) and raised the specular (shiney hilight brightness), while messing with the specular falloff curve (blurrier shiney hilight).
 
-Only a computer could composite/post process those rendered frames fast enough, and that's what post-effects shaders/filters are for.
+{{< imgcard dpad_basic_material Link "dpad_basic_material.png">}}
+Turning up the specular lets the rounded edge pick up bright hilights.
+{{< /imgcard >}}mgcar
 
+{{< alert title="Making new materials is WEIRD" color= "primary" >}}
+To use another instance of a standard material like Basic Material or Toy Plastic you have to click *Copy Mat* (in the material palette), select another standard material *that you're happy to lose* and then *Paste Mat*. 
 
-{{< alert title="Definition: Post effects (post processing)" color= "primary" >}}
-*Post-Effects* are filters than can be applied to the images rendered in the viewport of Substance Painter to simulate common camera effects.
-
-*Post processing* is the general term for modifying the image/frame (by hand or by script/filter/plugin) produced by the 3D rendering process or produced by a camera. Post = after, as in post-mortem.
+ZBrush is definitely not a world class materials/rendering program.
 {{< /alert >}}
 
-Each effect is broken down in the Substance documentation:
+### Material exercise
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://docs.substance3d.com/spdoc/post-processing-172818692.html" target="_blank">Post effects on Substance Docs<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+Reproduce the d-pad's black plastic material. Duplicate it and make a red plastic, which will have a sharper hilight and be much brighter/more saturated.
 
-### Don't use IRay
+## Texture mapping
 
-At least not for submitting this assessment. We're producing game assets for real time rendering, so we'll work on making that look as good as we can. Iray's renders require many seconds to minutes to produce, so it's giving us a view of our asset that would never appear in game. That really limits its usefulness for assessing our work.
+Texture-mapping the graphic insert. Let's do it together.
 
-## Sketchfab
+### Exercise
 
-> Sketchfab is a service that hosts 3D models and textures as well as offering an embeddable, webgl based viewer with advanced real-time rendering capabilities and handy tools for inspecting the model and textures.
+Right click and save these images to your project folder.  
 
-**Let's create an account.** The free account has 1 model per month. Feel free to create the account with your school email.
+<img src="insert_texture_buttons.png" width=320 /><img src="insert_texture_rough.png" width=320 />
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://sketchfab.com/signup" target="_blank">Register a free Sketchfab account<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+1. In your project, select your graphics insert (the piece of plastic with writing printed on it). Make a duplicate to work on, turn off the original's visibility (eye) icon.  
+2. Under *tool -> texture map* click the big empty texture and click *import*. Load `insert_texture_buttons.png`. Note it's not visible on your mesh. You might have even been warned that it doesn't have uvs.   
+![import texture](import_texture.png)  
+3. Open the *UV Map* palette (above the Texture Map one), set the *UV Map Size* slider to 1024 and just click *Create -> UVP*. Turn off the floor (shift-p) to make sure you can see the new texture.  
+![uvmap uvp](uvmap_uvp.png)  
+4. It might be dim or coloured strangely. Fill the graphics insert with ZBro paint (matcap) and white (colour) - the texture map is tinted/rendered based on whatever material is under it. Annoyingly, the texture has it's own Fill mat, so expand *Tool -> Texture Map -> Fill* and click *Fill Mat*  
+5. You can check the alignment of your buttons etc against this texture map, but this one's a really dodgey hack job. Make a polished version of the texture with clean lettering/shapes and better colouring. Add noise to the surface with noisemaker if you haven't already.  
 
-<div class="sketchfab-embed-wrapper"> <iframe title="Mini Axe" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="480" height="480" src="https://sketchfab.com/models/c580dcae6f6e46568e5759eba18d3dc7/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/mini-axe-c580dcae6f6e46568e5759eba18d3dc7?utm_medium=embed&utm_campaign=share-popup&utm_content=c580dcae6f6e46568e5759eba18d3dc7" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Mini Axe </a> by <a href="https://sketchfab.com/dmacdraws?utm_medium=embed&utm_campaign=share-popup&utm_content=c580dcae6f6e46568e5759eba18d3dc7" target="_blank" style="font-weight: bold; color: #1CAAD9;"> dmacdraws </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=c580dcae6f6e46568e5759eba18d3dc7" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+{{< imgcard textured_inset_rough_zbro Link "textured_inset_rough_zbro.png">}}
+The graphics insert with the rough texture applied and visible in the viewport+renders.
+{{< /imgcard >}}
 
-[See mini axe on Sketchfab](https://sketchfab.com/3d-models/mini-axe-c580dcae6f6e46568e5759eba18d3dc7)
+<!--
+## Transferring the details
 
-Exporting once you have an account:
+Normal mapping!
+Substance Painter!
 
-Step | Screenshot
----- | ----
-**1** Go to *file -> export*, choose *sketchfab*, log in. | ![export 1](sketchfab__export_1.png)
-**2** Configure the *Title*, *Description* etc | ![export 2](sketchfab__export_2.png)
-**3** Wait for the sketchfab elves to prep the model (a few minutes). | ![export 3](sketchfab__export_3.png)
-**4** Configure 3D settings - camera angle, transform, post effects etc. | ![sketchfab 3d settings](sketchfab_3d_settings.jpg)
+{{< imgcard axe_zb Link "https://dmcgits.github.io/mds/workshops/painter/painter_notes.html">}}
+Click here to open the Painter workshop notes
+{{< /imgcard >}}
 
-<!-- 
+Requirements:
 
-1. Some feedback  
-2. Defining the last task for the assessment (how to render it this week)  
-3. Some learnin: How you might retopo your model for painter in your holidays/future  
+**Two collections of meshes.** Each collection can be saved into an fbx format file.
 
-## Finishing
+1. Very **detailed meshes** of the prop parts that look very nice but are too heavy for games. 
+2. The **game ready mesh** with uv maps.
+   * These should have hard edges wherever there are seams/texture borders in the uv map, and soft edges everywhere else.
+   * Freeze any scaling (probably already done for uv unwrap)
 
-Rendering with Orb's setup.
-Save this [step-by-step tutorial by Orb/Michael Vicente](https://laureateaus-my.sharepoint.com/:v:/g/personal/daniel_mcgillick_laureate_edu_au/Ea6azVT_8EpKjeq_YFqng-ABfNCHg1-LgWcGkiTcwCYEWA?e=meF9tb), where he explains and demonstrates his rendering process in ZBrush.
+**Magic software:** It **scans the surface** of the high detail meshes, tosses away the polygons, and **makes an image** from their skin that **the game ready mesh will wear** like a suit.
 
-If you take the time to follow it, put in the work, having your renders look this good and demonstrating your effort will be worth solid marks, taking you up into distinction territory.
+![](skin_suit.jpg)
 
-Don't make your file overly heavy! You should be able to get all your necessary stone details in 250K-350K points each, for example, less on the boring stones. Overly heavy means you are trying to work with the scene and it's uber slow, maybe rendering takes forever etc.
+### Our mug exports
 
-## Decimation And Topo Demo
+![](mug_export_game_subd.png)
 
-For learning's sake.
-The goal here is to take our high res model from ZBrush to maya and draw game res topology onto it. Kinda like tracing. ZBrush high res meshes are heavy though, so we'll decimate one down to medium res and trace that instead.
+1. **mug_game.fbx**: The _game meshes of the mug body, handle and coffee. 
+   * This is only about 50KBs.
+   * Make sure they all have the same material.
+2. **mug_subd.fbx**: The _subd meshes of the mug parts, but subdivided and smoothed for real. We'll use Maya to export the subd meshes and apply the smooth and subdivide algorithms along the way, producing tens or hundreds of thousands of real triangles.
+   * This sounds backwards but you have to have _smooth meshes_ **un**selected when you export the subd meshes, or they'll export the unsmoothed versions. You got it right if the file will be megabytes in size.
 
-### 1. ZBrush Decimation
-**CAPTURING PICS DURING DEMO.**
+## Baking your model in Painter
 
-1. Make a copy/duplicate of what you want to retopologise.
-2. If you have subdivs, choose the level that has most of the detail but it doesn't have to be super sharp.
-3. I delete my lower and higher subdivs, and then decimate 
-   - preprocess the decimation
-   - Try decimating to the lowest number that gives you all the info you need about the surface, but is light enough for maya.
-     - maybe 1-5K for a wharf brick? Similar for a plank. A character face might be 15K?
-4. Export fbx or sent to Maya with GoZ.
+Grab these:
 
-Extra decimation techniques/info from Pav:
-{{< youtube TitIPlM2Xnk >}}
-{{< youtube 7BoRmlCEq9g >}}
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="A1_bake.zip">A1 Painter Baking Files<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>
 
-Tessimating and decimating!
-{{< youtube ogSldTT6slc >}}
+Watch this:
 
-### 2. Maya retopo
-**CAPTURING PICS DURING DEMO.**
-Here's a video of the FlippedNormal guys demoing it as well, watch this later for a refresher/anything I missed.
-
-{{< youtube xpDWta5O3n8 >}}
-
-We'll use two new features for this: _live surface_ and _quad draw_.
-1. Import medium res into Maya (or receive via GoZ)
-2. (optional) Drop it into a new layer, and make a new layer for the game res topology.
-3. Right click the medium res mesh and click **make live** in the popup menu.
-4. Open the _Modeling Toolkit_ and click **quad draw**
-5. Left click the live mesh to drop points on it. Your goal is to draw the corners of four sided faces.
-6. Where you've dropped four points, shift click in the open space between them to make a face.
-7. Ctrl click to insert edge loop. Ctrl-shift click to delete things. Ctrl-shift-middle drag to move edge loop.
-8. Tab-drag to extrude border edges, making whole new rows of quads!
-
-[Click here for all the controls](https://knowledge.autodesk.com/support/maya-lt/learn-explore/caas/CloudHelp/cloudhelp/2017/ENU/MayaLT/files/GUID-ED28E6BC-6141-491C-8C1B-2AE6FC813284-htm.html) or, in Maya, look at the bottom of the modeling toolkit when quad draw is activated (you might have to expand the tool tips section/scroll down).
-
-## Submitting This Week
-
-Deliverables and how to submit them on the assessments (dmdocs) page:
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-high-poly-environments">Assessment 3</a>
+{{< youtube v5b0z5FLXDk >}}
 
 -->
+
+## Week 4 Final Submission details
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-4-submission-details">Week 4 submission details<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+</a>  
+
+<!--   
+Open your Maya projects. We're going to try to resolve any problems you're having exporting your files for baking in Painter.
+
+First, if you:
+- Don't know what meshes to make or what to export, then it's very possible you haven't carefully read through the updated week 3 notes that were mentioned in the announcement sent out on Saturday: 
+  - Read those (don't skim), and check if your question was already answered.
+    - Grab and examine the updated Maya project.
+  
+  https://dmdocs.netlify.com/torrens/aac202/week3/#how-it-all-works
+  
+Other problems we'll look at:
+  - Fixing any weird subds and smooth preview errors
+  - Errors stopping Maya unfolding/laying out your game mesh.
+  - Everything looks to be set up right.. but the bake is failing/has errors  
+  - It's baking but the result still looks low poly
+
+### Updated Arcade Stick Files
+
+These also contain the baking project you'll use today to import your model.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ETl9ulaSrI9LlLCR05OObgoBjILw7NO0KUpV_aFLyMV66w?e=HFsDQb">Arcade Stick V2 Maya<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EbGYxoT6oiNLlvRKy42Gt-gBla0ZvIzXG04Akn0MG_GzLA?e=SsJOGf">Arcade Stick V2 Painter<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+## Substance
+
+First, looking through the updated arcade stick scene.
+
+{{< imgcard arcade_stick_baked_painter Link "arcade_stick_baked_painter.png">}}
+Wireframe over normal mapped game mesh, normal mapped game mesh, roughly textured game mesh.
+{{< /imgcard >}}
+
+### Starting With Configured Scene
+
+I've created a _Substance Painter_ project you can use for baking.  The settings are already tweaked for our workflow and for checking the quality of the baked maps. There are a few straightforward steps to using it:
+
+First, in _Maya_ (as in week 3 notes):
+* Append `_game` to the end of all your game mesh names (as above)
+* Append `_subdiv` to the end of all your subd mesh names (as above)
+* rename the material on your game meshes to game_meshes_mat
+* Ensure your **game mesh has been UV mapped** and unwrapped. The **subd mesh doesn't require a uv map.**
+* Ensure your game mesh UVs all fit within 0-1 uv space (the default square in UV editor)
+* export all `subd meshes` together as a `single file` (eg `joystick_parts_subd.fbx`)
+* export game meshes together as another single file (eg `joystick_parts_game.fbx`)
+
+In _Painter_:
+* Open the `firstname_lastname_baking.spp` scene.
+* Click _Edit -> Project Configuration_ (image below)
+* Click _Select_
+* Choose your `thing_parts_game.fbx` file
+* In the _Texture Set Settings_ panel click _Bake Mesh Maps_ and then the tiny document icon beside the _High Definition Meshes_ list.
+* Choose your `thing_parts_subd.fbx` file.
+* Click _Bake game_meshes_mat Mesh Maps_
+
+
+{{< imgcard baking_project_configuration Link "baking _project_configuration.png">}}
+The baking project has a button and its trim. You'll replace the meshes with your own.
+{{< /imgcard >}}
+
+### Baking
+
+Next we'll click _Bake Mesh Maps_ in _Texture Set Settings_
+
+{{< imgcard texture_set_pre_bake Link "texture_set_pre_bake.png">}}
+The texture set dialogue before you bake anything. 
+{{< /imgcard >}}
+
+{{< imgcard painter_bake_settings Link "painter_bake_settings.png">}}
+In the Joystick scene I used 2048, start with your resolution at 512 or 1024 for a quicker test.
+{{< /imgcard >}}
+
+{{< imgcard texture_set_post_bake Link "texture_set_post_bake.png">}}
+If your bake succeeds, Painter connects all the new textures.
+{{< /imgcard >}}
+
+### Reference: Map Types
+
+|  Map Type           |  What It Contains              |
+|-------------------  | ----------------------------------------------------------------------|
+| Normals             |  Info about where a polygon was facing at this point on high res mesh |
+| World Normals       |  The same info, relative to the worl (not the given game mesh poly)   |
+| Ambient Occlusion   |  Results of any bounced (indirect) light (soft and blurry)            |
+| Color ID/Clown map  |  In this case, a different colour for each subdiv object that was separate in maya. |
+| Curvature           |  White where the subd was convex, black where it was concave          |
+| Position            |  Location in the world of every triangle in the smoothed subd         |
+| Thickness           |  White means subd was thick, black means thin. Good for candles, skin etc |
+
+
+### Environment settings (show wires, rendering quality, studio lighting, rotate environment)
+
+We'll step through these.
+
+## Deliverable This Week
+
+You'll create images and submit them in an archive with one of your scene files.
+
+###  Painter images
+Pic a 2 or 3 camera angles to show off your object. For each one, capture at least two images:
+
+1: Object with normal maps enabled, using default white material.  
+2. The same again with wireframes enabled.  
+3. This time turn on any materials you’ve applied, and turn off wireframes.  
+
+###  Maya Images
+Hide your game meshes, unhide all your subd meshes. Pick two angles and take screen shots with `wireframe on shaded` enabled and:
+1. Normal view enabled (press `1`)
+2. Subd smoothing enabled (press`3`)
+
+### Scene File
+Do **one** of the following:
+
+1: If you successfully bake your textures, submit your *Painter* `spp` file.
+2: Otherwise submit your *Maya* `.ma` or `.mb` scene file
+
+### Archive  
+1. Gather your images and scene file in one folder. **compress** the folder with `.7zip` or `zip`
+2. Name the archive:
+   `firstname_lastname_A1_AAC202.zip`
+3. Submit on Blackboards assessment 1 page.
+
+If you have trouble with the large file size, upload it to a service like *Dropbox* and submit the link.
+
+## Texturing
+
+Mask by color selection.
+
+## Presenting Our Results
+
+* Real time rendering.
+* Screenshots
+* Environments
+* Post effects
+  * Don't go overboard on these. It's a rabbit hole, and won't fix mesh problems :\
+
+### Summary
+1. Finalising models
+2. Exploring updated Arcade Stick files
+3. Importing meshes and baking high res details to texture maps.
+3. Deliverables
+3. Lighting/materials
+-->
+

@@ -1,145 +1,339 @@
 ---
-title: "9. Modern texturing with PBR"
-linkTitle: "9: PBR Texturing"
-weight: "90"
+title: "5. Hard surface modelling with subdivs"
+linkTitle: "5. Hard surf 1"
+weight: 50
 description: >
-  Learning about the current state of surfacing/texturing meshes for games.
+  Weeks 5-8: Hard surface modelling time
 ---
 
-## Assessment 3: PBR Texturing
+<!--
+NEW CONCEPT WITH objects that better show smooth to sharp etc.
+SIMPLE enough to model, retop, and then get to substance.
+-->
 
-**Final Submission: End of week 12.**
+## What is Hard Surface Modelling?
 
-Not yet fully ready. What it'll involve is texturing a provided model, using Substance Painter, and exporting to a provided Unity scene/web viewer. 
+Hard surface modelling is a term used in the game industry for modelling objects that are inorganic and usually machined. Think headphones, engines, washing machines, hinges, vehicles, space helmets, guns, armour, frying pans. These objects are usually rigid and have features not easily found in nature: **paralell lines, near-perfect circles, very flat surfaces, tightly controlled bevelled/rounded edges**. If you've held an iphone,- played a nice piano, used a well made game controller or mouse that fit your hand well, you know the pleasure of having just the right curves and texture to a surface, just the right play/travel to a button.
 
-**Week 11:** Progress will be submitted to a Blackboard thread for review.   
-**Week 12:** Models, textures and screenshots will be submitted.
+{{< imgcard "wooden_radio" Link "wooden_radio.jpg">}}
+Handsome retro bluetooth radio.
+{{< /imgcard >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#assessment-3-pbr-texturing">Assessment 3</a>
+{{< imgcard helmet_doom_eternal Link "helmet_doom_eternal.jpg">}}
+AAA super legit space helmet
+{{< /imgcard >}}
 
-## Download these examples!
+The techniques for modeling a go kart or military radio in high detail, then, is pretty different to how you'd model say, a _Wrinkle-necked Slothbarg Peasant_ NPC or his ragged cloth farmer's tunic.
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/EQSgGyMiDvJNtHQDgXoeDY4BrjF73IEZutuCpVnQG9Gsig?e=GZnOwF" target="_blank">Download week9_examples.7z<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+## How's it done? 
 
-## See PBR in action
+The key is controlling surfaces and edges carefully, without introducing lumpiness. As we saw in character modelling, **fewer edges** usually leads to **fewer lumps**: but it leaves things faceted, or we **smooth it and lose our sharp edges**.
 
-Overwatch was one of my first games with this look, especially in a stylised way.
-Current games all use it, yell out some games.
+{{< imgproc klaayas_room_wireframe_javier_rodriguez Resize "600x" Link "klaayas_room_wireframe_javier_rodriguez.jpg">}}
+Round vs sharp, countour control!
+{{< /imgproc >}}
 
-  - Meet Mat examples are up on sketchfab 
-    - Collection: https://sketchfab.com/substance3D/collections/meetmat17
-    ![](mat_collection.png)
-    - individual: https://sketchfab.com/3d-models/meet-mat-2017-medicbot-v2-fc160f297c7c4587b09a7b5a47b1b52e
+Look at the eimage above carefully. See how the window is perfectly smooth and round, and the top left curtain folds are perfectly curved despite having few lines on there?
 
+That's our friend **dynamic subdivisions**. But how do we use them without collapsing the sharp edges at the edges of teh window, or the controlled bevels on the chest?
 
-  - Other models
-    - Substance staff picks: https://sketchfab.com/substance3D/collections/allegorithmic-staff-pick
-    - https://sketchfab.com/3d-models/soliders-helmet-rock-band-4-8c3464c1855248b2bc6c3428b4e9988d
-    - Adobe's profile page on sketchfab : https://sketchfab.com/substance3D 
+![Pixar subdivs](subdiv_pyramid_pixar.png)
 
-## Diffuse, painted - most basic
+### Creases and control edges
 
-Load up the dagger from week9 examples and apply the texture to the colour channel of the material.
+{{< imgproc control_loops Resize "400x" Link "control_loops.jpg" >}}
+Using extra edges where we want more structure.
+{{< /imgproc >}}
 
-Before PBR, a shader used a diffuse texture (the ones you've made in ACR103) to give the impression that a mesh (a bunch of triangles) actually had a surface which, thanks to colour, could be mossy bricks, wood with nails in, maybe skin and armour and cloth all in a single triangle.  
+When we subdivide, as you can imagine, our computers do some fancy math to add new polygons, average them out, etc etc. That's fine, we just hit ctrl-d. The way that algorithm (bit of code that calls the shots) works allows for us to add in extra edges, or add *crease* to edges, just like creasing paper really, so when the surface smoothes it can keep corners.
 
-To do this, it mapped pixels from the diffuse texture to the surface. It was up to the artist to give the impression light from an imagined sun or lamps or lava or whatever was bouncing off the surface and into our eyes, without which of course we wouldn't see it. The properties of the surface materials were suggested by painting in shadows, hilights, reflections etc. Some of the shadows and light might be generated by a renderer beforehand, then we'd add that to the texture and flatten it. 
+{{< imgproc "bot_piece" Resize "400x" Link "bot_piece.jpg" >}}
+Armour from the upper arm of a robot.
+{{< /imgproc >}}
 
-## PBR with image based lighting
+You can think of **creases** like the bendy poles in a tent. The hold the form very well where the cloth crosses them, and bend with the form along their length.
 
-Look at [a meet mat example](https://sketchfab.com/3d-models/meet-mat-2017-medicbot-v2-fc160f297c7c4587b09a7b5a47b1b52e).
-A shader uses many types of image map plus light sources and other things to
+TODO: Need pic of crease in zbrush. Pref from my hearthstone things.
 
-1. Give the same impression of a surface moss/wood etc on it via colour
-2. Allow them to be seen by mapping a colour pixel from the albedo (colour map) onto the surface, but then..
-3. It shades/paints the surface differently every frame based on the player's viewpoint and the position of lights, the sky/sun/surroundings (and more) to look like it's made of metal, rubber, skin etc and reflecting the world accordingly. 
-  - This is the same process a texture painter was going through in their mind when painting diffuse textures and adding in lighting/reflections etc, but here it's calculated by the graphics card in real time in response to the world. 
-  - It uses more textures than just the colour (albedo) to power all of this, because doing it in real time would be murder to the GPU (see RTX). There are textures holding a metalness score for every pixel in the colour map, and others with roughness scores, ambient occlusion (self-shadowing) scores, transluscency scores and lots of other possible information.
+**Support edges** are more about strength in numbers.. The more there are and the closer together they are, they more they behave like a creased edge. You get more control with support edges, but it messes with your polygon density. 
 
-## What's Substance Painter like?
+{{< alert title="Catmull-Clark" color= "primary" >}}
+The most common smoothing algorithm used in 3D packages is <i>Catmull-Clark</i> subdivision. You probably won't be surprised that it's engineered to allow expressive modelling with minimal polygons when you hear that the _Catmull_ is **Ed Catmull**, co-founder of **Pixar**. Pixar's tech is heavily focussed on realism combined with appeal, but with the goal of rendering fast enough to make the hundreds of hundres of thousands of frames needed for a feature film.
 
-Big, for one thing.
-
-After that it's like a mix of Maya navigation and Photoshop layer groups and kinda 3D coat thinking sometimes.
-
-Open Manhole1.spp and let's see what a project looks like. What, roughly, does an artist do there to texture meshes?
-
-{{< alert title="Painter GPU warning" color= "primary" >}}
-Painter will ask you to change a few windows settings so the GPU can do longer tasks. 
-
-*You can only do this if you're on your own computer. This lab machines won't allow you to make registry changes. If you're on a lab pc, just click continue.*
-
-If you're on your own PC, click the URL in the popup dialogue for more info, and click the quit button in the Painter warning dialogue. You'll be creating or updating these entries in the Windows registry:
-![registry tdr](registry_tdr.png)
+He worked along with Jim Clarke, who co-founded _Silicon Graphics_ and _Netscape_, and of course like all our creations it was built on the work of other smart, passionate people.
 {{< /alert >}}
 
-#### Important shortcuts
 
-Action | Shortcut
---------------------------- | -------
-Tumble Camera | Alt-LMB drag (like Maya)
-Pan Camera | Alt-MMB drag (Maya)
-Zoom | Wheel or Alt-RMB drag (Maya)
-Rotate environment lighting | Shift-RMB drag
-See shortcuts in viewport | Hold a modifier (alt, shift, ctrl) for a while 
-See material in 3D/2D viewports | m
-See next baked map in use | b
-See next channel of our layered materials | 
+## Subdivision surfaces
 
-### Next file 
+{{< imgcard subdivision_cube_wikipedia >}}
+Subdividing a cube three times - wikpedia
+{{< /imgcard >}}
+
+#### Subdivision: 
+* Take a square, draw a vertical and horizontal line through the middle. 
+* You've subdivided it into 4 squares.
+
+#### Smoothing
+
+Once your mesh is subdivided and has lots more edges and verts, a smoothing algorithm is applied. In it's simplest form, it's kind of averaging out the space between all the vertices on the model, averaging out the area of all the faces, averaging out all the angles. It eventually leads to a sphere.
+
+Imagine you can sew:
+* You get some soft, elastic fabric, cut out the shapes of the polygons in your model, and sew them together.
+* Fill it with little foam balls (bean bag beans)
+
+{{< imgproc cube_cushion Resize "500x">}}
+Cube cushion
+{{< /imgproc >}}
+
+Or just imagine your model as a baloon:
+{{< imgproc jett_balloon Resize "500x">}}
+The Super Wings?
+{{< /imgproc >}}
+
+{{< alert title="Further Reading" color= "primary" >}}
+Wikipedia: <https://en.wikipedia.org/wiki/Subdivision_surface>
+{{< /alert >}}
+
+<!-- 
+
+## New tools!
+
+Since we're doing new things, I've updated our tools and UI. Grab them and we'll install.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/Ee2da8SsTu5Jlf4E10iHxCgBhxjyXKhXfMMnCeyzpibg_A?e=6f1xLN" target="_blank">ZBrush 2020.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laureateaus-my.sharepoint.com/:u:/g/personal/daniel_mcgillick_laureate_edu_au/ETsNpdQYe1NJpDtFYUZDE04Bawx7Di8-PfsyDlWfOCZwxw?e=75Dvru" target="_blank">zbrush_customisation.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+-->
+## Introducing ZModeler brush! 
+hotkey: b > z > m
+
+Zmodeler brush lets you work on geometry at the vert/edge/face level like Maya, but also lets you to work by flat islands, polygroup islands and more.
+
+![zmodeler tank frame](zmodeler_tank_1.png)
+An in-progress model with the zmodeler brush hilighting an edge.
+
+Watch a little of the Metal Slug tank modeling tute by Joseph Drust. Jump in around 13:40, watch a few minutes, skip around.
+
+{{< youtube jHOk2kCPK8Y >}}
+
+![zmodeler edge actions](zmodeler_edge_actions.png)
+Hitting <kbd>space</kbd> while using zmodeler shows you what you can do to the component type under your cursor.
+
+TODO: Screenshot of the custom zmodeler brushes
+
+
+## Exercise 1: Explore breakfast
+
+<!--Open scene with cube and magnifying glass good topo, mag bad topo, in layers, only cube visible.-->
+Grab and open this ZBrush project
+{{< imgcard "mug_subd_zb" Link "breakfast_zbrush.zip">}}
+Breakfasty bits modeled in ZBrush.
+{{< /imgcard >}}
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="breakfast_zbrush.zip" target="_blank">breakfast_zbrush.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+TODO: Add more to breakfast: fork with creases and control loops.
+
+### Breakfast by Paul Chambers
+
+This is the pic I was modeling from.
+
+{{< imgproc style_big_breakfast_paul_chambers Resize "1024x" Link "style_big_breakfast_paul_chambers.png" >}}
+Big breakfast. Click to zoom.
+{{< /imgproc >}}
+
+### Creases and control loops.
+
+Turn on and off dynamic subdivs for the various bits. Look at the shapes we get.
+
+### Control loops and ZModeler
+
+Pros: fine control
+Cons: Extra unwanted polygon density
+
+### Arcade stick
+
+{{< imgcard arcade_stick_zb Link "stick.zip">}}
+Download, unzip and open the arcade stick in ZBrush
+{{< /imgcard >}}
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="stick.zip" target="_blank">stick.zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+## Style reference is critical 
+
+Detailed subdivision modelling is way beyond the scope of this subject. Instead, we'll use the techniques to add **charming roundness** and **light catching** chamfers to our props.
+
+To do that in a cohesive way we'll use style reference.
+
+#### Close Up: Paul Chambers
+
+He's an artist who works at SuperCell.
+
+{{< imgproc style_pancakes_paul_chambers Resize "1024x" Link "style_pancakes_paul_chambers.png" >}}
+Pancake breakfast. Click to zoom.
+{{< /imgproc >}}
+
+{{< imgproc style_chest_paul_chambers Resize "1024x" Link "style_chest_paul_chambers.png" >}}
+Chest. Click to zoom.
+{{< /imgproc >}}
  
-2. Mini Axe
+#### Zoomed out: Lulemero
 
-### Please explain those maps and channels
+Nice rounded softness in this scene gives us an idea of how to approach our modeling.
 
-Some pictures aren't representative, you don't look at them to see what something looks like. You look at them for information about something maybe. A graph is a bit like that. Closer:
-* A fingerprint
-* a qr code or bar code
-* consider an fbi recruit's file with a reduced photocopy of a shot up target from their practise at the shooting range.
-* a rubbing from a gravestone
-* polarised view of stressed plastic?
-
-### Baked?
-
-Not every image is drawn. Some can use the properties of the subject and a physical or chemical process to capture them. Consider an xray or a grave stone rubbing. Baking maps is looking at a little area of a high poly mesh from the nearest vantage point on a low poly copy of the mesh and storing it in a pixel.
-
-It's like putting scaffolding in front of a brick wall, covering it in post it notes, rubbing a crayon over all of them, then putting all those post its in a box (in order). You can go and stick them all up on your lounge wall or office wall and recreate the wall. Sorta.
-
-A normal map is like a plaster cast of a bootprint, but manages to store the same 3 dimensional impression in a 2d picture. (It stores x y z info in r g b channels
-
-Today we'll do the short version:
-
-**Baked maps** are the info Painter has analyzed and stolen from a sweet high poly mesh and saved into images (think of these images as data files, not pictures for looking at). The surface shader uses the info about the high poly mesh to make it look like the low poly mesh still has all that extra detail.  
-
-Smart materials use the high poly info in the images to put dirt and moss and pooled schmoo in the crevices, or to remove paint and put nicks and shine on bumps and edges etc.
-
-![maps and channels](maps_channels.png)
+{{< imgproc klaayas_room_javier_rodriguez Resize "1024x" Link "klaayas_room_javier_rodriguez.jpg">}}
+Everything looks sanded off, smooth to touch. Click to zoom.
+{{< /imgproc >}}
 
 ## Homework
 
-### Read PBR Guide part 1. 
+**Due Monday 12pm (midday)**
 
-You can visit the html version of part 1, or read it in the all-in-one PDF.
+1. Watch Metal Slug tank modeling.
+2. Watch Pavlovic Tutorials.
+3. Model breakfast object/s with ZModeler.
 
-Guide parts | Format
----- | ----
-[Part 1](https://academy.substance3d.com/courses/the-pbr-guide-part-1) - Light and matter | Online 
-[Parts 1 and 2](https://academy-api.substance3d.com/courses/b6377358ad36c444f45e2deaa0626e65/attachments/2b57526e-4bf3-4fd6-ae88-e9a9313a35cc) - All in one | PDF download 
+Learning subdiv modeling requires time, **concentration** and **repetition**. There are multiple techniques **specific** to certain types of models/problems.
 
-### Watch Part 1 of Getting Started
+### 1. Watch metal slug tank modeling 
 
-I've gathered a Youtube playlist of Adobe's free learning material. [How to Substance Painter 2021](https://www.youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4)  
+Watch at least half an hour of this 1 hour video. It doesn't have to be one sequential bit, you can pick 3 10 minute chunks for example. 
 
-![Getting started](substance_getting_started.png)
+It's timelapsed but it has **commentary** through the whole thing by Pixologic's demo guy (and former industry modeler guy). It doesn't slowly teach you any given feature, but it will give you a great **understanding of how he breaks up the model** into pieces, then repeats a small set of processes in different ways. He also solves common problems, and you'll see him use masking, polygroups and visiblity controls just like with the other brushes. By the end you can see how appealing mechanical things can be made with the zmodeler brush/tools. 
 
-Watch [the intro and then part 1 of getting started](https://www.youtube.com/watch?v=-ZbmRsOnApk&list=PLfWza-ietxywun4izsjHG6A69i-aLROK4&index=1) and try some of the things you see there. Add some materials, mask some things. *(Haven't yet confirmed this can be done in 2019.3.3 with provided project files)* 
+{{< youtube jHOk2kCPK8Y >}}
 
-[How to Substance Painter 2021](https://www.youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4)  
+<!-- https://www.youtube.com/watch?v=jHOk2kCPK8Y -->  
 
-You can grab the [spider bot project files too](https://academy-api.substance3d.com/courses/88047015-c97e-48e8-9654-be65ca7c9809/attachments/ac082bf7-d343-4e1a-afd5-3edd4b4af287) \(268mb\)  
+### 2. Watch Pavlovic tutorials
 
-If the 2021 version turns out too radically different to 2019.3.3 and you can't find things it shows in the interface (or figure out where they went), there is this playlist of the previous introduction vides from 2018: 
+This guy is the absolute source. Learn with Michael Pavlovic: **watch videos *33-37*.**
 
-[How to Substance Painter 2018](https://www.youtube.com/watch?v=IGGQl9kVB1M&list=PLB0wXHrWAmCxt86Aof15KxHnimg5Iowf6&index=9)
+[ZModeler in the 2021 intro to Zbrush series](https://www.youtube.com/watch?v=XcR5TzvIaoc&list=PLkzopwqcFevYP1Nm3wIKsyH-jQTkk8AhS&index=33)
 
-There's other free learning material up on Substance Academy, and plenty of paid great guides to specific kinds of texturing on Gumroad, Flipped Normals.
+### 3. Model object
+
+Using zmodeler and dynamic subdivisions, have a go at modeling the knife in this pancake breakfast scene. **Hint:** don't make it one single piece. use separate meshes for the blade, the handle and the rivet. If you finish it and want to explore more, try the teapot: separate lid, handle, body and spout.
+
+Post screenshots of the model with polyframe on and off, with dynamic subdivs on and off.
+
+{{< imgproc style_pancakes_paul_chambers Resize "1024x" Link "style_pancakes_paul_chambers.png" >}}
+Pancake breakfast. Click to zoom.
+{{< /imgproc >}}
+
+#### Submission
+
+By midday Monday add a **reply** to your class's thread below and **insert your screenshots** so they're visible when we view the thread. If you click a link and it has to authorize it may drop you at the subject's blackboard homepage. If so, come back here and click again.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064204_1&message_id=_2899265_1" target="_blank">HW Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+
+<!-- 
+
+### Working with cylinders
+
+flipped normals how to model curved hard surfaces.
+https://www.youtube.com/watch?v=u7hg6xjskoq
+
+Some straightforward controlling of volume and end shapes:
+{{< youtubetime iyZqmWf5x_c 223 >}}
+
+But how do you add features to one small area without breaking the that perfectly circular cross section:
+{{< youtubetime RCSijbeXujs 38 >}}
+
+The first 10 minutes here show us how to break up the mesh without gaps and distortions.
+{{< youtube ryPIKJkNzPI >}}
+
+### More Complex
+
+More by Elementza:
+
+{{< youtube 0WZ8zfKOTr0 >}}
+
+### Sharp Things, Hiding Triangles
+
+One to subdivision modeling is that **pointy volumes** are naturally form **pyramids/triangles**: how do we handle those with quads?
+
+{{< youtube "Z9wgKy-F1Rw" >}}
+
+{{< alert title="Disaster: I don't know 3DS Max!" color= "danger" >}}
+Relaxing. He's using 3DS Max, but he's using subdivision surfaces and **his solutions apply just as well in Maya**. The video's full of great techniques despite the weird tool names (turbosmooth = Maya's smoothed display, etc).
+{{< /alert >}}
+
+Another challenge he helps you manage: **adding details** means adding lots of edge loops. How do we **avoid a loopfest** that makes the model unmanageable and messes up curves?
+* If we terminate those edges that'll make a triangle, right? Won't that mess up the surface?
+  * First, there are **sneaky ways of shaping quads** 
+  * Second, triangles and ngons  create bumpy artefacts on curved surfaces, but **flat surfaces handle bad geometry better**
+
+## Summary
+
+This week we
+* Learned about high detail modelling using sub division surfaces
+* Tried some basic techniques and learned about the challenges
+* Covered our first assessment
+* Introduced resources you'll need to learn from
+* Have homework to do!
+
+-->
+
+<!--
+
+ Homework
+
+1. Watch videos provided, take notes about some of the techniques and challenges of subdivision/hard surface modeling that you discover.
+2. Consider what techniques you think will solve your problems.
+3. Draw over the concept in photoshop/krita to show pieces, and again to show ideas of edges/topology
+4. Document your answers in **your own new thread** in the module one forum. [See my post for instructions](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_89547_1&nav=discussion_board_entry&conf_id=_152757_1&forum_id=_866553_1&message_id=_2124709_1).
+
+-->
+
+<!--  
+
+ NEW APPROACH
+Biggest cross-subject problem right now: assignments are due on a sunday, not 1 week after the class.
+
+W1: 
+- Do not teach about the game mesh or painter yet! Introduce once this first idea is rock solid.
+- Leave out "high" and "low" poly where possible. Use "unsmoothed" and "smoothed", "subdivided".
+- Pic an object from the provided concept in first hour.
+- Demo of SubD modeling. Understanding that the subd mesh has two views/states.
+- Together we model something step by step
+- They start on their model. Forget the whole planning angle, was too confusing. People mixed up all the meshes and though they thought they grocked the normals, it was usually misinterpreted.
+
+W2: 
+  - More subD modeling and refining, finishing
+  - Looking at problems people have
+  - Fixing one or two meshes for people in front of class
+  - Get it finalised. Name everything part1_subd, thing_subd.
+
+W3: 
+- Describe goal: lets make a game mesh that is as close as possible to our subd in smoothed mode.
+- You can start with a new mesh, or with a duplicate of the subd with all the supports removed.
+- Call parts part1_game, thing_game.
+- Key challenge? How do you model something in the same space as another model (the subd) and compare them?
+  - Using layers with R turned on
+  - Making objects visible/invisible
+  - game res prefers staying inside the high res.
+  - approximating smooth curves with minimal geometry (use example both big curves and tight curves)
+Our game res model is going to have texture maps generated from the geometry of the smoothed subdiv!
+Use always: Freeze modifiers, delete history! Especially important in UV.
+- Uv unwrapping game model.
+  - Recapping the unwrap process
+  - How to set up our normals:
+    - In edge mode, uv editor -> select -> select texture borders. Harden edges.
+    - Inverse edge selection. Soften edges.
+Has to be finishd this week. Post to journal.
+
+W4: 
+  - Work together demo: download and open painter demo scene. (maybe download all demo assets start of trimester?)
+    - scene has a baked button in it when opened
+    - edit -> project configuration, import a diff game meshes
+    - Texture Set Settings -> Bake Mesh Maps, select diff subd meshes
+    - Hit bake, see results.
+    - Explain that the game res  mesh is our true mesh, and the new normal maps we just got are generated from the high res.
+      - Diagram showing how it looks in front and behind, then uses angle of surface for x,y,z (r,g,b) values. 1,0,1 for purple.
+  - Do it with theirs, debug what's not working.
+Open painter sample scene
+-->
+
