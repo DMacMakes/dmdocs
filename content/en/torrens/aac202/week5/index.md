@@ -117,29 +117,24 @@ Smart materials use the high poly info in the images to put dirt and moss and po
 
 ## Homework
 
-### Read PBR Guide part 1. 
+### Read the PBR Guide
 
-You can visit the html version of part 1, or read it in the all-in-one PDF.
+Read through part 1 of The PBR Guide, [Light and Matter](https://academy.substance3d.com/courses/the-pbr-guide-part-1). You don't have to read deeply into all the technical details; focus on trying to gain a feel for the top level ideas about light bouncing imperfectly off surfaces - which are smooth/rough, metallic/not metallic, coloured -  and changing as it makes it's wonky way to your eyeball.
 
-Guide parts | Format
----- | ----
-[Part 1](https://academy.substance3d.com/courses/the-pbr-guide-part-1) - Light and matter | Online 
-[Parts 1 and 2](https://academy-api.substance3d.com/courses/b6377358ad36c444f45e2deaa0626e65/attachments/2b57526e-4bf3-4fd6-ae88-e9a9313a35cc) - All in one | PDF download 
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://substance3d.adobe.com/tutorials/courses/the-pbr-guide-part-1" target="_blank">PBR pt.1, Light and Matter<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+### Watch and work through "Getting Started"
 
-### Watch Part 1 of Getting Started
+Adobe provide a short but in-depth, satisfying introduction to texturing a robot (*spiderbot*) in Painter. They provide the base model (look for *spiderbot.zip* below *Download object files* on the tutorial page) along with videos leading you through the steps. 
 
-I've gathered a Youtube playlist of Adobe's free learning material. [How to Substance Painter 2021](https://www.youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4)  
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://substance3d.adobe.com/tutorials/courses/Getting-Started-with-Substance-3D-Painter-2021/youtube--ZbmRsOnApk" target="_blank">Getting Started series on Adobe.com<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+{{< alert title="Working Along" color= "primary" >}}
+They're only about 90 minutes total, so working along with them you should be able to complete or get close to completing the series in this week's 7 hours of personal work/research time you apply to AAC202 (as with all subjects).
+{{< /alert >}}
 
 ![Getting started](substance_getting_started.png)
+### More video resources
 
-Watch [the intro and then part 1 of getting started](https://www.youtube.com/watch?v=-ZbmRsOnApk&list=PLfWza-ietxywun4izsjHG6A69i-aLROK4&index=1) and try some of the things you see there. Add some materials, mask some things. *(Haven't yet confirmed this can be done in 2019.3.3 with provided project files)* 
+The episodes have also been added - along with other videos, including stylised texturing - to my [How to Substance Painter 2021 playlist](https://www.youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4) on Youtube.
 
-[How to Substance Painter 2021](https://www.youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4)  
 
-You can grab the [spider bot project files too](https://academy-api.substance3d.com/courses/88047015-c97e-48e8-9654-be65ca7c9809/attachments/ac082bf7-d343-4e1a-afd5-3edd4b4af287) \(268mb\)  
-
-If the 2021 version turns out too radically different to 2019.3.3 and you can't find things it shows in the interface (or figure out where they went), there is this playlist of the previous introduction vides from 2018: 
-
-[How to Substance Painter 2018](https://www.youtube.com/watch?v=IGGQl9kVB1M&list=PLB0wXHrWAmCxt86Aof15KxHnimg5Iowf6&index=9)
-
-There's other free learning material up on Substance Academy, and plenty of paid great guides to specific kinds of texturing on Gumroad, Flipped Normals.
