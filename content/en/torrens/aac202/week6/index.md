@@ -8,29 +8,46 @@ description: >
 
 
 This week:
-* Other resources: Danny's Painter playlist
+* Assessment 1 marking complete
+* How did people go with homework?
+* Other resources on Danny's Painter playlist
 * Assessment 3
 * The Substance ecosystem: Designer vs Painter. Alchemist?
 * Looking through example files
-* Approaching the task of texturing: Having a plan, working large to small, style reference, photo reference, pureref!
+* Approaching the task of texturing: Having a plan for materials, working large to small, style reference, photo reference, pureref! (Storytelling will come in more next week)
 
 ## Painter Playlist
+
+[How to Painter 2021 on Youtube](https://www.youtube.com/playlist?list=PLfWza-ietxywun4izsjHG6A69i-aLROK4)
 
 ## Assessment 2
 [Assessment 2 on dmdocs](../assessments/#2-model-surfacing)
 
 ## Substance Ecosystem
 
-Designer: design substances as procedural graph, maths, composites
-Substance Painter: Surfacing real models using substances, smart materials, filters, masks, hand painting etc.
+The Substance eco system supports the creation of substances and their application to 3D models, for a variety of pipelines including game, film and print production.
+
+> **Defining A Substance**
+> A substance is a procedural material with tweakable parameters, say some driftwood with an adjustable base colour, amount of barnacles and seaweed, scratches and bleaching. It can accept inputs such as image maps that allow it to algorithmically apply different treatments to edges, cavities, upper/side/lower surfaces etc.
+
+Program | Purpose
+--- | ---
+Designer |  Design new substances as procedural graph, maths, composites
+Substance Painter |  Surfacing real models using substances, smart materials, filters, masks, hand painting etc. 
+Alchemy | a sort of conversion tool that lets you open substances, tweak their parameters and bake out texture maps. I think.
 
 ## Example Files, Assessment Files
-Axe? Drone?
+Axe? Drain cover? 
 
 ## Approaching texturing
 Choose your model, then we have to begin. But where to start?
 
-Having a plan, working large to small, style reference, photo reference, pureref!
+Having a plan, working large to small, style reference, photo reference, pureref! Moodboarding with real world textures, palettes, real world objects.
+
+* [Material Inspo on Pinterest](https://www.pinterest.com.au/dmacdraws/material-inspo/)
+* [Barbariana on Pinterest](https://www.pinterest.com.au/dmacdraws/barbariana/)
+
+You cannot simply work from other 3D, games reference: they've already been interpreted and lost a lot of information. It becomes very hard to avoid cloning as you can't make your own decisions about what to keep/toss, and to have new ideas. Real world things can be boiled down to monotone triangles of colour or blurry smears, and they work because they are the remnants of things that fit the subject matter. Good luck reverse engineering them! 
 
 ## Style in video games.
 
@@ -49,7 +66,7 @@ Element | Approach
 **Lighting** | Comes from sources available in the environment and is reflected by objects in accordance with the properties of their real life counterparts, or the closes thing if we're dealing with fantasy/sci fi.  
 **Post effects/filters\*** | Will usually enhance detail and contrast but in line with film grading of movies/tv. They'll often recreate the physical properties of lenses, and the way cameras are affected by light and the environment.  
 
-\* *graphic effects applied to the whole screen once the scene is rendered in 3d*
+*graphic effects applied to the whole screen once the scene is rendered in 3d*
 
 ![last of us 2](realism_lastofus2_2.png)
 
