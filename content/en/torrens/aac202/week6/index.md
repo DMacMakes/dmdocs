@@ -80,3 +80,11 @@ Element | Approach
 **Characters, props and environments** | Often have only as much detail as is required to communicate broadly the nature of their surface and materials. Cloth wrinkles, tree bark, anatomy and wear/dirt/damage are often rendered in a simplified way, sufficient to communicate their nature, and often grouped, altered or exaggerated to add contrast, improve readability, add appeal and rhythm.  
 **Lighting** | May come from sources available in the environment but also from hidden lights, or extra lighting is implied in shaders. It will often be reflected by objects in ways that are correct on some level but also exaggerated/simplified to improve our ability to read silhouettes, distinguish materials more readily, add an exciting dynamism or to alter mood dramatically.   
 **Post effects/filters** | Can be used in a huge variety of ways. They too may add contrast and enhance detail. Typically they'll be used in many varied/creative ways that are often based more on principles of graphic design or illustration/painting than on physical properties of lenses/film. They'll do so to create mood, control/encourage the eye towards important characters/features (exaggerated depth of field), enhance a sense of action/motion, to evoke a style of poster/cartoon/school of painting, the possibilities are endless.  
+
+## Homework
+
+This week we're you're planning your approach to texturing this model and blocking in placeholder materials and the required masks. Post the results to the appropriate thread linked below, before our next review class. More details are found in the first post of the thread.
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127451_1&message_id=_3077891_1" target="_blank">ULTIMO Students: Week 6 Homework Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127466_1&message_id=_3077168_1" target="_blank">ONLINE Students: Week 6 Homework Thread<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
