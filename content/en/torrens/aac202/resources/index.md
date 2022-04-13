@@ -37,12 +37,12 @@ _ZBrush_ is a digital sculpting application that provides an experience similar 
 The zip contains:
   - a custom user interface file (.cfg)
   - a hotkey file (TXT)
-  - A `ZBrush 2020` folder full of resources (brushes, materials, basemeshes)
+  - A `ZBrush 2022` folder full of resources (brushes, materials, basemeshes)
 
 {{< alert title="Installing the resources" color= "secondary" >}}
 
 1. Unzip to a new folder.
-2. Go to the folder, look for a `ZBrush 2020` folder, open that.
+2. Go to the folder, look for a `ZBrush 2022` folder, open that.
 3. Select and copy everything inside (*ZProjects, ZStartup, ZTools, wintab32.dll*)with <kbd>Ctrl</kbd> + <kbd>c</kbd>
 4. Open another explorer window and navigate to `C:\Program Files\Pixologic\ZBrush 2021`  (or ZBrush 2022 FL on a uni machine) and you should see a lot of folders, and most of them start with *Z*. **Paste** into this folder with <kbd>Ctrl</kbd> + <kbd>v</kbd>
 5. Run ZBrush 2020 and, in the lightbox, double-click the 1mCube project to open it.
@@ -54,7 +54,7 @@ The zip contains:
 
 {{< /alert >}}
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/zb_resources_v2020.zip?csf=1&web=1&e=OYcNvn" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://laustu.sharepoint.com/:u:/r/sites/largefilecurriculum/AAC202/zb_resources_2022.zip?csf=1&web=1&e=2G7f9g" target="_blank">Download resources zip<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 ### Maya
 
