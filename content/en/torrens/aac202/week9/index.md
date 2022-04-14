@@ -1,15 +1,10 @@
 ---
 title: "9. Hard surface modelling with subdivs"
 linkTitle: "9. Hard surf 1"
-weight: 0
+weight: 90
 description: >
   Weeks 9-12: Hard surface modelling time
 ---
-
-<!--
-NEW CONCEPT WITH objects that better show smooth to sharp etc.
-SIMPLE enough to model, retop, and then get to substance.
--->
 
 ## What is Hard Surface Modelling?
 
