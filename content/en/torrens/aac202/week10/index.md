@@ -137,4 +137,6 @@ Keep working on nes pad model.
 Plan feature a.
 Implement a and b.
 -->
-Post progress in [Module 6 Discussion Forum - Your NES Pad Modelling Progress](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_115852_1&nav=discussion_board_entry&conf_id=_246176_1&forum_id=_1064205_1&message_id=_2909653_1) *before* our next review & feedback sesion. 
+Post progress in Module 10 Discussion Forum: NES Controller progress *before* our next review & feedback sesion.   
+[Ultimo](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127455_1&message_id=_3107695_1)  
+[Online](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127470_1&message_id=_3107696_1)
