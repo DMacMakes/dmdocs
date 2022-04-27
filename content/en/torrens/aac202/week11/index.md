@@ -106,6 +106,6 @@ Two circles using cylinder of 32 sides to generate. Bridge em with interactive e
 
 Complete as much of the NES pad modelling as you can by **Midday Monday** and submit images. Remember, it's an assessment deliverable worth up to 30%! More info in the submission threads below.
 
-[Ultimo class week 7 submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102604_1&nav=discussion_board_entry&conf_id=_201885_1&forum_id=_968747_1&message_id=_2597080_1) 
+[Ultimo class A3 Progress Submission thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127456_1&message_id=_3114314_1) 
 
-[Online class week 7 submission thread](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_102086_1&nav=discussion_board_entry&conf_id=_201367_1&forum_id=_968732_1&message_id=_2597097_1)
+[Online class A3 Progress Submission thread](https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127471_1&message_id=_3114324_1)
