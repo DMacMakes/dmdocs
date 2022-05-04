@@ -21,7 +21,9 @@ Order  | Deliverable       | Due     | Blackboard number
 
 ## 1. High Poly Character 
 
-**Due:** End of week 4
+**Delivered:** End of week 4  
+
+<!-- 
 
 **Create a bust from an existing 2D concept:**   
 1. Select one of the heads from the concept art [below](#concepts)    
@@ -74,11 +76,13 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * Painting in eyelashes and eyebrows that you didn't have geometry for
 
+-->
 
----
 ## 2: Model Surfacing
 
-**Final Submission: End of Week 8** 
+**Delivered:** End of Week 8
+
+<!--  
 
 Texture on of the provided models using Substance Painter.
 
@@ -124,6 +128,7 @@ You can find the submission thread and the requirements at the following link:
 
 [Texturing Assessment on Blackboard](https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055546_1&course_id=_115852_1)
 
+--> 
 
 ## 3. Hard surface model: NES Controller   
 
@@ -133,12 +138,11 @@ Model the NES pad as close as you can to completion. Focus on controlling the si
 
 ![Nes pad](nes_pad.jpg)
 
-<!-- 
 More info on level of detail and finish is [available below](#level-of-detail).
 
 ### What to submit
 
-Create a zip file named *aac202_a2_Lastname_Firstname.zip* containing the following.
+Create a zip file named *aac202_a3_Lastname_Firstname.zip* containing the following.
 
 * Renders/screenshots showing your finished model off from varous angles, including closeups where they help.
 * At least one beauty render, preferably composited and polished.
@@ -146,9 +150,10 @@ Create a zip file named *aac202_a2_Lastname_Firstname.zip* containing the follow
 
 ### Delivery
 
-While this our second assessment, you'll be delivering it to the *Assessment 1* section on Blackboard.  Upload your zip file to Torrens LFS (instructions below) and submit your link to Blackboard:
+While this our third assessment, you'll be delivering it to the *Assessment 1* section on Blackboard.  Upload your zip file to Torrens LFS (instructions below) and submit your link to Blackboard:
 
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055545_1&course_id=_115852_1" target="_blank">Online Hard Surface assessment blackboard<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10330016_1&course_id=_120652_1" target="_blank">ONLINE Prop Model/NES Controller Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10329943_1&course_id=_120651_1" target="_blank">ULTIMO Prop Model/NES Controller Submission<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 #### Level of detail
 
@@ -158,7 +163,6 @@ Objects | Focus on using edge loops and creases to **control all the silhouettes
 Materials | At a minimum use the ZBro Paint matcap. Try other materials to see if you can represent the glossy red plastic and metal screws better. 
 Color | If using ZBro paint, at a minimum fill with flat colour. You can add more subtle aging and colouration with polypaint if you like. If you use metal matcaps or pre-coloured plasticy matcaps, you might need to fill with just white to get the right result.
 
--->
 
 <!--  
 
