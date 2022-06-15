@@ -1,6 +1,6 @@
 ---
-title: "12. Finishing Assessment 2"
-linkTitle: "12. Finish A2"
+title: "12. Finishing Assessment 3"
+linkTitle: "12. Finish A3"
 weight: 120
 description: >
  Finalising details, texturing in ZBrush, rendering.
@@ -8,25 +8,24 @@ description: >
 
 ## Assessment 3 Final push 
 
-What are we delivering? That'll define how we spend our last few days on the project.
+### Week 7 problems - alphas/imm/geometry
+Any issues with alphas and insert mesh brushes that weren't covered in class or review?
+Have you done your research but still have hard geo problems? I might have easy solutions.
 
-[Assessment 3 - NES Controller on dmdocs](../assessments/#2-hard-surface-model-nes-controller)
+### Deliverables
+What are we delivering? That'll define how we spend our last few days on the project. The assessments page on dmdocs has been updated with details:
 
-## Last 5 percent
+[Assessment 3 - NES Controller on dmdocs](../assessments/#3-hard-surface-model-nes-controller)
 
+### Last 5 percent
 Details should be 95% done (or done) by now, but you might have one or two hard-solves left to figure out.
 
-### Hard geometry problems
-
-Hit me with any surprise hard geo problems now, I might have easy solutions.
-
-### Week 7 problems - alphas/imm
-
-Any issues with alphas and insert mesh brushes that weren't covered in class or review?
-
 ## Materials and textures
+Let's try to apply tweak our materials and add a texture to the face plate. 
 
-Note: If you absolutely *can't* texture the insert you can try photoshopping it into a render/composite. You'll do better marks-wise if you get this nutted out.
+{{< alert title="Quickish" color= "secondary" >}}
+I'll work through these two parts reasonably quickly in class. If you fall behind, go to the notes: they cover the process well. Go further and read about materials/textures in the ZBrush Docs.
+{{< /alert >}}
 
 ### Standard Materials - when Matcaps won't do it.
 Matcaps use an image and some fancy tricks to act like materials do in other 3d renderers (think Arnold in Maya for example) while being less work for your computer. They're really limited though; matcaps get darker not only in colour as you add black, their fake lighting/hilights disappear too.
@@ -41,7 +40,7 @@ Here's an example of using a basic material to get closer (than zbro paint) to t
 
 {{< imgcard dpad_basic_material Link "dpad_basic_material.png">}}
 Turning up the specular lets the rounded edge pick up bright hilights.
-{{< /imgcard >}}mgcar
+{{< /imgcard >}}
 
 {{< alert title="Making new materials is WEIRD" color= "primary" >}}
 To use another instance of a standard material like Basic Material or Toy Plastic you have to click *Copy Mat* (in the material palette), select another standard material *that you're happy to lose* and then *Paste Mat*. 
@@ -63,6 +62,8 @@ Right click and save these images to your project folder.
 
 <img src="insert_texture_buttons.png" width=320 /><img src="insert_texture_rough.png" width=320 />
 
+> Note: If you absolutely *can't* texture the insert you can try photoshopping it into a render/composite. You'll do better marks-wise though, if you figure out the texturing in ZBrush.
+
 1. In your project, select your graphics insert (the piece of plastic with writing printed on it). Make a duplicate to work on, turn off the original's visibility (eye) icon.  
 2. Under *tool -> texture map* click the big empty texture and click *import*. Load `insert_texture_buttons.png`. Note it's not visible on your mesh. You might have even been warned that it doesn't have uvs.   
 ![import texture](import_texture.png)  
@@ -75,55 +76,11 @@ Right click and save these images to your project folder.
 The graphics insert with the rough texture applied and visible in the viewport+renders.
 {{< /imgcard >}}
 
-<!--
-## Transferring the details
+## Week 12 Final Submission details
 
-Normal mapping!
-Substance Painter!
+Here's another link to the Assessment 3 details on the dmdocs assessments page.  
 
-{{< imgcard axe_zb Link "https://dmcgits.github.io/mds/workshops/painter/painter_notes.html">}}
-Click here to open the Painter workshop notes
-{{< /imgcard >}}
-
-Requirements:
-
-**Two collections of meshes.** Each collection can be saved into an fbx format file.
-
-1. Very **detailed meshes** of the prop parts that look very nice but are too heavy for games. 
-2. The **game ready mesh** with uv maps.
-   * These should have hard edges wherever there are seams/texture borders in the uv map, and soft edges everywhere else.
-   * Freeze any scaling (probably already done for uv unwrap)
-
-**Magic software:** It **scans the surface** of the high detail meshes, tosses away the polygons, and **makes an image** from their skin that **the game ready mesh will wear** like a suit.
-
-![](skin_suit.jpg)
-
-### Our mug exports
-
-![](mug_export_game_subd.png)
-
-1. **mug_game.fbx**: The _game meshes of the mug body, handle and coffee. 
-   * This is only about 50KBs.
-   * Make sure they all have the same material.
-2. **mug_subd.fbx**: The _subd meshes of the mug parts, but subdivided and smoothed for real. We'll use Maya to export the subd meshes and apply the smooth and subdivide algorithms along the way, producing tens or hundreds of thousands of real triangles.
-   * This sounds backwards but you have to have _smooth meshes_ **un**selected when you export the subd meshes, or they'll export the unsmoothed versions. You got it right if the file will be megabytes in size.
-
-## Baking your model in Painter
-
-Grab these:
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="A1_bake.zip">A1 Painter Baking Files<i class="fas fa-arrow-alt-circle-right ml-2"></i>
-</a>
-
-Watch this:
-
-{{< youtube v5b0z5FLXDk >}}
-
--->
-
-## Week 4 Final Submission details
-
-<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#week-4-submission-details">Week 4 submission details<i class="fas fa-arrow-alt-circle-right ml-2"></i>
+<a class="btn btn-lg btn-primary mr-3 mb-4" href="../assessments/#3-hard-surface-model-nes-controller">Week 12 Final Submission Details<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>  
 
 <!--   
