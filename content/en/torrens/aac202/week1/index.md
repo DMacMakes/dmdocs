@@ -66,10 +66,12 @@ You could work toward high detail assets using our low poly process but.. on its
 
 ## ZBrush installation
 
-You should all have now have ZBrush installed, lets add our custom UI, brushes etc. 
+Issues? Edu/Kivuto/OnTheHub licenses?
+<!--
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="../resources/#custom-zbrush-ui-and-resources">AAC202 Software Resources<i class="fas fa-arrow-alt-circle-right ml-2"></i>
 </a>
+-->
 
 ### Brush testing project.
 
@@ -225,16 +227,19 @@ Watch out:
 
 ## Homework 
 
-Pick a different Madball (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours. Do starting from the base sphere provided in `Trying_Out_Brushes.zpr`. If you already overwrote that file working on the class Madball, download it again for a fresh copy.  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
+Pick a different Madball (the real foam ball, not a 2D  drawing from their site) and sculpt it as faithfully as you can in 2 hours, starting from the base sphere provided in `Trying_Out_Brushes.zpr`. If you already overwrote that file working on the class Madball, download it again for a fresh copy.  Use brushes like the standard, dam standard, pinch, inflate, move, hpolish and smooth to reproduce the  clean surfaces and creases. 
 
 {{< alert title="Deliverables and Submission" color= "primary" >}}
-
+Take a few screenshots showing off your madball, and post them in the #work-aac channel on our T3 Discord Server.
+{{< /alert >}}
+<!-- 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127461_1&message_id=_3008344_1" target="_blank">Madball Homework Submission ONLINE<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127446_1" target="_blank">Madball Homework Submission ULTIMO<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-{{< /alert >}}
+
 
 _**Bonus:**_ ZBrush has a super helpful filter called **Clay Polish**. Look it up in the zbrush documentation or on youtube. To try it out, add some random shapes to your free-play sculpt and hit Clay Polish. For this kind of sculpt it's a bit of a magic "make art" button.
+-->
 
 {{< imgcard mb_detail_skullface Link "mb_detail_skullface.jpg">}}
 Skullface Detail
