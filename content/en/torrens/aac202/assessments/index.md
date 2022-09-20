@@ -21,9 +21,7 @@ Order  | Deliverable       | Due     | Blackboard number
 
 ## 1. High Poly Character 
 
-**Delivered:** End of week 4  
-
-<!-- 
+**Due:** End of week 4  
 
 **Create a bust from an existing 2D concept:**   
 1. Select one of the heads from the concept art [below](#concepts)    
@@ -76,7 +74,6 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * Painting in eyelashes and eyebrows that you didn't have geometry for
 
--->
 
 ## 2: Model Surfacing
 
