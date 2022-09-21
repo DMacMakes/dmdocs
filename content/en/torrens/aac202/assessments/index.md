@@ -74,12 +74,23 @@ faces-12
   * Adding gloss/specular hilight/shine to some elements
   * Painting in eyelashes and eyebrows that you didn't have geometry for
 
+## 2: Prop Model
 
-## 2: Model Surfacing
+Axe, table, what's available and varied. 
+1. Detail prop a little (stone, metal?). 
+2. Decimate and export from ZBrush.
+3. Retopo: Create low poly, game-resolution mesh (2,000 polygons?) in Maya using quad draw.
+4. Uv Unwrap model. Harden/Soften normals (uses island edges).
+5. New Painter project, bring in game-resolution mesh. Bake maps from high res sculpt to game res mesh.
+6. Export to Unreal or Sketchfab, test lighting/shading
+7. Basic texturing in Painter, re-export to Unreal or Sketchfab.
+Submit High and game res meshes (fbx), sketchfab link, screenshots.
+   
 
-**Delivered:** End of Week 8
 
-<!--  
+## 3: Model Surfacing
+
+**Due:** End of Week 12 
 
 Texture on of the provided models using Substance Painter.
 
@@ -96,16 +107,17 @@ Here's some reference for cartoony styled 3D using with a PBR look:
 
 ### Submitting your work:
 
-#### Week 7: Submit progress to Blackboard threads:
+#### Week 11: Submit progress to Blackboard threads:
 You can find the submission thread and the requirements at the following link:
 
+(older links, T2 2022)
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120651_1&nav=discussion_board_entry&conf_id=_270524_1&forum_id=_1127452_1&message_id=_3063104_1" target="_blank">ULTIMO Students: Week 7 Submission Discussion<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_120652_1&nav=discussion_board_entry&conf_id=_270525_1&forum_id=_1127467_1&message_id=_3063106_1" target="_blank">ONLINE Students: Week 7 Submission Discussion<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
-#### Week 8: Final submission 
+#### Week 12: Final submission 
 
-**Due: 11:55pm Sunday, Module 8 (10 Apr)** 
+**Due: 11:55pm Sunday, Module 12** 
 
 **What to Submit:**
 1. Final Painter project (*.spp file)
@@ -119,14 +131,14 @@ You can find the submission thread and the requirements at the following link:
 3. Export the final version of your model+textures to Sketchfab.
 4. Submit the **LFS link and the Sketchfab link** to Blackboard under *Assessment 2: Model Surfacing*.
 
+(older links, t2 2022)
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10329944_1&course_id=_120651_1" target="_blank">ULTIMO Students: Submit Model Surfacing Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 <a class="btn btn-lg btn-primary mr-3 mb-4" href="https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10330017_1&course_id=_120652_1" target="_blank">ONLINE Students: Submit Model Surfacing Assessment<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 
 [Texturing Assessment on Blackboard](https://torrens.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_10055546_1&course_id=_115852_1)
 
---> 
-
+<!-- 
 ## 3. Hard surface model: NES Controller   
 
 **Due:** End of week 12
@@ -160,6 +172,7 @@ Objects | Focus on using edge loops and creases to **control all the silhouettes
 Materials | At a minimum use the ZBro Paint matcap. Try other materials to see if you can represent the glossy red plastic and metal screws better. 
 Color | If using ZBro paint, at a minimum fill with flat colour. You can add more subtle aging and colouration with polypaint if you like. If you use metal matcaps or pre-coloured plasticy matcaps, you might need to fill with just white to get the right result.
 
+--> 
 
 <!--  
 
