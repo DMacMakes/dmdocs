@@ -9,6 +9,8 @@ resources:
     params:
       byline: "Credit: http://annx.asianews.network"
 ---
+Text editing on github ios is here 😍
+
 ## Software Requirements
 
 Before we can do any programming, you need to have the right software on hand. If you haven't installed *Visual Studio* and *Flowgorithm* you need to follow the link and do so! 
