@@ -14,7 +14,17 @@ resources:
 See Teams/MyLearn announcements.
 
 ## Drawing Tips and Warmup Exercise
-We'll be creating environments/buildings for assessment 2, so let's practise drawing shapes and lines with confidence.
+We'll be creating environments/buildings for assessment 2, so let's practise drawing shapes and lines with confidence. Everything is built of basic shapes, so warm up to get these fundamentals right every time you draw.
+
+These are just as valid on paper as they are on a tablet/cintiq.
+
+* Dot to dot lines
+  * For straighter lines and to hit your target, look ahead of the pen, not at the pen.
+  * Turn the page, the ipad, or on a pc, the canvas itself (usually *r* in photoshop)
+* squares and rectangles with dots first
+* circles in squares via mid point lines
+* curves with dots
+* 3D objects: cubes and perhaps cylinders with dots
 
 ## Light and Shadow
 
