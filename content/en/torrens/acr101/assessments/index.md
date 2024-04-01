@@ -16,11 +16,6 @@ Be aware that **Assessment 3** is an ongoing Journal that has **deliverables eve
 
 ## Assessment 3 - Journal
 
-Critical links:
-
-- [Assessment landing page](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8570122_1&course_id=_83802_1&mode=reset) on Blackboard. This has a **link to your journal**
-- [Assessment Brief PDF](https://laureate-au.blackboard.com/bbcswebdav/pid-8570148-dt-content-rid-35711014_1/xid-35711014_1) on Blackboard
-
 Rough summary: It's a journal you will share only with me, and it contains images you made for the weekly exercises, along with your reflections on how you used/benefited from class theory in their creation. By the end of the Trimester you'll have at least 12 entries.
 
 **Due:** 11:55PM, Sunday at end of Week 12 (module 6.2). 
@@ -32,11 +27,12 @@ For weekly Assessment 3 deliverablys check the **week's notes** (left nav, or to
 
 ## Assessment 1: Character Portfolio
 
-**Due Date:** 11:55pm, Wednesday, **April 1**. (revised due to campus closure)
+**Updated Monday 1st April, 2024 to reflect change to MyLearn**
 
-First, read the brief carefully:
+**Due Date:** 11:55pm, Sunday, end of week 6.
+As with all subjects, submit your assessment on *MyLearn/Canvas*.
 
-[Brief on Blackboard](https://learn-ap-southeast-2-prod-fleet01-xythos.s3-ap-southeast-2.amazonaws.com/5c07149a959f5/15620432?response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27ACR101%2520Assessment%25201.2019113.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200317T031337Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21600&X-Amz-Credential=AKIAIW5OVFIUOTV36DNA%2F20200317%2Fap-southeast-2%2Fs3%2Faws4_request&X-Amz-Signature=c5aaccaf0afc2a3bd67edab1aae8b46fd04f124aef5e70a995bd6001318eb738)
+**Note to T1, 2024 students:** If you delivered your assessment on Monday because you read the old date (a "Wednesday, 1st April" following a campus closure due to covid), I won't be docking any marks for lateness. This is only fair, given I was the source of that potential confusion.
 
 ### Deliverables
 
@@ -117,9 +113,7 @@ Crane
 
 ## Assessment 2: Environment Portfolio
 
-Similar to assessment 1 in idea and format, applied to environments.
-
-[Brief page on Blackboard](https://laureate-au.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_8570135_1&course_id=_83802_1) (Tri 1, 2020)
+Similar to assessment 1 in idea and format, applied to environments. 
 
 {{< alert title="Environment" color= "primary" >}}
 The game world. The landscape including trees, rivers, trails, roads, buildings, walls, citadels and so on. 
@@ -139,7 +133,7 @@ A game environment differs from a real world environment in that it often has to
 
 ### Submission/Deliverables
 
-**Due Date:** Sunday May 10, 11:55pm.
+**Due Date:** 11:55pm, Sunday, end of Week 11 (module 6.1 in old timey units)
 
 * Environment Portfolio
     * High resolution images, not thumbnails. A landscape-orientation page should be around 2500px wide.
