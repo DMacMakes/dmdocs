@@ -1,6 +1,6 @@
 ---
-title: "7: Painting Tips: Light And Shapes"
-linkTitle: "W.7 Painting Tips 1"
+title: "7: Shapes and Light"
+linkTitle: "W.7 Shapes and Light"
 weight: 70
 description: >
   Painting doesn't have to be so intimidating. Tips today include using simple tones to maximum effect, and knowing how certain "good" aka dynamic shapes can make paintings more engaging. Also: Assessment 2.
