@@ -14,17 +14,6 @@ resources:
 Be aware that **Assessment 3** is an ongoing Journal that has **deliverables every week** of trimester! To reflect this Assessment 3 is listed first.
 {{% /alert %}}
 
-## Assessment 3 - Journal
-
-Rough summary: It's a journal you will share only with me, and it contains images you made for the weekly exercises, along with your reflections on how you used/benefited from class theory in their creation. By the end of the Trimester you'll have at least 12 entries.
-
-**Due:** 11:55PM, Sunday at end of Week 12 (module 6.2). 
-**Weighting:** 30%.
-
-### Weekly Deliverables
-
-For weekly Assessment 3 deliverablys check the **week's notes** (left nav, or top of page nav button on mobile).
-
 ## Assessment 1: Character Portfolio
 
 **Updated Monday 1st April, 2024 to reflect change to MyLearn**
@@ -109,8 +98,6 @@ Mantis (Kung Fu Panda)
 Crane 
 {{< /imgcard >}}
 
-
-
 ## Assessment 2: Environment Portfolio
 
 Similar to assessment 1 in idea and format, applied to environments. 
@@ -134,6 +121,7 @@ A game environment differs from a real world environment in that it often has to
 ### Submission/Deliverables
 
 **Due Date:** 11:55pm, Sunday, end of Week 11 (module 6.1 in old timey units)
+**Brief and Submission:** These are on MyLearn/Canvas.
 
 * Environment Portfolio
     * High resolution images, not thumbnails. A landscape-orientation page should be around 2500px wide.
@@ -146,7 +134,7 @@ A game environment differs from a real world environment in that it often has to
 Zip up or PDF your 16 pages.
 * **Do not** use pdf if you aren't sure how to **preserve resolution** and quality.
 
-### Filling 12 Pages
+### Filling 16 Pages
 
 The numbering of the list isn't page counts, just a reference.
 
@@ -181,16 +169,15 @@ The numbering of the list isn't page counts, just a reference.
 * ACR101 [youtube playlist](https://www.youtube.com/playlist?list=PLfWza-ietxyyBRsQdwrhGV7ymiKaGwbpz).
 * Uncharted Environment [Workflow breakdown on Gnomon](https://www.gnomon.edu/blog/discover-naughty-dog-s-environment-art-workflow-for-uncharted-4).
 
-## What Have I/You Forgotten?
 
-There's a fair bit to remember when it comes to submitting your work. Here's a list of things to look for, and to ask me about if I've left them out.
-  * Final due dates and smaller deliverable due dates
-  * Tasks - what are we making?
-  * Deliverables - what outputs are needed, in what structure?
-  * Specific file formats and requirements:
-    * PSD with layers or flat PNG? What version of the program do I export from? 
-    * How do I deliver large files? How do I reduce file size?
-  * Etc
+## Assessment 3 - Journal
 
+Rough summary: It's a journal you will share only with me, and it contains images you made for the weekly exercises, along with your reflections on how you used/benefited from class theory in their creation. By the end of the Trimester you'll have at least 12 entries.
 
+**Due:** 11:55PM, Sunday at end of Week 12 (module 6.2). 
+**Weighting:** 30%.
+
+### Weekly Deliverables
+
+For weekly Assessment 3 deliverablys check the **week's notes** (left nav, or top of page nav button on mobile).
 

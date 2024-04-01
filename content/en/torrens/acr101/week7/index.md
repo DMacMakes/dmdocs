@@ -43,9 +43,9 @@ Painting from life using 3 tone light and shadow.
 
 Check out the dmdocs ACR101 [assessment page](../assessments/#assessment-2-environment-portfolio)
 
-* 16 pages, as with character folio.
+* 16 pages (if you can't get to 16, aim for 12+)
+* There's more reference required for an environment than a character, which will fill up at least 5 pages (by requirements)
 * Incorporates work done in class and updated journal.
-* Minimum (equivalent) 5 pages of reference.
   
 ## Good Shapes
 
