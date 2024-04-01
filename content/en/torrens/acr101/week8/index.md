@@ -1,76 +1,63 @@
 ---
-title: "8: Painting Tips: Light And Shapes"
-linkTitle: "W.8 Painting Tips 1"
+title: "8: Colour"
+linkTitle: "W.8 Color"
 weight: 80
 description: >
-  Painting doesn't have to be so intimidating. Tips today include using simple tones to maximum effect, and knowing how certain "good" aka dynamic shapes can make paintings more engaging. Also: Assessment 2.
+  Color harmonies, psychology, mood and application.
 resources:
-- src: "*catell*"
+- src: "image_of_art.png"
   params:
-    byline: "Art: Catell Ruiz (Deviantart)"
+    byline: "Art: Person Person"
 ---
 
-We've had 7 heavy weeks of work and not a small amount of drama with the change in lifestyle for all of us. This week is going to be a bit lighter, but the concepts are so vital and engaging that hopefully you'll be inspired to play a lot with these concepts at home.
+## Week 8 Powerpoint
 
-## Light and Shadow
+Download my a PDF of the updated [week8 (formerly week 7) powerpoint slides](ACR101_Week_8_Colour.pdf).
 
-Marco Bucci! **Watch this video** on your own pc. When you're done, come back to the stream and **type '3'** in chat.
+{{< imgproc slides_week8 Resize "500x" Link "ACR101_Week_8_Colour.pdf" >}}
+Click for slides pdf
+{{< /imgproc >}}
 
-{{< youtube "xcCJ2CU-bFw" >}}
+## Last Week:
 
-### Exercise
+[Due in Week 6](../week6/#due-this-week)
 
-Painting from life using 3 tone light and shadow. 
+## Discussing Assessment 1
 
-Grab the [Brushes here](week8_exercise_brushes.abr)
+* Due this week!
+* Checking in on progress
+* Answering questions.
+* Adding in this week's activities
 
-{{< imgcard portrait_1>}}
+## Aliased Painting
+
+To explore colours you need to be able to quickly alter them as a group and individually. If you have gradients or soft edges, that gets hard and you end up wasting time with bad seams and other messes.
+
+* Painting with hard edges stops shapes from blurring into one another. 
+* Then you can **easily change colours** with wand select, adjust hue/sat and bucket fill.
+
+{{< imgcard aliased_painting Link "aliased_painting.psd">}}
+Click to download this PSD.
 {{< /imgcard >}}
 
-{{< imgcard portrait_2>}}
-{{< /imgcard >}}
+For tools like marquee select and lasso select
+* disable anti aliasing
 
-{{< imgcard portrait_3>}}
-{{< /imgcard >}}
+For tools like bucket fill and wand select:
+* disable anti aliasing
+* set tolerance to 0
+* disable "contiguous" if you want to select areas of a colour that aren't connected
 
+For drawing **use the _Pencil_ tool**, which is like the _Brush_ but it always has a hard, jaggy edge. For its shape, righ click the canvas and select _Hard Round_ or _Hard Round Pressure Size_ (under general brushes).
 
-## Assessment 2: Environment Portfolio
+## In Class Activities:
 
-Check out the dmdocs ACR101 [assessment page](../assessments/#assessment-2-environment-portfolio)
+1. Warmup
+2. Aliased Painting
+3. Colour options for your character if you aren't finished.
 
-* 16 pages, as with character folio.
-* Incorporates work done in class and updated journal.
-* Minimum (equivalent) 5 pages of reference.
-  
-## Good Shapes
+## Due This Week
 
-Marco Bucci again! **Watch this video** on your own pc. When you're done, come back to the stream and **type '{)'** in chat.
-
-{{< youtube "-ZknWKTpc90" >}}
-
-### Exercise
-
-You've learned about seeing large shapes in dynamic paintings. Now look at your own painting and see where you can simplify areas and make them more dynamic by cleaning up/altering/creating shapes in there. 
-
-## Homework
-
-Give yourself 30 minutes to paint the major values in the image below by Catell Ruiz. Post it to the discussion forum in the [Week 8 - Environment practise](https://laureate-au.blackboard.com/webapps/discussionboard/do/message?action=list_messages&course_id=_83802_1&nav=discussion_board_entry&conf_id=_133410_1&forum_id=_805305_1&message_id=_2024923_1) thread at least one day before class (by Monday night if class is Tuesday).
-
-* You can use 5 major values
-* Look for good shapes
-* Don't paint most of the lines (edges between slats, drop shadow on every tile)
-* Steer clear of blending except on the one or two rounded roof/beam bits it's needed. 
-* Keep moving around the image, don't stay long in one place
-* You don't always have to brush/paint. Try selecting an area with the freehand lasso tool and filling it 👌
-
-
-{{< imgcard homework_catell Link "homework_catell.jpg">}}
-House concept for <i>Numa</i>
-{{< /imgcard >}}
-
-## Resources
-
-* ACR101 [youtube playlist](https://www.youtube.com/playlist?list=PLfWza-ietxyyBRsQdwrhGV7ymiKaGwbpz).
-* Uncharted Environment [Workflow breakdown on Gnomon](https://www.gnomon.edu/blog/discover-naughty-dog-s-environment-art-workflow-for-uncharted-4).
-
+1. Submit your character portfolio.
+2. Reflect on what you learned about color theory in your journal. Add an image of your class work.
 
