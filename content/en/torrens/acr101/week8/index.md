@@ -1,63 +1,130 @@
 ---
-title: "8: Colour"
-linkTitle: "W.8 Color"
+title: "Environment Concepts"
+linkTitle: "W.8 Enviro Concepts"
 weight: 80
 description: >
-  Color harmonies, psychology, mood and application.
-resources:
-- src: "image_of_art.png"
-  params:
-    byline: "Art: Person Person"
+  What does it encompass? What do I do?
 ---
 
-## Week 8 Powerpoint
+Some people have been worried about what goes in an environment concept portfolio, and others have been unsure about their ideas.
 
-Download my a PDF of the updated [week8 (formerly week 7) powerpoint slides](ACR101_Week_8_Colour.pdf).
+Hopefully I can help with that today.
 
-{{< imgproc slides_week8 Resize "500x" Link "ACR101_Week_8_Colour.pdf" >}}
-Click for slides pdf
-{{< /imgproc >}}
+## Handy Resources for Perspective Drawing
+### Perspective Tools (Paid, better on Sale)
+Draw perspective lines easily in photoshop, from your own guidance or extracted from an existing image.
+(Perspective Tools V2 on Gumroad)[https://kritskiy.gumroad.com/l/PT2?layout=profile]
+<!-- 
+## Last Weeks Homework: Scene Concept 
 
-## Last Week:
+We looked at how creature box paints a scene of our environment. How'd you go?
+-->
 
-[Due in Week 6](../week6/#due-this-week)
+## Eg: 2D Environment Concepts
 
-## Discussing Assessment 1
+### Rayman Legends
 
-* Due this week!
-* Checking in on progress
-* Answering questions.
-* Adding in this week's activities
-
-## Aliased Painting
-
-To explore colours you need to be able to quickly alter them as a group and individually. If you have gradients or soft edges, that gets hard and you end up wasting time with bad seams and other messes.
-
-* Painting with hard edges stops shapes from blurring into one another. 
-* Then you can **easily change colours** with wand select, adjust hue/sat and bucket fill.
-
-{{< imgcard aliased_painting Link "aliased_painting.psd">}}
-Click to download this PSD.
+{{< imgcard rayman_game_assets_and_level Link "http://aymrc.blogspot.com/2013/11/rayman-legends-concepts.html">}}
+Playable level area concept (top), Concept for modular wall (target)
 {{< /imgcard >}}
 
-For tools like marquee select and lasso select
-* disable anti aliasing
+{{< imgcard rayman_game_assets_castle Link "http://aymrc.blogspot.com/2013/11/rayman-legends-concepts.html">}}
+Finished assets for use by level artists
+{{< /imgcard >}}
 
-For tools like bucket fill and wand select:
-* disable anti aliasing
-* set tolerance to 0
-* disable "contiguous" if you want to select areas of a colour that aren't connected
+{{< imgcard rayman_hazard_plan_values Link "http://aymrc.blogspot.com/2013/11/rayman-legends-concepts.html">}}
+A plan for a hazard Rayman would encounter, using just values (brightness).
+{{< /imgcard >}}
 
-For drawing **use the _Pencil_ tool**, which is like the _Brush_ but it always has a hard, jaggy edge. For its shape, righ click the canvas and select _Hard Round_ or _Hard Round Pressure Size_ (under general brushes).
+{{< imgcard rayman_in_game_garden Link "http://aymrc.blogspot.com/2013/11/rayman-legends-concepts.html">}}
+Castle garden from player's view
+{{< /imgcard >}}
 
-## In Class Activities:
+### Mercenary Kings
 
-1. Warmup
-2. Aliased Painting
-3. Colour options for your character if you aren't finished.
+{{< imgcard mercenary_kings_tent >}}
+Mercenary Kings gameplay
+{{< /imgcard >}}
 
-## Due This Week
+{{< imgcard mk_bastion_1 Link "https://jgsboutain.tumblr.com/post/113471073385/so-many-things-i-wanted-to-include-the-dam-levels">}}
+Bastion level concept
+{{< /imgcard >}}
 
-1. Submit your character portfolio.
-2. Reflect on what you learned about color theory in your journal. Add an image of your class work.
+{{< imgcard mk_bastion_2 Link "https://jgsboutain.tumblr.com/post/113471073385/so-many-things-i-wanted-to-include-the-dam-levels">}}
+Bastion level in game
+{{< /imgcard >}}
 
+
+{{< imgcard mk_pow_1 Link "https://jgsboutain.tumblr.com/post/110654685785/the-story-was-slowly-taking-shape-and-this-piece">}}
+Pow camp concept
+{{< /imgcard >}}
+
+{{< imgcard mk_pow_2 Link "https://jgsboutain.tumblr.com/post/110654685785/the-story-was-slowly-taking-shape-and-this-piece">}}
+Pow camp in game
+{{< /imgcard >}}
+
+{{< imgcard mk_temple_1 Link "https://jgsboutain.tumblr.com/post/112723089805/this-one-was-my-favorite-piece-for-a-very-long">}}
+Temple concept
+{{< /imgcard >}}
+
+{{< imgcard mk_temple_2 Link "https://jgsboutain.tumblr.com/post/112723089805/this-one-was-my-favorite-piece-for-a-very-long">}}
+Temple in game
+{{< /imgcard >}}
+
+{{< imgcard mk_underground_level_drawn Link "https://blog.tributegames.com/post/59417316032/how-about-a-bit-of-concept-art">}}
+Underground hand drawn (vs pixel)
+{{< /imgcard >}}
+
+{{< imgcard mk_process_sculpture Link "https://blog.tributegames.com/post/62152060206/step-by-step-background-art-process">}}
+Background art process by Stephane Boutin.
+{{< /imgcard >}}
+
+{{< imgcard mk_level_superlow Link "https://blog.tributegames.com/post/98242560106/mercenary-kings-jungle-level-heat-map-this">}}
+This <i>heat map</i>, showing were players often die, is also a low res level layout.
+{{< /imgcard >}}
+
+Stephane did all the background art for Scott Pilgrim, so get googling if you liked this.
+
+### Filling 12 Pages
+
+The numbering of the list isn't page counts, just a reference.
+
+1. Level Idea 
+   - written
+   - game genre, gameplay
+   - scenario for this level (eg raid on temple)
+1. Photo Reference
+2. Style Reference
+    - On a team you'll probably be given a style to follow by the lead artist
+    - We don't have that, so provide images of a style you would make the game in
+    - Provide enough variety in image subjects to cover the style meaningfully: buildings, landscapes, props, foliage etc
+    - Can use style of an existing game, or two games (it will be between this and this), or an artist you like online that produces art that could feasibly be in-game.
+3. Maps
+    - Sketching out a top down map (maybe rpg or rts game) or side on map (platformer, brawler) is great planning step. 
+    - Getting player from a to b in your mind, over a rough map, tells you things you'll need ie. rubble pile, collapsed temple, tree with branches to jump on etc
+4. Scenes
+     - Wide angle shot of a whole scene not from a gameplay perspective perhaps: more something to evoke the experience of the place, like a holiday photograph.
+5. Various buildings
+6. Key (and less key) props/set pieces
+    - ramshackle old ladders, barricades, gutters to shimmy
+    - blown up truck, raised garden beds
+    - elevator apparently formed of vines
+7. Vegetation
+    - Tropical, alpine? Tree 1, tree 2, shrub, grass (very high, high, medium, low)
+8. Features supporting game mechanics (barricades, climb-ables, stuff to shimmy, destructables)
+9. Areas for encounters:
+    - boss fight area: is she on a giant spinning platform? Are there lava pits?
+
+### Style Reference
+
+Critical! Photo reference tells us what things look like. We're not making real things though, we're making game art. Since none of us (including me) have a super developed, world famous style, we need to show the style we'll be working in.
+
+<!--
+##  Perspective Drawing
+
+Basics
+Photoshop Tricks
+3D Software Tricks
+
+Whatever helps you get it done.
+-->
