@@ -16,15 +16,11 @@ Download my a PDF of the updated [week8 (formerly week 7) powerpoint slides](
   
 ).
 
-{{< imgproc slides_week8 Resize "500x" Link "ACR101_Week_8_Colour.pdf" >}}
+{{< imgproc slides_colour Resize "500x" Link "ACR101_Slides_Colour.pdf" >}}
 Click for slides pdf
 {{< /imgproc >}}
 
-## Last Week:
-
-[Due in Week 6](../week6/#due-this-week)
-
-## Discussing Assessment 1
+## Discussing Assessment 2
 
 * Due this week!
 * Checking in on progress
